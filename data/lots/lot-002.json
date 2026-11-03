@@ -175,7 +175,7 @@
    "p": [
     {
      "t": "muet",
-     "mot": "[w]his[t]le"
+     "mot": "w[h]is[t]le"
     }
    ]
   },
@@ -2039,7 +2039,11 @@
    "p": [
     {
      "t": "muet",
-     "mot": "r[h]yt[h]m"
+     "mot": "r[h]ythm"
+    },
+    {
+     "t": "piege",
+     "ipa": "ð.əm"
     }
    ]
   },
@@ -2053,7 +2057,7 @@
    "p": [
     {
      "t": "piege",
-     "mot": "ath[l]ete"
+     "ipa": "ˈæθ.liːt"
     }
    ]
   },

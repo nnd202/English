@@ -350,7 +350,7 @@ function htmlCarte(c, { retournee, surligne }) {
     <div class="fiche-texte ${c.type === 'phrase' ? 'long' : ''}">${retournee && p && p.mot ? htmlSurligne(c.texte, p.mot) : h(c.texte)}</div>
     ${c.note && c.note.startsWith('(') ? `<div class="fiche-note">${h(c.note)}</div>` : ''}`;
   if (!retournee) return html + `<div class="fiche-indice">Prononce, puis retourne</div>`;
-  html += `<div class="fiche-ipa">/${p && p.ipa ? htmlSurligne(c.ipa, p.ipa) : ipaHtml(c.ipa)}/</div>
+  html += `<div class="fiche-ipa${c.ipa.length > 24 ? ' long' : ''}">/${p && p.ipa ? htmlSurligne(c.ipa, p.ipa) : ipaHtml(c.ipa)}/</div>
     <div class="fiche-actions">
       <button data-dire="1">${ICONES.son}<span>Écouter</span></button>
       <button data-dire="lent">${ICONES.lent}<span>Lent</span></button>
@@ -509,8 +509,9 @@ function ecranStats() {
     jours.push({ k, n, d });
   }
   const max = Math.max(1, ...jours.map(j => j.n));
+  // Barres de 70 au plus sous une marge de 18 : l'étiquette du plus haut jour reste visible.
   const graphe = `<svg class="graphe" viewBox="0 0 280 110">${jours.map((j, i) => {
-    const hb = j.n ? Math.max(3, 80 * j.n / max) : 0;
+    const hb = j.n ? Math.max(3, 70 * j.n / max) : 0;
     return `<rect x="${i * 20 + 3}" y="${88 - hb}" width="14" height="${hb}" rx="4"/>${j.n ? `<text x="${i * 20 + 10}" y="${84 - hb}">${j.n}</text>` : ''}<text class="jour" x="${i * 20 + 10}" y="104">${j.d.getDate()}</text>`;
   }).join('')}</svg>`;
 

@@ -10,7 +10,7 @@ wrestle | ˈres.əl | To fight by holding and pushing; to struggle with a proble
 listen | ˈlɪs.ən | To pay attention to sounds or to someone speaking. | Are you even listening to me? | muet@m:lis[t]en
 castle | ˈkæs.əl | A large, old fortified building. | We visited a castle in Scotland. | muet@m:cas[t]le
 fasten | ˈfæs.ən | To close or attach something firmly. | Please fasten your seatbelts. | muet@m:fas[t]en
-whistle | ˈwɪs.əl | To make a high sound by blowing through your lips. | He whistled to get the dog's attention. | muet@m:[w]his[t]le
+whistle | ˈwɪs.əl | To make a high sound by blowing through your lips. | He whistled to get the dog's attention. | muet@m:w[h]is[t]le
 mortgage | ˈmɔːr.ɡɪdʒ | A loan used to buy a house. | They just paid off their mortgage. | muet@m:mor[t]gage
 calm | kɑːm | Peaceful and relaxed; not worried. | Try to stay calm. | muet@m:ca[l]m
 almond | ˈɑː.mənd | An oval nut. | I'll have an almond croissant. | muet@m:a[l]mond
@@ -140,8 +140,8 @@ throughout | θruˈaʊt | In every part of; during the whole of. | It rained thr
 thousand | ˈθaʊ.zənd | The number 1,000. | It costs a thousand dollars. | piege@i:z
 theater | ˈθiː.ə.t̬ɚ | A building for plays or movies. | We went to the theater last night. | flap; piege@m:[th]eater
 therefore | ˈðer.fɔːr | For that reason. | It's late; therefore, we should go. | piege@i:ð
-rhythm | ˈrɪð.əm | A regular repeated pattern of sounds or movements. | She has a great sense of rhythm. | muet@m:r[h]yt[h]m
-athlete | ˈæθ.liːt | Someone who is good at sports. | He's a professional athlete. | piege@m:ath[l]ete
+rhythm | ˈrɪð.əm | A regular repeated pattern of sounds or movements. | She has a great sense of rhythm. | muet@m:r[h]ythm; piege@i:ð.əm
+athlete | ˈæθ.liːt | Someone who is good at sports. | He's a professional athlete. | piege@i:ˈæθ.liːt
 nevertheless | ˌnev.ɚ.ðəˈles | In spite of that; still. | It was hard. Nevertheless, we finished. | accent@i:ˈles
 furthermore | ˈfɝː.ðɚ.mɔːr | In addition; also. | Furthermore, it's cheaper. | piege@i:ðɚ
 whereas | werˈæz | While, in contrast. | He loves cities, whereas she prefers the country. | accent@i:ˈæz
