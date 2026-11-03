@@ -1,0 +1,89 @@
+{
+  "code": "en-US",
+  "nom": "Anglais américain",
+  "voix": "en-US",
+  "notation": "IPA américaine du Cambridge Dictionary (flap noté t̬), plus deux signes de l'oral enchaîné : ‿ (liaison) et ʔ (coup de glotte).",
+
+  "symboles": [
+    { "s": "iː", "ex": "sheep", "g": "Voyelles" },
+    { "s": "ɪ", "ex": "ship", "g": "Voyelles" },
+    { "s": "i", "ex": "happy", "g": "Voyelles" },
+    { "s": "e", "ex": "bed", "g": "Voyelles" },
+    { "s": "æ", "ex": "cat", "g": "Voyelles" },
+    { "s": "ɑː", "ex": "hot", "g": "Voyelles" },
+    { "s": "ɔː", "ex": "law", "g": "Voyelles" },
+    { "s": "ʊ", "ex": "put", "g": "Voyelles" },
+    { "s": "uː", "ex": "blue", "g": "Voyelles" },
+    { "s": "u", "ex": "influence", "g": "Voyelles" },
+    { "s": "ʌ", "ex": "cup", "g": "Voyelles" },
+    { "s": "ə", "ex": "about", "g": "Voyelles" },
+    { "s": "ɚ", "ex": "mother", "g": "Voyelles" },
+    { "s": "ɝː", "ex": "bird", "g": "Voyelles" },
+
+    { "s": "eɪ", "ex": "day", "g": "Diphtongues" },
+    { "s": "aɪ", "ex": "eye", "g": "Diphtongues" },
+    { "s": "ɔɪ", "ex": "boy", "g": "Diphtongues" },
+    { "s": "aʊ", "ex": "mouth", "g": "Diphtongues" },
+    { "s": "oʊ", "ex": "nose", "g": "Diphtongues" },
+
+    { "s": "θ", "ex": "think", "g": "Consonnes" },
+    { "s": "ð", "ex": "this", "g": "Consonnes" },
+    { "s": "ʃ", "ex": "she", "g": "Consonnes" },
+    { "s": "ʒ", "ex": "vision", "g": "Consonnes" },
+    { "s": "tʃ", "ex": "cheese", "g": "Consonnes" },
+    { "s": "dʒ", "ex": "jump", "g": "Consonnes" },
+    { "s": "ŋ", "ex": "sing", "g": "Consonnes" },
+    { "s": "j", "ex": "yes", "g": "Consonnes" },
+    { "s": "r", "ex": "red", "g": "Consonnes" },
+    { "s": "ɡ", "ex": "get", "g": "Consonnes" },
+    { "s": "t̬", "ex": "water (flap)", "g": "Consonnes" },
+    { "s": "ʔ", "ex": "button (glotte)", "g": "Consonnes" },
+    { "s": "p", "ex": "pen", "g": "Consonnes", "evident": true },
+    { "s": "b", "ex": "bad", "g": "Consonnes", "evident": true },
+    { "s": "t", "ex": "tea", "g": "Consonnes", "evident": true },
+    { "s": "d", "ex": "did", "g": "Consonnes", "evident": true },
+    { "s": "k", "ex": "cat", "g": "Consonnes", "evident": true },
+    { "s": "f", "ex": "fall", "g": "Consonnes", "evident": true },
+    { "s": "v", "ex": "van", "g": "Consonnes", "evident": true },
+    { "s": "s", "ex": "see", "g": "Consonnes", "evident": true },
+    { "s": "z", "ex": "zoo", "g": "Consonnes", "evident": true },
+    { "s": "h", "ex": "hat", "g": "Consonnes", "evident": true },
+    { "s": "m", "ex": "man", "g": "Consonnes", "evident": true },
+    { "s": "n", "ex": "no", "g": "Consonnes", "evident": true },
+    { "s": "l", "ex": "leg", "g": "Consonnes", "evident": true },
+    { "s": "w", "ex": "wet", "g": "Consonnes", "evident": true },
+
+    { "s": "ˈ", "ex": "accent", "g": "Signes" },
+    { "s": "ˌ", "ex": "accent secondaire", "g": "Signes" },
+    { "s": ".", "ex": "coupe de syllabe", "g": "Signes", "evident": true },
+    { "s": "‿", "ex": "liaison", "g": "Signes" }
+  ],
+
+  "pastilles": {
+    "flap":        { "nom": "Flap T", "regle": "Entre deux voyelles (la seconde non accentuée), t se dit comme un d très bref : la langue tape une seule fois. water, city, get it." },
+    "liaison":     { "nom": "Liaison", "regle": "La consonne finale s'accroche à la voyelle du mot suivant : on entend un seul mot. turn off → tɝː‿nɑːf." },
+    "faible":      { "nom": "Forme faible", "regle": "Les petits mots non accentués (have, of, to, for, can, and, the…) perdent leur voyelle pleine et passent au schwa ə." },
+    "reduction":   { "nom": "Réduction", "regle": "Des groupes très fréquents fusionnent à l'oral : going to → gonna, want to → wanna, got to → gotta, let me → lemme. On l'écrit normalement, on l'entend réduit." },
+    "elision":     { "nom": "Élision", "regle": "Un son disparaît, souvent un t ou une syllabe faible coincés entre deux consonnes : next day, comfortable, don't know." },
+    "assimilation":{ "nom": "Assimilation", "regle": "Deux sons voisins se fondent en un troisième : d + you → dʒ (did you → didja), t + you → tʃ (got you → gotcha)." },
+    "glotte":      { "nom": "Coup de glotte", "regle": "Devant un n syllabique, le t est coupé dans la gorge au lieu d'être articulé : button, certain, mountain." },
+    "accent":      { "nom": "Accent mobile", "regle": "L'accent tonique change de syllabe selon la forme du mot (nom ou verbe, dérivés), et les voyelles changent avec lui : record / record, photograph / photography." },
+    "muet":        { "nom": "Lettre muette", "regle": "L'orthographe garde une lettre qu'on ne prononce pas : debt, island, Wednesday, often." },
+    "piege":       { "nom": "Piège", "regle": "La prononciation s'éloigne de ce que l'orthographe laisse attendre : colonel, women, busy, recipe." }
+  },
+
+  "liens": [
+    { "nom": "Cambridge", "url": "https://dictionary.cambridge.org/dictionary/english/{tirets}", "source": "lemme", "types": ["mot", "combi", "phrasal"] },
+    { "nom": "Merriam-Webster", "url": "https://www.merriam-webster.com/dictionary/{code}", "source": "lemme", "types": ["mot", "combi", "phrasal"] },
+    { "nom": "YouGlish", "url": "https://youglish.com/pronounce/{code}/english/us", "source": "texte", "types": ["mot", "combi", "phrasal", "phrase"] },
+    { "nom": "Forvo", "url": "https://forvo.com/word/{soulignes}/#en", "source": "lemme", "types": ["mot", "phrasal"] },
+    { "nom": "PlayPhrase", "url": "https://www.playphrase.me/#/search?q={code}", "source": "texte", "types": ["combi", "phrasal", "phrase"] }
+  ],
+
+  "types": {
+    "mot":     "Mot",
+    "combi":   "Combinaison",
+    "phrasal": "Phrasal verb",
+    "phrase":  "Phrase"
+  }
+}
