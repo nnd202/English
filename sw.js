@@ -1,6 +1,6 @@
 // Service worker : réseau d'abord, cache en secours (fonctionne hors ligne).
 // Tout nouveau fichier doit être ajouté à CORE (tools/check.mjs le vérifie).
-const CACHE = 'english-v1';
+const CACHE = 'english-v3';
 const CORE = [
   './',
   'index.html',
@@ -12,9 +12,15 @@ const CORE = [
   'js/tirage.js',
   'js/ipa.js',
   'js/voix.js',
+  'js/dictee.js',
   'data/langue.json',
   'data/lots.json',
   'data/lots/lot-001.json',
+  'data/lots/lot-002.json',
+  'data/lots/lot-003.json',
+  'data/lots/lot-004.json',
+  'data/lots/lot-005.json',
+  'data/dictees/dictees-001.json',
   'icons/icon-64.png',
   'icons/icon-192.png',
   'icons/icon-512.png',

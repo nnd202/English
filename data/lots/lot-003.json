@@ -1,0 +1,1320 @@
+{
+ "lot": "lot-003",
+ "titre": "Combinaisons : formes faibles, liaisons, réductions",
+ "date": "2026-11-03",
+ "cartes": [
+  {
+   "id": "c-could-have-been",
+   "type": "combi",
+   "texte": "could have been",
+   "ipa": "kʊd‿əv ˈbɪn",
+   "def": "Something was possible in the past but didn't happen.",
+   "ex": "It could have been worse.",
+   "lemme": "could",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-would-have",
+   "type": "combi",
+   "texte": "would have",
+   "ipa": "wʊd‿əv",
+   "def": "Describes an imagined past result.",
+   "ex": "I would have called, but my phone died.",
+   "lemme": "would",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-must-have-been",
+   "type": "combi",
+   "texte": "must have been",
+   "ipa": "ˈmʌst‿əv bɪn",
+   "def": "A confident guess about the past.",
+   "ex": "It must have been hard for you.",
+   "lemme": "must",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-might-as-well",
+   "type": "combi",
+   "texte": "might as well",
+   "ipa": "ˈmaɪt̬‿əz ˈwel",
+   "def": "There's no reason not to, so let's do it.",
+   "ex": "We might as well go home.",
+   "lemme": "might as well",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "faible",
+     "ipa": "əz"
+    }
+   ]
+  },
+  {
+   "id": "c-had-better",
+   "type": "combi",
+   "texte": "had better",
+   "ipa": "həd ˈbet̬.ɚ",
+   "def": "Should (strong advice or warning).",
+   "ex": "You'd better hurry.",
+   "lemme": "had better",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "həd"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "c-supposed-to",
+   "type": "combi",
+   "texte": "supposed to",
+   "ipa": "səˈpoʊs.tə",
+   "def": "Expected or required to.",
+   "ex": "You're supposed to be here at nine.",
+   "lemme": "supposed to",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "suppose[d] to"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "c-have-to",
+   "type": "combi",
+   "texte": "have to",
+   "ipa": "ˈhæf.tə",
+   "def": "Must.",
+   "ex": "I have to go.",
+   "lemme": "have to",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "f"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "c-has-to",
+   "type": "combi",
+   "texte": "has to",
+   "ipa": "ˈhæs.tə",
+   "def": "Must (he, she, it).",
+   "ex": "She has to work late.",
+   "lemme": "have to",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "s"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "c-ought-to",
+   "type": "combi",
+   "texte": "ought to",
+   "ipa": "ˈɑː.t̬ə",
+   "def": "Should.",
+   "ex": "You ought to see a doctor.",
+   "lemme": "ought to",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈɑː.t̬ə"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "c-let-me-see",
+   "type": "combi",
+   "texte": "let me see",
+   "ipa": "ˈlem.i ˈsiː",
+   "def": "Give me a moment to think or check.",
+   "ex": "Let me see… yes, it's here.",
+   "lemme": "let",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈlem.i"
+    }
+   ]
+  },
+  {
+   "id": "c-give-me-a-minute",
+   "type": "combi",
+   "texte": "give me a minute",
+   "ipa": "ˈɡɪm.i ə ˈmɪn.ɪt",
+   "def": "Wait a moment.",
+   "ex": "Give me a minute, I'm almost done.",
+   "lemme": "give",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈɡɪm.i"
+    }
+   ]
+  },
+  {
+   "id": "c-a-couple-of",
+   "type": "combi",
+   "texte": "a couple of",
+   "ipa": "ə ˈkʌp.əl‿əv",
+   "def": "Two, or a few.",
+   "ex": "I'll be back in a couple of days.",
+   "lemme": "couple",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-out-of",
+   "type": "combi",
+   "texte": "out of",
+   "ipa": "ˈaʊt̬‿əv",
+   "def": "From inside to outside; with none left.",
+   "ex": "We're out of milk.",
+   "lemme": "out of",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-sort-of",
+   "type": "combi",
+   "texte": "sort of",
+   "ipa": "ˈsɔːr.t̬əv",
+   "def": "Somewhat; kind of.",
+   "ex": "It's sort of complicated.",
+   "lemme": "sort of",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-a-bit-of",
+   "type": "combi",
+   "texte": "a bit of",
+   "ipa": "ə ˈbɪt̬‿əv",
+   "def": "A small amount of.",
+   "ex": "It's a bit of a mess.",
+   "lemme": "bit",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-as-well-as",
+   "type": "combi",
+   "texte": "as well as",
+   "ipa": "əz ˈwel‿əz",
+   "def": "And also.",
+   "ex": "She speaks Spanish as well as French.",
+   "lemme": "as well as",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əz"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-in-front-of",
+   "type": "combi",
+   "texte": "in front of",
+   "ipa": "ɪn ˈfrʌnt‿əv",
+   "def": "Facing; ahead of.",
+   "ex": "I'll meet you in front of the station.",
+   "lemme": "in front of",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-instead-of",
+   "type": "combi",
+   "texte": "instead of",
+   "ipa": "ɪnˈsted‿əv",
+   "def": "In place of.",
+   "ex": "Let's walk instead of driving.",
+   "lemme": "instead of",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-because-of",
+   "type": "combi",
+   "texte": "because of",
+   "ipa": "bɪˈkʌz‿əv",
+   "def": "As a result of.",
+   "ex": "The game was canceled because of the rain.",
+   "lemme": "because of",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-in-spite-of",
+   "type": "combi",
+   "texte": "in spite of",
+   "ipa": "ɪn ˈspaɪt̬‿əv",
+   "def": "Despite.",
+   "ex": "We went in spite of the weather.",
+   "lemme": "in spite of",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-as-soon-as",
+   "type": "combi",
+   "texte": "as soon as",
+   "ipa": "əz ˈsuːn‿əz",
+   "def": "Right when; immediately after.",
+   "ex": "Call me as soon as you land.",
+   "lemme": "as soon as",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əz"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-as-long-as",
+   "type": "combi",
+   "texte": "as long as",
+   "ipa": "əz ˈlɑːŋ‿əz",
+   "def": "On condition that; for the whole time that.",
+   "ex": "You can stay as long as you want.",
+   "lemme": "as long as",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əz"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-by-the-way",
+   "type": "combi",
+   "texte": "by the way",
+   "ipa": "ˈbaɪ ðə ˈweɪ",
+   "def": "Used to add something on another topic.",
+   "ex": "By the way, did you call Mom?",
+   "lemme": "by the way",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ðə"
+    }
+   ]
+  },
+  {
+   "id": "c-on-the-other-hand",
+   "type": "combi",
+   "texte": "on the other hand",
+   "ipa": "ɑːn ði ˈʌð.ɚ ˈhænd",
+   "def": "Introduces the opposite point.",
+   "ex": "It's cheap. On the other hand, it's slow.",
+   "lemme": "on the other hand",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ði"
+    }
+   ]
+  },
+  {
+   "id": "c-at-least",
+   "type": "combi",
+   "texte": "at least",
+   "ipa": "ət ˈliːst",
+   "def": "Not less than; anyway, on the bright side.",
+   "ex": "At least nobody got hurt.",
+   "lemme": "at least",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ət"
+    }
+   ]
+  },
+  {
+   "id": "c-at-all",
+   "type": "combi",
+   "texte": "at all",
+   "ipa": "ət̬‿ˈɑːl",
+   "def": "In any way (in questions and negatives).",
+   "ex": "Did you sleep at all?",
+   "lemme": "at all",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-first-of-all",
+   "type": "combi",
+   "texte": "first of all",
+   "ipa": "ˈfɝːst‿əv ˈɑːl",
+   "def": "To begin with.",
+   "ex": "First of all, thanks for coming.",
+   "lemme": "first of all",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-after-all",
+   "type": "combi",
+   "texte": "after all",
+   "ipa": "ˈæf.tɚ‿ˈɑːl",
+   "def": "Despite what was expected; remember that.",
+   "ex": "It worked out after all.",
+   "lemme": "after all",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-all-of-a-sudden",
+   "type": "combi",
+   "texte": "all of a sudden",
+   "ipa": "ˈɑːl‿əv‿ə ˈsʌd.ən",
+   "def": "Suddenly.",
+   "ex": "All of a sudden, the lights went out.",
+   "lemme": "all of a sudden",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-once-in-a-while",
+   "type": "combi",
+   "texte": "once in a while",
+   "ipa": "ˈwʌns‿ɪn‿ə ˈwaɪl",
+   "def": "Sometimes, but not often.",
+   "ex": "I eat meat once in a while.",
+   "lemme": "once in a while",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-whats-going-on",
+   "type": "combi",
+   "texte": "what's going on",
+   "ipa": "ˈwʌts ˈɡoʊ.ɪŋ‿ˈɑːn",
+   "def": "What is happening?",
+   "ex": "What's going on here?",
+   "lemme": "go on",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-what-do-you-think",
+   "type": "combi",
+   "texte": "what do you think",
+   "ipa": "ˈwʌd.ə.jə ˈθɪŋk",
+   "def": "Asking for someone's opinion.",
+   "ex": "What do you think of my idea?",
+   "lemme": "think",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈwʌd.ə.jə"
+    }
+   ]
+  },
+  {
+   "id": "c-what-do-you-mean",
+   "type": "combi",
+   "texte": "what do you mean",
+   "ipa": "ˈwʌd.ə.jə ˈmiːn",
+   "def": "Asking for clarification.",
+   "ex": "What do you mean by that?",
+   "lemme": "mean",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈwʌd.ə.jə"
+    }
+   ]
+  },
+  {
+   "id": "c-how-about-you",
+   "type": "combi",
+   "texte": "how about you",
+   "ipa": "ˌhaʊ‿əˈbaʊ.tʃu",
+   "def": "Returning the question.",
+   "ex": "I'm good. How about you?",
+   "lemme": "how about",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃu"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-dont-you",
+   "type": "combi",
+   "texte": "don't you",
+   "ipa": "ˈdoʊn.tʃə",
+   "def": "Starts a negative question.",
+   "ex": "Don't you think it's weird?",
+   "lemme": "don't",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃə"
+    }
+   ]
+  },
+  {
+   "id": "c-would-you",
+   "type": "combi",
+   "texte": "would you",
+   "ipa": "ˈwʊ.dʒə",
+   "def": "Starts a polite request.",
+   "ex": "Would you mind closing the window?",
+   "lemme": "would",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "dʒə"
+    }
+   ]
+  },
+  {
+   "id": "c-could-you",
+   "type": "combi",
+   "texte": "could you",
+   "ipa": "ˈkʊ.dʒə",
+   "def": "Starts a polite request.",
+   "ex": "Could you help me with this?",
+   "lemme": "could",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "dʒə"
+    }
+   ]
+  },
+  {
+   "id": "c-got-you",
+   "type": "combi",
+   "texte": "got you",
+   "ipa": "ˈɡɑː.tʃə",
+   "def": "I understand; or: I caught you.",
+   "ex": "Got you, thanks.",
+   "lemme": "gotcha",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃə"
+    }
+   ]
+  },
+  {
+   "id": "c-last-year",
+   "type": "combi",
+   "texte": "last year",
+   "ipa": "ˌlæs ˈtʃɪr",
+   "def": "The year before this one.",
+   "ex": "We went there last year.",
+   "lemme": "last year",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃɪr"
+    }
+   ]
+  },
+  {
+   "id": "c-nice-to-meet-you",
+   "type": "combi",
+   "texte": "nice to meet you",
+   "ipa": "ˈnaɪs tə ˈmiː.tʃə",
+   "def": "Greeting someone for the first time.",
+   "ex": "Nice to meet you, I'm Sam.",
+   "lemme": "nice to meet you",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃə"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "c-not-yet",
+   "type": "combi",
+   "texte": "not yet",
+   "ipa": "ˈnɑː.tʃet",
+   "def": "Not now, but probably later.",
+   "ex": "Is it ready? Not yet.",
+   "lemme": "yet",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃet"
+    }
+   ]
+  },
+  {
+   "id": "c-ill-let-you-know",
+   "type": "combi",
+   "texte": "I'll let you know",
+   "ipa": "aɪl ˈle.tʃə ˈnoʊ",
+   "def": "I'll tell you when I have the information.",
+   "ex": "I'll let you know tomorrow.",
+   "lemme": "let someone know",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃə"
+    }
+   ]
+  },
+  {
+   "id": "c-a-little-bit",
+   "type": "combi",
+   "texte": "a little bit",
+   "ipa": "ə ˈlɪt̬.əl ˈbɪt",
+   "def": "Slightly.",
+   "ex": "I'm a little bit tired.",
+   "lemme": "little",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "c-pretty-good",
+   "type": "combi",
+   "texte": "pretty good",
+   "ipa": "ˈprɪt̬.i ˈɡʊd",
+   "def": "Quite good.",
+   "ex": "The food was pretty good.",
+   "lemme": "pretty",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "piege",
+     "mot": "pr[e]tty"
+    }
+   ]
+  },
+  {
+   "id": "c-what-about",
+   "type": "combi",
+   "texte": "what about",
+   "ipa": "ˈwʌt̬‿əˌbaʊt",
+   "def": "Suggesting or asking about something.",
+   "ex": "What about Friday?",
+   "lemme": "what about",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-right-away",
+   "type": "combi",
+   "texte": "right away",
+   "ipa": "ˈraɪt̬‿əˈweɪ",
+   "def": "Immediately.",
+   "ex": "I'll do it right away.",
+   "lemme": "right away",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-right-now",
+   "type": "combi",
+   "texte": "right now",
+   "ipa": "ˈraɪʔ ˈnaʊ",
+   "def": "At this moment.",
+   "ex": "I'm busy right now.",
+   "lemme": "right now",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    }
+   ]
+  },
+  {
+   "id": "c-what-if",
+   "type": "combi",
+   "texte": "what if",
+   "ipa": "ˈwʌt̬‿ɪf",
+   "def": "Introduces an imagined situation.",
+   "ex": "What if it rains?",
+   "lemme": "what if",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-make-sure",
+   "type": "combi",
+   "texte": "make sure",
+   "ipa": "ˈmeɪk ˈʃʊr",
+   "def": "Check; make certain.",
+   "ex": "Make sure you lock the door.",
+   "lemme": "make sure",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ʃʊr"
+    }
+   ]
+  },
+  {
+   "id": "c-make-a-decision",
+   "type": "combi",
+   "texte": "make a decision",
+   "ipa": "ˈmeɪk‿ə dɪˈsɪʒ.ən",
+   "def": "Decide.",
+   "ex": "We need to make a decision today.",
+   "lemme": "decision",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "piege",
+     "ipa": "ʒ"
+    }
+   ]
+  },
+  {
+   "id": "c-pay-attention",
+   "type": "combi",
+   "texte": "pay attention",
+   "ipa": "ˈpeɪ‿əˈten.ʃən",
+   "def": "Listen or watch carefully.",
+   "ex": "Pay attention to the details.",
+   "lemme": "pay attention",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-keep-in-mind",
+   "type": "combi",
+   "texte": "keep in mind",
+   "ipa": "ˈkiːp‿ɪn ˈmaɪnd",
+   "def": "Remember; take into account.",
+   "ex": "Keep in mind that it closes at six.",
+   "lemme": "keep in mind",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-take-care-of",
+   "type": "combi",
+   "texte": "take care of",
+   "ipa": "ˈteɪk ˈker‿əv",
+   "def": "Look after; deal with.",
+   "ex": "I'll take care of it.",
+   "lemme": "take care of",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-take-it-easy",
+   "type": "combi",
+   "texte": "take it easy",
+   "ipa": "ˈteɪk‿ɪt̬‿ˈiː.zi",
+   "def": "Relax; don't work too hard.",
+   "ex": "Take it easy this weekend.",
+   "lemme": "take it easy",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "c-get-used-to",
+   "type": "combi",
+   "texte": "get used to",
+   "ipa": "ɡet ˈjuːs.tə",
+   "def": "Become familiar with.",
+   "ex": "You'll get used to it.",
+   "lemme": "get used to",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "s"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "c-about-to",
+   "type": "combi",
+   "texte": "about to",
+   "ipa": "əˈbaʊ.t̬ə",
+   "def": "Going to do very soon.",
+   "ex": "I was about to call you.",
+   "lemme": "about to",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "abou[t] to"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "c-get-rid-of",
+   "type": "combi",
+   "texte": "get rid of",
+   "ipa": "ɡet ˈrɪd‿əv",
+   "def": "Throw away; remove.",
+   "ex": "We need to get rid of this old couch.",
+   "lemme": "get rid of",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-take-a-look",
+   "type": "combi",
+   "texte": "take a look",
+   "ipa": "ˈteɪk‿ə ˈlʊk",
+   "def": "Look at something.",
+   "ex": "Let me take a look.",
+   "lemme": "take a look",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-have-a-good-one",
+   "type": "combi",
+   "texte": "have a good one",
+   "ipa": "ˈhæv‿ə ˈɡʊd ˌwʌn",
+   "def": "A friendly goodbye.",
+   "ex": "Thanks, have a good one!",
+   "lemme": "have a good one",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-as-far-as-i-know",
+   "type": "combi",
+   "texte": "as far as I know",
+   "ipa": "əz ˈfɑːr‿əz‿aɪ ˈnoʊ",
+   "def": "Based on what I know.",
+   "ex": "As far as I know, it's still open.",
+   "lemme": "as far as I know",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "əz"
+    }
+   ]
+  },
+  {
+   "id": "c-its-up-to-you",
+   "type": "combi",
+   "texte": "it's up to you",
+   "ipa": "ɪts‿ˈʌp tə ˈjuː",
+   "def": "You decide.",
+   "ex": "Pizza or sushi? It's up to you.",
+   "lemme": "up to you",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "c-for-a-while",
+   "type": "combi",
+   "texte": "for a while",
+   "ipa": "fɚ‿ə ˈwaɪl",
+   "def": "For some time.",
+   "ex": "I haven't seen him for a while.",
+   "lemme": "for a while",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "fɚ"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-lets-get-started",
+   "type": "combi",
+   "texte": "let's get started",
+   "ipa": "ˈlets ɡet ˈstɑːr.t̬ɪd",
+   "def": "Let's begin.",
+   "ex": "OK, let's get started.",
+   "lemme": "get started",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "c-sooner-or-later",
+   "type": "combi",
+   "texte": "sooner or later",
+   "ipa": "ˈsuː.nɚ‿ɚ ˈleɪ.t̬ɚ",
+   "def": "At some point; eventually.",
+   "ex": "Sooner or later, he'll find out.",
+   "lemme": "sooner or later",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "‿ɚ"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-more-or-less",
+   "type": "combi",
+   "texte": "more or less",
+   "ipa": "ˈmɔːr‿ɚ ˈles",
+   "def": "Approximately.",
+   "ex": "It's more or less finished.",
+   "lemme": "more or less",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "‿ɚ"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-here-and-there",
+   "type": "combi",
+   "texte": "here and there",
+   "ipa": "ˈhɪr‿ən ˈðer",
+   "def": "In various places.",
+   "ex": "There are a few typos here and there.",
+   "lemme": "here and there",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ən"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-salt-and-pepper",
+   "type": "combi",
+   "texte": "salt and pepper",
+   "ipa": "ˈsɑːlt‿ən ˈpep.ɚ",
+   "def": "The two basic seasonings.",
+   "ex": "Pass the salt and pepper.",
+   "lemme": "salt and pepper",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ən"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "c-whats-the-matter",
+   "type": "combi",
+   "texte": "what's the matter",
+   "ipa": "ˈwʌts ðə ˈmæt̬.ɚ",
+   "def": "What's wrong?",
+   "ex": "What's the matter? You look upset.",
+   "lemme": "matter",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "faible",
+     "ipa": "ðə"
+    }
+   ]
+  },
+  {
+   "id": "c-it-doesnt-matter",
+   "type": "combi",
+   "texte": "it doesn't matter",
+   "ipa": "ɪt ˈdʌz.ən ˈmæt̬.ɚ",
+   "def": "It's not important.",
+   "ex": "Don't worry, it doesn't matter.",
+   "lemme": "matter",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "doesn'[t] matter"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "c-a-cup-of-coffee",
+   "type": "combi",
+   "texte": "a cup of coffee",
+   "ipa": "ə ˈkʌp‿ə ˈkɑː.fi",
+   "def": "A serving of coffee.",
+   "ex": "Let's grab a cup of coffee.",
+   "lemme": "cup",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈkʌp‿ə"
+    }
+   ]
+  },
+  {
+   "id": "c-out-of-the-blue",
+   "type": "combi",
+   "texte": "out of the blue",
+   "ipa": "ˈaʊt̬‿əv ðə ˈbluː",
+   "def": "Unexpectedly.",
+   "ex": "He called me out of the blue.",
+   "lemme": "out of the blue",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    }
+   ]
+  },
+  {
+   "id": "c-on-purpose",
+   "type": "combi",
+   "texte": "on purpose",
+   "ipa": "ɑːn ˈpɝː.pəs",
+   "def": "Deliberately.",
+   "ex": "Did you do that on purpose?",
+   "lemme": "on purpose",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "pəs"
+    }
+   ]
+  },
+  {
+   "id": "c-in-the-meantime",
+   "type": "combi",
+   "texte": "in the meantime",
+   "ipa": "ɪn ðə ˈmiːn.taɪm",
+   "def": "Meanwhile; until something else happens.",
+   "ex": "In the meantime, let's eat.",
+   "lemme": "in the meantime",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ðə"
+    }
+   ]
+  },
+  {
+   "id": "c-for-good",
+   "type": "combi",
+   "texte": "for good",
+   "ipa": "fɚ ˈɡʊd",
+   "def": "Forever; permanently.",
+   "ex": "She left town for good.",
+   "lemme": "for good",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "fɚ"
+    }
+   ]
+  },
+  {
+   "id": "c-to-be-honest",
+   "type": "combi",
+   "texte": "to be honest",
+   "ipa": "tə bi ˈɑː.nɪst",
+   "def": "Speaking frankly.",
+   "ex": "To be honest, I'm not a fan.",
+   "lemme": "honest",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "tə"
+    },
+    {
+     "t": "muet",
+     "mot": "[h]onest"
+    }
+   ]
+  }
+ ]
+}

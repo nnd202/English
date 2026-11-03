@@ -1,0 +1,87 @@
+{
+  "lot": "dictees-001",
+  "titre": "Premières dictées : vie courante, récits, actualité",
+  "date": "2026-11-03",
+  "textes": [
+    { "id": "d-running-late", "titre": "Running late", "genre": "Message vocal", "phrases": [
+      "Hey, it's me.",
+      "I'm running a little late, so don't wait for me.",
+      "There was an accident on the highway, and traffic's backed up for miles.",
+      "I should be there in about twenty minutes.",
+      "If you get hungry, just go ahead and order.",
+      "I'll have whatever you're having.",
+      "Sorry about that!"
+    ]},
+    { "id": "d-coffee-shop", "titre": "At the coffee shop", "genre": "Dialogue", "phrases": [
+      "Hi, what can I get for you?",
+      "Can I get a medium latte with oat milk?",
+      "Sure. Would you like anything to eat with that?",
+      "No, I'm good, thanks.",
+      "That'll be five forty.",
+      "Is it for here or to go?",
+      "To go, please."
+    ]},
+    { "id": "d-new-apartment", "titre": "The new apartment", "genre": "Conversation", "phrases": [
+      "So we finally moved into the new apartment last weekend.",
+      "It's a lot smaller than our old place, but it's in a better neighborhood.",
+      "The kitchen is tiny, though, and there's barely enough room for a table.",
+      "On the bright side, we can walk to work now.",
+      "We still haven't unpacked half of our boxes.",
+      "I guess we'll get around to it eventually."
+    ]},
+    { "id": "d-weekend-plans", "titre": "Weekend plans", "genre": "Dialogue", "phrases": [
+      "What are you up to this weekend?",
+      "Not much, honestly.",
+      "I was thinking about going hiking if the weather's nice.",
+      "Do you want to come with me?",
+      "I'd love to, but I've got a ton of work to catch up on.",
+      "Maybe next time, then."
+    ]},
+    { "id": "d-job-interview", "titre": "The job interview", "genre": "Récit", "phrases": [
+      "I had a job interview this morning, and I think it went pretty well.",
+      "They asked me a lot of questions about my last position.",
+      "At one point, I totally blanked on a question about my weaknesses.",
+      "I tried to laugh it off and come up with something.",
+      "They said they'd get back to me by the end of the week.",
+      "Fingers crossed!"
+    ]},
+    { "id": "d-lost-wallet", "titre": "The lost wallet", "genre": "Récit", "phrases": [
+      "Last Friday, I realized I'd lost my wallet somewhere downtown.",
+      "I retraced my steps, but I couldn't find it anywhere.",
+      "I was about to cancel all my cards when my phone rang.",
+      "It was a woman who'd found it on a bench near the park.",
+      "She'd looked me up online and decided to call.",
+      "I couldn't believe how lucky I was.",
+      "I offered to buy her lunch, but she wouldn't let me."
+    ]},
+    { "id": "d-friendly-advice", "titre": "Friendly advice", "genre": "Conseil", "phrases": [
+      "If I were you, I wouldn't worry about it too much.",
+      "Everybody makes mistakes, especially when they're starting out.",
+      "What matters is that you learned something from it.",
+      "Just talk to your manager and explain what happened.",
+      "I'm sure she'll understand.",
+      "And next time, don't be afraid to ask for help."
+    ]},
+    { "id": "d-weather", "titre": "Weather report", "genre": "Météo", "phrases": [
+      "Good morning! It's going to be a chilly start to the day, with temperatures in the low forties.",
+      "Expect clouds to build up throughout the afternoon.",
+      "There's a good chance of rain by this evening, so you might want to bring an umbrella.",
+      "Things should clear up by tomorrow morning, and we're looking at a sunny weekend."
+    ]},
+    { "id": "d-bike-program", "titre": "City bike program", "genre": "Actualité", "phrases": [
+      "The city announced on Tuesday that it will expand its bike sharing program to twelve new neighborhoods.",
+      "Officials say the goal is to cut down on traffic and reduce pollution.",
+      "More than three thousand bikes will be added over the next two years.",
+      "Some residents worry that the stations will take up valuable parking spaces.",
+      "Others say it's about time the city invested in cleaner transportation.",
+      "The first new stations are expected to open in the spring."
+    ]},
+    { "id": "d-sleep-podcast", "titre": "Sleep (podcast)", "genre": "Podcast", "phrases": [
+      "Welcome back to the show.",
+      "Today we're going to talk about something that a lot of people struggle with: getting enough sleep.",
+      "Most adults need seven to nine hours a night, but almost a third of us don't get that.",
+      "And it turns out that sleep affects pretty much everything, from your mood to your memory.",
+      "So stick around, because we've got some simple tips that might actually help."
+    ]}
+  ]
+}

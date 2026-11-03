@@ -11,7 +11,7 @@
     { "s": "e", "ex": "bed", "g": "Voyelles" },
     { "s": "æ", "ex": "cat", "g": "Voyelles" },
     { "s": "ɑː", "ex": "hot", "g": "Voyelles" },
-    { "s": "ɔː", "ex": "law", "g": "Voyelles" },
+    { "s": "ɔː", "ex": "door", "g": "Voyelles" },
     { "s": "ʊ", "ex": "put", "g": "Voyelles" },
     { "s": "uː", "ex": "blue", "g": "Voyelles" },
     { "s": "u", "ex": "influence", "g": "Voyelles" },
@@ -66,7 +66,8 @@
     "reduction":   { "nom": "Réduction", "regle": "Des groupes très fréquents fusionnent à l'oral : going to → gonna, want to → wanna, got to → gotta, let me → lemme. On l'écrit normalement, on l'entend réduit." },
     "elision":     { "nom": "Élision", "regle": "Un son disparaît, souvent un t ou une syllabe faible coincés entre deux consonnes : next day, comfortable, don't know." },
     "assimilation":{ "nom": "Assimilation", "regle": "Deux sons voisins se fondent en un troisième : d + you → dʒ (did you → didja), t + you → tʃ (got you → gotcha)." },
-    "glotte":      { "nom": "Coup de glotte", "regle": "Devant un n syllabique, le t est coupé dans la gorge au lieu d'être articulé : button, certain, mountain." },
+    "glotte":      { "nom": "Coup de glotte", "regle": "Devant un n, ou en fin de mot devant une consonne, le t est coupé dans la gorge au lieu d'être articulé : button, certain, right now, that makes sense." },
+    "ed":          { "nom": "Terminaison -ed", "regle": "-ed se dit /t/ après un son sourd (p, k, f, s, ʃ, tʃ), /d/ après un son voisé, et /ɪd/ seulement après t ou d : asked /æskt/, changed /tʃeɪndʒd/, wanted /ˈwɑːn.t̬ɪd/." },
     "accent":      { "nom": "Accent mobile", "regle": "L'accent tonique change de syllabe selon la forme du mot (nom ou verbe, dérivés), et les voyelles changent avec lui : record / record, photograph / photography." },
     "muet":        { "nom": "Lettre muette", "regle": "L'orthographe garde une lettre qu'on ne prononce pas : debt, island, Wednesday, often." },
     "piege":       { "nom": "Piège", "regle": "La prononciation s'éloigne de ce que l'orthographe laisse attendre : colonel, women, busy, recipe." }

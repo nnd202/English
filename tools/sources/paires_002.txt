@@ -1,0 +1,25 @@
+# mot | note | ipa | définition | exemple | pastilles
+present | (nom) | ˈprez.ənt | A gift; the current time. | What a nice present! | accent@i:ˈprez
+present | (verbe) | prɪˈzent | To show or give something formally. | She'll present the results tomorrow. | accent@i:ˈzent
+object | (nom) | ˈɑːb.dʒekt | A thing you can see or touch; a goal. | What's that shiny object? | accent@i:ˈɑːb
+object | (verbe) | əbˈdʒekt | To say you disagree or oppose. | Does anyone object? | accent@i:ˈdʒekt
+increase | (nom) | ˈɪn.kriːs | A rise in amount or number. | There's been an increase in prices. | accent@i:ˈɪn
+increase | (verbe) | ɪnˈkriːs | To become or make larger. | Prices increased last year. | accent@i:ˈkriːs
+project | (nom) | ˈprɑː.dʒekt | A planned piece of work. | I'm working on a new project. | accent@i:ˈprɑː
+project | (verbe) | prəˈdʒekt | To estimate the future; to show an image on a screen. | Sales are projected to rise. | accent@i:ˈdʒekt
+produce | (nom) | ˈproʊ.duːs | Fruit and vegetables. | The store sells fresh produce. | accent@i:ˈproʊ
+produce | (verbe) | prəˈduːs | To make or create. | The factory produces cars. | accent@i:ˈduːs
+separate | (adjectif) | ˈsep.ɚ.ət | Apart; not connected. | They sleep in separate rooms. | accent@i:ət
+separate | (verbe) | ˈsep.ə.reɪt | To divide or move apart. | Separate the eggs. | accent@i:reɪt
+estimate | (nom) | ˈes.tə.mət | A rough calculation. | Can you give me an estimate? | accent@i:mət
+estimate | (verbe) | ˈes.tə.meɪt | To roughly calculate. | We estimated the cost at $500. | accent@i:meɪt
+live | (adjectif) | laɪv | Alive; happening now, not recorded. | It's a live broadcast. | piege@i:aɪ
+live | (verbe) | lɪv | To be alive; to have your home somewhere. | Where do you live? | piege@i:ɪ
+lead | (nom : le métal) | led | A heavy gray metal. | Old pipes contain lead. | piege@i:e
+lead | (verbe) | liːd | To guide or be in charge of. | She'll lead the team. | piege@i:iː
+tear | (nom : une larme) | tɪr | A drop of water from your eye. | A tear rolled down her cheek. | piege@i:ɪr
+tear | (verbe : déchirer) | ter | To pull apart; to rip. | Don't tear the page. | piege@i:er
+wind | (nom) | wɪnd | Moving air. | The wind is really strong today. | piege@i:ɪ
+wind | (verbe) | waɪnd | To turn or twist; to wrap around. | The road winds through the hills. | piege@i:aɪ
+close | (adjectif) | kloʊs | Near; intimate. | We're very close friends. | piege@i:s
+close | (verbe) | kloʊz | To shut. | Please close the door. | piege@i:z

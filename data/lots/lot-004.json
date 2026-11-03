@@ -1,0 +1,813 @@
+{
+ "lot": "lot-004",
+ "titre": "Phrasal verbs courants",
+ "date": "2026-11-03",
+ "cartes": [
+  {
+   "id": "p-find-out",
+   "type": "phrasal",
+   "texte": "find out",
+   "ipa": "faɪnd‿ˈaʊt",
+   "def": "Discover information.",
+   "ex": "I just found out she's moving.",
+   "lemme": "find out",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-work-out",
+   "type": "phrasal",
+   "texte": "work out",
+   "ipa": "wɝːk‿ˈaʊt",
+   "def": "Exercise; find a solution; end well.",
+   "ex": "It all worked out in the end.",
+   "lemme": "work out",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-carry-on",
+   "type": "phrasal",
+   "texte": "carry on",
+   "ipa": "ˈker.i‿ˈɑːn",
+   "def": "Continue.",
+   "ex": "Carry on, I'm listening.",
+   "lemme": "carry on",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-set-up",
+   "type": "phrasal",
+   "texte": "set up",
+   "ipa": "set̬‿ˈʌp",
+   "def": "Arrange, install or organize.",
+   "ex": "Can you help me set up the TV?",
+   "lemme": "set up",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-show-up",
+   "type": "phrasal",
+   "texte": "show up",
+   "ipa": "ʃoʊ‿ˈʌp",
+   "def": "Arrive; appear.",
+   "ex": "He didn't show up.",
+   "lemme": "show up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-end-up",
+   "type": "phrasal",
+   "texte": "end up",
+   "ipa": "end‿ˈʌp",
+   "def": "Finally be in a situation you didn't plan.",
+   "ex": "We ended up staying all night.",
+   "lemme": "end up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-break-up",
+   "type": "phrasal",
+   "texte": "break up",
+   "ipa": "breɪk‿ˈʌp",
+   "def": "End a relationship.",
+   "ex": "They broke up last month.",
+   "lemme": "break up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-make-up",
+   "type": "phrasal",
+   "texte": "make up",
+   "ipa": "meɪk‿ˈʌp",
+   "def": "Invent; or become friends again after a fight.",
+   "ex": "Stop making up excuses.",
+   "lemme": "make up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-bring-up",
+   "type": "phrasal",
+   "texte": "bring up",
+   "ipa": "brɪŋ‿ˈʌp",
+   "def": "Mention a topic; raise a child.",
+   "ex": "Don't bring that up again.",
+   "lemme": "bring up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-check-out",
+   "type": "phrasal",
+   "texte": "check out",
+   "ipa": "tʃek‿ˈaʊt",
+   "def": "Look at something interesting; leave a hotel.",
+   "ex": "Check out this video.",
+   "lemme": "check out",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-hang-out",
+   "type": "phrasal",
+   "texte": "hang out",
+   "ipa": "hæŋ‿ˈaʊt",
+   "def": "Spend time together casually.",
+   "ex": "Wanna hang out later?",
+   "lemme": "hang out",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-hold-on",
+   "type": "phrasal",
+   "texte": "hold on",
+   "ipa": "hoʊld‿ˈɑːn",
+   "def": "Wait a moment.",
+   "ex": "Hold on a second.",
+   "lemme": "hold on",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-calm-down",
+   "type": "phrasal",
+   "texte": "calm down",
+   "ipa": "kɑːm ˈdaʊn",
+   "def": "Become calm.",
+   "ex": "Calm down, it's fine.",
+   "lemme": "calm down",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "ca[l]m"
+    }
+   ]
+  },
+  {
+   "id": "p-shut-up",
+   "type": "phrasal",
+   "texte": "shut up",
+   "ipa": "ʃʌt̬‿ˈʌp",
+   "def": "Be quiet (rude, or playful).",
+   "ex": "Oh, shut up!",
+   "lemme": "shut up",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-let-you-down",
+   "type": "phrasal",
+   "texte": "let you down",
+   "ipa": "ˈle.tʃə ˈdaʊn",
+   "def": "Disappoint you.",
+   "ex": "I don't want to let you down.",
+   "lemme": "let down",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃə"
+    }
+   ]
+  },
+  {
+   "id": "p-turn-down",
+   "type": "phrasal",
+   "texte": "turn down",
+   "ipa": "tɝːn ˈdaʊn",
+   "def": "Refuse; lower the volume.",
+   "ex": "She turned down the offer.",
+   "lemme": "turn down",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɝː"
+    }
+   ]
+  },
+  {
+   "id": "p-turn-it-off",
+   "type": "phrasal",
+   "texte": "turn it off",
+   "ipa": "ˈtɝːn‿ɪt̬‿ˈɑːf",
+   "def": "Stop a machine or light.",
+   "ex": "Turn it off, please.",
+   "lemme": "turn off",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "p-turn-it-on",
+   "type": "phrasal",
+   "texte": "turn it on",
+   "ipa": "ˈtɝːn‿ɪt̬‿ˈɑːn",
+   "def": "Start a machine or light.",
+   "ex": "Can you turn it on?",
+   "lemme": "turn on",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "p-put-it-off",
+   "type": "phrasal",
+   "texte": "put it off",
+   "ipa": "ˈpʊt̬‿ɪt̬‿ˈɑːf",
+   "def": "Postpone.",
+   "ex": "Stop putting it off.",
+   "lemme": "put off",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-put-on",
+   "type": "phrasal",
+   "texte": "put on",
+   "ipa": "pʊt̬‿ˈɑːn",
+   "def": "Wear; gain weight.",
+   "ex": "Put on your coat.",
+   "lemme": "put on",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-take-off",
+   "type": "phrasal",
+   "texte": "take off",
+   "ipa": "teɪk‿ˈɑːf",
+   "def": "Remove clothing; leave the ground.",
+   "ex": "The plane took off late.",
+   "lemme": "take off",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-get-over",
+   "type": "phrasal",
+   "texte": "get over",
+   "ipa": "ɡet̬‿ˈoʊ.vɚ",
+   "def": "Recover from something.",
+   "ex": "She never got over it.",
+   "lemme": "get over",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-get-back-to",
+   "type": "phrasal",
+   "texte": "get back to",
+   "ipa": "ɡet ˈbæk tə",
+   "def": "Reply to someone later.",
+   "ex": "I'll get back to you tomorrow.",
+   "lemme": "get back to",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "p-look-forward-to",
+   "type": "phrasal",
+   "texte": "look forward to",
+   "ipa": "lʊk ˈfɔːr.wɚd tə",
+   "def": "Be excited about something coming.",
+   "ex": "I'm looking forward to it.",
+   "lemme": "look forward to",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "p-look-after",
+   "type": "phrasal",
+   "texte": "look after",
+   "ipa": "lʊk‿ˈæf.tɚ",
+   "def": "Take care of.",
+   "ex": "Can you look after the kids?",
+   "lemme": "look after",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-look-into",
+   "type": "phrasal",
+   "texte": "look into",
+   "ipa": "lʊk‿ˈɪn.tə",
+   "def": "Investigate.",
+   "ex": "I'll look into it.",
+   "lemme": "look into",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "p-come-across",
+   "type": "phrasal",
+   "texte": "come across",
+   "ipa": "kʌm‿əˈkrɑːs",
+   "def": "Find by chance; seem.",
+   "ex": "I came across an old photo.",
+   "lemme": "come across",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-come-up",
+   "type": "phrasal",
+   "texte": "come up",
+   "ipa": "kʌm‿ˈʌp",
+   "def": "Arise unexpectedly.",
+   "ex": "Sorry, something came up.",
+   "lemme": "come up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-go-through",
+   "type": "phrasal",
+   "texte": "go through",
+   "ipa": "ɡoʊ ˈθruː",
+   "def": "Experience something difficult; examine carefully.",
+   "ex": "She's going through a lot.",
+   "lemme": "go through",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "thr[ough]"
+    }
+   ]
+  },
+  {
+   "id": "p-deal-with",
+   "type": "phrasal",
+   "texte": "deal with",
+   "ipa": "ˈdiːl wɪð",
+   "def": "Handle.",
+   "ex": "I'll deal with it later.",
+   "lemme": "deal with",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ð"
+    }
+   ]
+  },
+  {
+   "id": "p-point-out",
+   "type": "phrasal",
+   "texte": "point out",
+   "ipa": "pɔɪn‿ˈaʊt",
+   "def": "Draw attention to something.",
+   "ex": "She pointed out a mistake.",
+   "lemme": "point out",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "poin[t] out"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-pick-up-on",
+   "type": "phrasal",
+   "texte": "pick up on",
+   "ipa": "ˌpɪk‿ˈʌp‿ɑːn",
+   "def": "Notice something subtle.",
+   "ex": "She picked up on my mood.",
+   "lemme": "pick up on",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-run-out-of",
+   "type": "phrasal",
+   "texte": "run out of",
+   "ipa": "rʌn‿ˈaʊt̬‿əv",
+   "def": "Use all of something.",
+   "ex": "We ran out of time.",
+   "lemme": "run out of",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "p-fill-out",
+   "type": "phrasal",
+   "texte": "fill out",
+   "ipa": "fɪl‿ˈaʊt",
+   "def": "Complete a form.",
+   "ex": "Please fill out this form.",
+   "lemme": "fill out",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-give-it-back",
+   "type": "phrasal",
+   "texte": "give it back",
+   "ipa": "ˈɡɪv‿ɪt ˈbæk",
+   "def": "Return something.",
+   "ex": "Give it back!",
+   "lemme": "give back",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-hand-in",
+   "type": "phrasal",
+   "texte": "hand in",
+   "ipa": "hænd‿ˈɪn",
+   "def": "Submit work.",
+   "ex": "Hand in your reports by Friday.",
+   "lemme": "hand in",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-show-off",
+   "type": "phrasal",
+   "texte": "show off",
+   "ipa": "ʃoʊ‿ˈɑːf",
+   "def": "Try to impress people.",
+   "ex": "Stop showing off.",
+   "lemme": "show off",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-sort-out",
+   "type": "phrasal",
+   "texte": "sort out",
+   "ipa": "sɔːrt̬‿ˈaʊt",
+   "def": "Resolve; organize.",
+   "ex": "We need to sort this out.",
+   "lemme": "sort out",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-catch-up",
+   "type": "phrasal",
+   "texte": "catch up",
+   "ipa": "kætʃ‿ˈʌp",
+   "def": "Reach the same level; talk about recent news.",
+   "ex": "Let's catch up soon.",
+   "lemme": "catch up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-keep-up-with",
+   "type": "phrasal",
+   "texte": "keep up with",
+   "ipa": "kiːp‿ˈʌp wɪð",
+   "def": "Stay at the same pace or level.",
+   "ex": "It's hard to keep up with the news.",
+   "lemme": "keep up with",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-cut-back-on",
+   "type": "phrasal",
+   "texte": "cut back on",
+   "ipa": "ˌkʌt ˈbæk‿ɑːn",
+   "def": "Reduce.",
+   "ex": "I'm cutting back on sugar.",
+   "lemme": "cut back on",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-get-away-with",
+   "type": "phrasal",
+   "texte": "get away with",
+   "ipa": "ɡet̬‿əˈweɪ wɪð",
+   "def": "Avoid punishment.",
+   "ex": "He got away with it.",
+   "lemme": "get away with",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-look-up-to",
+   "type": "phrasal",
+   "texte": "look up to",
+   "ipa": "lʊk‿ˈʌp tə",
+   "def": "Admire.",
+   "ex": "I've always looked up to her.",
+   "lemme": "look up to",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "faible",
+     "ipa": "tə"
+    }
+   ]
+  },
+  {
+   "id": "p-give-in",
+   "type": "phrasal",
+   "texte": "give in",
+   "ipa": "ɡɪv‿ˈɪn",
+   "def": "Stop resisting.",
+   "ex": "He finally gave in.",
+   "lemme": "give in",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-break-down",
+   "type": "phrasal",
+   "texte": "break down",
+   "ipa": "breɪk ˈdaʊn",
+   "def": "Stop working; lose control of your emotions.",
+   "ex": "My car broke down.",
+   "lemme": "break down",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "br[ea]k"
+    }
+   ]
+  },
+  {
+   "id": "p-back-up",
+   "type": "phrasal",
+   "texte": "back up",
+   "ipa": "bæk‿ˈʌp",
+   "def": "Support someone; save a copy.",
+   "ex": "Back up your files.",
+   "lemme": "back up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-throw-away",
+   "type": "phrasal",
+   "texte": "throw away",
+   "ipa": "θroʊ‿əˈweɪ",
+   "def": "Put in the trash.",
+   "ex": "Don't throw it away.",
+   "lemme": "throw away",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-wake-up",
+   "type": "phrasal",
+   "texte": "wake up",
+   "ipa": "weɪk‿ˈʌp",
+   "def": "Stop sleeping.",
+   "ex": "I woke up at six.",
+   "lemme": "wake up",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-count-on",
+   "type": "phrasal",
+   "texte": "count on",
+   "ipa": "kaʊn‿ˈɑːn",
+   "def": "Rely on.",
+   "ex": "You can count on me.",
+   "lemme": "count on",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "coun[t] on"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "p-drop-by",
+   "type": "phrasal",
+   "texte": "drop by",
+   "ipa": "ˌdrɑːp ˈbaɪ",
+   "def": "Visit briefly.",
+   "ex": "Drop by anytime.",
+   "lemme": "drop by",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɑː"
+    }
+   ]
+  }
+ ]
+}

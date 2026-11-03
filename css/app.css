@@ -20,7 +20,7 @@
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; background: var(--bleu-pale); color: var(--texte); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 16px; }
 body { min-height: 100dvh; }
-button, input, select { font: inherit; color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; border: 0; background: none; padding: 0; }
 a { color: inherit; text-decoration: none; }
 svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
@@ -218,6 +218,37 @@ svg.graphe text.jour { fill: #a6afc2; font-size: 8px; }
 
 .toast { position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%); background: var(--bleu-nuit); color: var(--blanc); padding: 10px 18px; border-radius: 14px; font-size: 14px; z-index: 30; max-width: 90%; text-align: center; }
 .toast[hidden] { display: none; }
+
+/* Dictées */
+.ligne-dictee { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid var(--gris-clair); }
+.bloc-titre + .ligne-dictee { border-top: 0; }
+.ld-main { flex: 1; text-align: left; display: flex; flex-direction: column; }
+.ld-main small { color: var(--gris); font-size: 12.5px; }
+.ligne-dictee em { font-style: normal; font-size: 13px; color: var(--bleu-fonce); background: var(--bleu-clair); padding: 3px 9px; border-radius: 999px; }
+.ld-suppr { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--gris); }
+.ld-suppr svg { width: 16px; height: 16px; }
+.ld-suppr.arme { background: var(--rate); color: var(--blanc); }
+.champ { width: 100%; padding: 13px 14px; border-radius: 16px; border: 1px solid var(--gris-clair); background: var(--bleu-pale); outline: none; resize: vertical; }
+.champ:focus { border-color: var(--bleu); background: var(--blanc); }
+.champ.grand { min-height: 220px; }
+.dictee-corps { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+.dictee-fiche { flex: none; justify-content: flex-start; gap: 12px; }
+.fiche-actions.grandes button { min-width: 120px; padding: 14px 10px; font-size: 14px; }
+.saisie { font-size: 18px; min-height: 96px; }
+.correction { font-size: 19px; line-height: 1.9; text-align: left; width: 100%; }
+.correction.ligne { display: flex; align-items: flex-start; gap: 8px; font-size: 16px; line-height: 1.8; padding: 8px 0; border-top: 1px solid var(--gris-clair); justify-content: space-between; }
+.bloc-titre + .correction.ligne { border-top: 0; }
+.correction.ligne .btn-mini { flex: none; padding: 6px; }
+.correction.ligne .btn-mini svg { width: 18px; height: 18px; }
+.correction del { text-decoration: line-through; opacity: .75; margin-right: 3px; }
+.correction ins { text-decoration: none; font-weight: 700; }
+.d-faute ins { color: #b56a12; border-bottom: 2px solid var(--difficile); }
+.d-faux ins { color: #c2405a; border-bottom: 2px solid var(--rate); }
+.d-faute del, .d-faux del { color: var(--gris); }
+.d-manque { color: #4b5670; background: #eef1f8; border-radius: 6px; padding: 0 4px; border: 1.5px dashed #b9c2d6; }
+.d-ajout { color: var(--rate); }
+.legende-notes i.d-i-faute { background: var(--difficile); } .legende-notes i.d-i-faux { background: var(--rate); }
+.legende-notes i.d-i-manque { background: #b9c2d6; } .legende-notes i.d-i-ajout { background: #f3b1b7; }
 
 @media (min-width: 700px) {
   .jeu { max-width: 560px; margin: 0 auto; }

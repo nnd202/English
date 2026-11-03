@@ -77,8 +77,11 @@ Une **web app installable (PWA)**, hébergée sur GitHub Pages, sans serveur, sa
 | `js/store.js` | État local, séries, records, fusion d'import (calculs purs) |
 | `js/ipa.js` | Découpage IPA, légende contextuelle, zones à surligner (pur) |
 | `js/voix.js` | Synthèse vocale |
+| `js/dictee.js` | Dictées : découpage en phrases, comparaison mot à mot (pur) |
 | `data/langue.json` | **Tout ce qui dépend de la langue** : symboles et légende, pastilles et règles, liens, voix |
-| `data/lots.json` + `data/lots/*.json` | Le contenu, par lots |
+| `data/lots.json` + `data/lots/*.json` | Les cartes, par lots |
+| `data/dictees/*.json` | Les textes de dictée, par lots (listés dans `lots.json`, clé `dictees`) |
+| `tools/sources/*.txt`, `tools/construire.py`, `tools/ipa_us.py` | Fabrication des lots (voir § 8) |
 | `sw.js` | Hors ligne (réseau d'abord, cache en secours). Tout nouveau fichier va dans `CORE` |
 | `tools/check.mjs` | Vérification : `node tools/check.mjs` |
 
@@ -88,9 +91,24 @@ Une **web app installable (PWA)**, hébergée sur GitHub Pages, sans serveur, sa
 
 Tout ce qui s'apprend vit dans des **lots** ; le code ne change pas.
 
+**Fabrication (recommandée)** : les lots 002 à 005 sont écrits dans des fichiers texte simples, une carte par ligne, dans `tools/sources/` :
+
+```
+mot | ipa | définition | exemple | pastilles                       (mots_*.txt)
+mot | (nom) | ipa | définition | exemple | pastilles              (paires_*.txt)
+texte | ipa | définition | exemple | lemme | pastilles            (combis_*.txt, phrasal_*.txt)
+texte | ipa | usage | pastilles                                   (phrases_*.txt)
+```
+
+Pastilles : `flap`, `glotte`, `liaison` seules (cible automatique : t̬, ʔ, ‿) ; sinon `type@m:zone` (dans le mot) ou `type@i:zone` (dans l'IPA), séparées par `;`. Puis `python3 tools/construire.py` régénère les JSON. `python3 tools/ipa_us.py mot…` propose une transcription à partir de CMUdict (`pip install cmudict`), convertie à la notation Cambridge (t̬, ɚ, ɝː, ɑː, syllabes, coup de glotte) : **toujours relire à la main**.
+
+**Directement en JSON** :
+
 1. Créer `data/lots/lot-00X.json` sur le modèle de `lot-001.json`.
 2. L'ajouter à `data/lots.json` et à la liste `CORE` de `sw.js`.
 3. Lancer `node tools/check.mjs` : identifiants uniques, champs présents, chaque symbole IPA présent dans la légende, chaque pastille qui surligne bien quelque chose.
+
+**Une dictée** : `{ "id": "d-…", "titre": "…", "genre": "Récit", "phrases": ["…", "…"] }` dans un fichier de `data/dictees/`. Le texte est découpé à l'avance en phrases, toujours correctement écrites. Pas de chiffres : on écrit les nombres en lettres (« five forty »).
 
 Une carte :
 
@@ -124,8 +142,8 @@ Le moteur (Sprint, FSRS, tirage, stats, sauvegarde, rendu des cartes) ne dépend
 
 ## 10. Feuille de route
 
-1. **Sprint** et cartes de prononciation : livré (prototype, premier lot de 65 cartes).
-2. **Dictées** : un texte lu par la voix, phrase par phrase, réécoute et vitesse lente ; on tape ; la correction compare mot à mot (manqués, ajoutés, mal écrits ; majuscules et ponctuation pardonnées). Textes écrits par lots, ou texte collé par l'utilisateur (article, livre libre de droits comme Project Gutenberg) qui reste sur son téléphone. On n'écrit jamais de forme fautive : la difficulté est d'**entendre** « whaddaya » et d'écrire « what do you ».
+1. **Sprint** et cartes de prononciation : livré. 446 cartes (251 mots, 91 combinaisons, 59 phrasal verbs, 45 phrases).
+2. **Dictées** : livré. Voir § 13.
 3. **Verbes irréguliers** : la grille à remplir façon Geoquiz (saisie libre ou curseur), avec l'IPA.
 4. **Timeline des temps** : une frise avec « maintenant » et un point de référence ; placer l'événement au doigt (point, durée close, action en cours qui traverse le repère) ; correction superposée avec le nom du temps. Variante inverse : conjuguer d'après le schéma. Grille des 12 temps en mode clic.
 5. **Plus tard** : prépositions, faux amis, et ce qui viendra.
@@ -139,3 +157,14 @@ Bleu roi franc (#3d63dd), grandes cartes blanches, coins très arrondis (24 à 2
 - Le petit signe du flap (U+032C) est mal placé par certaines polices : il est dessiné en CSS (`.flap`).
 - Une carte en attente de retour ne doit pas être piochée normalement, sinon le retour se perd.
 - Le bouton retour d'Android pendant une partie : pause, pas sortie.
+
+## 13. Les dictées
+
+L'écoute est le vrai point faible visé : entendre « whaddaya » et écrire « what do you ». On n'écrit **jamais** de forme fautive : le texte de référence est toujours correct.
+
+- **Textes** : ceux de l'appli (par lots, écrits en anglais américain naturel, riches en liaisons et formes réduites : message vocal, dialogue, récit, actualité, météo, podcast), ou un texte **collé** (article, livre libre de droits, réplique), découpé automatiquement en phrases et gardé sur l'appareil seulement.
+- **Déroulé** : phrase par phrase. Écouter (ou Lent) autant de fois que voulu, taper, Vérifier, puis la phrase suivante.
+- **Comparaison mot à mot** (plus longue sous-suite commune) : juste ; **orthographe** (le bon mot à une ou deux lettres près : orange) ; **faux** (autre mot : rouge) ; **oublié** (encadré pointillé) ; **en trop** (barré). Majuscules, ponctuation, accents, apostrophes typographiques et tirets sont pardonnés. Les contractions comptent (« I'm » ≠ « Im »).
+- **Bilan** : % de mots justes, détail par catégorie, temps, nombre d'écoutes, correction complète avec réécoute de chaque phrase. Meilleur score affiché à côté de chaque texte.
+- Une dictée compte pour la **série de jours** et le **temps cumulé**, pas pour les records du Sprint. Quitter en cours enregistre les phrases déjà vérifiées.
+- Le chrono mesure seulement : pas de pression ici, l'écoute demande du calme.

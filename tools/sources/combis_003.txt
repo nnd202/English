@@ -1,0 +1,76 @@
+# texte | ipa | définition | exemple | lemme | pastilles
+could have been | kʊd‿əv ˈbɪn | Something was possible in the past but didn't happen. | It could have been worse. | could | faible@i:əv; liaison
+would have | wʊd‿əv | Describes an imagined past result. | I would have called, but my phone died. | would | faible@i:əv; liaison
+must have been | ˈmʌst‿əv bɪn | A confident guess about the past. | It must have been hard for you. | must | faible@i:əv; liaison
+might as well | ˈmaɪt̬‿əz ˈwel | There's no reason not to, so let's do it. | We might as well go home. | might as well | flap; faible@i:əz
+had better | həd ˈbet̬.ɚ | Should (strong advice or warning). | You'd better hurry. | had better | faible@i:həd; flap
+supposed to | səˈpoʊs.tə | Expected or required to. | You're supposed to be here at nine. | supposed to | elision@m:suppose[d] to; faible@i:tə
+have to | ˈhæf.tə | Must. | I have to go. | have to | assimilation@i:f; faible@i:tə
+has to | ˈhæs.tə | Must (he, she, it). | She has to work late. | have to | assimilation@i:s; faible@i:tə
+ought to | ˈɑː.t̬ə | Should. | You ought to see a doctor. | ought to | reduction@i:ˈɑː.t̬ə; flap
+let me see | ˈlem.i ˈsiː | Give me a moment to think or check. | Let me see… yes, it's here. | let | reduction@i:ˈlem.i
+give me a minute | ˈɡɪm.i ə ˈmɪn.ɪt | Wait a moment. | Give me a minute, I'm almost done. | give | reduction@i:ˈɡɪm.i
+a couple of | ə ˈkʌp.əl‿əv | Two, or a few. | I'll be back in a couple of days. | couple | liaison; faible@i:əv
+out of | ˈaʊt̬‿əv | From inside to outside; with none left. | We're out of milk. | out of | flap; faible@i:əv
+sort of | ˈsɔːr.t̬əv | Somewhat; kind of. | It's sort of complicated. | sort of | flap; faible@i:əv
+a bit of | ə ˈbɪt̬‿əv | A small amount of. | It's a bit of a mess. | bit | flap; liaison
+as well as | əz ˈwel‿əz | And also. | She speaks Spanish as well as French. | as well as | faible@i:əz; liaison
+in front of | ɪn ˈfrʌnt‿əv | Facing; ahead of. | I'll meet you in front of the station. | in front of | liaison; faible@i:əv
+instead of | ɪnˈsted‿əv | In place of. | Let's walk instead of driving. | instead of | liaison; faible@i:əv
+because of | bɪˈkʌz‿əv | As a result of. | The game was canceled because of the rain. | because of | liaison; faible@i:əv
+in spite of | ɪn ˈspaɪt̬‿əv | Despite. | We went in spite of the weather. | in spite of | flap; liaison
+as soon as | əz ˈsuːn‿əz | Right when; immediately after. | Call me as soon as you land. | as soon as | faible@i:əz; liaison
+as long as | əz ˈlɑːŋ‿əz | On condition that; for the whole time that. | You can stay as long as you want. | as long as | faible@i:əz; liaison
+by the way | ˈbaɪ ðə ˈweɪ | Used to add something on another topic. | By the way, did you call Mom? | by the way | faible@i:ðə
+on the other hand | ɑːn ði ˈʌð.ɚ ˈhænd | Introduces the opposite point. | It's cheap. On the other hand, it's slow. | on the other hand | faible@i:ði
+at least | ət ˈliːst | Not less than; anyway, on the bright side. | At least nobody got hurt. | at least | faible@i:ət
+at all | ət̬‿ˈɑːl | In any way (in questions and negatives). | Did you sleep at all? | at all | flap; liaison
+first of all | ˈfɝːst‿əv ˈɑːl | To begin with. | First of all, thanks for coming. | first of all | liaison; faible@i:əv
+after all | ˈæf.tɚ‿ˈɑːl | Despite what was expected; remember that. | It worked out after all. | after all | liaison
+all of a sudden | ˈɑːl‿əv‿ə ˈsʌd.ən | Suddenly. | All of a sudden, the lights went out. | all of a sudden | liaison; faible@i:əv
+once in a while | ˈwʌns‿ɪn‿ə ˈwaɪl | Sometimes, but not often. | I eat meat once in a while. | once in a while | liaison
+what's going on | ˈwʌts ˈɡoʊ.ɪŋ‿ˈɑːn | What is happening? | What's going on here? | go on | liaison
+what do you think | ˈwʌd.ə.jə ˈθɪŋk | Asking for someone's opinion. | What do you think of my idea? | think | reduction@i:ˈwʌd.ə.jə
+what do you mean | ˈwʌd.ə.jə ˈmiːn | Asking for clarification. | What do you mean by that? | mean | reduction@i:ˈwʌd.ə.jə
+how about you | ˌhaʊ‿əˈbaʊ.tʃu | Returning the question. | I'm good. How about you? | how about | assimilation@i:tʃu; liaison
+don't you | ˈdoʊn.tʃə | Starts a negative question. | Don't you think it's weird? | don't | assimilation@i:tʃə
+would you | ˈwʊ.dʒə | Starts a polite request. | Would you mind closing the window? | would | assimilation@i:dʒə
+could you | ˈkʊ.dʒə | Starts a polite request. | Could you help me with this? | could | assimilation@i:dʒə
+got you | ˈɡɑː.tʃə | I understand; or: I caught you. | Got you, thanks. | gotcha | assimilation@i:tʃə
+last year | ˌlæs ˈtʃɪr | The year before this one. | We went there last year. | last year | assimilation@i:tʃɪr
+nice to meet you | ˈnaɪs tə ˈmiː.tʃə | Greeting someone for the first time. | Nice to meet you, I'm Sam. | nice to meet you | assimilation@i:tʃə; faible@i:tə
+not yet | ˈnɑː.tʃet | Not now, but probably later. | Is it ready? Not yet. | yet | assimilation@i:tʃet
+I'll let you know | aɪl ˈle.tʃə ˈnoʊ | I'll tell you when I have the information. | I'll let you know tomorrow. | let someone know | assimilation@i:tʃə
+a little bit | ə ˈlɪt̬.əl ˈbɪt | Slightly. | I'm a little bit tired. | little | flap
+pretty good | ˈprɪt̬.i ˈɡʊd | Quite good. | The food was pretty good. | pretty | flap; piege@m:pr[e]tty
+what about | ˈwʌt̬‿əˌbaʊt | Suggesting or asking about something. | What about Friday? | what about | flap; liaison
+right away | ˈraɪt̬‿əˈweɪ | Immediately. | I'll do it right away. | right away | flap; liaison
+right now | ˈraɪʔ ˈnaʊ | At this moment. | I'm busy right now. | right now | glotte
+what if | ˈwʌt̬‿ɪf | Introduces an imagined situation. | What if it rains? | what if | flap; liaison
+make sure | ˈmeɪk ˈʃʊr | Check; make certain. | Make sure you lock the door. | make sure | piege@i:ʃʊr
+make a decision | ˈmeɪk‿ə dɪˈsɪʒ.ən | Decide. | We need to make a decision today. | decision | liaison; piege@i:ʒ
+pay attention | ˈpeɪ‿əˈten.ʃən | Listen or watch carefully. | Pay attention to the details. | pay attention | liaison
+keep in mind | ˈkiːp‿ɪn ˈmaɪnd | Remember; take into account. | Keep in mind that it closes at six. | keep in mind | liaison
+take care of | ˈteɪk ˈker‿əv | Look after; deal with. | I'll take care of it. | take care of | liaison; faible@i:əv
+take it easy | ˈteɪk‿ɪt̬‿ˈiː.zi | Relax; don't work too hard. | Take it easy this weekend. | take it easy | liaison; flap
+get used to | ɡet ˈjuːs.tə | Become familiar with. | You'll get used to it. | get used to | piege@i:s; faible@i:tə
+about to | əˈbaʊ.t̬ə | Going to do very soon. | I was about to call you. | about to | elision@m:abou[t] to; flap
+get rid of | ɡet ˈrɪd‿əv | Throw away; remove. | We need to get rid of this old couch. | get rid of | liaison; faible@i:əv
+take a look | ˈteɪk‿ə ˈlʊk | Look at something. | Let me take a look. | take a look | liaison
+have a good one | ˈhæv‿ə ˈɡʊd ˌwʌn | A friendly goodbye. | Thanks, have a good one! | have a good one | liaison
+as far as I know | əz ˈfɑːr‿əz‿aɪ ˈnoʊ | Based on what I know. | As far as I know, it's still open. | as far as I know | liaison; faible@i:əz
+it's up to you | ɪts‿ˈʌp tə ˈjuː | You decide. | Pizza or sushi? It's up to you. | up to you | liaison; faible@i:tə
+for a while | fɚ‿ə ˈwaɪl | For some time. | I haven't seen him for a while. | for a while | faible@i:fɚ; liaison
+let's get started | ˈlets ɡet ˈstɑːr.t̬ɪd | Let's begin. | OK, let's get started. | get started | flap
+sooner or later | ˈsuː.nɚ‿ɚ ˈleɪ.t̬ɚ | At some point; eventually. | Sooner or later, he'll find out. | sooner or later | faible@i:‿ɚ; flap; liaison
+more or less | ˈmɔːr‿ɚ ˈles | Approximately. | It's more or less finished. | more or less | faible@i:‿ɚ; liaison
+here and there | ˈhɪr‿ən ˈðer | In various places. | There are a few typos here and there. | here and there | faible@i:ən; liaison
+salt and pepper | ˈsɑːlt‿ən ˈpep.ɚ | The two basic seasonings. | Pass the salt and pepper. | salt and pepper | faible@i:ən; liaison
+what's the matter | ˈwʌts ðə ˈmæt̬.ɚ | What's wrong? | What's the matter? You look upset. | matter | flap; faible@i:ðə
+it doesn't matter | ɪt ˈdʌz.ən ˈmæt̬.ɚ | It's not important. | Don't worry, it doesn't matter. | matter | elision@m:doesn'[t] matter; flap
+a cup of coffee | ə ˈkʌp‿ə ˈkɑː.fi | A serving of coffee. | Let's grab a cup of coffee. | cup | reduction@i:ˈkʌp‿ə
+out of the blue | ˈaʊt̬‿əv ðə ˈbluː | Unexpectedly. | He called me out of the blue. | out of the blue | flap; faible@i:əv
+on purpose | ɑːn ˈpɝː.pəs | Deliberately. | Did you do that on purpose? | on purpose | piege@i:pəs
+in the meantime | ɪn ðə ˈmiːn.taɪm | Meanwhile; until something else happens. | In the meantime, let's eat. | in the meantime | faible@i:ðə
+for good | fɚ ˈɡʊd | Forever; permanently. | She left town for good. | for good | faible@i:fɚ
+to be honest | tə bi ˈɑː.nɪst | Speaking frankly. | To be honest, I'm not a fan. | honest | faible@i:tə; muet@m:[h]onest

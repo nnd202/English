@@ -1,0 +1,662 @@
+{
+ "lot": "lot-005",
+ "titre": "Phrases courtes de la vie courante",
+ "date": "2026-11-03",
+ "cartes": [
+  {
+   "id": "f-what-do-you-want-to-do",
+   "type": "phrase",
+   "texte": "What do you want to do?",
+   "ipa": "ˈwʌd.ə.jə ˈwɑː.nə ˈduː",
+   "def": "Asking someone what they'd like to do.",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈwʌd.ə.jə"
+    },
+    {
+     "t": "reduction",
+     "ipa": "ˈwɑː.nə"
+    }
+   ]
+  },
+  {
+   "id": "f-im-going-to-grab-a-coffee",
+   "type": "phrase",
+   "texte": "I'm going to grab a coffee.",
+   "ipa": "aɪm ˈɡʌ.nə ˈɡræb‿ə ˈkɑː.fi",
+   "def": "Saying you're about to get a coffee.",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈɡʌ.nə"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-did-you-get-my-message",
+   "type": "phrase",
+   "texte": "Did you get my message?",
+   "ipa": "ˈdɪdʒ.ə ˈɡet maɪ ˈmes.ɪdʒ",
+   "def": "Checking that someone received your text or email.",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "ˈdɪdʒ.ə"
+    }
+   ]
+  },
+  {
+   "id": "f-i-havent-seen-him-in-ages",
+   "type": "phrase",
+   "texte": "I haven't seen him in ages.",
+   "ipa": "aɪ ˈhæv.ənt ˈsiːn‿ɪm‿ɪn ˈeɪ.dʒɪz",
+   "def": "It's been a very long time.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ɪm‿"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-tell-her-i-said-hi",
+   "type": "phrase",
+   "texte": "Tell her I said hi.",
+   "ipa": "ˈtel‿ɚ aɪ ˈsed ˈhaɪ",
+   "def": "Passing on a greeting.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "‿ɚ"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-give-them-a-call",
+   "type": "phrase",
+   "texte": "Give them a call.",
+   "ipa": "ˈɡɪv‿əm‿ə ˈkɑːl",
+   "def": "Suggesting someone phones them.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əm"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-i-shouldve-known-better",
+   "type": "phrase",
+   "texte": "I should've known better.",
+   "ipa": "aɪ ˈʃʊd‿əv ˈnoʊn ˈbet̬.ɚ",
+   "def": "Regretting a mistake you should have avoided.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "f-its-not-that-big-of-a-deal",
+   "type": "phrase",
+   "texte": "It's not that big of a deal.",
+   "ipa": "ɪts ˈnɑːʔ ðæt ˈbɪɡ‿əv‿ə ˈdiːl",
+   "def": "Minimizing a problem.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-could-you-say-that-again",
+   "type": "phrase",
+   "texte": "Could you say that again?",
+   "ipa": "ˈkʊ.dʒə ˈseɪ ðæt̬‿əˈɡen",
+   "def": "Asking someone to repeat.",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "dʒə"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "piege",
+     "ipa": "ˈɡen"
+    }
+   ]
+  },
+  {
+   "id": "f-ill-be-right-back",
+   "type": "phrase",
+   "texte": "I'll be right back.",
+   "ipa": "aɪl bi ˈraɪʔ ˈbæk",
+   "def": "Leaving for a moment.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    }
+   ]
+  },
+  {
+   "id": "f-lets-get-out-of-here",
+   "type": "phrase",
+   "texte": "Let's get out of here.",
+   "ipa": "ˈlets ˈɡet̬‿aʊt̬‿əv ˈhɪr",
+   "def": "Suggesting you leave.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-hows-it-going",
+   "type": "phrase",
+   "texte": "How's it going?",
+   "ipa": "ˈhaʊz‿ɪt ˈɡoʊ.ɪŋ",
+   "def": "A casual \"how are you?\"",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-what-have-you-been-up-to",
+   "type": "phrase",
+   "texte": "What have you been up to?",
+   "ipa": "ˈwʌt̬‿əv jə bɪn‿ˈʌp tuː",
+   "def": "Asking what someone has been doing lately.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-i-dont-want-to-talk-about-it",
+   "type": "phrase",
+   "texte": "I don't want to talk about it.",
+   "ipa": "aɪ doʊn ˈwɑː.nə ˈtɑːk‿əˈbaʊt̬‿ɪt",
+   "def": "Refusing to discuss something.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "don'[t] want"
+    },
+    {
+     "t": "reduction",
+     "ipa": "ˈwɑː.nə"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "f-do-you-want-me-to-help",
+   "type": "phrase",
+   "texte": "Do you want me to help?",
+   "ipa": "də.jə ˈwɑːn mi tə ˈhelp",
+   "def": "Offering help.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "wan[t] me"
+    },
+    {
+     "t": "faible",
+     "ipa": "də.jə"
+    }
+   ]
+  },
+  {
+   "id": "f-its-kind-of-hard-to-explain",
+   "type": "phrase",
+   "texte": "It's kind of hard to explain.",
+   "ipa": "ɪts ˈkaɪn.də ˈhɑːrd tu‿ɪkˈspleɪn",
+   "def": "Something is complicated to describe.",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈkaɪn.də"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-ive-got-to-get-going",
+   "type": "phrase",
+   "texte": "I've got to get going.",
+   "ipa": "aɪv ˈɡɑː.t̬ə ˈɡet ˈɡoʊ.ɪŋ",
+   "def": "Saying you need to leave.",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈɡɑː.t̬ə"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "f-can-i-ask-you-something",
+   "type": "phrase",
+   "texte": "Can I ask you something?",
+   "ipa": "kən‿aɪ ˈæsk‿jə ˈsʌm.θɪŋ",
+   "def": "Before a personal or delicate question.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "kən"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-that-makes-sense",
+   "type": "phrase",
+   "texte": "That makes sense.",
+   "ipa": "ˈðæʔ ˈmeɪks ˈsens",
+   "def": "Showing you understand.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    }
+   ]
+  },
+  {
+   "id": "f-ill-think-about-it",
+   "type": "phrase",
+   "texte": "I'll think about it.",
+   "ipa": "aɪl ˈθɪŋk‿əˈbaʊt̬‿ɪt",
+   "def": "Not deciding right away.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "f-hold-on-a-second",
+   "type": "phrase",
+   "texte": "Hold on a second.",
+   "ipa": "ˈhoʊld‿ɑːn‿ə ˈsek.ənd",
+   "def": "Asking someone to wait.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-it-was-a-lot-of-fun",
+   "type": "phrase",
+   "texte": "It was a lot of fun.",
+   "ipa": "ɪt wəz‿ə ˈlɑːt̬‿əv ˈfʌn",
+   "def": "Saying you enjoyed something.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "wəz"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-what-time-is-it",
+   "type": "phrase",
+   "texte": "What time is it?",
+   "ipa": "ˈwʌ ˈtaɪm‿ɪz‿ɪt",
+   "def": "Asking the time.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "Wha[t] time"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-im-not-going-to-lie",
+   "type": "phrase",
+   "texte": "I'm not going to lie.",
+   "ipa": "aɪm ˈnɑːʔ ˈɡʌ.nə ˈlaɪ",
+   "def": "Before an honest admission.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    },
+    {
+     "t": "reduction",
+     "ipa": "ˈɡʌ.nə"
+    }
+   ]
+  },
+  {
+   "id": "f-let-me-know-what-you-think",
+   "type": "phrase",
+   "texte": "Let me know what you think.",
+   "ipa": "ˈlem.i ˈnoʊ ˈwʌ.tʃə ˈθɪŋk",
+   "def": "Asking for feedback.",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈlem.i"
+    },
+    {
+     "t": "assimilation",
+     "ipa": "tʃə"
+    }
+   ]
+  },
+  {
+   "id": "f-where-did-you-put-it",
+   "type": "phrase",
+   "texte": "Where did you put it?",
+   "ipa": "ˈwer.dʒə ˈpʊt̬‿ɪt",
+   "def": "Asking where something is.",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "dʒə"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "f-i-meant-to-tell-you",
+   "type": "phrase",
+   "texte": "I meant to tell you.",
+   "ipa": "aɪ ˈmen tə ˈtel‿jə",
+   "def": "Apologizing for not mentioning something.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "mean[t] to"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-you-cant-be-serious",
+   "type": "phrase",
+   "texte": "You can't be serious.",
+   "ipa": "jə ˈkæn bi ˈsɪr.i.əs",
+   "def": "Expressing disbelief.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "can'[t] be"
+    },
+    {
+     "t": "faible",
+     "ipa": "jə"
+    }
+   ]
+  },
+  {
+   "id": "f-is-that-all-right",
+   "type": "phrase",
+   "texte": "Is that all right?",
+   "ipa": "ɪz ˈðæt̬‿ɑːl ˈraɪt",
+   "def": "Asking permission or agreement.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-well-figure-something-out",
+   "type": "phrase",
+   "texte": "We'll figure something out.",
+   "ipa": "wil ˈfɪɡ.jɚ ˈsʌm.θɪŋ‿ˈaʊt",
+   "def": "Reassuring someone.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-i-didnt-mean-to",
+   "type": "phrase",
+   "texte": "I didn't mean to.",
+   "ipa": "aɪ ˈdɪd.ən ˈmiːn tuː",
+   "def": "Apologizing for an accident.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "didn'[t] mean"
+    }
+   ]
+  },
+  {
+   "id": "f-what-are-you-up-to-tonight",
+   "type": "phrase",
+   "texte": "What are you up to tonight?",
+   "ipa": "ˈwʌt̬‿ɚ jə ˈʌp tə təˈnaɪt",
+   "def": "Asking about someone's evening plans.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "faible",
+     "ipa": "ɚ jə"
+    }
+   ]
+  },
+  {
+   "id": "f-its-about-time",
+   "type": "phrase",
+   "texte": "It's about time.",
+   "ipa": "ɪts‿əˈbaʊ ˈtaɪm",
+   "def": "Finally! (it should have happened sooner)",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "abou[t] time"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-thanks-for-letting-me-know",
+   "type": "phrase",
+   "texte": "Thanks for letting me know.",
+   "ipa": "ˈθæŋks fɚ ˈlet̬.ɪŋ mi ˈnoʊ",
+   "def": "Thanking someone for information.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "fɚ"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "f-sorry-to-keep-you-waiting",
+   "type": "phrase",
+   "texte": "Sorry to keep you waiting.",
+   "ipa": "ˈsɑːr.i tə ˈkiːp jə ˈweɪ.t̬ɪŋ",
+   "def": "Apologizing for being late.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "tə"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "f-would-you-mind-if-i-sat-here",
+   "type": "phrase",
+   "texte": "Would you mind if I sat here?",
+   "ipa": "ˈwʊ.dʒə ˈmaɪnd‿ɪf‿aɪ ˈsæt ˈhɪr",
+   "def": "Politely asking to sit.",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "dʒə"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-i-could-use-some-help",
+   "type": "phrase",
+   "texte": "I could use some help.",
+   "ipa": "aɪ ˈkʊ.dʒuːz səm ˈhelp",
+   "def": "I'd appreciate some help.",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "dʒuːz"
+    },
+    {
+     "t": "faible",
+     "ipa": "səm"
+    }
+   ]
+  },
+  {
+   "id": "f-not-that-i-know-of",
+   "type": "phrase",
+   "texte": "Not that I know of.",
+   "ipa": "ˈnɑːʔ ðət̬‿aɪ ˈnoʊ‿əv",
+   "def": "As far as I know, no.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-just-let-it-go",
+   "type": "phrase",
+   "texte": "Just let it go.",
+   "ipa": "ˈdʒʌs ˈlet̬‿ɪt ˈɡoʊ",
+   "def": "Advice to stop worrying about something.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "Jus[t] let"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  }
+ ]
+}

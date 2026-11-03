@@ -5,13 +5,14 @@ import { creerPioche, difficultes, quotaNouvelles } from './tirage.js';
 import { retenu } from './fsrs.js';
 import { legende, zones, morceaux } from './ipa.js';
 import { initVoix, dire, voixListe, voixOk } from './voix.js';
+import { decouperPhrases, comparer, compter } from './dictee.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const vue = $('#vue'), nav = $('#nav'), feuille = $('#feuille');
 const h = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-let LANGUE = null, CARTES = [], PAR_ID = new Map();
-let partie = null, bilan = null;
+let LANGUE = null, CARTES = [], PAR_ID = new Map(), DICTEES = [];
+let partie = null, bilan = null, dictee = null, bilanDictee = null;
 
 const DUREES = [300, 600, 900, 1200];
 const TIRAGES = { melange: 'Mélange', hasard: 'Hasard', dues: 'À revoir', nouvelles: 'Nouvelles' };
@@ -53,10 +54,14 @@ const ICONES = {
 async function demarrer() {
   const charge = async (u) => (await fetch(u, { cache: 'no-cache' })).json();
   LANGUE = await charge('data/langue.json');
-  const { lots } = await charge('data/lots.json');
-  for (const nom of lots) {
-    const lot = await charge(`data/lots/${nom}.json`);
-    for (const c of lot.cartes) { c.lot = nom; CARTES.push(c); PAR_ID.set(c.id, c); }
+  const { lots, dictees = [] } = await charge('data/lots.json');
+  const tous = await Promise.all([
+    ...lots.map(nom => charge(`data/lots/${nom}.json`)),
+    ...dictees.map(nom => charge(`data/dictees/${nom}.json`))
+  ]);
+  for (const lot of tous) {
+    for (const c of lot.cartes || []) { c.lot = lot.lot; CARTES.push(c); PAR_ID.set(c.id, c); }
+    for (const t of lot.textes || []) DICTEES.push(t);
   }
   store.charger();
   initVoix(LANGUE.voix);
@@ -73,9 +78,18 @@ function router() {
     mettrePause(true);
     return;
   }
+  if (dictee && !dictee.fini && hash !== '#/dictee') {
+    history.pushState(null, '', '#/dictee');
+    voileQuitterDictee();
+    return;
+  }
   fermerFeuille();
   const [, ecran, arg] = hash.split('/');
-  nav.hidden = ecran === 'jeu';
+  nav.hidden = ecran === 'jeu' || ecran === 'dictee';
+  if (ecran === 'dictee' && dictee) return ecranDictee();
+  if (ecran === 'bilan-dictee' && bilanDictee) return ecranBilanDictee();
+  if (ecran === 'dictees') return ecranDictees();
+  if (ecran === 'coller') return ecranColler();
   if (ecran === 'jeu' && partie) return ecranJeu();
   if (ecran === 'bilan' && bilan) return ecranBilan();
   if (ecran === 'stats') return ecranStats();
@@ -159,10 +173,13 @@ function ecranAccueil() {
       <div class="bloc-titre"><h2>Mode libre</h2><span>Sans chrono ni record : prendre son temps, lire, écouter</span></div>
       <button class="btn-second" data-lancer="libre">Commencer</button>
     </section>
+    <section class="bloc">
+      <div class="bloc-titre"><h2>Dictées</h2><span>Écouter, taper, comparer mot à mot</span></div>
+      <a class="btn-second" href="#/dictees">Choisir un texte</a>
+    </section>
     <section class="bloc bientot">
       <div class="bloc-titre"><h2>Bientôt</h2></div>
       <div class="ligne-bientot"><b>Timeline des temps</b><span>placer l'action sur la frise</span></div>
-      <div class="ligne-bientot"><b>Dictées</b><span>écouter, taper, comparer</span></div>
       <div class="ligne-bientot"><b>Verbes irréguliers</b><span>la grille à remplir</span></div>
     </section>
   </main>`;
@@ -500,12 +517,16 @@ function ecranStats() {
       <p class="info">« Bien ancrées » : tenues au moins 3 semaines selon FSRS.</p>
     </section>
     <section class="bloc"><div class="bloc-titre"><h2>Toutes tes notes</h2></div>${barreNotes(totalNotes)}</section>
+    ${statsDictees(e.sessions)}
     ${dures.length ? `<section class="bloc"><div class="bloc-titre"><h2>Les plus dures</h2><span>Difficulté calculée par FSRS (sur 10)</span></div>
       ${dures.map(c => ligneCarte(c, etats[c.id].d.toFixed(1))).join('')}</section>` : ''}
     ${lentes.length ? `<section class="bloc"><div class="bloc-titre"><h2>Celles qui prennent du temps</h2><span>Temps moyen par passage, tous modes</span></div>
       ${lentes.map(c => ligneCarte(c, `${(etats[c.id].t / etats[c.id].n / 1000).toFixed(1)} s`)).join('')}</section>` : ''}
     <section class="bloc"><div class="bloc-titre"><h2>Historique</h2></div>
-      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => `<div class="ligne-histo">
+      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'dictee' ? `<div class="ligne-histo">
+        <div><b>Dictée</b> · ${h(s.titre)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}</small></div>
+        <div class="histo-droite"><strong>${pourcent(s)}</strong></div>
+      </div>` : `<div class="ligne-histo">
         <div><b>${s.mode === 'sprint' ? `Sprint ${s.duree / 60} min` : 'Libre'}</b> · ${TIRAGES[s.tirage] || ''}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}${s.mode === 'sprint' && !s.complet ? ' · arrêtée' : ''}</small></div>
         <div class="histo-droite"><strong>${s.passees}</strong><span class="pts">${[4, 3, 2, 1].map(g => `<i class="n${g}">${s.notes[g] || 0}</i>`).join('')}</span></div>
       </div>`).join('') : '<p class="info">Aucune partie pour l\'instant.</p>'}
@@ -667,7 +688,7 @@ async function exporter() {
   const e = store.get();
   const d = new Date();
   const nom = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')} - Export English.txt`;
-  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint } });
+  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint, textes: e.textes } });
   const fichier = new File([contenu], nom, { type: 'text/plain' });
   let ok = false;
   try {
@@ -695,12 +716,242 @@ async function importer(f) {
     if (data.app !== 'English' || !data.etat) throw new Error('format');
     const e = store.get();
     const fus = store.fusionner(e, data.etat);
-    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions });
+    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions, textes: fus.textes });
     toast(`Import réussi : ${fus.sessions.length} parties au total.`);
     router();
   } catch {
     toast('Fichier non reconnu.');
   }
+}
+
+// ---------- Dictées ----------
+const pourcent = (s) => s.mots ? `${Math.round(100 * s.justes / s.mots)} %` : '—';
+
+function statsDictees(sessions) {
+  const d = sessions.filter(s => s.mode === 'dictee');
+  if (!d.length) return '';
+  const mots = d.reduce((n, s) => n + s.mots, 0), justes = d.reduce((n, s) => n + s.justes, 0);
+  return `<section class="bloc"><div class="bloc-titre"><h2>Dictées</h2></div>
+    <div class="grille-chiffres">
+      <div><b>${d.length}</b><span>dictées</span></div>
+      <div><b>${mots ? Math.round(100 * justes / mots) : 0} %</b><span>mots justes</span></div>
+      <div><b>${duree(d.reduce((n, s) => n + s.joue, 0))}</b><span>temps</span></div>
+    </div></section>`;
+}
+
+function meilleure(id) {
+  const d = store.get().sessions.filter(s => s.mode === 'dictee' && s.texteId === id && s.mots);
+  if (!d.length) return null;
+  return Math.max(...d.map(s => Math.round(100 * s.justes / s.mots)));
+}
+
+function ecranDictees() {
+  dessinerNav('maison');
+  const e = store.get();
+  const ligne = (t, perso) => {
+    const m = meilleure(t.id);
+    return `<div class="ligne-dictee">
+      <button class="ld-main" data-dictee="${h(t.id)}">
+        <b>${h(t.titre)}</b><small>${h(t.genre || 'Ton texte')} · ${pluriel(t.phrases.length, 'phrase')}</small>
+      </button>
+      ${m != null ? `<em>${m} %</em>` : ''}
+      ${perso ? `<button class="ld-suppr" data-suppr="${h(t.id)}" aria-label="Supprimer">${ICONES.fermer}</button>` : ''}
+    </div>`;
+  };
+  vue.innerHTML = `${entete('Dictées', 'La voix lit, tu tapes, l\'appli compare', false, '#/')}
+  <main class="page">
+    <section class="bloc">
+      <div class="bloc-titre"><h2>Coller un texte</h2><span>Un article, un passage de livre, une réplique… Il reste sur ton téléphone.</span></div>
+      <a class="btn-second" href="#/coller">Coller un texte</a>
+    </section>
+    ${e.textes.length ? `<section class="bloc liste"><div class="bloc-titre"><h2>Tes textes</h2></div>${e.textes.map(t => ligne(t, true)).join('')}</section>` : ''}
+    <section class="bloc liste"><div class="bloc-titre"><h2>Textes de l'appli</h2></div>${DICTEES.map(t => ligne(t, false)).join('')}</section>
+  </main>`;
+  vue.querySelectorAll('[data-dictee]').forEach(b => b.onclick = () => {
+    const id = b.dataset.dictee;
+    const t = DICTEES.find(x => x.id === id) || e.textes.find(x => x.id === id);
+    if (t) lancerDictee(t);
+  });
+  vue.querySelectorAll('[data-suppr]').forEach(b => b.onclick = () => {
+    const t = e.textes.find(x => x.id === b.dataset.suppr);
+    if (!t || !confirmerDouce(b)) return;
+    e.textes = e.textes.filter(x => x !== t);
+    store.sauver(); toast('Texte supprimé.'); ecranDictees();
+  });
+}
+
+// Suppression en deux touchers (pas de boîte de dialogue du navigateur).
+function confirmerDouce(bouton) {
+  if (bouton.dataset.arme) return true;
+  bouton.dataset.arme = '1';
+  bouton.classList.add('arme');
+  toast('Touche encore pour supprimer.');
+  setTimeout(() => { delete bouton.dataset.arme; bouton.classList.remove('arme'); }, 3000);
+  return false;
+}
+
+function ecranColler() {
+  dessinerNav('maison');
+  vue.innerHTML = `${entete('Coller un texte', '', false, '#/dictees')}
+  <main class="page">
+    <section class="bloc">
+      <input class="champ" id="titre-texte" placeholder="Titre (facultatif)" maxlength="60">
+      <textarea class="champ grand" id="texte-colle" placeholder="Colle ici un texte en anglais…" autocomplete="off" spellcheck="false"></textarea>
+      <p class="info" id="apercu">0 phrase</p>
+      <button class="btn-principal" id="garder">Enregistrer et commencer</button>
+    </section>
+  </main>`;
+  const zone = $('#texte-colle');
+  const maj = () => { const n = decouperPhrases(zone.value).length; $('#apercu').textContent = pluriel(n, 'phrase'); };
+  zone.oninput = maj;
+  $('#garder').onclick = () => {
+    const phrases = decouperPhrases(zone.value);
+    if (!phrases.length) { toast('Colle d\'abord un texte.'); return; }
+    const titre = $('#titre-texte').value.trim() || phrases[0].split(' ').slice(0, 5).join(' ') + '…';
+    const t = { id: 'u' + Date.now(), titre, phrases, date: Date.now() };
+    const e = store.get();
+    e.textes.unshift(t);
+    store.sauver();
+    lancerDictee(t);
+  };
+}
+
+function lancerDictee(t) {
+  dictee = { texte: t, i: 0, saisie: '', resultats: [], ecoutes: Array(t.phrases.length).fill(0), debut: Date.now(), verifie: false, fini: false };
+  history.pushState(null, '', '#/dictee');
+  router();
+  clearInterval(lancerDictee.t);
+  lancerDictee.t = setInterval(() => {
+    if (!dictee || dictee.fini) { clearInterval(lancerDictee.t); return; }
+    const el = $('#chrono-d');
+    if (el) el.textContent = chrono(Date.now() - dictee.debut);
+  }, 500);
+}
+
+function htmlComparaison(elts) {
+  return elts.map(e => {
+    switch (e.k) {
+      case 'ok': return `<span class="d-ok">${h(e.ref)}</span>`;
+      case 'faute': return `<span class="d-faute"><del>${h(e.saisi)}</del><ins>${h(e.ref)}</ins></span>`;
+      case 'faux': return `<span class="d-faux"><del>${h(e.saisi)}</del><ins>${h(e.ref)}</ins></span>`;
+      case 'manque': return `<ins class="d-manque">${h(e.ref)}</ins>`;
+      default: return `<del class="d-ajout">${h(e.saisi)}</del>`;
+    }
+  }).join(' ');
+}
+
+function ecranDictee() {
+  nav.hidden = true;
+  const d = dictee, t = d.texte, n = t.phrases.length;
+  const res = d.verifie ? d.resultats[d.i] : null;
+  const c = res ? compter(res) : null;
+  vue.innerHTML = `<div class="jeu dictee">
+    <div class="jeu-tete">
+      <button class="btn-rond" id="quitter-d" aria-label="Quitter">${ICONES.fermer}</button>
+      <div class="jeu-chrono"><span id="chrono-d">${chrono(Date.now() - d.debut)}</span><small>${h(t.titre)}</small></div>
+      <div class="jeu-score"><b>${d.i + 1}/${n}</b><small>phrase</small></div>
+      <div class="barre"><div style="width:${100 * (d.i + (d.verifie ? 1 : 0)) / n}%"></div></div>
+    </div>
+    <div class="dictee-corps">
+      <div class="fiche dictee-fiche">
+        <div class="fiche-actions grandes">
+          <button data-ecoute="1">${ICONES.son}<span>Écouter</span></button>
+          <button data-ecoute="lent">${ICONES.lent}<span>Lent</span></button>
+        </div>
+        <p class="info">${d.ecoutes[d.i] ? `Écoutée ${d.ecoutes[d.i]} fois` : 'Écoute la phrase, puis tape-la.'}</p>
+        ${res ? `<div class="correction">${htmlComparaison(res)}</div>
+          <p class="info centre">${c.justes}/${c.mots} mots justes${c.fautes ? ` · ${pluriel(c.fautes, 'faute')} d'orthographe` : ''}${c.faux ? ` · ${c.faux} faux` : ''}${c.manques ? ` · ${c.manques} oublié${c.manques > 1 ? 's' : ''}` : ''}${c.ajouts ? ` · ${c.ajouts} en trop` : ''}</p>`
+          : `<textarea class="champ saisie" id="saisie" rows="3" placeholder="Tape ce que tu entends…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">${h(d.saisie)}</textarea>`}
+      </div>
+      ${res
+        ? `<button class="btn-principal" id="suivante">${d.i + 1 < n ? 'Phrase suivante' : 'Voir le bilan'}</button>`
+        : `<button class="btn-principal" id="verifier">Vérifier</button>`}
+    </div>
+  </div>`;
+  vue.querySelectorAll('[data-ecoute]').forEach(b => b.onclick = () => {
+    const r = store.get().reglages;
+    if (!dire(t.phrases[d.i], { vitesse: b.dataset.ecoute === 'lent' ? r.vitesseLente : 1, nom: r.voix })) { toast('Synthèse vocale indisponible sur ce navigateur.'); return; }
+    d.ecoutes[d.i]++;
+    const info = vue.querySelector('.dictee-fiche .info');
+    if (info) info.textContent = `Écoutée ${d.ecoutes[d.i]} fois`;
+  });
+  $('#quitter-d').onclick = voileQuitterDictee;
+  const zone = $('#saisie');
+  if (zone) zone.oninput = () => { d.saisie = zone.value; };
+  const v = $('#verifier');
+  if (v) v.onclick = () => {
+    if (!d.saisie.trim()) { toast('Tape d\'abord la phrase.'); return; }
+    d.resultats[d.i] = comparer(t.phrases[d.i], d.saisie);
+    d.verifie = true;
+    ecranDictee();
+  };
+  const s = $('#suivante');
+  if (s) s.onclick = () => {
+    if (d.i + 1 < n) { d.i++; d.saisie = ''; d.verifie = false; ecranDictee(); }
+    else finirDictee();
+  };
+}
+
+function voileQuitterDictee() {
+  if (!dictee || $('.voile-pause')) return;
+  const div = document.createElement('div');
+  div.className = 'voile-pause';
+  div.innerHTML = `<div class="boite"><h2>Quitter la dictée ?</h2><p>${dictee.resultats.length ? 'Les phrases déjà vérifiées seront enregistrées.' : 'Rien ne sera enregistré.'}</p>
+    <button class="btn-principal" id="continuer-d">Continuer</button>
+    <button class="btn-second" id="arreter-d">Quitter</button></div>`;
+  $('.jeu').appendChild(div);
+  $('#continuer-d').onclick = () => div.remove();
+  $('#arreter-d').onclick = () => finirDictee(true);
+}
+
+function finirDictee(abandon = false) {
+  const d = dictee;
+  d.fini = true;
+  clearInterval(lancerDictee.t);
+  const faits = d.resultats.filter(Boolean);
+  const tot = faits.map(compter).reduce((a, c) => { for (const k in c) a[k] = (a[k] || 0) + c[k]; return a; }, {});
+  const s = {
+    id: 'd' + d.debut, mode: 'dictee', texteId: d.texte.id, titre: d.texte.titre,
+    debut: d.debut, fin: Date.now(), joue: Date.now() - d.debut, complet: !abandon,
+    phrases: faits.length, ecoutes: d.ecoutes.reduce((a, b) => a + b, 0),
+    mots: tot.mots || 0, justes: tot.justes || 0, fautes: tot.fautes || 0, faux: tot.faux || 0, manques: tot.manques || 0, ajouts: tot.ajouts || 0,
+    passees: 0, notes: {}, cartes: []
+  };
+  if (faits.length) { store.get().sessions.push(s); store.sauver(); }
+  bilanDictee = faits.length ? { s, d } : null;
+  dictee = null;
+  location.replace(faits.length ? '#/bilan-dictee' : '#/dictees');
+}
+
+function ecranBilanDictee() {
+  dessinerNav('maison');
+  const { s, d } = bilanDictee;
+  vue.innerHTML = `${entete('Bilan de la dictée', d.texte.titre)}
+  <main class="page">
+    <section class="bloc bilan">
+      <div class="gros"><b>${pourcent(s)}</b><span>de mots justes</span></div>
+      <p class="sous">${s.justes}/${s.mots} mots · ${chrono(s.joue)} · ${pluriel(s.ecoutes, 'écoute')}</p>
+      <div class="legende-notes">
+        <span><i class="d-i-faute"></i>Orthographe <b>${s.fautes}</b></span>
+        <span><i class="d-i-faux"></i>Faux <b>${s.faux}</b></span>
+        <span><i class="d-i-manque"></i>Oubliés <b>${s.manques}</b></span>
+        <span><i class="d-i-ajout"></i>En trop <b>${s.ajouts}</b></span>
+      </div>
+    </section>
+    <section class="bloc"><div class="bloc-titre"><h2>Correction</h2></div>
+      ${d.resultats.map((r, i) => r ? `<div class="correction ligne"><div>${htmlComparaison(r)}</div>
+        <button class="btn-mini clair" data-relire="${i}">${ICONES.son}</button></div>` : '').join('')}
+    </section>
+    <div class="boutons">
+      <button class="btn-principal" id="refaire">Recommencer</button>
+      <a class="btn-second" href="#/dictees">Autres textes</a>
+    </div>
+  </main>`;
+  vue.querySelectorAll('[data-relire]').forEach(b => b.onclick = () => {
+    const r = store.get().reglages;
+    dire(d.texte.phrases[+b.dataset.relire], { nom: r.voix });
+  });
+  $('#refaire').onclick = () => lancerDictee(d.texte);
 }
 
 demarrer().catch(err => {

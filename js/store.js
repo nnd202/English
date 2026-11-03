@@ -26,7 +26,8 @@ export function etatVide() {
     reglages: { ...REGLAGES_DEFAUT },
     sprint: { duree: 900, tirage: 'melange', types: [...TYPES] },
     derniereSauvegarde: null,
-    enCours: null
+    enCours: null,
+    textes: []                // textes de dictée collés (restent sur l'appareil)
   };
 }
 
@@ -47,6 +48,7 @@ export function charger() {
   etat.sprint = { ...vide.sprint, ...(etat.sprint || {}) };
   etat.cartes ||= {};
   etat.sessions ||= [];
+  etat.textes ||= [];
   // Partie interrompue (appli fermée en pleine partie) : enregistrée telle quelle, hors records.
   if (etat.enCours) {
     const s = etat.enCours;
@@ -87,9 +89,9 @@ export function introduitesLe(cartes, jour) {
   return Object.values(cartes).filter(e => e.intro && jourCle(e.intro) === jour).length;
 }
 
-// Série de jours : un jour compte s'il contient au moins une carte notée.
+// Série de jours : un jour compte s'il contient au moins une carte notée ou une dictée.
 export function series(sessions, aujourdhui = jourCle(Date.now())) {
-  const jours = new Set(sessions.filter(s => s.cartes && s.cartes.length).map(s => jourCle(s.debut)));
+  const jours = new Set(sessions.filter(s => (s.cartes && s.cartes.length) || s.mode === 'dictee').map(s => jourCle(s.debut)));
   const tries = [...jours].sort();
   let record = 0, courant = 0, prec = null;
   for (const j of tries) {
@@ -135,6 +137,8 @@ export function fusionner(a, b) {
   const ids = new Set(out.sessions.map(s => s.id));
   for (const s of b.sessions || []) if (!ids.has(s.id)) out.sessions.push(s);
   out.sessions.sort((x, y) => x.debut - y.debut);
+  const tids = new Set((a.textes || []).map(t => t.id));
+  out.textes = [...(a.textes || []), ...(b.textes || []).filter(t => !tids.has(t.id))];
   return out;
 }
 

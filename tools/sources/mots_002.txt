@@ -1,0 +1,194 @@
+# mot | ipa | définition | exemple | pastilles (type, type@m:zone dans le mot, type@i:zone dans l'IPA)
+receipt | rɪˈsiːt | A piece of paper showing what you paid. | Can I get a receipt, please? | muet@m:recei[p]t
+doubt | daʊt | A feeling of not being sure; to feel unsure. | I doubt he'll show up on time. | muet@m:dou[b]t
+plumber | ˈplʌm.ɚ | Someone who fixes pipes, sinks and toilets. | We need to call a plumber. | muet@m:plum[b]er
+thumb | θʌm | The short, thick finger on the side of your hand. | She gave me a thumbs-up. | muet@m:thum[b]
+climb | klaɪm | To go up something using your hands and feet. | We climbed to the top of the hill. | muet@m:clim[b]
+tomb | tuːm | A place, often stone, where a dead person is buried. | The tomb dates back to Roman times. | muet@m:tom[b]; piege@i:uː
+knowledge | ˈnɑː.lɪdʒ | What you know or understand about something. | She has a deep knowledge of history. | muet@m:[k]nowledge; piege@m:kn[ow]ledge
+wrestle | ˈres.əl | To fight by holding and pushing; to struggle with a problem. | He's been wrestling with that decision for weeks. | muet@m:[w]res[t]le
+listen | ˈlɪs.ən | To pay attention to sounds or to someone speaking. | Are you even listening to me? | muet@m:lis[t]en
+castle | ˈkæs.əl | A large, old fortified building. | We visited a castle in Scotland. | muet@m:cas[t]le
+fasten | ˈfæs.ən | To close or attach something firmly. | Please fasten your seatbelts. | muet@m:fas[t]en
+whistle | ˈwɪs.əl | To make a high sound by blowing through your lips. | He whistled to get the dog's attention. | muet@m:[w]his[t]le
+mortgage | ˈmɔːr.ɡɪdʒ | A loan used to buy a house. | They just paid off their mortgage. | muet@m:mor[t]gage
+calm | kɑːm | Peaceful and relaxed; not worried. | Try to stay calm. | muet@m:ca[l]m
+almond | ˈɑː.mənd | An oval nut. | I'll have an almond croissant. | muet@m:a[l]mond
+salmon | ˈsæm.ən | A large fish with pink flesh. | We had grilled salmon for dinner. | muet@m:sa[l]mon
+yolk | joʊk | The yellow part of an egg. | I like my egg yolks runny. | muet@m:yo[l]k
+honest | ˈɑː.nɪst | Truthful; not lying or cheating. | To be honest, I didn't like it. | muet@m:[h]onest
+heir | er | A person who will receive someone's money or title. | He's the heir to a huge fortune. | muet@m:[h]eir
+psychology | saɪˈkɑː.lə.dʒi | The study of the mind and behavior. | She has a degree in psychology. | muet@m:[p]sychology; accent@i:ˈkɑː
+autumn | ˈɑː.t̬əm | The season between summer and winter (also "fall"). | Autumn is my favorite season. | muet@m:autum[n]
+column | ˈkɑː.ləm | A tall post; a vertical section of text or numbers. | Add up the numbers in this column. | muet@m:colum[n]
+foreign | ˈfɔːr.ən | From another country. | Do you speak any foreign languages? | muet@m:forei[g]n
+sovereign | ˈsɑːv.rən | Having full power; independent. | It's a sovereign nation. | muet@m:soverei[g]n
+campaign | kæmˈpeɪn | A planned series of actions to reach a goal. | They launched an ad campaign. | muet@m:campai[g]n
+design | dɪˈzaɪn | A plan or drawing; to plan how something will look or work. | I love the design of this app. | muet@m:desi[g]n; piege@i:z
+muscle | ˈmʌs.əl | Body tissue that makes you move. | I pulled a muscle at the gym. | muet@m:mus[c]le
+scissors | ˈsɪz.ɚz | A tool with two blades for cutting. | Pass me the scissors, please. | piege@i:z
+Christmas | ˈkrɪs.məs | The holiday on December 25th. | What are you doing for Christmas? | muet@m:Chris[t]mas
+cupboard | ˈkʌb.ɚd | A cabinet with shelves and a door. | The mugs are in the cupboard. | muet@m:cu[p]board; piege@m:cupb[oa]rd
+sword | sɔːrd | A weapon with a long metal blade. | He drew his sword. | muet@m:s[w]ord
+business | ˈbɪz.nɪs | Buying and selling; a company. | She runs her own business. | elision@m:bus[i]ness; piege@m:b[u]siness
+chocolate | ˈtʃɑːk.lət | A sweet brown food made from cocoa. | Dark chocolate is my weakness. | elision@m:choc[o]late
+different | ˈdɪf.rənt | Not the same. | That's a different story. | elision@m:diff[e]rent
+interesting | ˈɪn.trə.stɪŋ | Holding your attention. | That's an interesting point. | elision@m:int[e]resting; accent@i:ˈɪn
+camera | ˈkæm.rə | A device for taking photos or videos. | Turn your camera on. | elision@m:cam[e]ra
+temperature | ˈtem.prə.tʃɚ | How hot or cold something is. | The temperature dropped overnight. | elision@m:temp[e]rature
+restaurant | ˈres.tə.rɑːnt | A place where you pay to eat meals. | Let's try that new restaurant. | piege@i:rɑːnt
+favorite | ˈfeɪv.rɪt | Liked more than all the others. | What's your favorite movie? | elision@m:fav[o]rite
+several | ˈsev.rəl | More than two but not many. | I've seen it several times. | elision@m:sev[e]ral
+average | ˈæv.rɪdʒ | Typical; the result of adding numbers and dividing. | On average, it takes ten minutes. | elision@m:av[e]rage
+mischievous | ˈmɪs.tʃə.vəs | Playfully causing small trouble. | He gave me a mischievous grin. | piege@i:tʃə.vəs; accent@i:ˈmɪs
+jewelry | ˈdʒuː.əl.ri | Rings, necklaces, earrings and so on. | She doesn't wear much jewelry. | piege@i:dʒuː.əl
+February | ˈfeb.ruː.er.i | The second month of the year. | My birthday is in February. | piege@i:ruː.er
+bury | ˈber.i | To put something in the ground and cover it. | The dog buried its bone. | piege@m:b[u]ry
+flood | flʌd | A large amount of water covering dry land. | The storm caused a flood. | piege@m:fl[oo]d
+sew | soʊ | To join cloth with a needle and thread. | Can you sew this button back on? | piege@m:s[ew]
+lose | luːz | To no longer have something; not to win. | Don't lose your keys. | piege@i:z
+loose | luːs | Not tight. | These pants are a little loose. | piege@i:s
+cough | kɑːf | To push air out of your throat with a sudden noise. | I've had a cough all week. | piege@m:c[ough]
+though | ðoʊ | However; despite the fact that. | It's expensive. Worth it, though. | piege@m:th[ough]
+through | θruː | From one side to the other; by means of. | We drove through the tunnel. | piege@m:thr[ough]
+thought | θɑːt | An idea; past of think. | I thought you were joking. | piege@m:th[ough]t
+bought | bɑːt | Past of buy. | I bought a new laptop. | piege@m:b[ough]t
+drought | draʊt | A long period with no rain. | The drought ruined the crops. | piege@m:dr[ough]t
+daughter | ˈdɑː.t̬ɚ | Someone's female child. | Their daughter just started college. | piege@m:d[augh]ter
+sausage | ˈsɑː.sɪdʒ | Chopped meat in a long tube shape. | Sausage and eggs for breakfast. | piege@m:s[au]sage
+sweat | swet | Liquid on your skin when you're hot. | I was dripping with sweat. | piege@m:sw[ea]t
+threat | θret | A statement or sign that something bad may happen. | Climate change is a real threat. | piege@m:thr[ea]t
+breath | breθ | Air going in and out of your lungs. | Take a deep breath. | piege@i:e
+breathe | briːð | To take air in and out of your lungs. | Just breathe and relax. | piege@i:iːð
+develop | dɪˈvel.əp | To grow or make something grow; to create. | They're developing a new app. | accent@i:ˈvel
+event | ɪˈvent | Something that happens, often something important. | The event starts at seven. | accent@i:ˈvent
+hotel | hoʊˈtel | A building where you pay to stay the night. | We booked a hotel downtown. | accent@i:ˈtel; piege@m:[h]otel
+career | kəˈrɪr | The jobs you do over your working life. | She's had a long career in law. | accent@i:ˈrɪr
+guitar | ɡɪˈtɑːr | A string instrument. | He's learning to play guitar. | accent@i:ˈtɑːr
+cigarette | ˌsɪɡ.əˈret | Rolled tobacco that people smoke. | He quit cigarettes last year. | accent@i:ˈret
+magazine | ˈmæɡ.ə.ziːn | A weekly or monthly publication with articles and pictures. | I read it in a magazine. | accent@i:ˈmæɡ
+category | ˈkæt̬.ə.ɡɔːr.i | A group of things that share something. | Which category does it belong to? | accent@i:ˈkæt̬
+hierarchy | ˈhaɪ.rɑːr.ki | A system where people or things are ranked. | The company has a strict hierarchy. | piege@i:ˈhaɪ
+genuine | ˈdʒen.ju.ɪn | Real; sincere. | She showed genuine interest. | piege@m:genu[ine]
+mature | məˈtʊr | Fully grown; behaving like an adult. | He's very mature for his age. | accent@i:ˈtʊr
+analysis | əˈnæl.ə.sɪs | A careful, detailed study of something. | We need a deeper analysis. | accent@i:ˈnæl
+photograph | ˈfoʊ.t̬ə.ɡræf | A photo. | That's a beautiful photograph. | accent@i:ˈfoʊ
+democracy | dɪˈmɑː.krə.si | Government by the people, through elections. | Free press is vital to democracy. | accent@i:ˈmɑː
+democratic | ˌdem.əˈkræt̬.ɪk | Based on democracy. | It was a democratic decision. | accent@i:ˈkræ
+economy | ɪˈkɑː.nə.mi | The system of money, trade and jobs in a country. | The economy is slowing down. | accent@i:ˈkɑː
+economic | ˌek.əˈnɑː.mɪk | Related to the economy. | It's an economic crisis. | accent@i:ˈnɑː
+technology | tekˈnɑː.lə.dʒi | Machines and tools made with scientific knowledge. | Technology changes so fast. | accent@i:ˈnɑː
+ceremony | ˈser.ə.moʊ.ni | A formal event, like a wedding. | The ceremony was beautiful. | accent@i:ˈser
+catastrophe | kəˈtæs.trə.fi | A sudden disaster. | It was a complete catastrophe. | piege@m:catastroph[e]; accent@i:ˈtæs
+facade | fəˈsɑːd | The front of a building; a false appearance. | Her smile was just a facade. | piege@m:fa[c]ade
+debris | dəˈbriː | Broken pieces left after something is destroyed. | The road was covered in debris. | muet@m:debri[s]
+ballet | bæˈleɪ | A classical dance form. | She's been doing ballet since she was five. | muet@m:balle[t]
+buffet | bəˈfeɪ | A meal where you serve yourself. | The hotel has a breakfast buffet. | muet@m:buffe[t]
+chaos | ˈkeɪ.ɑːs | Complete confusion and disorder. | The airport was total chaos. | piege@m:[ch]aos
+archive | ˈɑːr.kaɪv | A collection of old records; to store them. | I'll archive these emails. | piege@m:ar[ch]ive
+architect | ˈɑːr.kə.tekt | Someone who designs buildings. | My sister is an architect. | piege@m:ar[ch]itect
+character | ˈker.ək.tɚ | A person in a story; someone's personality. | She's quite a character. | piege@m:[ch]aracter
+chemistry | ˈkem.ə.stri | The science of substances; a natural connection between people. | They have great chemistry. | piege@m:[ch]emistry
+stomach | ˈstʌm.ək | The organ where food goes; your belly. | My stomach hurts. | piege@m:stoma[ch]
+mechanic | məˈkæn.ɪk | Someone who repairs engines and cars. | I took my car to the mechanic. | piege@m:me[ch]anic
+technique | tekˈniːk | A particular way of doing something. | Her technique is flawless. | piege@m:techn[ique]
+unique | juːˈniːk | The only one of its kind. | Every fingerprint is unique. | piege@m:un[ique]
+colleague | ˈkɑː.liːɡ | Someone you work with. | A colleague recommended this place. | piege@m:collea[gue]; accent@i:ˈkɑː
+league | liːɡ | A group of sports teams that play each other. | They're top of the league. | muet@m:lea[gue]
+fatigue | fəˈtiːɡ | Extreme tiredness. | Fatigue was setting in. | muet@m:fati[gue]
+vague | veɪɡ | Not clear or precise. | His answer was pretty vague. | muet@m:va[gue]
+tongue | tʌŋ | The muscle in your mouth used to taste and speak. | It's on the tip of my tongue. | piege@m:t[ongue]
+better | ˈbet̬.ɚ | Of a higher quality; comparative of good. | This one's way better. | flap
+matter | ˈmæt̬.ɚ | To be important; a subject or situation. | It doesn't matter. | flap
+beautiful | ˈbjuː.t̬ə.fəl | Very pretty or pleasant. | What a beautiful day. | flap
+computer | kəmˈpjuː.t̬ɚ | An electronic machine for working with data. | My computer froze again. | flap
+community | kəˈmjuː.nə.t̬i | People living in one place or sharing interests. | It's a close-knit community. | flap
+opportunity | ˌɑː.pɚˈtuː.nə.t̬i | A chance to do something. | It's a great opportunity. | flap; accent@i:ˈtuː
+quality | ˈkwɑː.lə.t̬i | How good something is. | The quality is excellent. | flap
+security | sɪˈkjʊr.ə.t̬i | Protection from danger. | Security was tight at the airport. | flap
+authority | əˈθɔːr.ə.t̬i | The power to make decisions. | She has the authority to sign it. | flap
+priority | praɪˈɔːr.ə.t̬i | Something more important than other things. | Your health is the priority. | flap
+ability | əˈbɪl.ə.t̬i | The skill or power to do something. | She has the ability to stay calm. | flap
+reality | riˈæl.ə.t̬i | What actually exists or happens. | It's time to face reality. | flap
+totally | ˈtoʊ.t̬əl.i | Completely. | I totally forgot. | flap
+meeting | ˈmiː.t̬ɪŋ | A planned gathering to discuss something. | I'm stuck in a meeting. | flap
+data | ˈdeɪ.t̬ə | Facts and numbers collected for analysis. | The data doesn't lie. | flap
+metal | ˈmet̬.əl | A hard material like iron or gold. | The chair is made of metal. | flap
+letter | ˈlet̬.ɚ | A written message; a symbol of the alphabet. | I got a letter from the bank. | flap
+bottle | ˈbɑː.t̬əl | A container for liquids. | Grab a bottle of water. | flap
+battle | ˈbæt̬.əl | A fight; a struggle. | It's an uphill battle. | flap
+settle | ˈset̬.əl | To decide; to make a home somewhere; to calm down. | Let's settle this now. | flap
+potato | pəˈteɪ.t̬oʊ | A vegetable that grows underground. | Mashed potatoes, please. | flap
+tomato | təˈmeɪ.t̬oʊ | A soft red fruit used as a vegetable. | Add some tomato sauce. | flap
+Saturday | ˈsæt̬.ɚ.deɪ | The day after Friday. | See you on Saturday. | flap
+thirty | ˈθɝː.t̬i | The number 30. | I'll be there in thirty minutes. | flap
+forty | ˈfɔːr.t̬i | The number 40. | He just turned forty. | flap
+party | ˈpɑːr.t̬i | A social event; a political group. | Are you coming to the party? | flap
+dirty | ˈdɝː.t̬i | Not clean. | My shoes are dirty. | flap
+important | ɪmˈpɔːr.ʔənt | Having great value or effect. | This is really important. | glotte
+certain | ˈsɝː.ʔən | Sure; particular but not named. | I'm not certain about that. | glotte
+mountain | ˈmaʊn.ʔən | A very high hill. | We hiked up the mountain. | glotte
+months | mʌnθs | Plural of month. | It took six months. | piege@i:nθs
+sixth | sɪksθ | Number six in order. | It's on the sixth floor. | piege@i:ksθ
+twelfth | twelfθ | Number twelve in order. | Today is the twelfth. | piege@i:lfθ
+depth | depθ | How deep something is. | We discussed it in depth. | piege@i:pθ
+width | wɪdθ | How wide something is. | Measure the width of the room. | piege@i:dθ
+strength | streŋθ | Physical or mental power. | It takes strength to admit it. | piege@i:ŋθ
+length | leŋθ | How long something is. | What's the length of the film? | piege@i:ŋθ
+birthday | ˈbɝːθ.deɪ | The day you were born, each year. | Happy birthday! | piege@i:ɝːθ
+throughout | θruˈaʊt | In every part of; during the whole of. | It rained throughout the day. | accent@i:ˈaʊt
+thousand | ˈθaʊ.zənd | The number 1,000. | It costs a thousand dollars. | piege@i:z
+theater | ˈθiː.ə.t̬ɚ | A building for plays or movies. | We went to the theater last night. | flap; piege@m:[th]eater
+therefore | ˈðer.fɔːr | For that reason. | It's late; therefore, we should go. | piege@i:ð
+rhythm | ˈrɪð.əm | A regular repeated pattern of sounds or movements. | She has a great sense of rhythm. | muet@m:r[h]yt[h]m
+athlete | ˈæθ.liːt | Someone who is good at sports. | He's a professional athlete. | piege@m:ath[l]ete
+nevertheless | ˌnev.ɚ.ðəˈles | In spite of that; still. | It was hard. Nevertheless, we finished. | accent@i:ˈles
+furthermore | ˈfɝː.ðɚ.mɔːr | In addition; also. | Furthermore, it's cheaper. | piege@i:ðɚ
+whereas | werˈæz | While, in contrast. | He loves cities, whereas she prefers the country. | accent@i:ˈæz
+albeit | ɑːlˈbiː.ɪt | Although. | It worked, albeit slowly. | piege@m:al[bei]t
+inevitable | ɪˈnev.ə.t̬ə.bəl | Certain to happen. | Change is inevitable. | flap; accent@i:ˈnev
+deliberately | dɪˈlɪb.ɚ.ət.li | On purpose. | He deliberately ignored me. | accent@i:ˈlɪb
+eventually | ɪˈven.tʃu.ə.li | In the end, after a long time. (Not « éventuellement ».) | Eventually, we found the place. | piege@i:tʃu
+ultimately | ˈʌl.tə.mət.li | In the end; most importantly. | Ultimately, it's your decision. | accent@i:ˈʌl
+approximately | əˈprɑːk.sə.mət.li | About; roughly. | It takes approximately an hour. | accent@i:ˈprɑːk
+consequently | ˈkɑːn.sə.kwənt.li | As a result. | He missed the bus and was consequently late. | accent@i:ˈkɑːn
+significant | sɪɡˈnɪf.ə.kənt | Important or large enough to notice. | There's a significant difference. | accent@i:ˈnɪf
+sophisticated | səˈfɪs.tə.keɪ.t̬ɪd | Advanced and complex; refined. | It's a sophisticated system. | flap; accent@i:ˈfɪs
+comprehensive | ˌkɑːm.prəˈhen.sɪv | Including everything; complete. | It's a comprehensive guide. | accent@i:ˈhen
+ambiguous | æmˈbɪɡ.ju.əs | Having more than one possible meaning. | The wording is ambiguous. | accent@i:ˈbɪɡ
+vulnerable | ˈvʌl.nɚ.ə.bəl | Easily hurt or attacked. | Kids are especially vulnerable. | accent@i:ˈvʌl
+ubiquitous | juːˈbɪk.wə.t̬əs | Found everywhere. | Smartphones are ubiquitous. | flap; accent@i:ˈbɪk
+meticulous | məˈtɪk.jə.ləs | Very careful about details. | She keeps meticulous records. | accent@i:ˈtɪk
+reluctant | rɪˈlʌk.tənt | Not willing; hesitant. | He was reluctant to help. | accent@i:ˈlʌk
+resilient | rɪˈzɪl.jənt | Able to recover quickly from difficulties. | Kids are incredibly resilient. | piege@i:ˈzɪl.jənt
+thoroughly | ˈθɝː.oʊ.li | Completely; carefully. | I thoroughly enjoyed it. | piege@m:thor[ough]ly
+awkward | ˈɑː.kwɚd | Embarrassing or uncomfortable; clumsy. | There was an awkward silence. | piege@i:ɑː
+anxious | ˈæŋk.ʃəs | Worried and nervous. | I always get anxious before exams. | piege@i:ŋk.ʃ
+anxiety | æŋˈzaɪ.ə.t̬i | A feeling of worry and fear. | She struggles with anxiety. | flap; piege@i:ŋˈz
+jealous | ˈdʒel.əs | Upset because someone has what you want. | Are you jealous? | piege@i:ˈdʒel
+exhausted | ɪɡˈzɑː.stɪd | Extremely tired. | I'm absolutely exhausted. | muet@m:ex[h]austed; piege@i:ɡˈz
+embarrassed | ɪmˈber.əst | Feeling ashamed or awkward. | I was so embarrassed. | ed@i:st
+genre | ˈʒɑːn.rə | A type of book, movie or music. | What genre of music do you like? | piege@i:ʒ
+niche | nɪtʃ | A small specialized area or market. | It's a niche market. | piege@i:ɪtʃ
+suite | swiːt | A set of connected rooms; a set of software. | We stayed in a suite. | piege@i:swiːt
+rural | ˈrʊr.əl | In the countryside. | She grew up in a rural area. | piege@i:ˈrʊr.əl
+squirrel | ˈskwɝː.əl | A small animal with a bushy tail that lives in trees. | A squirrel ran up the tree. | piege@i:ˈskwɝː
+world | wɝːld | The earth and everyone on it. | It's a small world. | piege@i:ɝːld
+mirror | ˈmɪr.ɚ | Glass in which you see your reflection. | Look in the mirror. | piege@i:ɪr.ɚ
+worry | ˈwɝː.i | To feel anxious; a feeling of anxiety. | Don't worry about it. | piege@m:w[o]rry
+purpose | ˈpɝː.pəs | The reason for something. | What's the purpose of this meeting? | piege@m:purp[o]se
+focus | ˈfoʊ.kəs | To give attention to one thing; the center of attention. | I can't focus right now. | piege@i:oʊ
+suit | suːt | A matching jacket and pants; to be right for someone. | Does Friday suit you? | piege@m:s[ui]t
+juice | dʒuːs | Liquid from fruit. | Orange juice, please. | piege@m:j[ui]ce
+label | ˈleɪ.bəl | A small tag with information. | Read the label first. | piege@i:ˈleɪ
+pronunciation | prəˌnʌn.siˈeɪ.ʃən | How a word is said. | Your pronunciation is great. | piege@m:pron[u]nciation
+pronounce | prəˈnaʊns | To say a word in a particular way. | How do you pronounce this? | accent@i:ˈnaʊns
+asked | æskt | Past of ask. | She asked me a question. | ed@i:kt
+worked | wɝːkt | Past of work. | It worked perfectly. | ed@i:kt
+wanted | ˈwɑːn.t̬ɪd | Past of want. | I wanted to call you. | ed@i:ɪd; flap
+needed | ˈniː.dɪd | Past of need. | That's exactly what I needed. | ed@i:dɪd
+laughed | læft | Past of laugh. | We laughed so hard. | ed@i:ft
+watched | wɑːtʃt | Past of watch. | We watched the game last night. | ed@i:tʃt
+changed | tʃeɪndʒd | Past of change. | Nothing has changed. | ed@i:dʒd
+decided | dɪˈsaɪ.dɪd | Past of decide. | We decided to stay. | ed@i:dɪd
+finished | ˈfɪn.ɪʃt | Past of finish; completed. | Are you finished? | ed@i:ʃt

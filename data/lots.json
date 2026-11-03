@@ -1,3 +1,12 @@
 {
-  "lots": ["lot-001"]
+  "lots": [
+    "lot-001",
+    "lot-002",
+    "lot-003",
+    "lot-004",
+    "lot-005"
+  ],
+  "dictees": [
+    "dictees-001"
+  ]
 }

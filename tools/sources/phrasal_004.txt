@@ -1,0 +1,51 @@
+# texte | ipa | définition | exemple | lemme | pastilles
+find out | faɪnd‿ˈaʊt | Discover information. | I just found out she's moving. | find out | liaison
+work out | wɝːk‿ˈaʊt | Exercise; find a solution; end well. | It all worked out in the end. | work out | liaison
+carry on | ˈker.i‿ˈɑːn | Continue. | Carry on, I'm listening. | carry on | liaison
+set up | set̬‿ˈʌp | Arrange, install or organize. | Can you help me set up the TV? | set up | flap; liaison
+show up | ʃoʊ‿ˈʌp | Arrive; appear. | He didn't show up. | show up | liaison
+end up | end‿ˈʌp | Finally be in a situation you didn't plan. | We ended up staying all night. | end up | liaison
+break up | breɪk‿ˈʌp | End a relationship. | They broke up last month. | break up | liaison
+make up | meɪk‿ˈʌp | Invent; or become friends again after a fight. | Stop making up excuses. | make up | liaison
+bring up | brɪŋ‿ˈʌp | Mention a topic; raise a child. | Don't bring that up again. | bring up | liaison
+check out | tʃek‿ˈaʊt | Look at something interesting; leave a hotel. | Check out this video. | check out | liaison
+hang out | hæŋ‿ˈaʊt | Spend time together casually. | Wanna hang out later? | hang out | liaison
+hold on | hoʊld‿ˈɑːn | Wait a moment. | Hold on a second. | hold on | liaison
+calm down | kɑːm ˈdaʊn | Become calm. | Calm down, it's fine. | calm down | muet@m:ca[l]m
+shut up | ʃʌt̬‿ˈʌp | Be quiet (rude, or playful). | Oh, shut up! | shut up | flap; liaison
+let you down | ˈle.tʃə ˈdaʊn | Disappoint you. | I don't want to let you down. | let down | assimilation@i:tʃə
+turn down | tɝːn ˈdaʊn | Refuse; lower the volume. | She turned down the offer. | turn down | piege@i:ɝː
+turn it off | ˈtɝːn‿ɪt̬‿ˈɑːf | Stop a machine or light. | Turn it off, please. | turn off | liaison; flap
+turn it on | ˈtɝːn‿ɪt̬‿ˈɑːn | Start a machine or light. | Can you turn it on? | turn on | liaison; flap
+put it off | ˈpʊt̬‿ɪt̬‿ˈɑːf | Postpone. | Stop putting it off. | put off | flap; liaison
+put on | pʊt̬‿ˈɑːn | Wear; gain weight. | Put on your coat. | put on | flap; liaison
+take off | teɪk‿ˈɑːf | Remove clothing; leave the ground. | The plane took off late. | take off | liaison
+get over | ɡet̬‿ˈoʊ.vɚ | Recover from something. | She never got over it. | get over | flap; liaison
+get back to | ɡet ˈbæk tə | Reply to someone later. | I'll get back to you tomorrow. | get back to | faible@i:tə
+look forward to | lʊk ˈfɔːr.wɚd tə | Be excited about something coming. | I'm looking forward to it. | look forward to | faible@i:tə
+look after | lʊk‿ˈæf.tɚ | Take care of. | Can you look after the kids? | look after | liaison
+look into | lʊk‿ˈɪn.tə | Investigate. | I'll look into it. | look into | liaison; faible@i:tə
+come across | kʌm‿əˈkrɑːs | Find by chance; seem. | I came across an old photo. | come across | liaison
+come up | kʌm‿ˈʌp | Arise unexpectedly. | Sorry, something came up. | come up | liaison
+go through | ɡoʊ ˈθruː | Experience something difficult; examine carefully. | She's going through a lot. | go through | piege@m:thr[ough]
+deal with | ˈdiːl wɪð | Handle. | I'll deal with it later. | deal with | piege@i:ð
+point out | pɔɪn‿ˈaʊt | Draw attention to something. | She pointed out a mistake. | point out | elision@m:poin[t] out; liaison
+pick up on | ˌpɪk‿ˈʌp‿ɑːn | Notice something subtle. | She picked up on my mood. | pick up on | liaison
+run out of | rʌn‿ˈaʊt̬‿əv | Use all of something. | We ran out of time. | run out of | liaison; flap
+fill out | fɪl‿ˈaʊt | Complete a form. | Please fill out this form. | fill out | liaison
+give it back | ˈɡɪv‿ɪt ˈbæk | Return something. | Give it back! | give back | liaison
+hand in | hænd‿ˈɪn | Submit work. | Hand in your reports by Friday. | hand in | liaison
+show off | ʃoʊ‿ˈɑːf | Try to impress people. | Stop showing off. | show off | liaison
+sort out | sɔːrt̬‿ˈaʊt | Resolve; organize. | We need to sort this out. | sort out | flap; liaison
+catch up | kætʃ‿ˈʌp | Reach the same level; talk about recent news. | Let's catch up soon. | catch up | liaison
+keep up with | kiːp‿ˈʌp wɪð | Stay at the same pace or level. | It's hard to keep up with the news. | keep up with | liaison
+cut back on | ˌkʌt ˈbæk‿ɑːn | Reduce. | I'm cutting back on sugar. | cut back on | liaison
+get away with | ɡet̬‿əˈweɪ wɪð | Avoid punishment. | He got away with it. | get away with | flap; liaison
+look up to | lʊk‿ˈʌp tə | Admire. | I've always looked up to her. | look up to | liaison; faible@i:tə
+give in | ɡɪv‿ˈɪn | Stop resisting. | He finally gave in. | give in | liaison
+break down | breɪk ˈdaʊn | Stop working; lose control of your emotions. | My car broke down. | break down | piege@m:br[ea]k
+back up | bæk‿ˈʌp | Support someone; save a copy. | Back up your files. | back up | liaison
+throw away | θroʊ‿əˈweɪ | Put in the trash. | Don't throw it away. | throw away | liaison
+wake up | weɪk‿ˈʌp | Stop sleeping. | I woke up at six. | wake up | liaison
+count on | kaʊn‿ˈɑːn | Rely on. | You can count on me. | count on | elision@m:coun[t] on; liaison
+drop by | ˌdrɑːp ˈbaɪ | Visit briefly. | Drop by anytime. | drop by | piege@i:ɑː

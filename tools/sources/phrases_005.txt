@@ -1,0 +1,40 @@
+# texte | ipa | usage | pastilles
+What do you want to do? | ˈwʌd.ə.jə ˈwɑː.nə ˈduː | Asking someone what they'd like to do. | reduction@i:ˈwʌd.ə.jə; reduction@i:ˈwɑː.nə
+I'm going to grab a coffee. | aɪm ˈɡʌ.nə ˈɡræb‿ə ˈkɑː.fi | Saying you're about to get a coffee. | reduction@i:ˈɡʌ.nə; liaison
+Did you get my message? | ˈdɪdʒ.ə ˈɡet maɪ ˈmes.ɪdʒ | Checking that someone received your text or email. | assimilation@i:ˈdɪdʒ.ə
+I haven't seen him in ages. | aɪ ˈhæv.ənt ˈsiːn‿ɪm‿ɪn ˈeɪ.dʒɪz | It's been a very long time. | faible@i:ɪm‿; liaison
+Tell her I said hi. | ˈtel‿ɚ aɪ ˈsed ˈhaɪ | Passing on a greeting. | faible@i:‿ɚ; liaison
+Give them a call. | ˈɡɪv‿əm‿ə ˈkɑːl | Suggesting someone phones them. | faible@i:əm; liaison
+I should've known better. | aɪ ˈʃʊd‿əv ˈnoʊn ˈbet̬.ɚ | Regretting a mistake you should have avoided. | faible@i:əv; flap
+It's not that big of a deal. | ɪts ˈnɑːʔ ðæt ˈbɪɡ‿əv‿ə ˈdiːl | Minimizing a problem. | glotte; liaison
+Could you say that again? | ˈkʊ.dʒə ˈseɪ ðæt̬‿əˈɡen | Asking someone to repeat. | assimilation@i:dʒə; flap; piege@i:ˈɡen
+I'll be right back. | aɪl bi ˈraɪʔ ˈbæk | Leaving for a moment. | glotte
+Let's get out of here. | ˈlets ˈɡet̬‿aʊt̬‿əv ˈhɪr | Suggesting you leave. | flap; liaison
+How's it going? | ˈhaʊz‿ɪt ˈɡoʊ.ɪŋ | A casual "how are you?" | liaison
+What have you been up to? | ˈwʌt̬‿əv jə bɪn‿ˈʌp tuː | Asking what someone has been doing lately. | flap; faible@i:əv; liaison
+I don't want to talk about it. | aɪ doʊn ˈwɑː.nə ˈtɑːk‿əˈbaʊt̬‿ɪt | Refusing to discuss something. | elision@m:don'[t] want; reduction@i:ˈwɑː.nə; flap
+Do you want me to help? | də.jə ˈwɑːn mi tə ˈhelp | Offering help. | elision@m:wan[t] me; faible@i:də.jə
+It's kind of hard to explain. | ɪts ˈkaɪn.də ˈhɑːrd tu‿ɪkˈspleɪn | Something is complicated to describe. | reduction@i:ˈkaɪn.də; liaison
+I've got to get going. | aɪv ˈɡɑː.t̬ə ˈɡet ˈɡoʊ.ɪŋ | Saying you need to leave. | reduction@i:ˈɡɑː.t̬ə; flap
+Can I ask you something? | kən‿aɪ ˈæsk‿jə ˈsʌm.θɪŋ | Before a personal or delicate question. | faible@i:kən; liaison
+That makes sense. | ˈðæʔ ˈmeɪks ˈsens | Showing you understand. | glotte
+I'll think about it. | aɪl ˈθɪŋk‿əˈbaʊt̬‿ɪt | Not deciding right away. | liaison; flap
+Hold on a second. | ˈhoʊld‿ɑːn‿ə ˈsek.ənd | Asking someone to wait. | liaison
+It was a lot of fun. | ɪt wəz‿ə ˈlɑːt̬‿əv ˈfʌn | Saying you enjoyed something. | faible@i:wəz; flap; liaison
+What time is it? | ˈwʌ ˈtaɪm‿ɪz‿ɪt | Asking the time. | elision@m:Wha[t] time; liaison
+I'm not going to lie. | aɪm ˈnɑːʔ ˈɡʌ.nə ˈlaɪ | Before an honest admission. | glotte; reduction@i:ˈɡʌ.nə
+Let me know what you think. | ˈlem.i ˈnoʊ ˈwʌ.tʃə ˈθɪŋk | Asking for feedback. | reduction@i:ˈlem.i; assimilation@i:tʃə
+Where did you put it? | ˈwer.dʒə ˈpʊt̬‿ɪt | Asking where something is. | assimilation@i:dʒə; flap
+I meant to tell you. | aɪ ˈmen tə ˈtel‿jə | Apologizing for not mentioning something. | elision@m:mean[t] to; liaison
+You can't be serious. | jə ˈkæn bi ˈsɪr.i.əs | Expressing disbelief. | elision@m:can'[t] be; faible@i:jə
+Is that all right? | ɪz ˈðæt̬‿ɑːl ˈraɪt | Asking permission or agreement. | flap; liaison
+We'll figure something out. | wil ˈfɪɡ.jɚ ˈsʌm.θɪŋ‿ˈaʊt | Reassuring someone. | liaison
+I didn't mean to. | aɪ ˈdɪd.ən ˈmiːn tuː | Apologizing for an accident. | elision@m:didn'[t] mean
+What are you up to tonight? | ˈwʌt̬‿ɚ jə ˈʌp tə təˈnaɪt | Asking about someone's evening plans. | flap; faible@i:ɚ jə
+It's about time. | ɪts‿əˈbaʊ ˈtaɪm | Finally! (it should have happened sooner) | elision@m:abou[t] time; liaison
+Thanks for letting me know. | ˈθæŋks fɚ ˈlet̬.ɪŋ mi ˈnoʊ | Thanking someone for information. | faible@i:fɚ; flap
+Sorry to keep you waiting. | ˈsɑːr.i tə ˈkiːp jə ˈweɪ.t̬ɪŋ | Apologizing for being late. | faible@i:tə; flap
+Would you mind if I sat here? | ˈwʊ.dʒə ˈmaɪnd‿ɪf‿aɪ ˈsæt ˈhɪr | Politely asking to sit. | assimilation@i:dʒə; liaison
+I could use some help. | aɪ ˈkʊ.dʒuːz səm ˈhelp | I'd appreciate some help. | assimilation@i:dʒuːz; faible@i:səm
+Not that I know of. | ˈnɑːʔ ðət̬‿aɪ ˈnoʊ‿əv | As far as I know, no. | glotte; flap; liaison
+Just let it go. | ˈdʒʌs ˈlet̬‿ɪt ˈɡoʊ | Advice to stop worrying about something. | elision@m:Jus[t] let; flap

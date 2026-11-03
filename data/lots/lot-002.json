@@ -1,0 +1,3169 @@
+{
+ "lot": "lot-002",
+ "titre": "Mots : lettres muettes, orthographe trompeuse, accent, flaps, -ed, paires nom/verbe",
+ "date": "2026-11-03",
+ "cartes": [
+  {
+   "id": "m-receipt",
+   "type": "mot",
+   "texte": "receipt",
+   "ipa": "rɪˈsiːt",
+   "def": "A piece of paper showing what you paid.",
+   "ex": "Can I get a receipt, please?",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "recei[p]t"
+    }
+   ]
+  },
+  {
+   "id": "m-doubt",
+   "type": "mot",
+   "texte": "doubt",
+   "ipa": "daʊt",
+   "def": "A feeling of not being sure; to feel unsure.",
+   "ex": "I doubt he'll show up on time.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "dou[b]t"
+    }
+   ]
+  },
+  {
+   "id": "m-plumber",
+   "type": "mot",
+   "texte": "plumber",
+   "ipa": "ˈplʌm.ɚ",
+   "def": "Someone who fixes pipes, sinks and toilets.",
+   "ex": "We need to call a plumber.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "plum[b]er"
+    }
+   ]
+  },
+  {
+   "id": "m-thumb",
+   "type": "mot",
+   "texte": "thumb",
+   "ipa": "θʌm",
+   "def": "The short, thick finger on the side of your hand.",
+   "ex": "She gave me a thumbs-up.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "thum[b]"
+    }
+   ]
+  },
+  {
+   "id": "m-climb",
+   "type": "mot",
+   "texte": "climb",
+   "ipa": "klaɪm",
+   "def": "To go up something using your hands and feet.",
+   "ex": "We climbed to the top of the hill.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "clim[b]"
+    }
+   ]
+  },
+  {
+   "id": "m-tomb",
+   "type": "mot",
+   "texte": "tomb",
+   "ipa": "tuːm",
+   "def": "A place, often stone, where a dead person is buried.",
+   "ex": "The tomb dates back to Roman times.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "tom[b]"
+    },
+    {
+     "t": "piege",
+     "ipa": "uː"
+    }
+   ]
+  },
+  {
+   "id": "m-knowledge",
+   "type": "mot",
+   "texte": "knowledge",
+   "ipa": "ˈnɑː.lɪdʒ",
+   "def": "What you know or understand about something.",
+   "ex": "She has a deep knowledge of history.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[k]nowledge"
+    },
+    {
+     "t": "piege",
+     "mot": "kn[ow]ledge"
+    }
+   ]
+  },
+  {
+   "id": "m-wrestle",
+   "type": "mot",
+   "texte": "wrestle",
+   "ipa": "ˈres.əl",
+   "def": "To fight by holding and pushing; to struggle with a problem.",
+   "ex": "He's been wrestling with that decision for weeks.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[w]res[t]le"
+    }
+   ]
+  },
+  {
+   "id": "m-listen",
+   "type": "mot",
+   "texte": "listen",
+   "ipa": "ˈlɪs.ən",
+   "def": "To pay attention to sounds or to someone speaking.",
+   "ex": "Are you even listening to me?",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "lis[t]en"
+    }
+   ]
+  },
+  {
+   "id": "m-castle",
+   "type": "mot",
+   "texte": "castle",
+   "ipa": "ˈkæs.əl",
+   "def": "A large, old fortified building.",
+   "ex": "We visited a castle in Scotland.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "cas[t]le"
+    }
+   ]
+  },
+  {
+   "id": "m-fasten",
+   "type": "mot",
+   "texte": "fasten",
+   "ipa": "ˈfæs.ən",
+   "def": "To close or attach something firmly.",
+   "ex": "Please fasten your seatbelts.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "fas[t]en"
+    }
+   ]
+  },
+  {
+   "id": "m-whistle",
+   "type": "mot",
+   "texte": "whistle",
+   "ipa": "ˈwɪs.əl",
+   "def": "To make a high sound by blowing through your lips.",
+   "ex": "He whistled to get the dog's attention.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[w]his[t]le"
+    }
+   ]
+  },
+  {
+   "id": "m-mortgage",
+   "type": "mot",
+   "texte": "mortgage",
+   "ipa": "ˈmɔːr.ɡɪdʒ",
+   "def": "A loan used to buy a house.",
+   "ex": "They just paid off their mortgage.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "mor[t]gage"
+    }
+   ]
+  },
+  {
+   "id": "m-calm",
+   "type": "mot",
+   "texte": "calm",
+   "ipa": "kɑːm",
+   "def": "Peaceful and relaxed; not worried.",
+   "ex": "Try to stay calm.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "ca[l]m"
+    }
+   ]
+  },
+  {
+   "id": "m-almond",
+   "type": "mot",
+   "texte": "almond",
+   "ipa": "ˈɑː.mənd",
+   "def": "An oval nut.",
+   "ex": "I'll have an almond croissant.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "a[l]mond"
+    }
+   ]
+  },
+  {
+   "id": "m-salmon",
+   "type": "mot",
+   "texte": "salmon",
+   "ipa": "ˈsæm.ən",
+   "def": "A large fish with pink flesh.",
+   "ex": "We had grilled salmon for dinner.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "sa[l]mon"
+    }
+   ]
+  },
+  {
+   "id": "m-yolk",
+   "type": "mot",
+   "texte": "yolk",
+   "ipa": "joʊk",
+   "def": "The yellow part of an egg.",
+   "ex": "I like my egg yolks runny.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "yo[l]k"
+    }
+   ]
+  },
+  {
+   "id": "m-honest",
+   "type": "mot",
+   "texte": "honest",
+   "ipa": "ˈɑː.nɪst",
+   "def": "Truthful; not lying or cheating.",
+   "ex": "To be honest, I didn't like it.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[h]onest"
+    }
+   ]
+  },
+  {
+   "id": "m-heir",
+   "type": "mot",
+   "texte": "heir",
+   "ipa": "er",
+   "def": "A person who will receive someone's money or title.",
+   "ex": "He's the heir to a huge fortune.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[h]eir"
+    }
+   ]
+  },
+  {
+   "id": "m-psychology",
+   "type": "mot",
+   "texte": "psychology",
+   "ipa": "saɪˈkɑː.lə.dʒi",
+   "def": "The study of the mind and behavior.",
+   "ex": "She has a degree in psychology.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[p]sychology"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈkɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-autumn",
+   "type": "mot",
+   "texte": "autumn",
+   "ipa": "ˈɑː.t̬əm",
+   "def": "The season between summer and winter (also \"fall\").",
+   "ex": "Autumn is my favorite season.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "autum[n]"
+    }
+   ]
+  },
+  {
+   "id": "m-column",
+   "type": "mot",
+   "texte": "column",
+   "ipa": "ˈkɑː.ləm",
+   "def": "A tall post; a vertical section of text or numbers.",
+   "ex": "Add up the numbers in this column.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "colum[n]"
+    }
+   ]
+  },
+  {
+   "id": "m-foreign",
+   "type": "mot",
+   "texte": "foreign",
+   "ipa": "ˈfɔːr.ən",
+   "def": "From another country.",
+   "ex": "Do you speak any foreign languages?",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "forei[g]n"
+    }
+   ]
+  },
+  {
+   "id": "m-sovereign",
+   "type": "mot",
+   "texte": "sovereign",
+   "ipa": "ˈsɑːv.rən",
+   "def": "Having full power; independent.",
+   "ex": "It's a sovereign nation.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "soverei[g]n"
+    }
+   ]
+  },
+  {
+   "id": "m-campaign",
+   "type": "mot",
+   "texte": "campaign",
+   "ipa": "kæmˈpeɪn",
+   "def": "A planned series of actions to reach a goal.",
+   "ex": "They launched an ad campaign.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "campai[g]n"
+    }
+   ]
+  },
+  {
+   "id": "m-design",
+   "type": "mot",
+   "texte": "design",
+   "ipa": "dɪˈzaɪn",
+   "def": "A plan or drawing; to plan how something will look or work.",
+   "ex": "I love the design of this app.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "desi[g]n"
+    },
+    {
+     "t": "piege",
+     "ipa": "z"
+    }
+   ]
+  },
+  {
+   "id": "m-muscle",
+   "type": "mot",
+   "texte": "muscle",
+   "ipa": "ˈmʌs.əl",
+   "def": "Body tissue that makes you move.",
+   "ex": "I pulled a muscle at the gym.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "mus[c]le"
+    }
+   ]
+  },
+  {
+   "id": "m-scissors",
+   "type": "mot",
+   "texte": "scissors",
+   "ipa": "ˈsɪz.ɚz",
+   "def": "A tool with two blades for cutting.",
+   "ex": "Pass me the scissors, please.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "z"
+    }
+   ]
+  },
+  {
+   "id": "m-christmas",
+   "type": "mot",
+   "texte": "Christmas",
+   "ipa": "ˈkrɪs.məs",
+   "def": "The holiday on December 25th.",
+   "ex": "What are you doing for Christmas?",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "Chris[t]mas"
+    }
+   ]
+  },
+  {
+   "id": "m-cupboard",
+   "type": "mot",
+   "texte": "cupboard",
+   "ipa": "ˈkʌb.ɚd",
+   "def": "A cabinet with shelves and a door.",
+   "ex": "The mugs are in the cupboard.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "cu[p]board"
+    },
+    {
+     "t": "piege",
+     "mot": "cupb[oa]rd"
+    }
+   ]
+  },
+  {
+   "id": "m-sword",
+   "type": "mot",
+   "texte": "sword",
+   "ipa": "sɔːrd",
+   "def": "A weapon with a long metal blade.",
+   "ex": "He drew his sword.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "s[w]ord"
+    }
+   ]
+  },
+  {
+   "id": "m-business",
+   "type": "mot",
+   "texte": "business",
+   "ipa": "ˈbɪz.nɪs",
+   "def": "Buying and selling; a company.",
+   "ex": "She runs her own business.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "bus[i]ness"
+    },
+    {
+     "t": "piege",
+     "mot": "b[u]siness"
+    }
+   ]
+  },
+  {
+   "id": "m-chocolate",
+   "type": "mot",
+   "texte": "chocolate",
+   "ipa": "ˈtʃɑːk.lət",
+   "def": "A sweet brown food made from cocoa.",
+   "ex": "Dark chocolate is my weakness.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "choc[o]late"
+    }
+   ]
+  },
+  {
+   "id": "m-different",
+   "type": "mot",
+   "texte": "different",
+   "ipa": "ˈdɪf.rənt",
+   "def": "Not the same.",
+   "ex": "That's a different story.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "diff[e]rent"
+    }
+   ]
+  },
+  {
+   "id": "m-interesting",
+   "type": "mot",
+   "texte": "interesting",
+   "ipa": "ˈɪn.trə.stɪŋ",
+   "def": "Holding your attention.",
+   "ex": "That's an interesting point.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "int[e]resting"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈɪn"
+    }
+   ]
+  },
+  {
+   "id": "m-camera",
+   "type": "mot",
+   "texte": "camera",
+   "ipa": "ˈkæm.rə",
+   "def": "A device for taking photos or videos.",
+   "ex": "Turn your camera on.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "cam[e]ra"
+    }
+   ]
+  },
+  {
+   "id": "m-temperature",
+   "type": "mot",
+   "texte": "temperature",
+   "ipa": "ˈtem.prə.tʃɚ",
+   "def": "How hot or cold something is.",
+   "ex": "The temperature dropped overnight.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "temp[e]rature"
+    }
+   ]
+  },
+  {
+   "id": "m-restaurant",
+   "type": "mot",
+   "texte": "restaurant",
+   "ipa": "ˈres.tə.rɑːnt",
+   "def": "A place where you pay to eat meals.",
+   "ex": "Let's try that new restaurant.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "rɑːnt"
+    }
+   ]
+  },
+  {
+   "id": "m-favorite",
+   "type": "mot",
+   "texte": "favorite",
+   "ipa": "ˈfeɪv.rɪt",
+   "def": "Liked more than all the others.",
+   "ex": "What's your favorite movie?",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "fav[o]rite"
+    }
+   ]
+  },
+  {
+   "id": "m-several",
+   "type": "mot",
+   "texte": "several",
+   "ipa": "ˈsev.rəl",
+   "def": "More than two but not many.",
+   "ex": "I've seen it several times.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "sev[e]ral"
+    }
+   ]
+  },
+  {
+   "id": "m-average",
+   "type": "mot",
+   "texte": "average",
+   "ipa": "ˈæv.rɪdʒ",
+   "def": "Typical; the result of adding numbers and dividing.",
+   "ex": "On average, it takes ten minutes.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "av[e]rage"
+    }
+   ]
+  },
+  {
+   "id": "m-mischievous",
+   "type": "mot",
+   "texte": "mischievous",
+   "ipa": "ˈmɪs.tʃə.vəs",
+   "def": "Playfully causing small trouble.",
+   "ex": "He gave me a mischievous grin.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "tʃə.vəs"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈmɪs"
+    }
+   ]
+  },
+  {
+   "id": "m-jewelry",
+   "type": "mot",
+   "texte": "jewelry",
+   "ipa": "ˈdʒuː.əl.ri",
+   "def": "Rings, necklaces, earrings and so on.",
+   "ex": "She doesn't wear much jewelry.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "dʒuː.əl"
+    }
+   ]
+  },
+  {
+   "id": "m-february",
+   "type": "mot",
+   "texte": "February",
+   "ipa": "ˈfeb.ruː.er.i",
+   "def": "The second month of the year.",
+   "ex": "My birthday is in February.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ruː.er"
+    }
+   ]
+  },
+  {
+   "id": "m-bury",
+   "type": "mot",
+   "texte": "bury",
+   "ipa": "ˈber.i",
+   "def": "To put something in the ground and cover it.",
+   "ex": "The dog buried its bone.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "b[u]ry"
+    }
+   ]
+  },
+  {
+   "id": "m-flood",
+   "type": "mot",
+   "texte": "flood",
+   "ipa": "flʌd",
+   "def": "A large amount of water covering dry land.",
+   "ex": "The storm caused a flood.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "fl[oo]d"
+    }
+   ]
+  },
+  {
+   "id": "m-sew",
+   "type": "mot",
+   "texte": "sew",
+   "ipa": "soʊ",
+   "def": "To join cloth with a needle and thread.",
+   "ex": "Can you sew this button back on?",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "s[ew]"
+    }
+   ]
+  },
+  {
+   "id": "m-lose",
+   "type": "mot",
+   "texte": "lose",
+   "ipa": "luːz",
+   "def": "To no longer have something; not to win.",
+   "ex": "Don't lose your keys.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "z"
+    }
+   ]
+  },
+  {
+   "id": "m-loose",
+   "type": "mot",
+   "texte": "loose",
+   "ipa": "luːs",
+   "def": "Not tight.",
+   "ex": "These pants are a little loose.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "s"
+    }
+   ]
+  },
+  {
+   "id": "m-cough",
+   "type": "mot",
+   "texte": "cough",
+   "ipa": "kɑːf",
+   "def": "To push air out of your throat with a sudden noise.",
+   "ex": "I've had a cough all week.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "c[ough]"
+    }
+   ]
+  },
+  {
+   "id": "m-though",
+   "type": "mot",
+   "texte": "though",
+   "ipa": "ðoʊ",
+   "def": "However; despite the fact that.",
+   "ex": "It's expensive. Worth it, though.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "th[ough]"
+    }
+   ]
+  },
+  {
+   "id": "m-through",
+   "type": "mot",
+   "texte": "through",
+   "ipa": "θruː",
+   "def": "From one side to the other; by means of.",
+   "ex": "We drove through the tunnel.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "thr[ough]"
+    }
+   ]
+  },
+  {
+   "id": "m-thought",
+   "type": "mot",
+   "texte": "thought",
+   "ipa": "θɑːt",
+   "def": "An idea; past of think.",
+   "ex": "I thought you were joking.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "th[ough]t"
+    }
+   ]
+  },
+  {
+   "id": "m-bought",
+   "type": "mot",
+   "texte": "bought",
+   "ipa": "bɑːt",
+   "def": "Past of buy.",
+   "ex": "I bought a new laptop.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "b[ough]t"
+    }
+   ]
+  },
+  {
+   "id": "m-drought",
+   "type": "mot",
+   "texte": "drought",
+   "ipa": "draʊt",
+   "def": "A long period with no rain.",
+   "ex": "The drought ruined the crops.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "dr[ough]t"
+    }
+   ]
+  },
+  {
+   "id": "m-daughter",
+   "type": "mot",
+   "texte": "daughter",
+   "ipa": "ˈdɑː.t̬ɚ",
+   "def": "Someone's female child.",
+   "ex": "Their daughter just started college.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "d[augh]ter"
+    }
+   ]
+  },
+  {
+   "id": "m-sausage",
+   "type": "mot",
+   "texte": "sausage",
+   "ipa": "ˈsɑː.sɪdʒ",
+   "def": "Chopped meat in a long tube shape.",
+   "ex": "Sausage and eggs for breakfast.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "s[au]sage"
+    }
+   ]
+  },
+  {
+   "id": "m-sweat",
+   "type": "mot",
+   "texte": "sweat",
+   "ipa": "swet",
+   "def": "Liquid on your skin when you're hot.",
+   "ex": "I was dripping with sweat.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "sw[ea]t"
+    }
+   ]
+  },
+  {
+   "id": "m-threat",
+   "type": "mot",
+   "texte": "threat",
+   "ipa": "θret",
+   "def": "A statement or sign that something bad may happen.",
+   "ex": "Climate change is a real threat.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "thr[ea]t"
+    }
+   ]
+  },
+  {
+   "id": "m-breath",
+   "type": "mot",
+   "texte": "breath",
+   "ipa": "breθ",
+   "def": "Air going in and out of your lungs.",
+   "ex": "Take a deep breath.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "e"
+    }
+   ]
+  },
+  {
+   "id": "m-breathe",
+   "type": "mot",
+   "texte": "breathe",
+   "ipa": "briːð",
+   "def": "To take air in and out of your lungs.",
+   "ex": "Just breathe and relax.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "iːð"
+    }
+   ]
+  },
+  {
+   "id": "m-develop",
+   "type": "mot",
+   "texte": "develop",
+   "ipa": "dɪˈvel.əp",
+   "def": "To grow or make something grow; to create.",
+   "ex": "They're developing a new app.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈvel"
+    }
+   ]
+  },
+  {
+   "id": "m-event",
+   "type": "mot",
+   "texte": "event",
+   "ipa": "ɪˈvent",
+   "def": "Something that happens, often something important.",
+   "ex": "The event starts at seven.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈvent"
+    }
+   ]
+  },
+  {
+   "id": "m-hotel",
+   "type": "mot",
+   "texte": "hotel",
+   "ipa": "hoʊˈtel",
+   "def": "A building where you pay to stay the night.",
+   "ex": "We booked a hotel downtown.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtel"
+    },
+    {
+     "t": "piege",
+     "mot": "[h]otel"
+    }
+   ]
+  },
+  {
+   "id": "m-career",
+   "type": "mot",
+   "texte": "career",
+   "ipa": "kəˈrɪr",
+   "def": "The jobs you do over your working life.",
+   "ex": "She's had a long career in law.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈrɪr"
+    }
+   ]
+  },
+  {
+   "id": "m-guitar",
+   "type": "mot",
+   "texte": "guitar",
+   "ipa": "ɡɪˈtɑːr",
+   "def": "A string instrument.",
+   "ex": "He's learning to play guitar.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtɑːr"
+    }
+   ]
+  },
+  {
+   "id": "m-cigarette",
+   "type": "mot",
+   "texte": "cigarette",
+   "ipa": "ˌsɪɡ.əˈret",
+   "def": "Rolled tobacco that people smoke.",
+   "ex": "He quit cigarettes last year.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈret"
+    }
+   ]
+  },
+  {
+   "id": "m-magazine",
+   "type": "mot",
+   "texte": "magazine",
+   "ipa": "ˈmæɡ.ə.ziːn",
+   "def": "A weekly or monthly publication with articles and pictures.",
+   "ex": "I read it in a magazine.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈmæɡ"
+    }
+   ]
+  },
+  {
+   "id": "m-category",
+   "type": "mot",
+   "texte": "category",
+   "ipa": "ˈkæt̬.ə.ɡɔːr.i",
+   "def": "A group of things that share something.",
+   "ex": "Which category does it belong to?",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkæt̬"
+    }
+   ]
+  },
+  {
+   "id": "m-hierarchy",
+   "type": "mot",
+   "texte": "hierarchy",
+   "ipa": "ˈhaɪ.rɑːr.ki",
+   "def": "A system where people or things are ranked.",
+   "ex": "The company has a strict hierarchy.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈhaɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-genuine",
+   "type": "mot",
+   "texte": "genuine",
+   "ipa": "ˈdʒen.ju.ɪn",
+   "def": "Real; sincere.",
+   "ex": "She showed genuine interest.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "genu[ine]"
+    }
+   ]
+  },
+  {
+   "id": "m-mature",
+   "type": "mot",
+   "texte": "mature",
+   "ipa": "məˈtʊr",
+   "def": "Fully grown; behaving like an adult.",
+   "ex": "He's very mature for his age.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtʊr"
+    }
+   ]
+  },
+  {
+   "id": "m-analysis",
+   "type": "mot",
+   "texte": "analysis",
+   "ipa": "əˈnæl.ə.sɪs",
+   "def": "A careful, detailed study of something.",
+   "ex": "We need a deeper analysis.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnæl"
+    }
+   ]
+  },
+  {
+   "id": "m-photograph",
+   "type": "mot",
+   "texte": "photograph",
+   "ipa": "ˈfoʊ.t̬ə.ɡræf",
+   "def": "A photo.",
+   "ex": "That's a beautiful photograph.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈfoʊ"
+    }
+   ]
+  },
+  {
+   "id": "m-democracy",
+   "type": "mot",
+   "texte": "democracy",
+   "ipa": "dɪˈmɑː.krə.si",
+   "def": "Government by the people, through elections.",
+   "ex": "Free press is vital to democracy.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈmɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-democratic",
+   "type": "mot",
+   "texte": "democratic",
+   "ipa": "ˌdem.əˈkræt̬.ɪk",
+   "def": "Based on democracy.",
+   "ex": "It was a democratic decision.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkræ"
+    }
+   ]
+  },
+  {
+   "id": "m-economy",
+   "type": "mot",
+   "texte": "economy",
+   "ipa": "ɪˈkɑː.nə.mi",
+   "def": "The system of money, trade and jobs in a country.",
+   "ex": "The economy is slowing down.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-economic",
+   "type": "mot",
+   "texte": "economic",
+   "ipa": "ˌek.əˈnɑː.mɪk",
+   "def": "Related to the economy.",
+   "ex": "It's an economic crisis.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-technology",
+   "type": "mot",
+   "texte": "technology",
+   "ipa": "tekˈnɑː.lə.dʒi",
+   "def": "Machines and tools made with scientific knowledge.",
+   "ex": "Technology changes so fast.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-ceremony",
+   "type": "mot",
+   "texte": "ceremony",
+   "ipa": "ˈser.ə.moʊ.ni",
+   "def": "A formal event, like a wedding.",
+   "ex": "The ceremony was beautiful.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈser"
+    }
+   ]
+  },
+  {
+   "id": "m-catastrophe",
+   "type": "mot",
+   "texte": "catastrophe",
+   "ipa": "kəˈtæs.trə.fi",
+   "def": "A sudden disaster.",
+   "ex": "It was a complete catastrophe.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "catastroph[e]"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈtæs"
+    }
+   ]
+  },
+  {
+   "id": "m-facade",
+   "type": "mot",
+   "texte": "facade",
+   "ipa": "fəˈsɑːd",
+   "def": "The front of a building; a false appearance.",
+   "ex": "Her smile was just a facade.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "fa[c]ade"
+    }
+   ]
+  },
+  {
+   "id": "m-debris",
+   "type": "mot",
+   "texte": "debris",
+   "ipa": "dəˈbriː",
+   "def": "Broken pieces left after something is destroyed.",
+   "ex": "The road was covered in debris.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "debri[s]"
+    }
+   ]
+  },
+  {
+   "id": "m-ballet",
+   "type": "mot",
+   "texte": "ballet",
+   "ipa": "bæˈleɪ",
+   "def": "A classical dance form.",
+   "ex": "She's been doing ballet since she was five.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "balle[t]"
+    }
+   ]
+  },
+  {
+   "id": "m-buffet",
+   "type": "mot",
+   "texte": "buffet",
+   "ipa": "bəˈfeɪ",
+   "def": "A meal where you serve yourself.",
+   "ex": "The hotel has a breakfast buffet.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "buffe[t]"
+    }
+   ]
+  },
+  {
+   "id": "m-chaos",
+   "type": "mot",
+   "texte": "chaos",
+   "ipa": "ˈkeɪ.ɑːs",
+   "def": "Complete confusion and disorder.",
+   "ex": "The airport was total chaos.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "[ch]aos"
+    }
+   ]
+  },
+  {
+   "id": "m-archive",
+   "type": "mot",
+   "texte": "archive",
+   "ipa": "ˈɑːr.kaɪv",
+   "def": "A collection of old records; to store them.",
+   "ex": "I'll archive these emails.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "ar[ch]ive"
+    }
+   ]
+  },
+  {
+   "id": "m-architect",
+   "type": "mot",
+   "texte": "architect",
+   "ipa": "ˈɑːr.kə.tekt",
+   "def": "Someone who designs buildings.",
+   "ex": "My sister is an architect.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "ar[ch]itect"
+    }
+   ]
+  },
+  {
+   "id": "m-character",
+   "type": "mot",
+   "texte": "character",
+   "ipa": "ˈker.ək.tɚ",
+   "def": "A person in a story; someone's personality.",
+   "ex": "She's quite a character.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "[ch]aracter"
+    }
+   ]
+  },
+  {
+   "id": "m-chemistry",
+   "type": "mot",
+   "texte": "chemistry",
+   "ipa": "ˈkem.ə.stri",
+   "def": "The science of substances; a natural connection between people.",
+   "ex": "They have great chemistry.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "[ch]emistry"
+    }
+   ]
+  },
+  {
+   "id": "m-stomach",
+   "type": "mot",
+   "texte": "stomach",
+   "ipa": "ˈstʌm.ək",
+   "def": "The organ where food goes; your belly.",
+   "ex": "My stomach hurts.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "stoma[ch]"
+    }
+   ]
+  },
+  {
+   "id": "m-mechanic",
+   "type": "mot",
+   "texte": "mechanic",
+   "ipa": "məˈkæn.ɪk",
+   "def": "Someone who repairs engines and cars.",
+   "ex": "I took my car to the mechanic.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "me[ch]anic"
+    }
+   ]
+  },
+  {
+   "id": "m-technique",
+   "type": "mot",
+   "texte": "technique",
+   "ipa": "tekˈniːk",
+   "def": "A particular way of doing something.",
+   "ex": "Her technique is flawless.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "techn[ique]"
+    }
+   ]
+  },
+  {
+   "id": "m-unique",
+   "type": "mot",
+   "texte": "unique",
+   "ipa": "juːˈniːk",
+   "def": "The only one of its kind.",
+   "ex": "Every fingerprint is unique.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "un[ique]"
+    }
+   ]
+  },
+  {
+   "id": "m-colleague",
+   "type": "mot",
+   "texte": "colleague",
+   "ipa": "ˈkɑː.liːɡ",
+   "def": "Someone you work with.",
+   "ex": "A colleague recommended this place.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "collea[gue]"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈkɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-league",
+   "type": "mot",
+   "texte": "league",
+   "ipa": "liːɡ",
+   "def": "A group of sports teams that play each other.",
+   "ex": "They're top of the league.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "lea[gue]"
+    }
+   ]
+  },
+  {
+   "id": "m-fatigue",
+   "type": "mot",
+   "texte": "fatigue",
+   "ipa": "fəˈtiːɡ",
+   "def": "Extreme tiredness.",
+   "ex": "Fatigue was setting in.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "fati[gue]"
+    }
+   ]
+  },
+  {
+   "id": "m-vague",
+   "type": "mot",
+   "texte": "vague",
+   "ipa": "veɪɡ",
+   "def": "Not clear or precise.",
+   "ex": "His answer was pretty vague.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "va[gue]"
+    }
+   ]
+  },
+  {
+   "id": "m-tongue",
+   "type": "mot",
+   "texte": "tongue",
+   "ipa": "tʌŋ",
+   "def": "The muscle in your mouth used to taste and speak.",
+   "ex": "It's on the tip of my tongue.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "t[ongue]"
+    }
+   ]
+  },
+  {
+   "id": "m-better",
+   "type": "mot",
+   "texte": "better",
+   "ipa": "ˈbet̬.ɚ",
+   "def": "Of a higher quality; comparative of good.",
+   "ex": "This one's way better.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-matter",
+   "type": "mot",
+   "texte": "matter",
+   "ipa": "ˈmæt̬.ɚ",
+   "def": "To be important; a subject or situation.",
+   "ex": "It doesn't matter.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-beautiful",
+   "type": "mot",
+   "texte": "beautiful",
+   "ipa": "ˈbjuː.t̬ə.fəl",
+   "def": "Very pretty or pleasant.",
+   "ex": "What a beautiful day.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-computer",
+   "type": "mot",
+   "texte": "computer",
+   "ipa": "kəmˈpjuː.t̬ɚ",
+   "def": "An electronic machine for working with data.",
+   "ex": "My computer froze again.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-community",
+   "type": "mot",
+   "texte": "community",
+   "ipa": "kəˈmjuː.nə.t̬i",
+   "def": "People living in one place or sharing interests.",
+   "ex": "It's a close-knit community.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-opportunity",
+   "type": "mot",
+   "texte": "opportunity",
+   "ipa": "ˌɑː.pɚˈtuː.nə.t̬i",
+   "def": "A chance to do something.",
+   "ex": "It's a great opportunity.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈtuː"
+    }
+   ]
+  },
+  {
+   "id": "m-quality",
+   "type": "mot",
+   "texte": "quality",
+   "ipa": "ˈkwɑː.lə.t̬i",
+   "def": "How good something is.",
+   "ex": "The quality is excellent.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-security",
+   "type": "mot",
+   "texte": "security",
+   "ipa": "sɪˈkjʊr.ə.t̬i",
+   "def": "Protection from danger.",
+   "ex": "Security was tight at the airport.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-authority",
+   "type": "mot",
+   "texte": "authority",
+   "ipa": "əˈθɔːr.ə.t̬i",
+   "def": "The power to make decisions.",
+   "ex": "She has the authority to sign it.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-priority",
+   "type": "mot",
+   "texte": "priority",
+   "ipa": "praɪˈɔːr.ə.t̬i",
+   "def": "Something more important than other things.",
+   "ex": "Your health is the priority.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-ability",
+   "type": "mot",
+   "texte": "ability",
+   "ipa": "əˈbɪl.ə.t̬i",
+   "def": "The skill or power to do something.",
+   "ex": "She has the ability to stay calm.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-reality",
+   "type": "mot",
+   "texte": "reality",
+   "ipa": "riˈæl.ə.t̬i",
+   "def": "What actually exists or happens.",
+   "ex": "It's time to face reality.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-totally",
+   "type": "mot",
+   "texte": "totally",
+   "ipa": "ˈtoʊ.t̬əl.i",
+   "def": "Completely.",
+   "ex": "I totally forgot.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-meeting",
+   "type": "mot",
+   "texte": "meeting",
+   "ipa": "ˈmiː.t̬ɪŋ",
+   "def": "A planned gathering to discuss something.",
+   "ex": "I'm stuck in a meeting.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-data",
+   "type": "mot",
+   "texte": "data",
+   "ipa": "ˈdeɪ.t̬ə",
+   "def": "Facts and numbers collected for analysis.",
+   "ex": "The data doesn't lie.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-metal",
+   "type": "mot",
+   "texte": "metal",
+   "ipa": "ˈmet̬.əl",
+   "def": "A hard material like iron or gold.",
+   "ex": "The chair is made of metal.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-letter",
+   "type": "mot",
+   "texte": "letter",
+   "ipa": "ˈlet̬.ɚ",
+   "def": "A written message; a symbol of the alphabet.",
+   "ex": "I got a letter from the bank.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-bottle",
+   "type": "mot",
+   "texte": "bottle",
+   "ipa": "ˈbɑː.t̬əl",
+   "def": "A container for liquids.",
+   "ex": "Grab a bottle of water.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-battle",
+   "type": "mot",
+   "texte": "battle",
+   "ipa": "ˈbæt̬.əl",
+   "def": "A fight; a struggle.",
+   "ex": "It's an uphill battle.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-settle",
+   "type": "mot",
+   "texte": "settle",
+   "ipa": "ˈset̬.əl",
+   "def": "To decide; to make a home somewhere; to calm down.",
+   "ex": "Let's settle this now.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-potato",
+   "type": "mot",
+   "texte": "potato",
+   "ipa": "pəˈteɪ.t̬oʊ",
+   "def": "A vegetable that grows underground.",
+   "ex": "Mashed potatoes, please.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-tomato",
+   "type": "mot",
+   "texte": "tomato",
+   "ipa": "təˈmeɪ.t̬oʊ",
+   "def": "A soft red fruit used as a vegetable.",
+   "ex": "Add some tomato sauce.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-saturday",
+   "type": "mot",
+   "texte": "Saturday",
+   "ipa": "ˈsæt̬.ɚ.deɪ",
+   "def": "The day after Friday.",
+   "ex": "See you on Saturday.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-thirty",
+   "type": "mot",
+   "texte": "thirty",
+   "ipa": "ˈθɝː.t̬i",
+   "def": "The number 30.",
+   "ex": "I'll be there in thirty minutes.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-forty",
+   "type": "mot",
+   "texte": "forty",
+   "ipa": "ˈfɔːr.t̬i",
+   "def": "The number 40.",
+   "ex": "He just turned forty.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-party",
+   "type": "mot",
+   "texte": "party",
+   "ipa": "ˈpɑːr.t̬i",
+   "def": "A social event; a political group.",
+   "ex": "Are you coming to the party?",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-dirty",
+   "type": "mot",
+   "texte": "dirty",
+   "ipa": "ˈdɝː.t̬i",
+   "def": "Not clean.",
+   "ex": "My shoes are dirty.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-important",
+   "type": "mot",
+   "texte": "important",
+   "ipa": "ɪmˈpɔːr.ʔənt",
+   "def": "Having great value or effect.",
+   "ex": "This is really important.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    }
+   ]
+  },
+  {
+   "id": "m-certain",
+   "type": "mot",
+   "texte": "certain",
+   "ipa": "ˈsɝː.ʔən",
+   "def": "Sure; particular but not named.",
+   "ex": "I'm not certain about that.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    }
+   ]
+  },
+  {
+   "id": "m-mountain",
+   "type": "mot",
+   "texte": "mountain",
+   "ipa": "ˈmaʊn.ʔən",
+   "def": "A very high hill.",
+   "ex": "We hiked up the mountain.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    }
+   ]
+  },
+  {
+   "id": "m-months",
+   "type": "mot",
+   "texte": "months",
+   "ipa": "mʌnθs",
+   "def": "Plural of month.",
+   "ex": "It took six months.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "nθs"
+    }
+   ]
+  },
+  {
+   "id": "m-sixth",
+   "type": "mot",
+   "texte": "sixth",
+   "ipa": "sɪksθ",
+   "def": "Number six in order.",
+   "ex": "It's on the sixth floor.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ksθ"
+    }
+   ]
+  },
+  {
+   "id": "m-twelfth",
+   "type": "mot",
+   "texte": "twelfth",
+   "ipa": "twelfθ",
+   "def": "Number twelve in order.",
+   "ex": "Today is the twelfth.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "lfθ"
+    }
+   ]
+  },
+  {
+   "id": "m-depth",
+   "type": "mot",
+   "texte": "depth",
+   "ipa": "depθ",
+   "def": "How deep something is.",
+   "ex": "We discussed it in depth.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "pθ"
+    }
+   ]
+  },
+  {
+   "id": "m-width",
+   "type": "mot",
+   "texte": "width",
+   "ipa": "wɪdθ",
+   "def": "How wide something is.",
+   "ex": "Measure the width of the room.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "dθ"
+    }
+   ]
+  },
+  {
+   "id": "m-strength",
+   "type": "mot",
+   "texte": "strength",
+   "ipa": "streŋθ",
+   "def": "Physical or mental power.",
+   "ex": "It takes strength to admit it.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ŋθ"
+    }
+   ]
+  },
+  {
+   "id": "m-length",
+   "type": "mot",
+   "texte": "length",
+   "ipa": "leŋθ",
+   "def": "How long something is.",
+   "ex": "What's the length of the film?",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ŋθ"
+    }
+   ]
+  },
+  {
+   "id": "m-birthday",
+   "type": "mot",
+   "texte": "birthday",
+   "ipa": "ˈbɝːθ.deɪ",
+   "def": "The day you were born, each year.",
+   "ex": "Happy birthday!",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɝːθ"
+    }
+   ]
+  },
+  {
+   "id": "m-throughout",
+   "type": "mot",
+   "texte": "throughout",
+   "ipa": "θruˈaʊt",
+   "def": "In every part of; during the whole of.",
+   "ex": "It rained throughout the day.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈaʊt"
+    }
+   ]
+  },
+  {
+   "id": "m-thousand",
+   "type": "mot",
+   "texte": "thousand",
+   "ipa": "ˈθaʊ.zənd",
+   "def": "The number 1,000.",
+   "ex": "It costs a thousand dollars.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "z"
+    }
+   ]
+  },
+  {
+   "id": "m-theater",
+   "type": "mot",
+   "texte": "theater",
+   "ipa": "ˈθiː.ə.t̬ɚ",
+   "def": "A building for plays or movies.",
+   "ex": "We went to the theater last night.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "piege",
+     "mot": "[th]eater"
+    }
+   ]
+  },
+  {
+   "id": "m-therefore",
+   "type": "mot",
+   "texte": "therefore",
+   "ipa": "ˈðer.fɔːr",
+   "def": "For that reason.",
+   "ex": "It's late; therefore, we should go.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ð"
+    }
+   ]
+  },
+  {
+   "id": "m-rhythm",
+   "type": "mot",
+   "texte": "rhythm",
+   "ipa": "ˈrɪð.əm",
+   "def": "A regular repeated pattern of sounds or movements.",
+   "ex": "She has a great sense of rhythm.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "r[h]yt[h]m"
+    }
+   ]
+  },
+  {
+   "id": "m-athlete",
+   "type": "mot",
+   "texte": "athlete",
+   "ipa": "ˈæθ.liːt",
+   "def": "Someone who is good at sports.",
+   "ex": "He's a professional athlete.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "ath[l]ete"
+    }
+   ]
+  },
+  {
+   "id": "m-nevertheless",
+   "type": "mot",
+   "texte": "nevertheless",
+   "ipa": "ˌnev.ɚ.ðəˈles",
+   "def": "In spite of that; still.",
+   "ex": "It was hard. Nevertheless, we finished.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈles"
+    }
+   ]
+  },
+  {
+   "id": "m-furthermore",
+   "type": "mot",
+   "texte": "furthermore",
+   "ipa": "ˈfɝː.ðɚ.mɔːr",
+   "def": "In addition; also.",
+   "ex": "Furthermore, it's cheaper.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ðɚ"
+    }
+   ]
+  },
+  {
+   "id": "m-whereas",
+   "type": "mot",
+   "texte": "whereas",
+   "ipa": "werˈæz",
+   "def": "While, in contrast.",
+   "ex": "He loves cities, whereas she prefers the country.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈæz"
+    }
+   ]
+  },
+  {
+   "id": "m-albeit",
+   "type": "mot",
+   "texte": "albeit",
+   "ipa": "ɑːlˈbiː.ɪt",
+   "def": "Although.",
+   "ex": "It worked, albeit slowly.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "al[bei]t"
+    }
+   ]
+  },
+  {
+   "id": "m-inevitable",
+   "type": "mot",
+   "texte": "inevitable",
+   "ipa": "ɪˈnev.ə.t̬ə.bəl",
+   "def": "Certain to happen.",
+   "ex": "Change is inevitable.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈnev"
+    }
+   ]
+  },
+  {
+   "id": "m-deliberately",
+   "type": "mot",
+   "texte": "deliberately",
+   "ipa": "dɪˈlɪb.ɚ.ət.li",
+   "def": "On purpose.",
+   "ex": "He deliberately ignored me.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈlɪb"
+    }
+   ]
+  },
+  {
+   "id": "m-eventually",
+   "type": "mot",
+   "texte": "eventually",
+   "ipa": "ɪˈven.tʃu.ə.li",
+   "def": "In the end, after a long time. (Not « éventuellement ».)",
+   "ex": "Eventually, we found the place.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "tʃu"
+    }
+   ]
+  },
+  {
+   "id": "m-ultimately",
+   "type": "mot",
+   "texte": "ultimately",
+   "ipa": "ˈʌl.tə.mət.li",
+   "def": "In the end; most importantly.",
+   "ex": "Ultimately, it's your decision.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈʌl"
+    }
+   ]
+  },
+  {
+   "id": "m-approximately",
+   "type": "mot",
+   "texte": "approximately",
+   "ipa": "əˈprɑːk.sə.mət.li",
+   "def": "About; roughly.",
+   "ex": "It takes approximately an hour.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈprɑːk"
+    }
+   ]
+  },
+  {
+   "id": "m-consequently",
+   "type": "mot",
+   "texte": "consequently",
+   "ipa": "ˈkɑːn.sə.kwənt.li",
+   "def": "As a result.",
+   "ex": "He missed the bus and was consequently late.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkɑːn"
+    }
+   ]
+  },
+  {
+   "id": "m-significant",
+   "type": "mot",
+   "texte": "significant",
+   "ipa": "sɪɡˈnɪf.ə.kənt",
+   "def": "Important or large enough to notice.",
+   "ex": "There's a significant difference.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnɪf"
+    }
+   ]
+  },
+  {
+   "id": "m-sophisticated",
+   "type": "mot",
+   "texte": "sophisticated",
+   "ipa": "səˈfɪs.tə.keɪ.t̬ɪd",
+   "def": "Advanced and complex; refined.",
+   "ex": "It's a sophisticated system.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈfɪs"
+    }
+   ]
+  },
+  {
+   "id": "m-comprehensive",
+   "type": "mot",
+   "texte": "comprehensive",
+   "ipa": "ˌkɑːm.prəˈhen.sɪv",
+   "def": "Including everything; complete.",
+   "ex": "It's a comprehensive guide.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈhen"
+    }
+   ]
+  },
+  {
+   "id": "m-ambiguous",
+   "type": "mot",
+   "texte": "ambiguous",
+   "ipa": "æmˈbɪɡ.ju.əs",
+   "def": "Having more than one possible meaning.",
+   "ex": "The wording is ambiguous.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈbɪɡ"
+    }
+   ]
+  },
+  {
+   "id": "m-vulnerable",
+   "type": "mot",
+   "texte": "vulnerable",
+   "ipa": "ˈvʌl.nɚ.ə.bəl",
+   "def": "Easily hurt or attacked.",
+   "ex": "Kids are especially vulnerable.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈvʌl"
+    }
+   ]
+  },
+  {
+   "id": "m-ubiquitous",
+   "type": "mot",
+   "texte": "ubiquitous",
+   "ipa": "juːˈbɪk.wə.t̬əs",
+   "def": "Found everywhere.",
+   "ex": "Smartphones are ubiquitous.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈbɪk"
+    }
+   ]
+  },
+  {
+   "id": "m-meticulous",
+   "type": "mot",
+   "texte": "meticulous",
+   "ipa": "məˈtɪk.jə.ləs",
+   "def": "Very careful about details.",
+   "ex": "She keeps meticulous records.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtɪk"
+    }
+   ]
+  },
+  {
+   "id": "m-reluctant",
+   "type": "mot",
+   "texte": "reluctant",
+   "ipa": "rɪˈlʌk.tənt",
+   "def": "Not willing; hesitant.",
+   "ex": "He was reluctant to help.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈlʌk"
+    }
+   ]
+  },
+  {
+   "id": "m-resilient",
+   "type": "mot",
+   "texte": "resilient",
+   "ipa": "rɪˈzɪl.jənt",
+   "def": "Able to recover quickly from difficulties.",
+   "ex": "Kids are incredibly resilient.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈzɪl.jənt"
+    }
+   ]
+  },
+  {
+   "id": "m-thoroughly",
+   "type": "mot",
+   "texte": "thoroughly",
+   "ipa": "ˈθɝː.oʊ.li",
+   "def": "Completely; carefully.",
+   "ex": "I thoroughly enjoyed it.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "thor[ough]ly"
+    }
+   ]
+  },
+  {
+   "id": "m-awkward",
+   "type": "mot",
+   "texte": "awkward",
+   "ipa": "ˈɑː.kwɚd",
+   "def": "Embarrassing or uncomfortable; clumsy.",
+   "ex": "There was an awkward silence.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-anxious",
+   "type": "mot",
+   "texte": "anxious",
+   "ipa": "ˈæŋk.ʃəs",
+   "def": "Worried and nervous.",
+   "ex": "I always get anxious before exams.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ŋk.ʃ"
+    }
+   ]
+  },
+  {
+   "id": "m-anxiety",
+   "type": "mot",
+   "texte": "anxiety",
+   "ipa": "æŋˈzaɪ.ə.t̬i",
+   "def": "A feeling of worry and fear.",
+   "ex": "She struggles with anxiety.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "piege",
+     "ipa": "ŋˈz"
+    }
+   ]
+  },
+  {
+   "id": "m-jealous",
+   "type": "mot",
+   "texte": "jealous",
+   "ipa": "ˈdʒel.əs",
+   "def": "Upset because someone has what you want.",
+   "ex": "Are you jealous?",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈdʒel"
+    }
+   ]
+  },
+  {
+   "id": "m-exhausted",
+   "type": "mot",
+   "texte": "exhausted",
+   "ipa": "ɪɡˈzɑː.stɪd",
+   "def": "Extremely tired.",
+   "ex": "I'm absolutely exhausted.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "ex[h]austed"
+    },
+    {
+     "t": "piege",
+     "ipa": "ɡˈz"
+    }
+   ]
+  },
+  {
+   "id": "m-embarrassed",
+   "type": "mot",
+   "texte": "embarrassed",
+   "ipa": "ɪmˈber.əst",
+   "def": "Feeling ashamed or awkward.",
+   "ex": "I was so embarrassed.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "st"
+    }
+   ]
+  },
+  {
+   "id": "m-genre",
+   "type": "mot",
+   "texte": "genre",
+   "ipa": "ˈʒɑːn.rə",
+   "def": "A type of book, movie or music.",
+   "ex": "What genre of music do you like?",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ʒ"
+    }
+   ]
+  },
+  {
+   "id": "m-niche",
+   "type": "mot",
+   "texte": "niche",
+   "ipa": "nɪtʃ",
+   "def": "A small specialized area or market.",
+   "ex": "It's a niche market.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɪtʃ"
+    }
+   ]
+  },
+  {
+   "id": "m-suite",
+   "type": "mot",
+   "texte": "suite",
+   "ipa": "swiːt",
+   "def": "A set of connected rooms; a set of software.",
+   "ex": "We stayed in a suite.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "swiːt"
+    }
+   ]
+  },
+  {
+   "id": "m-rural",
+   "type": "mot",
+   "texte": "rural",
+   "ipa": "ˈrʊr.əl",
+   "def": "In the countryside.",
+   "ex": "She grew up in a rural area.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈrʊr.əl"
+    }
+   ]
+  },
+  {
+   "id": "m-squirrel",
+   "type": "mot",
+   "texte": "squirrel",
+   "ipa": "ˈskwɝː.əl",
+   "def": "A small animal with a bushy tail that lives in trees.",
+   "ex": "A squirrel ran up the tree.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈskwɝː"
+    }
+   ]
+  },
+  {
+   "id": "m-world",
+   "type": "mot",
+   "texte": "world",
+   "ipa": "wɝːld",
+   "def": "The earth and everyone on it.",
+   "ex": "It's a small world.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɝːld"
+    }
+   ]
+  },
+  {
+   "id": "m-mirror",
+   "type": "mot",
+   "texte": "mirror",
+   "ipa": "ˈmɪr.ɚ",
+   "def": "Glass in which you see your reflection.",
+   "ex": "Look in the mirror.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɪr.ɚ"
+    }
+   ]
+  },
+  {
+   "id": "m-worry",
+   "type": "mot",
+   "texte": "worry",
+   "ipa": "ˈwɝː.i",
+   "def": "To feel anxious; a feeling of anxiety.",
+   "ex": "Don't worry about it.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "w[o]rry"
+    }
+   ]
+  },
+  {
+   "id": "m-purpose",
+   "type": "mot",
+   "texte": "purpose",
+   "ipa": "ˈpɝː.pəs",
+   "def": "The reason for something.",
+   "ex": "What's the purpose of this meeting?",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "purp[o]se"
+    }
+   ]
+  },
+  {
+   "id": "m-focus",
+   "type": "mot",
+   "texte": "focus",
+   "ipa": "ˈfoʊ.kəs",
+   "def": "To give attention to one thing; the center of attention.",
+   "ex": "I can't focus right now.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "oʊ"
+    }
+   ]
+  },
+  {
+   "id": "m-suit",
+   "type": "mot",
+   "texte": "suit",
+   "ipa": "suːt",
+   "def": "A matching jacket and pants; to be right for someone.",
+   "ex": "Does Friday suit you?",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "s[ui]t"
+    }
+   ]
+  },
+  {
+   "id": "m-juice",
+   "type": "mot",
+   "texte": "juice",
+   "ipa": "dʒuːs",
+   "def": "Liquid from fruit.",
+   "ex": "Orange juice, please.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "j[ui]ce"
+    }
+   ]
+  },
+  {
+   "id": "m-label",
+   "type": "mot",
+   "texte": "label",
+   "ipa": "ˈleɪ.bəl",
+   "def": "A small tag with information.",
+   "ex": "Read the label first.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈleɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-pronunciation",
+   "type": "mot",
+   "texte": "pronunciation",
+   "ipa": "prəˌnʌn.siˈeɪ.ʃən",
+   "def": "How a word is said.",
+   "ex": "Your pronunciation is great.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "pron[u]nciation"
+    }
+   ]
+  },
+  {
+   "id": "m-pronounce",
+   "type": "mot",
+   "texte": "pronounce",
+   "ipa": "prəˈnaʊns",
+   "def": "To say a word in a particular way.",
+   "ex": "How do you pronounce this?",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnaʊns"
+    }
+   ]
+  },
+  {
+   "id": "m-asked",
+   "type": "mot",
+   "texte": "asked",
+   "ipa": "æskt",
+   "def": "Past of ask.",
+   "ex": "She asked me a question.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "kt"
+    }
+   ]
+  },
+  {
+   "id": "m-worked",
+   "type": "mot",
+   "texte": "worked",
+   "ipa": "wɝːkt",
+   "def": "Past of work.",
+   "ex": "It worked perfectly.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "kt"
+    }
+   ]
+  },
+  {
+   "id": "m-wanted",
+   "type": "mot",
+   "texte": "wanted",
+   "ipa": "ˈwɑːn.t̬ɪd",
+   "def": "Past of want.",
+   "ex": "I wanted to call you.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "ɪd"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-needed",
+   "type": "mot",
+   "texte": "needed",
+   "ipa": "ˈniː.dɪd",
+   "def": "Past of need.",
+   "ex": "That's exactly what I needed.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "dɪd"
+    }
+   ]
+  },
+  {
+   "id": "m-laughed",
+   "type": "mot",
+   "texte": "laughed",
+   "ipa": "læft",
+   "def": "Past of laugh.",
+   "ex": "We laughed so hard.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "ft"
+    }
+   ]
+  },
+  {
+   "id": "m-watched",
+   "type": "mot",
+   "texte": "watched",
+   "ipa": "wɑːtʃt",
+   "def": "Past of watch.",
+   "ex": "We watched the game last night.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "tʃt"
+    }
+   ]
+  },
+  {
+   "id": "m-changed",
+   "type": "mot",
+   "texte": "changed",
+   "ipa": "tʃeɪndʒd",
+   "def": "Past of change.",
+   "ex": "Nothing has changed.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "dʒd"
+    }
+   ]
+  },
+  {
+   "id": "m-decided",
+   "type": "mot",
+   "texte": "decided",
+   "ipa": "dɪˈsaɪ.dɪd",
+   "def": "Past of decide.",
+   "ex": "We decided to stay.",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "dɪd"
+    }
+   ]
+  },
+  {
+   "id": "m-finished",
+   "type": "mot",
+   "texte": "finished",
+   "ipa": "ˈfɪn.ɪʃt",
+   "def": "Past of finish; completed.",
+   "ex": "Are you finished?",
+   "p": [
+    {
+     "t": "ed",
+     "ipa": "ʃt"
+    }
+   ]
+  },
+  {
+   "id": "m-present-n",
+   "type": "mot",
+   "texte": "present",
+   "note": "(nom)",
+   "ipa": "ˈprez.ənt",
+   "def": "A gift; the current time.",
+   "ex": "What a nice present!",
+   "lemme": "present",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈprez"
+    }
+   ]
+  },
+  {
+   "id": "m-present-v",
+   "type": "mot",
+   "texte": "present",
+   "note": "(verbe)",
+   "ipa": "prɪˈzent",
+   "def": "To show or give something formally.",
+   "ex": "She'll present the results tomorrow.",
+   "lemme": "present",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈzent"
+    }
+   ]
+  },
+  {
+   "id": "m-object-n",
+   "type": "mot",
+   "texte": "object",
+   "note": "(nom)",
+   "ipa": "ˈɑːb.dʒekt",
+   "def": "A thing you can see or touch; a goal.",
+   "ex": "What's that shiny object?",
+   "lemme": "object",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈɑːb"
+    }
+   ]
+  },
+  {
+   "id": "m-object-v",
+   "type": "mot",
+   "texte": "object",
+   "note": "(verbe)",
+   "ipa": "əbˈdʒekt",
+   "def": "To say you disagree or oppose.",
+   "ex": "Does anyone object?",
+   "lemme": "object",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈdʒekt"
+    }
+   ]
+  },
+  {
+   "id": "m-increase-n",
+   "type": "mot",
+   "texte": "increase",
+   "note": "(nom)",
+   "ipa": "ˈɪn.kriːs",
+   "def": "A rise in amount or number.",
+   "ex": "There's been an increase in prices.",
+   "lemme": "increase",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈɪn"
+    }
+   ]
+  },
+  {
+   "id": "m-increase-v",
+   "type": "mot",
+   "texte": "increase",
+   "note": "(verbe)",
+   "ipa": "ɪnˈkriːs",
+   "def": "To become or make larger.",
+   "ex": "Prices increased last year.",
+   "lemme": "increase",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkriːs"
+    }
+   ]
+  },
+  {
+   "id": "m-project-n",
+   "type": "mot",
+   "texte": "project",
+   "note": "(nom)",
+   "ipa": "ˈprɑː.dʒekt",
+   "def": "A planned piece of work.",
+   "ex": "I'm working on a new project.",
+   "lemme": "project",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈprɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-project-v",
+   "type": "mot",
+   "texte": "project",
+   "note": "(verbe)",
+   "ipa": "prəˈdʒekt",
+   "def": "To estimate the future; to show an image on a screen.",
+   "ex": "Sales are projected to rise.",
+   "lemme": "project",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈdʒekt"
+    }
+   ]
+  },
+  {
+   "id": "m-produce-n",
+   "type": "mot",
+   "texte": "produce",
+   "note": "(nom)",
+   "ipa": "ˈproʊ.duːs",
+   "def": "Fruit and vegetables.",
+   "ex": "The store sells fresh produce.",
+   "lemme": "produce",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈproʊ"
+    }
+   ]
+  },
+  {
+   "id": "m-produce-v",
+   "type": "mot",
+   "texte": "produce",
+   "note": "(verbe)",
+   "ipa": "prəˈduːs",
+   "def": "To make or create.",
+   "ex": "The factory produces cars.",
+   "lemme": "produce",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈduːs"
+    }
+   ]
+  },
+  {
+   "id": "m-separate-adj",
+   "type": "mot",
+   "texte": "separate",
+   "note": "(adjectif)",
+   "ipa": "ˈsep.ɚ.ət",
+   "def": "Apart; not connected.",
+   "ex": "They sleep in separate rooms.",
+   "lemme": "separate",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ət"
+    }
+   ]
+  },
+  {
+   "id": "m-separate-v",
+   "type": "mot",
+   "texte": "separate",
+   "note": "(verbe)",
+   "ipa": "ˈsep.ə.reɪt",
+   "def": "To divide or move apart.",
+   "ex": "Separate the eggs.",
+   "lemme": "separate",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "reɪt"
+    }
+   ]
+  },
+  {
+   "id": "m-estimate-n",
+   "type": "mot",
+   "texte": "estimate",
+   "note": "(nom)",
+   "ipa": "ˈes.tə.mət",
+   "def": "A rough calculation.",
+   "ex": "Can you give me an estimate?",
+   "lemme": "estimate",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "mət"
+    }
+   ]
+  },
+  {
+   "id": "m-estimate-v",
+   "type": "mot",
+   "texte": "estimate",
+   "note": "(verbe)",
+   "ipa": "ˈes.tə.meɪt",
+   "def": "To roughly calculate.",
+   "ex": "We estimated the cost at $500.",
+   "lemme": "estimate",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "meɪt"
+    }
+   ]
+  },
+  {
+   "id": "m-live-adj",
+   "type": "mot",
+   "texte": "live",
+   "note": "(adjectif)",
+   "ipa": "laɪv",
+   "def": "Alive; happening now, not recorded.",
+   "ex": "It's a live broadcast.",
+   "lemme": "live",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "aɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-live-v",
+   "type": "mot",
+   "texte": "live",
+   "note": "(verbe)",
+   "ipa": "lɪv",
+   "def": "To be alive; to have your home somewhere.",
+   "ex": "Where do you live?",
+   "lemme": "live",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-lead-n",
+   "type": "mot",
+   "texte": "lead",
+   "note": "(nom : le métal)",
+   "ipa": "led",
+   "def": "A heavy gray metal.",
+   "ex": "Old pipes contain lead.",
+   "lemme": "lead",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "e"
+    }
+   ]
+  },
+  {
+   "id": "m-lead-v",
+   "type": "mot",
+   "texte": "lead",
+   "note": "(verbe)",
+   "ipa": "liːd",
+   "def": "To guide or be in charge of.",
+   "ex": "She'll lead the team.",
+   "lemme": "lead",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "iː"
+    }
+   ]
+  },
+  {
+   "id": "m-tear-n",
+   "type": "mot",
+   "texte": "tear",
+   "note": "(nom : une larme)",
+   "ipa": "tɪr",
+   "def": "A drop of water from your eye.",
+   "ex": "A tear rolled down her cheek.",
+   "lemme": "tear",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɪr"
+    }
+   ]
+  },
+  {
+   "id": "m-tear-v",
+   "type": "mot",
+   "texte": "tear",
+   "note": "(verbe : déchirer)",
+   "ipa": "ter",
+   "def": "To pull apart; to rip.",
+   "ex": "Don't tear the page.",
+   "lemme": "tear",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "er"
+    }
+   ]
+  },
+  {
+   "id": "m-wind-n",
+   "type": "mot",
+   "texte": "wind",
+   "note": "(nom)",
+   "ipa": "wɪnd",
+   "def": "Moving air.",
+   "ex": "The wind is really strong today.",
+   "lemme": "wind",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-wind-v",
+   "type": "mot",
+   "texte": "wind",
+   "note": "(verbe)",
+   "ipa": "waɪnd",
+   "def": "To turn or twist; to wrap around.",
+   "ex": "The road winds through the hills.",
+   "lemme": "wind",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "aɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-close-adj",
+   "type": "mot",
+   "texte": "close",
+   "note": "(adjectif)",
+   "ipa": "kloʊs",
+   "def": "Near; intimate.",
+   "ex": "We're very close friends.",
+   "lemme": "close",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "s"
+    }
+   ]
+  },
+  {
+   "id": "m-close-v",
+   "type": "mot",
+   "texte": "close",
+   "note": "(verbe)",
+   "ipa": "kloʊz",
+   "def": "To shut.",
+   "ex": "Please close the door.",
+   "lemme": "close",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "z"
+    }
+   ]
+  }
+ ]
+}
