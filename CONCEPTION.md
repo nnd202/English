@@ -143,7 +143,7 @@ Le moteur (Sprint, FSRS, tirage, stats, sauvegarde, rendu des cartes) ne dépend
 ## 10. Feuille de route
 
 1. **Sprint** et cartes de prononciation : livré. 446 cartes (251 mots, 91 combinaisons, 59 phrasal verbs, 45 phrases).
-2. **Dictées** : livré. Voir § 13.
+2. **Dictées** : livré (banque de phrases B1-C2, dictée surprise Wikipédia, histoires, texte collé, difficulté réglable). Voir § 13.
 3. **Verbes irréguliers** : la grille à remplir façon Geoquiz (saisie libre ou curseur), avec l'IPA.
 4. **Timeline des temps** : une frise avec « maintenant » et un point de référence ; placer l'événement au doigt (point, durée close, action en cours qui traverse le repère) ; correction superposée avec le nom du temps. Variante inverse : conjuguer d'après le schéma. Grille des 12 temps en mode clic.
 5. **Plus tard** : prépositions, faux amis, et ce qui viendra.
@@ -161,11 +161,24 @@ Bleu roi franc (#3d63dd), grandes cartes blanches, coins très arrondis (24 à 2
 
 ## 13. Les dictées
 
-L'écoute est le vrai point faible visé : entendre « whaddaya » et écrire « what do you ». On n'écrit **jamais** de forme fautive : le texte de référence est toujours correct.
+L'écoute est le vrai point faible visé : entendre « whaddaya » et écrire « what do you ». On n'écrit **jamais** de forme fautive : le texte de référence est toujours correct. Inspiration : Daily Dictation (vraies voix humaines), dont l'audio ne peut pas être repris ; il est proposé en lien.
 
-- **Textes** : ceux de l'appli (par lots, écrits en anglais américain naturel, riches en liaisons et formes réduites : message vocal, dialogue, récit, actualité, météo, podcast), ou un texte **collé** (article, livre libre de droits, réplique), découpé automatiquement en phrases et gardé sur l'appareil seulement.
-- **Déroulé** : phrase par phrase. Écouter (ou Lent) autant de fois que voulu, taper, Vérifier, puis la phrase suivante.
-- **Comparaison mot à mot** (plus longue sous-suite commune) : juste ; **orthographe** (le bon mot à une ou deux lettres près : orange) ; **faux** (autre mot : rouge) ; **oublié** (encadré pointillé) ; **en trop** (barré). Majuscules, ponctuation, accents, apostrophes typographiques et tirets sont pardonnés. Les contractions comptent (« I'm » ≠ « Im »).
-- **Bilan** : % de mots justes, détail par catégorie, temps, nombre d'écoutes, correction complète avec réécoute de chaque phrase. Meilleur score affiché à côté de chaque texte.
-- Une dictée compte pour la **série de jours** et le **temps cumulé**, pas pour les records du Sprint. Quitter en cours enregistre les phrases déjà vérifiées.
-- Le chrono mesure seulement : pas de pression ici, l'écoute demande du calme.
+**Le problème du contenu** : un texte que l'on colle soi-même, on l'a déjà lu ; un petit stock s'épuise. D'où quatre sources :
+
+1. **Nouvelle dictée (banque de phrases)** : environ 380 phrases écrites pour l'appli, classées B1, B2, C1, C2 et par thème (`data/dictees/banque-001.json`, fabriqué depuis `tools/sources/banque_*.txt`). Chaque dictée tire 4 à 10 phrases : surtout des phrases **jamais vues**, plus environ une sur quatre **ratée** auparavant (vue il y a plus d'un jour). Une phrase réussie à 100 % ne revient plus tant qu'il reste du neuf. Suivi par phrase dans `phrasesDictee` (passages, meilleure part de mots justes, date). On ajoute des phrases par lots, sans rien changer d'autre.
+2. **Dictée surprise** : un résumé d'article de Wikipédia (article du jour ou au hasard, plusieurs essais si l'article est trop court), récupéré en direct par l'API publique de Wikipédia. Contenu infini et inconnu, registre écrit (plutôt C1). Parenthèses retirées ; **noms propres pardonnés** (comptés justes, soulignés en pointillé). Lien vers l'article et mention de la licence CC BY-SA au bilan. Rien n'est stocké dans le dépôt.
+3. **Histoires** : 10 textes suivis, plutôt B1-B2.
+4. **Texte collé** : découpé en phrases, gardé sur l'appareil seulement.
+
+**Difficulté réglable dans les deux sens** (mémorisée) :
+
+- niveau B1 à C2 ; nombre de phrases (4, 6, 8, 10) ;
+- vitesse de lecture lente (0,75), normale, rapide (1,15) ; le bouton « Lent » reste toujours disponible ;
+- écoutes illimitées, 3 par phrase ou une seule ;
+- aides : **nombre de mots** (des tirets, un par mot) et **écouter par morceaux** (la phrase coupée à la ponctuation, les morceaux de plus de 9 mots coupés en deux ; chaque morceau compte comme une écoute).
+
+**Déroulé** : phrase par phrase ; écouter, taper, Vérifier, puis la phrase suivante (réécoute possible après correction).
+
+**Comparaison mot à mot** (plus longue sous-suite commune) : juste ; **orthographe** (le bon mot à une ou deux lettres près : orange) ; **faux** (autre mot : rouge) ; **oublié** (encadré pointillé) ; **en trop** (barré). Majuscules, ponctuation, accents, apostrophes typographiques et tirets sont pardonnés. Les contractions comptent (« I'm » ≠ « Im »).
+
+**Bilan** : % de mots justes, détail par catégorie, temps, nombre d'écoutes, niveau et réglages, correction complète avec réécoute de chaque phrase. Stats : % par niveau. Une dictée compte pour la **série de jours** et le **temps cumulé**, pas pour les records du Sprint. Quitter en cours enregistre les phrases déjà vérifiées. Pas de pression ici : le chrono mesure seulement.

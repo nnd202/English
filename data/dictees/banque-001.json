@@ -1,0 +1,2311 @@
+{
+ "lot": "banque-001",
+ "titre": "Banque de phrases B1 à C2",
+ "date": "2026-11-03",
+ "banque": [
+  {
+   "id": "b1-001",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "I usually grab a coffee on my way to work."
+  },
+  {
+   "id": "b1-002",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "Could you turn the music down a little?"
+  },
+  {
+   "id": "b1-003",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "I forgot to set my alarm this morning."
+  },
+  {
+   "id": "b1-004",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "We ran out of milk, so I'll stop by the store."
+  },
+  {
+   "id": "b1-005",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "My phone died in the middle of the call."
+  },
+  {
+   "id": "b1-006",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "Don't forget to take the trash out tonight."
+  },
+  {
+   "id": "b1-007",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "I'm going to take a quick shower before dinner."
+  },
+  {
+   "id": "b1-008",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "Can you pick me up at the station around six?"
+  },
+  {
+   "id": "b1-009",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "It took me forever to find a parking spot."
+  },
+  {
+   "id": "b1-010",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "The kids are already in bed, so keep it down."
+  },
+  {
+   "id": "b1-011",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "I need to do laundry before the weekend."
+  },
+  {
+   "id": "b1-012",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "Let me know when you get home safe."
+  },
+  {
+   "id": "b1-013",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "I left my keys in the car again."
+  },
+  {
+   "id": "b1-014",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "Do you want to order pizza tonight?"
+  },
+  {
+   "id": "b1-015",
+   "niveau": "B1",
+   "theme": "quotidien",
+   "texte": "I'll be there in about ten minutes."
+  },
+  {
+   "id": "b1-016",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "I have a meeting at nine, so I can't talk long."
+  },
+  {
+   "id": "b1-017",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "My boss asked me to stay a little later today."
+  },
+  {
+   "id": "b1-018",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "Could you send me that file when you get a chance?"
+  },
+  {
+   "id": "b1-019",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "I'm working from home for the rest of the week."
+  },
+  {
+   "id": "b1-020",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "We have a deadline on Friday, so it's pretty busy."
+  },
+  {
+   "id": "b1-021",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "She just got promoted to team manager."
+  },
+  {
+   "id": "b1-022",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "I'll call you back after lunch, if that's OK."
+  },
+  {
+   "id": "b1-023",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "The printer isn't working again."
+  },
+  {
+   "id": "b1-024",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "He's been with the company for almost ten years."
+  },
+  {
+   "id": "b1-025",
+   "niveau": "B1",
+   "theme": "travail",
+   "texte": "I'm not sure I'll make it to the meeting."
+  },
+  {
+   "id": "b1-026",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "Our flight was delayed for two hours."
+  },
+  {
+   "id": "b1-027",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "Is there a pharmacy near the hotel?"
+  },
+  {
+   "id": "b1-028",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "We're thinking about going to the beach this summer."
+  },
+  {
+   "id": "b1-029",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "I always forget to bring a charger when I travel."
+  },
+  {
+   "id": "b1-030",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "How long does it take to get downtown by bus?"
+  },
+  {
+   "id": "b1-031",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "The hotel room was small, but it was really clean."
+  },
+  {
+   "id": "b1-032",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "We got lost on the way, but it was worth it."
+  },
+  {
+   "id": "b1-033",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "Can I get a window seat, please?"
+  },
+  {
+   "id": "b1-034",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "I'd like to rent a car for three days."
+  },
+  {
+   "id": "b1-035",
+   "niveau": "B1",
+   "theme": "voyage",
+   "texte": "The museum is closed on Mondays."
+  },
+  {
+   "id": "b1-036",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "This soup is a little too salty for me."
+  },
+  {
+   "id": "b1-037",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "Can we get the check, please?"
+  },
+  {
+   "id": "b1-038",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "I'm trying to eat less sugar these days."
+  },
+  {
+   "id": "b1-039",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "Do you have any vegetarian options?"
+  },
+  {
+   "id": "b1-040",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "We should try that new Mexican place downtown."
+  },
+  {
+   "id": "b1-041",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "I'll have the chicken with a side salad."
+  },
+  {
+   "id": "b1-042",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "My grandmother makes the best apple pie."
+  },
+  {
+   "id": "b1-043",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "I'm not really hungry, but I'll have some fruit."
+  },
+  {
+   "id": "b1-044",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "Could I get some water, please?"
+  },
+  {
+   "id": "b1-045",
+   "niveau": "B1",
+   "theme": "nourriture",
+   "texte": "Breakfast is my favorite meal of the day."
+  },
+  {
+   "id": "b1-046",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "I've had a headache since this morning."
+  },
+  {
+   "id": "b1-047",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "You should see a doctor if it doesn't get better."
+  },
+  {
+   "id": "b1-048",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "I go to the gym three times a week."
+  },
+  {
+   "id": "b1-049",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "I didn't sleep well last night."
+  },
+  {
+   "id": "b1-050",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "Drink plenty of water and get some rest."
+  },
+  {
+   "id": "b1-051",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "My back hurts after sitting all day."
+  },
+  {
+   "id": "b1-052",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "She's allergic to peanuts, so be careful."
+  },
+  {
+   "id": "b1-053",
+   "niveau": "B1",
+   "theme": "santé",
+   "texte": "I'm trying to walk at least thirty minutes a day."
+  },
+  {
+   "id": "b1-054",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "We've been friends since high school."
+  },
+  {
+   "id": "b1-055",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "My sister is getting married next spring."
+  },
+  {
+   "id": "b1-056",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "I haven't talked to him in a while."
+  },
+  {
+   "id": "b1-057",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "They invited us over for dinner on Saturday."
+  },
+  {
+   "id": "b1-058",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "Tell your parents I said hello."
+  },
+  {
+   "id": "b1-059",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "We had a big argument, but we're fine now."
+  },
+  {
+   "id": "b1-060",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "My neighbors are really friendly."
+  },
+  {
+   "id": "b1-061",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "I'm meeting a friend for lunch tomorrow."
+  },
+  {
+   "id": "b1-062",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "He always makes me laugh."
+  },
+  {
+   "id": "b1-063",
+   "niveau": "B1",
+   "theme": "relations",
+   "texte": "Do you want to come with us to the movies?"
+  },
+  {
+   "id": "b1-064",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "I've been reading a really good book lately."
+  },
+  {
+   "id": "b1-065",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "We watched a movie and went to bed early."
+  },
+  {
+   "id": "b1-066",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "Do you play any sports?"
+  },
+  {
+   "id": "b1-067",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "I'd love to learn how to play the guitar."
+  },
+  {
+   "id": "b1-068",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "The concert was amazing, but it was so crowded."
+  },
+  {
+   "id": "b1-069",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "We usually go hiking on Sunday mornings."
+  },
+  {
+   "id": "b1-070",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "I spent the whole afternoon gardening."
+  },
+  {
+   "id": "b1-071",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "Have you seen the new season yet?"
+  },
+  {
+   "id": "b1-072",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "I'm not a big fan of horror movies."
+  },
+  {
+   "id": "b1-073",
+   "niveau": "B1",
+   "theme": "loisirs",
+   "texte": "We're having a barbecue in the backyard."
+  },
+  {
+   "id": "b1-074",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "These shoes are on sale this week."
+  },
+  {
+   "id": "b1-075",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "Do you have this in a smaller size?"
+  },
+  {
+   "id": "b1-076",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "I'm just looking, thanks."
+  },
+  {
+   "id": "b1-077",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "Can I pay by card?"
+  },
+  {
+   "id": "b1-078",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "I bought a new laptop, but it's already slow."
+  },
+  {
+   "id": "b1-079",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "That's a little more than I wanted to spend."
+  },
+  {
+   "id": "b1-080",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "Could I return this if it doesn't fit?"
+  },
+  {
+   "id": "b1-081",
+   "niveau": "B1",
+   "theme": "achats",
+   "texte": "The store opens at ten on weekends."
+  },
+  {
+   "id": "b1-082",
+   "niveau": "B1",
+   "theme": "météo",
+   "texte": "It's supposed to rain all weekend."
+  },
+  {
+   "id": "b1-083",
+   "niveau": "B1",
+   "theme": "météo",
+   "texte": "It's way too hot to go outside right now."
+  },
+  {
+   "id": "b1-084",
+   "niveau": "B1",
+   "theme": "météo",
+   "texte": "Don't forget your jacket, it's getting cold."
+  },
+  {
+   "id": "b1-085",
+   "niveau": "B1",
+   "theme": "météo",
+   "texte": "The roads are icy, so drive carefully."
+  },
+  {
+   "id": "b1-086",
+   "niveau": "B1",
+   "theme": "météo",
+   "texte": "It was sunny this morning, but now it's cloudy."
+  },
+  {
+   "id": "b1-087",
+   "niveau": "B1",
+   "theme": "météo",
+   "texte": "I love the smell of the air after it rains."
+  },
+  {
+   "id": "b1-088",
+   "niveau": "B1",
+   "theme": "études",
+   "texte": "I have a big exam next week."
+  },
+  {
+   "id": "b1-089",
+   "niveau": "B1",
+   "theme": "études",
+   "texte": "My English is getting better, little by little."
+  },
+  {
+   "id": "b1-090",
+   "niveau": "B1",
+   "theme": "études",
+   "texte": "Could you explain that again, please?"
+  },
+  {
+   "id": "b1-091",
+   "niveau": "B1",
+   "theme": "études",
+   "texte": "I'm taking an online course in photography."
+  },
+  {
+   "id": "b1-092",
+   "niveau": "B1",
+   "theme": "études",
+   "texte": "I always study better in the morning."
+  },
+  {
+   "id": "b1-093",
+   "niveau": "B1",
+   "theme": "études",
+   "texte": "What does this word mean?"
+  },
+  {
+   "id": "b1-094",
+   "niveau": "B1",
+   "theme": "études",
+   "texte": "She wants to study medicine after high school."
+  },
+  {
+   "id": "b1-095",
+   "niveau": "B1",
+   "theme": "opinions",
+   "texte": "I think it's a great idea."
+  },
+  {
+   "id": "b1-096",
+   "niveau": "B1",
+   "theme": "opinions",
+   "texte": "Honestly, I don't really care either way."
+  },
+  {
+   "id": "b1-097",
+   "niveau": "B1",
+   "theme": "opinions",
+   "texte": "That sounds like a lot of work."
+  },
+  {
+   "id": "b1-098",
+   "niveau": "B1",
+   "theme": "opinions",
+   "texte": "I'm not sure that's a good idea."
+  },
+  {
+   "id": "b1-099",
+   "niveau": "B1",
+   "theme": "opinions",
+   "texte": "It's not as bad as I thought."
+  },
+  {
+   "id": "b1-100",
+   "niveau": "B1",
+   "theme": "opinions",
+   "texte": "I totally agree with you."
+  },
+  {
+   "id": "b1-101",
+   "niveau": "B1",
+   "theme": "opinions",
+   "texte": "It depends on how much it costs."
+  },
+  {
+   "id": "b2-001",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "I was going to call you, but I got caught up with something at work."
+  },
+  {
+   "id": "b2-002",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "If you're heading out anyway, could you grab some bread on the way back?"
+  },
+  {
+   "id": "b2-003",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "I've been meaning to clean out the garage for months now."
+  },
+  {
+   "id": "b2-004",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "We ended up staying up way too late watching old videos."
+  },
+  {
+   "id": "b2-005",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "I'd rather take the train than sit in traffic for an hour."
+  },
+  {
+   "id": "b2-006",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "It turns out the store had closed early because of the storm."
+  },
+  {
+   "id": "b2-007",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "I can't believe how fast this year has gone by."
+  },
+  {
+   "id": "b2-008",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "You might want to double-check the address before you leave."
+  },
+  {
+   "id": "b2-009",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "I didn't realize how tired I was until I sat down."
+  },
+  {
+   "id": "b2-010",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "Let's figure out the details once we get there."
+  },
+  {
+   "id": "b2-011",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "I've gotten used to waking up early, but I still don't like it."
+  },
+  {
+   "id": "b2-012",
+   "niveau": "B2",
+   "theme": "quotidien",
+   "texte": "Whenever I try to relax, something comes up."
+  },
+  {
+   "id": "b2-013",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "We're supposed to have the report ready by the end of the month."
+  },
+  {
+   "id": "b2-014",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "She turned down the job offer because the salary was too low."
+  },
+  {
+   "id": "b2-015",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "I'll get back to you as soon as I've talked to the team."
+  },
+  {
+   "id": "b2-016",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "The meeting ran over, so I missed my train."
+  },
+  {
+   "id": "b2-017",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "He's really good at explaining complicated things in simple terms."
+  },
+  {
+   "id": "b2-018",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "They're cutting back on travel to save money this year."
+  },
+  {
+   "id": "b2-019",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "I've been asked to give a short presentation on Monday."
+  },
+  {
+   "id": "b2-020",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "If we don't hire someone soon, we're going to fall behind."
+  },
+  {
+   "id": "b2-021",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "It's hard to focus when people keep interrupting you."
+  },
+  {
+   "id": "b2-022",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "I asked for a raise, and to my surprise, they said yes."
+  },
+  {
+   "id": "b2-023",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "We need to come up with a better way to handle complaints."
+  },
+  {
+   "id": "b2-024",
+   "niveau": "B2",
+   "theme": "travail",
+   "texte": "Working remotely has its perks, but I miss my colleagues."
+  },
+  {
+   "id": "b2-025",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "We missed our connecting flight and had to spend the night at the airport."
+  },
+  {
+   "id": "b2-026",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "The view from the top was absolutely worth the climb."
+  },
+  {
+   "id": "b2-027",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "I'd recommend booking in advance, especially during the holidays."
+  },
+  {
+   "id": "b2-028",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "We didn't have much of a plan, so we just wandered around the old town."
+  },
+  {
+   "id": "b2-029",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "The train was packed, so we had to stand the whole way."
+  },
+  {
+   "id": "b2-030",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "I always feel a little lost the first day in a new city."
+  },
+  {
+   "id": "b2-031",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "Make sure your passport is valid for at least six months."
+  },
+  {
+   "id": "b2-032",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "We rented a small apartment instead of staying in a hotel."
+  },
+  {
+   "id": "b2-033",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "The locals were incredibly welcoming and helpful."
+  },
+  {
+   "id": "b2-034",
+   "niveau": "B2",
+   "theme": "voyage",
+   "texte": "By the time we got to the beach, it had started raining."
+  },
+  {
+   "id": "b2-035",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "I've been trying to cook at home more often to save money."
+  },
+  {
+   "id": "b2-036",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "The service was a bit slow, but the food more than made up for it."
+  },
+  {
+   "id": "b2-037",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "I'm not much of a cook, but I make a decent pasta sauce."
+  },
+  {
+   "id": "b2-038",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "We should have made a reservation, the place is completely full."
+  },
+  {
+   "id": "b2-039",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "My doctor told me to cut down on red meat."
+  },
+  {
+   "id": "b2-040",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "I didn't expect it to be that spicy, my mouth is on fire."
+  },
+  {
+   "id": "b2-041",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "They've changed the menu, and honestly, I liked the old one better."
+  },
+  {
+   "id": "b2-042",
+   "niveau": "B2",
+   "theme": "nourriture",
+   "texte": "Could you put the leftovers in the fridge before you go to bed?"
+  },
+  {
+   "id": "b2-043",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "I've been feeling a little run down, so I'm taking it easy this week."
+  },
+  {
+   "id": "b2-044",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "She sprained her ankle while running and had to use crutches."
+  },
+  {
+   "id": "b2-045",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "Getting enough sleep makes a huge difference in how I feel."
+  },
+  {
+   "id": "b2-046",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "I should probably stop drinking coffee after four in the afternoon."
+  },
+  {
+   "id": "b2-047",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "The doctor said it was nothing serious, just a minor infection."
+  },
+  {
+   "id": "b2-048",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "Stress can affect your health more than people realize."
+  },
+  {
+   "id": "b2-049",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "I've signed up for a yoga class to help me relax."
+  },
+  {
+   "id": "b2-050",
+   "niveau": "B2",
+   "theme": "santé",
+   "texte": "It took me a few weeks to fully recover from the flu."
+  },
+  {
+   "id": "b2-051",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "We haven't seen each other in years, but it felt like no time had passed."
+  },
+  {
+   "id": "b2-052",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "I don't think he meant to be rude, he's just a little awkward."
+  },
+  {
+   "id": "b2-053",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "They've been together for so long that they finish each other's sentences."
+  },
+  {
+   "id": "b2-054",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "My parents are thinking about moving closer to us."
+  },
+  {
+   "id": "b2-055",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "I wish I had told her how I felt sooner."
+  },
+  {
+   "id": "b2-056",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "We get along well, even though we're completely different."
+  },
+  {
+   "id": "b2-057",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "She's always there for me when things get tough."
+  },
+  {
+   "id": "b2-058",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "I ran into my old teacher at the grocery store yesterday."
+  },
+  {
+   "id": "b2-059",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "We decided to keep things simple and have a small wedding."
+  },
+  {
+   "id": "b2-060",
+   "niveau": "B2",
+   "theme": "relations",
+   "texte": "It's not always easy to stay in touch when you live far apart."
+  },
+  {
+   "id": "b2-061",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "More and more people are choosing to live without a car."
+  },
+  {
+   "id": "b2-062",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "The city is planning to build more affordable housing downtown."
+  },
+  {
+   "id": "b2-063",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "A lot of young people can't afford to buy a home anymore."
+  },
+  {
+   "id": "b2-064",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "Social media has completely changed the way we communicate."
+  },
+  {
+   "id": "b2-065",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "The new law is supposed to take effect next year."
+  },
+  {
+   "id": "b2-066",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "Public transportation here is cheap, but it's not very reliable."
+  },
+  {
+   "id": "b2-067",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "Volunteering is a great way to meet people in your community."
+  },
+  {
+   "id": "b2-068",
+   "niveau": "B2",
+   "theme": "société",
+   "texte": "Some schools have banned phones in the classroom."
+  },
+  {
+   "id": "b2-069",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "My laptop keeps freezing whenever I open more than two programs."
+  },
+  {
+   "id": "b2-070",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "I forgot my password, so I had to reset it again."
+  },
+  {
+   "id": "b2-071",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "It's amazing how much you can do with just a phone these days."
+  },
+  {
+   "id": "b2-072",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "Make sure you back up your files before you install the update."
+  },
+  {
+   "id": "b2-073",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "I turned off notifications, and I feel a lot calmer now."
+  },
+  {
+   "id": "b2-074",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "The app is free, but you have to pay to remove the ads."
+  },
+  {
+   "id": "b2-075",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "I spend way too much time scrolling before bed."
+  },
+  {
+   "id": "b2-076",
+   "niveau": "B2",
+   "theme": "technologie",
+   "texte": "Self-driving cars still have a long way to go."
+  },
+  {
+   "id": "b2-077",
+   "niveau": "B2",
+   "theme": "argent",
+   "texte": "We're trying to put a little money aside every month."
+  },
+  {
+   "id": "b2-078",
+   "niveau": "B2",
+   "theme": "argent",
+   "texte": "Prices have gone up so much that eating out is a luxury now."
+  },
+  {
+   "id": "b2-079",
+   "niveau": "B2",
+   "theme": "argent",
+   "texte": "I ended up paying twice as much as I'd planned."
+  },
+  {
+   "id": "b2-080",
+   "niveau": "B2",
+   "theme": "argent",
+   "texte": "It's worth spending a bit more on something that lasts."
+  },
+  {
+   "id": "b2-081",
+   "niveau": "B2",
+   "theme": "argent",
+   "texte": "They offered me a discount because I'd been waiting so long."
+  },
+  {
+   "id": "b2-082",
+   "niveau": "B2",
+   "theme": "argent",
+   "texte": "I keep track of my expenses in a spreadsheet."
+  },
+  {
+   "id": "b2-083",
+   "niveau": "B2",
+   "theme": "culture",
+   "texte": "The movie was based on a true story, which made it even more powerful."
+  },
+  {
+   "id": "b2-084",
+   "niveau": "B2",
+   "theme": "culture",
+   "texte": "I didn't really get the ending, to be honest."
+  },
+  {
+   "id": "b2-085",
+   "niveau": "B2",
+   "theme": "culture",
+   "texte": "The museum was so big that we couldn't see everything in one day."
+  },
+  {
+   "id": "b2-086",
+   "niveau": "B2",
+   "theme": "culture",
+   "texte": "She's been playing the piano since she was a little kid."
+  },
+  {
+   "id": "b2-087",
+   "niveau": "B2",
+   "theme": "culture",
+   "texte": "The book was much better than the movie, as usual."
+  },
+  {
+   "id": "b2-088",
+   "niveau": "B2",
+   "theme": "culture",
+   "texte": "I've always wanted to see a play on Broadway."
+  },
+  {
+   "id": "b2-089",
+   "niveau": "B2",
+   "theme": "nature",
+   "texte": "We saw a family of deer right outside our window."
+  },
+  {
+   "id": "b2-090",
+   "niveau": "B2",
+   "theme": "nature",
+   "texte": "The lake was so clear you could see the bottom."
+  },
+  {
+   "id": "b2-091",
+   "niveau": "B2",
+   "theme": "nature",
+   "texte": "It's getting harder to find places without any light pollution."
+  },
+  {
+   "id": "b2-092",
+   "niveau": "B2",
+   "theme": "nature",
+   "texte": "The forest fire forced hundreds of people to leave their homes."
+  },
+  {
+   "id": "b2-093",
+   "niveau": "B2",
+   "theme": "nature",
+   "texte": "If it doesn't rain soon, the farmers are going to be in trouble."
+  },
+  {
+   "id": "b2-094",
+   "niveau": "B2",
+   "theme": "opinions",
+   "texte": "I see your point, but I'm not sure I agree."
+  },
+  {
+   "id": "b2-095",
+   "niveau": "B2",
+   "theme": "opinions",
+   "texte": "It's not that I don't like it, it's just not my thing."
+  },
+  {
+   "id": "b2-096",
+   "niveau": "B2",
+   "theme": "opinions",
+   "texte": "I'd be lying if I said I wasn't a little disappointed."
+  },
+  {
+   "id": "b2-097",
+   "niveau": "B2",
+   "theme": "opinions",
+   "texte": "It's easy to criticize when you don't have to make the decision."
+  },
+  {
+   "id": "b2-098",
+   "niveau": "B2",
+   "theme": "opinions",
+   "texte": "The more I think about it, the less I like the idea."
+  },
+  {
+   "id": "b2-099",
+   "niveau": "B2",
+   "theme": "opinions",
+   "texte": "Whether we like it or not, things are going to change."
+  },
+  {
+   "id": "b2-100",
+   "niveau": "B2",
+   "theme": "opinions",
+   "texte": "I used to think it was a waste of time, but I've changed my mind."
+  },
+  {
+   "id": "c1-001",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "Had I known the project would drag on this long, I would never have signed up for it."
+  },
+  {
+   "id": "c1-002",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "The proposal was shot down before anyone had even bothered to read it properly."
+  },
+  {
+   "id": "c1-003",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "She's got a knack for defusing tense situations without anyone noticing."
+  },
+  {
+   "id": "c1-004",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "We're stretched pretty thin as it is, so taking on another client is out of the question."
+  },
+  {
+   "id": "c1-005",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "It wasn't until the numbers came in that we realized how badly we'd misjudged the market."
+  },
+  {
+   "id": "c1-006",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "He tends to overpromise and underdeliver, which is starting to wear on the team."
+  },
+  {
+   "id": "c1-007",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "The merger is expected to go through despite mounting opposition from shareholders."
+  },
+  {
+   "id": "c1-008",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "Rather than micromanaging everyone, she lets people figure things out on their own."
+  },
+  {
+   "id": "c1-009",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "I'd been putting off that conversation for weeks, but it went better than I'd feared."
+  },
+  {
+   "id": "c1-010",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "We'll need to strike a balance between cutting costs and keeping morale up."
+  },
+  {
+   "id": "c1-011",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "The new policy has been met with a fair amount of skepticism from the staff."
+  },
+  {
+   "id": "c1-012",
+   "niveau": "C1",
+   "theme": "travail",
+   "texte": "If anything, the setback made us more determined to get it right."
+  },
+  {
+   "id": "c1-013",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "The gap between the richest and the poorest has been widening for decades."
+  },
+  {
+   "id": "c1-014",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "Critics argue that the measure does little to address the root causes of the problem."
+  },
+  {
+   "id": "c1-015",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "Housing prices have skyrocketed, pushing many families out of the neighborhoods they grew up in."
+  },
+  {
+   "id": "c1-016",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "Few issues are as divisive as immigration, and the debate shows no sign of cooling down."
+  },
+  {
+   "id": "c1-017",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "The report sheds light on just how widespread the problem has become."
+  },
+  {
+   "id": "c1-018",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "Whether the reform will actually make a difference remains to be seen."
+  },
+  {
+   "id": "c1-019",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "Turnout among young voters was surprisingly high, defying most predictions."
+  },
+  {
+   "id": "c1-020",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "It's one thing to pass a law and another thing entirely to enforce it."
+  },
+  {
+   "id": "c1-021",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "The scandal has dealt a serious blow to public trust in the institution."
+  },
+  {
+   "id": "c1-022",
+   "niveau": "C1",
+   "theme": "société",
+   "texte": "Many rural towns are struggling to hold on to their younger residents."
+  },
+  {
+   "id": "c1-023",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "The findings challenge the long-held assumption that the brain stops changing in adulthood."
+  },
+  {
+   "id": "c1-024",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "Researchers have yet to explain why the effect seems stronger in some patients than in others."
+  },
+  {
+   "id": "c1-025",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "The study's sample size was too small to draw any meaningful conclusions."
+  },
+  {
+   "id": "c1-026",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "What sets this approach apart is its ability to detect the disease years before symptoms appear."
+  },
+  {
+   "id": "c1-027",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "Scientists warn that the window for meaningful action on climate change is rapidly closing."
+  },
+  {
+   "id": "c1-028",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "The vaccine was developed in record time, thanks in part to decades of earlier research."
+  },
+  {
+   "id": "c1-029",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "Contrary to popular belief, we use far more than ten percent of our brains."
+  },
+  {
+   "id": "c1-030",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "The experiment had to be repeated after a calibration error skewed the results."
+  },
+  {
+   "id": "c1-031",
+   "niveau": "C1",
+   "theme": "science",
+   "texte": "Little is known about the creatures that inhabit the deepest parts of the ocean."
+  },
+  {
+   "id": "c1-032",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "Artificial intelligence is advancing at a pace that few experts had anticipated."
+  },
+  {
+   "id": "c1-033",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "The company came under fire for the way it handled its users' personal data."
+  },
+  {
+   "id": "c1-034",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "Most people click \"accept\" without having the faintest idea what they're agreeing to."
+  },
+  {
+   "id": "c1-035",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "The outage brought much of the internet to a standstill for several hours."
+  },
+  {
+   "id": "c1-036",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "It's become increasingly difficult to tell genuine content from what's been manipulated."
+  },
+  {
+   "id": "c1-037",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "The startup was acquired for a fraction of what it had once been valued at."
+  },
+  {
+   "id": "c1-038",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "Constant connectivity has blurred the line between work and personal time."
+  },
+  {
+   "id": "c1-039",
+   "niveau": "C1",
+   "theme": "technologie",
+   "texte": "Once the novelty wore off, most users simply stopped opening the app."
+  },
+  {
+   "id": "c1-040",
+   "niveau": "C1",
+   "theme": "argent",
+   "texte": "Inflation has eaten into people's savings, and wages have struggled to keep up."
+  },
+  {
+   "id": "c1-041",
+   "niveau": "C1",
+   "theme": "argent",
+   "texte": "Investors have grown wary of companies that burn through cash without turning a profit."
+  },
+  {
+   "id": "c1-042",
+   "niveau": "C1",
+   "theme": "argent",
+   "texte": "They managed to pay off their mortgage years ahead of schedule."
+  },
+  {
+   "id": "c1-043",
+   "niveau": "C1",
+   "theme": "argent",
+   "texte": "The cost of living here is so high that even well-paid professionals are feeling the pinch."
+  },
+  {
+   "id": "c1-044",
+   "niveau": "C1",
+   "theme": "argent",
+   "texte": "It's tempting to splurge after a hard week, but those small purchases add up."
+  },
+  {
+   "id": "c1-045",
+   "niveau": "C1",
+   "theme": "argent",
+   "texte": "The deal fell through at the last minute over a disagreement about the price."
+  },
+  {
+   "id": "c1-046",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "We drifted apart after college, but we've recently reconnected."
+  },
+  {
+   "id": "c1-047",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "He's not one to open up easily, so I was touched that he confided in me."
+  },
+  {
+   "id": "c1-048",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "It took me years to realize that I didn't need everyone's approval."
+  },
+  {
+   "id": "c1-049",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "She has a way of making people feel heard, even when she disagrees with them."
+  },
+  {
+   "id": "c1-050",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "They bent over backwards to make us feel at home."
+  },
+  {
+   "id": "c1-051",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "I'd hate for a misunderstanding like that to come between us."
+  },
+  {
+   "id": "c1-052",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "No matter how busy he gets, he always makes time for his kids."
+  },
+  {
+   "id": "c1-053",
+   "niveau": "C1",
+   "theme": "relations",
+   "texte": "Looking back, I can see that we were both too stubborn to back down."
+  },
+  {
+   "id": "c1-054",
+   "niveau": "C1",
+   "theme": "culture",
+   "texte": "The novel's ending is deliberately ambiguous, leaving readers to draw their own conclusions."
+  },
+  {
+   "id": "c1-055",
+   "niveau": "C1",
+   "theme": "culture",
+   "texte": "The film drew mixed reviews, but it has since gained something of a cult following."
+  },
+  {
+   "id": "c1-056",
+   "niveau": "C1",
+   "theme": "culture",
+   "texte": "Her latest album marks a striking departure from the sound that made her famous."
+  },
+  {
+   "id": "c1-057",
+   "niveau": "C1",
+   "theme": "culture",
+   "texte": "The exhibit traces the artist's evolution over the course of five decades."
+  },
+  {
+   "id": "c1-058",
+   "niveau": "C1",
+   "theme": "culture",
+   "texte": "It's a slow-burning series, but by the third episode I was completely hooked."
+  },
+  {
+   "id": "c1-059",
+   "niveau": "C1",
+   "theme": "culture",
+   "texte": "The play tackles grief with a surprising amount of humor."
+  },
+  {
+   "id": "c1-060",
+   "niveau": "C1",
+   "theme": "culture",
+   "texte": "Some critics dismissed the book as sentimental, while others hailed it as a masterpiece."
+  },
+  {
+   "id": "c1-061",
+   "niveau": "C1",
+   "theme": "nature",
+   "texte": "The river has burst its banks twice this year, flooding hundreds of homes."
+  },
+  {
+   "id": "c1-062",
+   "niveau": "C1",
+   "theme": "nature",
+   "texte": "Rising temperatures are forcing some species to migrate farther north."
+  },
+  {
+   "id": "c1-063",
+   "niveau": "C1",
+   "theme": "nature",
+   "texte": "The coral reef has suffered extensive bleaching over the past few summers."
+  },
+  {
+   "id": "c1-064",
+   "niveau": "C1",
+   "theme": "nature",
+   "texte": "Wildfires have become not only more frequent but also far more intense."
+  },
+  {
+   "id": "c1-065",
+   "niveau": "C1",
+   "theme": "nature",
+   "texte": "Conservationists hope the ban will give the population a chance to recover."
+  },
+  {
+   "id": "c1-066",
+   "niveau": "C1",
+   "theme": "nature",
+   "texte": "The drought has left reservoirs at their lowest levels in half a century."
+  },
+  {
+   "id": "c1-067",
+   "niveau": "C1",
+   "theme": "santé",
+   "texte": "Chronic stress can take a toll on your body long before you notice any symptoms."
+  },
+  {
+   "id": "c1-068",
+   "niveau": "C1",
+   "theme": "santé",
+   "texte": "The clinic is so understaffed that patients often wait months for an appointment."
+  },
+  {
+   "id": "c1-069",
+   "niveau": "C1",
+   "theme": "santé",
+   "texte": "Doctors are increasingly concerned about the overuse of antibiotics."
+  },
+  {
+   "id": "c1-070",
+   "niveau": "C1",
+   "theme": "santé",
+   "texte": "It's not so much the amount of exercise that matters as the consistency."
+  },
+  {
+   "id": "c1-071",
+   "niveau": "C1",
+   "theme": "santé",
+   "texte": "She made a full recovery, which the doctors described as nothing short of remarkable."
+  },
+  {
+   "id": "c1-072",
+   "niveau": "C1",
+   "theme": "santé",
+   "texte": "Sleep deprivation impairs judgment in much the same way as alcohol does."
+  },
+  {
+   "id": "c1-073",
+   "niveau": "C1",
+   "theme": "voyage",
+   "texte": "We'd barely checked in when the fire alarm went off and the whole hotel had to be evacuated."
+  },
+  {
+   "id": "c1-074",
+   "niveau": "C1",
+   "theme": "voyage",
+   "texte": "The town is off the beaten path, which is precisely what makes it so charming."
+  },
+  {
+   "id": "c1-075",
+   "niveau": "C1",
+   "theme": "voyage",
+   "texte": "Traveling alone forced me out of my comfort zone in ways I hadn't expected."
+  },
+  {
+   "id": "c1-076",
+   "niveau": "C1",
+   "theme": "voyage",
+   "texte": "The flight was overbooked, so they offered us vouchers to take a later one."
+  },
+  {
+   "id": "c1-077",
+   "niveau": "C1",
+   "theme": "voyage",
+   "texte": "Mass tourism is putting a strain on cities that were never designed for such crowds."
+  },
+  {
+   "id": "c1-078",
+   "niveau": "C1",
+   "theme": "voyage",
+   "texte": "We took a wrong turn and ended up in a village that wasn't even on the map."
+  },
+  {
+   "id": "c1-079",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "I can't help but feel that we're missing the bigger picture here."
+  },
+  {
+   "id": "c1-080",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "That's easier said than done, especially when you're on a tight budget."
+  },
+  {
+   "id": "c1-081",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "I'm all for innovation, but not at the expense of people's privacy."
+  },
+  {
+   "id": "c1-082",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "It goes without saying that safety should come first."
+  },
+  {
+   "id": "c1-083",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "To be fair, nobody could have predicted how things would turn out."
+  },
+  {
+   "id": "c1-084",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "I'm not entirely convinced, but I'm willing to give it a shot."
+  },
+  {
+   "id": "c1-085",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "Far from solving the problem, the new rules have only made things worse."
+  },
+  {
+   "id": "c1-086",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "You'd think they would have learned from their mistakes by now."
+  },
+  {
+   "id": "c1-087",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "It's not a question of whether it will happen, but when."
+  },
+  {
+   "id": "c1-088",
+   "niveau": "C1",
+   "theme": "opinions",
+   "texte": "Much as I'd like to help, my hands are tied."
+  },
+  {
+   "id": "c1-089",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "I've been so swamped lately that I've barely had time to catch my breath."
+  },
+  {
+   "id": "c1-090",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "No sooner had I sat down than the phone started ringing again."
+  },
+  {
+   "id": "c1-091",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "I'd completely lost track of time until I noticed it was getting dark."
+  },
+  {
+   "id": "c1-092",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "It's been one thing after another since we moved in."
+  },
+  {
+   "id": "c1-093",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "Try as I might, I just couldn't get the stain out of the carpet."
+  },
+  {
+   "id": "c1-094",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "I'm in two minds about whether to renew my lease."
+  },
+  {
+   "id": "c1-095",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "Should you need anything at all, don't hesitate to let me know."
+  },
+  {
+   "id": "c1-096",
+   "niveau": "C1",
+   "theme": "quotidien",
+   "texte": "I wouldn't have bothered if I'd known how long it was going to take."
+  },
+  {
+   "id": "c1-097",
+   "niveau": "C1",
+   "theme": "histoire",
+   "texte": "The treaty, signed after years of negotiations, brought an uneasy peace to the region."
+  },
+  {
+   "id": "c1-098",
+   "niveau": "C1",
+   "theme": "histoire",
+   "texte": "Historians still disagree about what ultimately led to the empire's collapse."
+  },
+  {
+   "id": "c1-099",
+   "niveau": "C1",
+   "theme": "histoire",
+   "texte": "The city was almost entirely rebuilt after the fire of the late nineteenth century."
+  },
+  {
+   "id": "c1-100",
+   "niveau": "C1",
+   "theme": "histoire",
+   "texte": "Few could have foreseen that the discovery would reshape the course of medicine."
+  },
+  {
+   "id": "c1-101",
+   "niveau": "C1",
+   "theme": "histoire",
+   "texte": "The letters, discovered decades later, revealed a very different side of the general."
+  },
+  {
+   "id": "c2-001",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "Notwithstanding the government's assurances, the reforms have done little to stem the tide of discontent among public sector workers."
+  },
+  {
+   "id": "c2-002",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "What began as a grassroots campaign has snowballed into a movement that politicians can no longer afford to ignore."
+  },
+  {
+   "id": "c2-003",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "The commission's findings, which were leaked days before their official release, paint a damning picture of institutional neglect."
+  },
+  {
+   "id": "c2-004",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "It is precisely those who stand to lose the most who have the least say in how such decisions are made."
+  },
+  {
+   "id": "c2-005",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "The ruling sets a precedent that could have far-reaching implications for how privacy is understood in the digital age."
+  },
+  {
+   "id": "c2-006",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "For all the talk of transparency, the process remains as opaque as ever."
+  },
+  {
+   "id": "c2-007",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "Not only did the policy fail to deliver on its promises, but it also exacerbated the very inequalities it was meant to address."
+  },
+  {
+   "id": "c2-008",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "The debate has become so polarized that any attempt at compromise is dismissed as a betrayal by both sides."
+  },
+  {
+   "id": "c2-009",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "Gentrification is often framed as a straightforward story of progress, yet it seldom benefits the people it displaces."
+  },
+  {
+   "id": "c2-010",
+   "niveau": "C2",
+   "theme": "société",
+   "texte": "Seldom has a single court decision provoked such a visceral reaction across the political spectrum."
+  },
+  {
+   "id": "c2-011",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "The hypothesis, though elegant, rests on a number of assumptions that have yet to be rigorously tested."
+  },
+  {
+   "id": "c2-012",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "Were the results to be replicated, they would upend decades of conventional wisdom about how memories are formed."
+  },
+  {
+   "id": "c2-013",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "The paper was retracted after it emerged that several of the images had been doctored."
+  },
+  {
+   "id": "c2-014",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "Far from being a fringe concern, antimicrobial resistance is now considered one of the gravest threats to global health."
+  },
+  {
+   "id": "c2-015",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "The telescope has allowed astronomers to peer further back in time than ever before, to an era when the first galaxies were taking shape."
+  },
+  {
+   "id": "c2-016",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "Correlation, as any statistician will tell you, is not the same thing as causation."
+  },
+  {
+   "id": "c2-017",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "The researchers were at pains to point out that their findings were preliminary and should be interpreted with caution."
+  },
+  {
+   "id": "c2-018",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "Only by pooling data from dozens of hospitals were they able to detect a pattern that had previously gone unnoticed."
+  },
+  {
+   "id": "c2-019",
+   "niveau": "C2",
+   "theme": "science",
+   "texte": "The mechanism by which the drug exerts its effect remains, to a large extent, a mystery."
+  },
+  {
+   "id": "c2-020",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "The central bank's decision to hold interest rates steady was widely interpreted as a tacit admission that the recovery had stalled."
+  },
+  {
+   "id": "c2-021",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "Investors, spooked by the prospect of a prolonged downturn, rushed to offload their riskier assets."
+  },
+  {
+   "id": "c2-022",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "The company's meteoric rise was matched only by the speed of its subsequent collapse."
+  },
+  {
+   "id": "c2-023",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "Austerity measures, however necessary they may have seemed at the time, left lasting scars on the country's public services."
+  },
+  {
+   "id": "c2-024",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "It remains to be seen whether the stimulus will translate into sustained growth or merely a short-lived bump."
+  },
+  {
+   "id": "c2-025",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "The so-called gig economy has given workers flexibility at the cost of security and benefits."
+  },
+  {
+   "id": "c2-026",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "Had regulators intervened sooner, much of the fallout could arguably have been avoided."
+  },
+  {
+   "id": "c2-027",
+   "niveau": "C2",
+   "theme": "économie",
+   "texte": "The supply chain disruptions laid bare just how dependent manufacturers had become on a handful of suppliers."
+  },
+  {
+   "id": "c2-028",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "The novel weaves together three generations of a family whose fates are inextricably bound up with the history of the town."
+  },
+  {
+   "id": "c2-029",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "Her prose is deceptively simple, concealing layers of meaning that only reveal themselves on a second reading."
+  },
+  {
+   "id": "c2-030",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "The director eschews conventional storytelling in favor of a fragmented, almost dreamlike structure."
+  },
+  {
+   "id": "c2-031",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "What might have been a run-of-the-mill thriller is elevated by a performance of remarkable subtlety."
+  },
+  {
+   "id": "c2-032",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "The retrospective invites visitors to reconsider an artist who was long dismissed as a mere imitator."
+  },
+  {
+   "id": "c2-033",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "Critics were quick to dismiss the album as derivative, though it has since come to be regarded as a landmark of the genre."
+  },
+  {
+   "id": "c2-034",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "The translation manages to capture not just the meaning of the original but its rhythm and its wit."
+  },
+  {
+   "id": "c2-035",
+   "niveau": "C2",
+   "theme": "culture",
+   "texte": "There is a melancholy undercurrent to even the most lighthearted scenes, which lends the film an unexpected depth."
+  },
+  {
+   "id": "c2-036",
+   "niveau": "C2",
+   "theme": "histoire",
+   "texte": "The armistice, far from heralding a lasting peace, merely postponed a conflict that many considered inevitable."
+  },
+  {
+   "id": "c2-037",
+   "niveau": "C2",
+   "theme": "histoire",
+   "texte": "Archival documents unearthed in the nineties cast the events of that winter in an entirely different light."
+  },
+  {
+   "id": "c2-038",
+   "niveau": "C2",
+   "theme": "histoire",
+   "texte": "The dynasty's downfall is often attributed to military defeat, but economic mismanagement played at least as large a role."
+  },
+  {
+   "id": "c2-039",
+   "niveau": "C2",
+   "theme": "histoire",
+   "texte": "Scarcely a decade after the revolution, many of its original ideals had been quietly abandoned."
+  },
+  {
+   "id": "c2-040",
+   "niveau": "C2",
+   "theme": "histoire",
+   "texte": "The expedition was beset by misfortune from the outset, and only a handful of its members ever made it home."
+  },
+  {
+   "id": "c2-041",
+   "niveau": "C2",
+   "theme": "histoire",
+   "texte": "Contemporary accounts of the battle vary so widely that historians have struggled to reconstruct what actually happened."
+  },
+  {
+   "id": "c2-042",
+   "niveau": "C2",
+   "theme": "travail",
+   "texte": "The restructuring, which management insisted was purely a matter of efficiency, was widely perceived as a pretext for layoffs."
+  },
+  {
+   "id": "c2-043",
+   "niveau": "C2",
+   "theme": "travail",
+   "texte": "She has an uncanny ability to anticipate objections and address them before they've even been raised."
+  },
+  {
+   "id": "c2-044",
+   "niveau": "C2",
+   "theme": "travail",
+   "texte": "It was only after he'd left the company that the full extent of the mismanagement came to light."
+  },
+  {
+   "id": "c2-045",
+   "niveau": "C2",
+   "theme": "travail",
+   "texte": "The negotiations dragged on for months, with neither side willing to make the first concession."
+  },
+  {
+   "id": "c2-046",
+   "niveau": "C2",
+   "theme": "travail",
+   "texte": "Burnout is rarely the result of a single crisis; more often, it creeps up on people over a period of years."
+  },
+  {
+   "id": "c2-047",
+   "niveau": "C2",
+   "theme": "travail",
+   "texte": "Under no circumstances should confidential documents be shared outside the department."
+  },
+  {
+   "id": "c2-048",
+   "niveau": "C2",
+   "theme": "travail",
+   "texte": "The board was reluctant to rock the boat, even though it was abundantly clear that a change of direction was long overdue."
+  },
+  {
+   "id": "c2-049",
+   "niveau": "C2",
+   "theme": "relations",
+   "texte": "It took me the better part of a decade to come to terms with the way things ended between us."
+  },
+  {
+   "id": "c2-050",
+   "niveau": "C2",
+   "theme": "relations",
+   "texte": "He has a disarming habit of saying exactly what everyone else is thinking but is too polite to admit."
+  },
+  {
+   "id": "c2-051",
+   "niveau": "C2",
+   "theme": "relations",
+   "texte": "Their friendship weathered more storms than most marriages, which is perhaps why it endured."
+  },
+  {
+   "id": "c2-052",
+   "niveau": "C2",
+   "theme": "relations",
+   "texte": "However hard she tried to hide it, her resentment was palpable to anyone who knew her well."
+  },
+  {
+   "id": "c2-053",
+   "niveau": "C2",
+   "theme": "relations",
+   "texte": "We've agreed to disagree, which, all things considered, is probably the healthiest outcome."
+  },
+  {
+   "id": "c2-054",
+   "niveau": "C2",
+   "theme": "relations",
+   "texte": "Little did they know that a chance encounter on a delayed train would change the course of their lives."
+  },
+  {
+   "id": "c2-055",
+   "niveau": "C2",
+   "theme": "nature",
+   "texte": "The once-thriving wetlands have been reduced to a fraction of their former size by decades of unchecked development."
+  },
+  {
+   "id": "c2-056",
+   "niveau": "C2",
+   "theme": "nature",
+   "texte": "Ecologists caution that reintroducing a predator can have consequences that ripple through the entire ecosystem."
+  },
+  {
+   "id": "c2-057",
+   "niveau": "C2",
+   "theme": "nature",
+   "texte": "The glacier, which has been retreating at an alarming rate, is expected to disappear entirely within a generation."
+  },
+  {
+   "id": "c2-058",
+   "niveau": "C2",
+   "theme": "nature",
+   "texte": "Few landscapes are as unforgiving as the desert at midday, when the heat seems to radiate from the very rocks."
+  },
+  {
+   "id": "c2-059",
+   "niveau": "C2",
+   "theme": "nature",
+   "texte": "The scheme to reforest the hillsides has been hailed as a success, though its long-term viability is still in question."
+  },
+  {
+   "id": "c2-060",
+   "niveau": "C2",
+   "theme": "technologie",
+   "texte": "The algorithm, opaque even to the engineers who designed it, has been accused of perpetuating existing biases."
+  },
+  {
+   "id": "c2-061",
+   "niveau": "C2",
+   "theme": "technologie",
+   "texte": "What was once hailed as a democratizing force has, in the eyes of many, become a vehicle for misinformation."
+  },
+  {
+   "id": "c2-062",
+   "niveau": "C2",
+   "theme": "technologie",
+   "texte": "The breach went undetected for months, during which time millions of records were quietly siphoned off."
+  },
+  {
+   "id": "c2-063",
+   "niveau": "C2",
+   "theme": "technologie",
+   "texte": "Rarely does a technology move from the laboratory to the mainstream as quickly as this one has."
+  },
+  {
+   "id": "c2-064",
+   "niveau": "C2",
+   "theme": "technologie",
+   "texte": "The promise of a paperless office has proved every bit as elusive as the promise of a four-day week."
+  },
+  {
+   "id": "c2-065",
+   "niveau": "C2",
+   "theme": "santé",
+   "texte": "The epidemic exposed long-standing weaknesses in a health system that had been chronically underfunded."
+  },
+  {
+   "id": "c2-066",
+   "niveau": "C2",
+   "theme": "santé",
+   "texte": "While the treatment is undeniably effective, its side effects are severe enough to deter many patients."
+  },
+  {
+   "id": "c2-067",
+   "niveau": "C2",
+   "theme": "santé",
+   "texte": "There is mounting evidence that loneliness is as detrimental to our health as smoking or obesity."
+  },
+  {
+   "id": "c2-068",
+   "niveau": "C2",
+   "theme": "santé",
+   "texte": "The guidelines, revised in light of new evidence, now advise against routine screening for people under fifty."
+  },
+  {
+   "id": "c2-069",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "I'd be hard-pressed to think of a worse moment to announce such a drastic change."
+  },
+  {
+   "id": "c2-070",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "It strikes me as somewhat disingenuous to complain about a problem you've done nothing to solve."
+  },
+  {
+   "id": "c2-071",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "Be that as it may, we can hardly afford to sit back and wait for things to improve on their own."
+  },
+  {
+   "id": "c2-072",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "The argument, persuasive as it may sound at first, doesn't hold up under closer scrutiny."
+  },
+  {
+   "id": "c2-073",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "Whatever one makes of his politics, there's no denying that he's a formidable speaker."
+  },
+  {
+   "id": "c2-074",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "I'm loath to admit it, but they may have had a point all along."
+  },
+  {
+   "id": "c2-075",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "It would be naive to assume that the problem will simply resolve itself."
+  },
+  {
+   "id": "c2-076",
+   "niveau": "C2",
+   "theme": "opinions",
+   "texte": "One could argue that the cure has turned out to be worse than the disease."
+  },
+  {
+   "id": "c2-077",
+   "niveau": "C2",
+   "theme": "quotidien",
+   "texte": "By the time I'd finally tracked down the right form, the office had already closed for the day."
+  },
+  {
+   "id": "c2-078",
+   "niveau": "C2",
+   "theme": "quotidien",
+   "texte": "I've lived here for the better part of fifteen years, and I still haven't figured out the parking rules."
+  },
+  {
+   "id": "c2-079",
+   "niveau": "C2",
+   "theme": "quotidien",
+   "texte": "Had it not been for a neighbor's quick thinking, the kitchen fire could have spread to the rest of the building."
+  },
+  {
+   "id": "c2-080",
+   "niveau": "C2",
+   "theme": "quotidien",
+   "texte": "Every time I think I've got my inbox under control, another deluge of emails comes pouring in."
+  },
+  {
+   "id": "c2-081",
+   "niveau": "C2",
+   "theme": "quotidien",
+   "texte": "The renovation, which was supposed to take three weeks, has now dragged on for the better part of a year."
+  },
+  {
+   "id": "c2-082",
+   "niveau": "C2",
+   "theme": "quotidien",
+   "texte": "I'd sooner walk the whole way home than squeeze onto another overcrowded bus."
+  }
+ ]
+}

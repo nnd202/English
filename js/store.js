@@ -18,6 +18,15 @@ export const REGLAGES_DEFAUT = {
 
 export const TYPES = ['mot', 'combi', 'phrasal', 'phrase'];
 
+export const DICTEE_DEFAUT = {
+  niveau: 'B2',       // B1, B2, C1, C2
+  nb: 6,              // phrases par dictée
+  vitesse: 'normale', // lente, normale, rapide
+  ecoutes: 0,         // écoutes par phrase : 0 = illimitées
+  aideMots: false,    // afficher le nombre de mots
+  aideMorceaux: false // écouter la phrase par morceaux
+};
+
 export function etatVide() {
   return {
     v: 1,
@@ -27,7 +36,9 @@ export function etatVide() {
     sprint: { duree: 900, tirage: 'melange', types: [...TYPES] },
     derniereSauvegarde: null,
     enCours: null,
-    textes: []                // textes de dictée collés (restent sur l'appareil)
+    textes: [],               // textes de dictée collés (restent sur l'appareil)
+    dictee: { ...DICTEE_DEFAUT },
+    phrasesDictee: {}         // suivi des phrases de la banque : { id: { n, best, last } }
   };
 }
 
@@ -49,6 +60,8 @@ export function charger() {
   etat.cartes ||= {};
   etat.sessions ||= [];
   etat.textes ||= [];
+  etat.phrasesDictee ||= {};
+  etat.dictee = { ...DICTEE_DEFAUT, ...(etat.dictee || {}) };
   // Partie interrompue (appli fermée en pleine partie) : enregistrée telle quelle, hors records.
   if (etat.enCours) {
     const s = etat.enCours;
@@ -139,6 +152,11 @@ export function fusionner(a, b) {
   out.sessions.sort((x, y) => x.debut - y.debut);
   const tids = new Set((a.textes || []).map(t => t.id));
   out.textes = [...(a.textes || []), ...(b.textes || []).filter(t => !tids.has(t.id))];
+  out.phrasesDictee = { ...(a.phrasesDictee || {}) };
+  for (const [id, x] of Object.entries(b.phrasesDictee || {})) {
+    const y = out.phrasesDictee[id];
+    if (!y || (x.last || 0) > (y.last || 0)) out.phrasesDictee[id] = { ...x, best: Math.max(x.best, y ? y.best : 0) };
+  }
   return out;
 }
 

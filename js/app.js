@@ -5,13 +5,13 @@ import { creerPioche, difficultes, quotaNouvelles } from './tirage.js';
 import { retenu } from './fsrs.js';
 import { legende, zones, morceaux } from './ipa.js';
 import { initVoix, dire, voixListe, voixOk } from './voix.js';
-import { decouperPhrases, comparer, compter } from './dictee.js';
+import { decouperPhrases, comparer, compter, choisirPhrases, morceaux as morceauxPhrase, phrasesWiki } from './dictee.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const vue = $('#vue'), nav = $('#nav'), feuille = $('#feuille');
 const h = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-let LANGUE = null, CARTES = [], PAR_ID = new Map(), DICTEES = [];
+let LANGUE = null, CARTES = [], PAR_ID = new Map(), DICTEES = [], BANQUE = [];
 let partie = null, bilan = null, dictee = null, bilanDictee = null;
 
 const DUREES = [300, 600, 900, 1200];
@@ -76,6 +76,7 @@ async function demarrer() {
   for (const lot of tous) {
     for (const c of lot.cartes || []) { c.lot = lot.lot; CARTES.push(c); PAR_ID.set(c.id, c); }
     for (const t of lot.textes || []) DICTEES.push(t);
+    for (const x of lot.banque || []) BANQUE.push(x);
   }
   store.charger();
   initVoix(LANGUE.voix);
@@ -541,7 +542,7 @@ function ecranStats() {
       ${lentes.map(c => ligneCarte(c, `${(etats[c.id].t / etats[c.id].n / 1000).toFixed(1)} s`)).join('')}</section>` : ''}
     <section class="bloc"><div class="bloc-titre"><h2>Historique</h2></div>
       ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'dictee' ? `<div class="ligne-histo">
-        <div><b>Dictée</b> · ${h(s.titre)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}</small></div>
+        <div><b>Dictée${s.niveau && s.source === 'banque' ? '' : ''}</b> · ${h(s.titre)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}</small></div>
         <div class="histo-droite"><strong>${pourcent(s)}</strong></div>
       </div>` : `<div class="ligne-histo">
         <div><b>${s.mode === 'sprint' ? `Sprint ${s.duree / 60} min` : 'Libre'}</b> · ${TIRAGES[s.tirage] || ''}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}${s.mode === 'sprint' && !s.complet ? ' · arrêtée' : ''}</small></div>
@@ -705,7 +706,7 @@ async function exporter() {
   const e = store.get();
   const d = new Date();
   const nom = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')} - Export English.txt`;
-  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint, textes: e.textes } });
+  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint, textes: e.textes, dictee: e.dictee, phrasesDictee: e.phrasesDictee } });
   const fichier = new File([contenu], nom, { type: 'text/plain' });
   let ok = false;
   try {
@@ -733,7 +734,7 @@ async function importer(f) {
     if (data.app !== 'English' || !data.etat) throw new Error('format');
     const e = store.get();
     const fus = store.fusionner(e, data.etat);
-    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions, textes: fus.textes });
+    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions, textes: fus.textes, phrasesDictee: fus.phrasesDictee });
     toast(`Import réussi : ${fus.sessions.length} parties au total.`);
     router();
   } catch {
@@ -742,17 +743,26 @@ async function importer(f) {
 }
 
 // ---------- Dictées ----------
+const NIVEAUX = ['B1', 'B2', 'C1', 'C2'];
+const VITESSES = { lente: { label: 'Lente', v: 0.75 }, normale: { label: 'Normale', v: 1 }, rapide: { label: 'Rapide', v: 1.15 } };
+const ECOUTES = { 0: 'Illimitées', 3: '3 par phrase', 1: 'Une seule' };
 const pourcent = (s) => s.mots ? `${Math.round(100 * s.justes / s.mots)} %` : '—';
 
 function statsDictees(sessions) {
   const d = sessions.filter(s => s.mode === 'dictee');
   if (!d.length) return '';
   const mots = d.reduce((n, s) => n + s.mots, 0), justes = d.reduce((n, s) => n + s.justes, 0);
-  return `<section class="bloc"><div class="bloc-titre"><h2>Dictées</h2></div>
+  const parNiveau = NIVEAUX.map(nv => {
+    const x = d.filter(s => s.niveau === nv);
+    const m = x.reduce((n, s) => n + s.mots, 0), j = x.reduce((n, s) => n + s.justes, 0);
+    return x.length ? `<div><b>${Math.round(100 * j / m)} %</b><span>${nv} · ${pluriel(x.length, 'dictée')}</span></div>` : '';
+  }).join('');
+  return `<section class="bloc"><div class="bloc-titre"><h2>Dictées</h2><span>Part de mots justes</span></div>
     <div class="grille-chiffres">
       <div><b>${d.length}</b><span>dictées</span></div>
       <div><b>${mots ? Math.round(100 * justes / mots) : 0} %</b><span>mots justes</span></div>
       <div><b>${duree(d.reduce((n, s) => n + s.joue, 0))}</b><span>temps</span></div>
+      ${parNiveau}
     </div></section>`;
 }
 
@@ -762,9 +772,16 @@ function meilleure(id) {
   return Math.max(...d.map(s => Math.round(100 * s.justes / s.mots)));
 }
 
+function resumeReglages(r) {
+  return [VITESSES[r.vitesse].label.toLowerCase(), ECOUTES[r.ecoutes].toLowerCase(), r.aideMots ? 'nombre de mots' : '', r.aideMorceaux ? 'par morceaux' : ''].filter(Boolean).join(' · ');
+}
+
 function ecranDictees() {
   dessinerNav('maison');
-  const e = store.get();
+  const e = store.get(), r = e.dictee;
+  const vus = (nv) => BANQUE.filter(p => p.niveau === nv && e.phrasesDictee[p.id]).length;
+  const total = (nv) => BANQUE.filter(p => p.niveau === nv).length;
+  const puce = (cle, val, label, actif) => `<button class="puce ${actif ? 'on' : ''}" data-r="${cle}" data-v="${val}">${label}</button>`;
   const ligne = (t, perso) => {
     const m = meilleure(t.id);
     return `<div class="ligne-dictee">
@@ -778,16 +795,56 @@ function ecranDictees() {
   vue.innerHTML = `${entete('Dictées', 'La voix lit, tu tapes, l\'appli compare', false, '#/')}
   <main class="page">
     <section class="bloc">
+      <div class="bloc-titre"><h2>Nouvelle dictée</h2><span>Des phrases tirées au hasard, jamais vues avant</span></div>
+      <div class="puces">${NIVEAUX.map(nv => puce('niveau', nv, nv, r.niveau === nv)).join('')}</div>
+      <p class="info">${r.niveau} : ${vus(r.niveau)} phrases faites sur ${total(r.niveau)}</p>
+      <div class="sous-titre">Phrases</div>
+      <div class="puces petites">${[4, 6, 8, 10].map(n => puce('nb', n, n, r.nb === n)).join('')}</div>
+      <div class="sous-titre">Vitesse de lecture</div>
+      <div class="puces petites">${Object.entries(VITESSES).map(([k, x]) => puce('vitesse', k, x.label, r.vitesse === k)).join('')}</div>
+      <div class="sous-titre">Écoutes</div>
+      <div class="puces petites">${[0, 3, 1].map(k => puce('ecoutes', k, ECOUTES[k], r.ecoutes === k)).join('')}</div>
+      <div class="sous-titre">Aides</div>
+      <div class="puces petites">
+        <button class="puce ${r.aideMots ? 'on' : ''}" data-aide="aideMots">Nombre de mots</button>
+        <button class="puce ${r.aideMorceaux ? 'on' : ''}" data-aide="aideMorceaux">Écouter par morceaux</button>
+      </div>
+      <button class="btn-principal" id="nouvelle">Commencer</button>
+    </section>
+    <section class="bloc">
+      <div class="bloc-titre"><h2>Dictée surprise</h2><span>Un article de Wikipédia lu à voix haute, impossible à connaître d'avance. Registre écrit, plutôt C1. Mêmes réglages ; les noms propres sont pardonnés.</span></div>
+      <div class="boutons-ligne">
+        <button class="btn-second" data-wiki="jour">Article du jour</button>
+        <button class="btn-second" data-wiki="hasard">Au hasard</button>
+      </div>
+    </section>
+    <section class="bloc liste"><div class="bloc-titre"><h2>Histoires</h2><span>Textes suivis, plutôt B1-B2</span></div>${DICTEES.map(t => ligne(t, false)).join('')}</section>
+    <section class="bloc">
       <div class="bloc-titre"><h2>Coller un texte</h2><span>Un article, un passage de livre, une réplique… Il reste sur ton téléphone.</span></div>
       <a class="btn-second" href="#/coller">Coller un texte</a>
     </section>
     ${e.textes.length ? `<section class="bloc liste"><div class="bloc-titre"><h2>Tes textes</h2></div>${e.textes.map(t => ligne(t, true)).join('')}</section>` : ''}
-    <section class="bloc liste"><div class="bloc-titre"><h2>Textes de l'appli</h2></div>${DICTEES.map(t => ligne(t, false)).join('')}</section>
+    <section class="bloc">
+      <div class="bloc-titre"><h2>Avec de vraies voix</h2><span>Enregistrements humains, accents variés : le complément idéal à la voix du téléphone.</span></div>
+      <a class="btn-second" href="https://dailydictation.com/" target="_blank" rel="noopener">Daily Dictation ${ICONES.lien}</a>
+    </section>
   </main>`;
+  vue.querySelectorAll('[data-r]').forEach(b => b.onclick = () => {
+    const v = b.dataset.v;
+    r[b.dataset.r] = ['nb', 'ecoutes'].includes(b.dataset.r) ? +v : v;
+    store.sauver(); ecranDictees();
+  });
+  vue.querySelectorAll('[data-aide]').forEach(b => b.onclick = () => { r[b.dataset.aide] = !r[b.dataset.aide]; store.sauver(); ecranDictees(); });
+  $('#nouvelle').onclick = () => {
+    const choix = choisirPhrases(BANQUE, e.phrasesDictee, r.niveau, r.nb, Date.now());
+    if (!choix.length) { toast('Aucune phrase pour ce niveau.'); return; }
+    lancerDictee({ id: 'banque-' + r.niveau, titre: `Dictée ${r.niveau}`, phrases: choix.map(p => p.texte), ids: choix.map(p => p.id) }, { source: 'banque', niveau: r.niveau });
+  };
+  vue.querySelectorAll('[data-wiki]').forEach(b => b.onclick = () => dicteeWiki(b.dataset.wiki, b));
   vue.querySelectorAll('[data-dictee]').forEach(b => b.onclick = () => {
     const id = b.dataset.dictee;
     const t = DICTEES.find(x => x.id === id) || e.textes.find(x => x.id === id);
-    if (t) lancerDictee(t);
+    if (t) lancerDictee(t, { source: DICTEES.includes(t) ? 'histoire' : 'texte' });
   });
   vue.querySelectorAll('[data-suppr]').forEach(b => b.onclick = () => {
     const t = e.textes.find(x => x.id === b.dataset.suppr);
@@ -795,6 +852,32 @@ function ecranDictees() {
     e.textes = e.textes.filter(x => x !== t);
     store.sauver(); toast('Texte supprimé.'); ecranDictees();
   });
+}
+
+// Article de Wikipédia (résumé), en direct. Plusieurs essais si l'article est trop court.
+async function dicteeWiki(quoi, bouton) {
+  const r = store.get().dictee;
+  const lib = bouton.textContent;
+  bouton.textContent = 'Recherche…'; bouton.disabled = true;
+  try {
+    let art = null;
+    if (quoi === 'jour') {
+      const d = new Date();
+      const u = `https://en.wikipedia.org/api/rest_v1/feed/featured/${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+      const j = await (await fetch(u)).json();
+      art = j.tfa;
+    }
+    for (let essai = 0; essai < 6 && !(art && phrasesWiki(art.extract || '', r.nb).length >= Math.min(3, r.nb)); essai++) {
+      art = await (await fetch('https://en.wikipedia.org/api/rest_v1/page/random/summary')).json();
+    }
+    const phrases = art ? phrasesWiki(art.extract || '', r.nb) : [];
+    if (!phrases.length) throw new Error('vide');
+    const titre = art.titles?.normalized || art.title;
+    lancerDictee({ id: 'wiki', titre, phrases, url: art.content_urls?.mobile?.page || art.content_urls?.desktop?.page }, { source: 'wiki', niveau: 'C1', indulgenceNoms: true });
+  } catch {
+    toast('Wikipédia est injoignable pour l\'instant (connexion ?).');
+    bouton.textContent = lib; bouton.disabled = false;
+  }
 }
 
 // Suppression en deux touchers (pas de boîte de dialogue du navigateur).
@@ -819,22 +902,24 @@ function ecranColler() {
     </section>
   </main>`;
   const zone = $('#texte-colle');
-  const maj = () => { const n = decouperPhrases(zone.value).length; $('#apercu').textContent = pluriel(n, 'phrase'); };
-  zone.oninput = maj;
+  zone.oninput = () => { $('#apercu').textContent = pluriel(decouperPhrases(zone.value).length, 'phrase'); };
   $('#garder').onclick = () => {
     const phrases = decouperPhrases(zone.value);
     if (!phrases.length) { toast('Colle d\'abord un texte.'); return; }
     const titre = $('#titre-texte').value.trim() || phrases[0].split(' ').slice(0, 5).join(' ') + '…';
     const t = { id: 'u' + Date.now(), titre, phrases, date: Date.now() };
-    const e = store.get();
-    e.textes.unshift(t);
+    store.get().textes.unshift(t);
     store.sauver();
-    lancerDictee(t);
+    lancerDictee(t, { source: 'texte' });
   };
 }
 
-function lancerDictee(t) {
-  dictee = { texte: t, i: 0, saisie: '', resultats: [], ecoutes: Array(t.phrases.length).fill(0), debut: Date.now(), verifie: false, fini: false };
+function lancerDictee(t, opts = {}) {
+  const r = { ...store.get().dictee };
+  dictee = {
+    texte: t, opts, reglages: r, i: 0, saisie: '', resultats: [],
+    ecoutes: Array(t.phrases.length).fill(0), debut: Date.now(), verifie: false, fini: false
+  };
   history.pushState(null, '', '#/dictee');
   router();
   clearInterval(lancerDictee.t);
@@ -849,6 +934,7 @@ function htmlComparaison(elts) {
   return elts.map(e => {
     switch (e.k) {
       case 'ok': return `<span class="d-ok">${h(e.ref)}</span>`;
+      case 'nom': return `<span class="d-nom">${h(e.ref)}</span>`;
       case 'faute': return `<span class="d-faute"><del>${h(e.saisi)}</del><ins>${h(e.ref)}</ins></span>`;
       case 'faux': return `<span class="d-faux"><del>${h(e.saisi)}</del><ins>${h(e.ref)}</ins></span>`;
       case 'manque': return `<ins class="d-manque">${h(e.ref)}</ins>`;
@@ -859,9 +945,17 @@ function htmlComparaison(elts) {
 
 function ecranDictee() {
   nav.hidden = true;
-  const d = dictee, t = d.texte, n = t.phrases.length;
+  const d = dictee, t = d.texte, n = t.phrases.length, r = d.reglages;
+  const phrase = t.phrases[d.i];
   const res = d.verifie ? d.resultats[d.i] : null;
   const c = res ? compter(res) : null;
+  const max = r.ecoutes, reste = max ? Math.max(0, max - d.ecoutes[d.i]) : Infinity;
+  const bloque = !res && reste === 0;
+  const parts = r.aideMorceaux ? morceauxPhrase(phrase) : [];
+  const nbMots = phrase.split(/\s+/).filter(w => /[A-Za-z0-9]/.test(w)).length;
+  const infoEcoute = res ? '' : max
+    ? (reste ? `${pluriel(reste, 'écoute')} restante${reste > 1 ? 's' : ''}` : 'Plus d\'écoute : à toi de jouer.')
+    : (d.ecoutes[d.i] ? `Écoutée ${d.ecoutes[d.i]} fois` : 'Écoute la phrase, puis tape-la.');
   vue.innerHTML = `<div class="jeu dictee">
     <div class="jeu-tete">
       <button class="btn-rond" id="quitter-d" aria-label="Quitter">${ICONES.fermer}</button>
@@ -872,12 +966,15 @@ function ecranDictee() {
     <div class="dictee-corps">
       <div class="fiche dictee-fiche">
         <div class="fiche-actions grandes">
-          <button data-ecoute="1">${ICONES.son}<span>Écouter</span></button>
-          <button data-ecoute="lent">${ICONES.lent}<span>Lent</span></button>
+          <button data-ecoute="norm" ${bloque ? 'disabled' : ''}>${ICONES.son}<span>Écouter</span></button>
+          <button data-ecoute="lent" ${bloque ? 'disabled' : ''}>${ICONES.lent}<span>Lent</span></button>
         </div>
-        <p class="info">${d.ecoutes[d.i] ? `Écoutée ${d.ecoutes[d.i]} fois` : 'Écoute la phrase, puis tape-la.'}</p>
+        ${parts.length > 1 && !res ? `<div class="morceaux">${parts.map((m, k) => `<button class="puce" data-morceau="${k}" ${bloque ? 'disabled' : ''}>${k + 1}</button>`).join('')}<span>par morceaux</span></div>` : ''}
+        <p class="info" id="info-ecoute">${infoEcoute}</p>
+        ${r.aideMots && !res ? `<p class="aide-mots">${'<i></i>'.repeat(nbMots)}<span>${nbMots} mots</span></p>` : ''}
         ${res ? `<div class="correction">${htmlComparaison(res)}</div>
-          <p class="info centre">${c.justes}/${c.mots} mots justes${c.fautes ? ` · ${pluriel(c.fautes, 'faute')} d'orthographe` : ''}${c.faux ? ` · ${c.faux} faux` : ''}${c.manques ? ` · ${c.manques} oublié${c.manques > 1 ? 's' : ''}` : ''}${c.ajouts ? ` · ${c.ajouts} en trop` : ''}</p>`
+          <p class="info centre">${c.justes}/${c.mots} mots justes${c.fautes ? ` · ${pluriel(c.fautes, 'faute')} d'orthographe` : ''}${c.faux ? ` · ${c.faux} faux` : ''}${c.manques ? ` · ${c.manques} oublié${c.manques > 1 ? 's' : ''}` : ''}${c.ajouts ? ` · ${c.ajouts} en trop` : ''}</p>
+          <button class="btn-mini clair relire" data-ecoute="norm">${ICONES.son} Réécouter</button>`
           : `<textarea class="champ saisie" id="saisie" rows="3" placeholder="Tape ce que tu entends…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">${h(d.saisie)}</textarea>`}
       </div>
       ${res
@@ -885,20 +982,23 @@ function ecranDictee() {
         : `<button class="btn-principal" id="verifier">Vérifier</button>`}
     </div>
   </div>`;
-  vue.querySelectorAll('[data-ecoute]').forEach(b => b.onclick = () => {
-    const r = store.get().reglages;
-    if (!dire(t.phrases[d.i], { vitesse: b.dataset.ecoute === 'lent' ? r.vitesseLente : 1, nom: r.voix })) { toast('Synthèse vocale indisponible sur ce navigateur.'); return; }
-    d.ecoutes[d.i]++;
-    const info = vue.querySelector('.dictee-fiche .info');
-    if (info) info.textContent = `Écoutée ${d.ecoutes[d.i]} fois`;
-  });
+  const ecouter = (texte, vitesse) => {
+    if (!res && max && d.ecoutes[d.i] >= max) return;
+    if (!dire(texte, { vitesse, nom: store.get().reglages.voix })) { toast('Synthèse vocale indisponible sur ce navigateur.'); return; }
+    if (!res) { d.ecoutes[d.i]++; if (max && d.ecoutes[d.i] >= max) { setTimeout(ecranDictee, 50); return; } }
+    const info = $('#info-ecoute');
+    if (info && !res) info.textContent = max ? `${pluriel(max - d.ecoutes[d.i], 'écoute')} restante${max - d.ecoutes[d.i] > 1 ? 's' : ''}` : `Écoutée ${d.ecoutes[d.i]} fois`;
+  };
+  vue.querySelectorAll('[data-ecoute]').forEach(b => b.onclick = () =>
+    ecouter(phrase, b.dataset.ecoute === 'lent' ? store.get().reglages.vitesseLente : VITESSES[r.vitesse].v));
+  vue.querySelectorAll('[data-morceau]').forEach(b => b.onclick = () => ecouter(parts[+b.dataset.morceau], VITESSES[r.vitesse].v));
   $('#quitter-d').onclick = voileQuitterDictee;
   const zone = $('#saisie');
   if (zone) zone.oninput = () => { d.saisie = zone.value; };
   const v = $('#verifier');
   if (v) v.onclick = () => {
     if (!d.saisie.trim()) { toast('Tape d\'abord la phrase.'); return; }
-    d.resultats[d.i] = comparer(t.phrases[d.i], d.saisie);
+    d.resultats[d.i] = comparer(phrase, d.saisie, { indulgenceNoms: !!d.opts.indulgenceNoms });
     d.verifie = true;
     ecranDictee();
   };
@@ -925,16 +1025,25 @@ function finirDictee(abandon = false) {
   const d = dictee;
   d.fini = true;
   clearInterval(lancerDictee.t);
+  const e = store.get();
   const faits = d.resultats.filter(Boolean);
   const tot = faits.map(compter).reduce((a, c) => { for (const k in c) a[k] = (a[k] || 0) + c[k]; return a; }, {});
+  // Suivi des phrases de la banque : meilleure part de mots justes.
+  if (d.texte.ids) d.resultats.forEach((res, k) => {
+    if (!res) return;
+    const c = compter(res), id = d.texte.ids[k], x = e.phrasesDictee[id] || { n: 0, best: 0 };
+    e.phrasesDictee[id] = { n: x.n + 1, best: Math.max(x.best, c.mots ? c.justes / c.mots : 0), last: Date.now() };
+  });
   const s = {
-    id: 'd' + d.debut, mode: 'dictee', texteId: d.texte.id, titre: d.texte.titre,
+    id: 'd' + d.debut, mode: 'dictee', source: d.opts.source || 'texte', niveau: d.opts.niveau || null,
+    texteId: d.texte.id, titre: d.texte.titre, url: d.texte.url || null, reglages: d.reglages,
     debut: d.debut, fin: Date.now(), joue: Date.now() - d.debut, complet: !abandon,
     phrases: faits.length, ecoutes: d.ecoutes.reduce((a, b) => a + b, 0),
     mots: tot.mots || 0, justes: tot.justes || 0, fautes: tot.fautes || 0, faux: tot.faux || 0, manques: tot.manques || 0, ajouts: tot.ajouts || 0,
     passees: 0, notes: {}, cartes: []
   };
-  if (faits.length) { store.get().sessions.push(s); store.sauver(); }
+  if (faits.length) { e.sessions.push(s); }
+  store.sauver();
   bilanDictee = faits.length ? { s, d } : null;
   dictee = null;
   location.replace(faits.length ? '#/bilan-dictee' : '#/dictees');
@@ -948,6 +1057,7 @@ function ecranBilanDictee() {
     <section class="bloc bilan">
       <div class="gros"><b>${pourcent(s)}</b><span>de mots justes</span></div>
       <p class="sous">${s.justes}/${s.mots} mots · ${chrono(s.joue)} · ${pluriel(s.ecoutes, 'écoute')}</p>
+      <p class="info centre">${s.niveau ? s.niveau + ' · ' : ''}${resumeReglages(s.reglages)}</p>
       <div class="legende-notes">
         <span><i class="d-i-faute"></i>Orthographe <b>${s.fautes}</b></span>
         <span><i class="d-i-faux"></i>Faux <b>${s.faux}</b></span>
@@ -958,17 +1068,21 @@ function ecranBilanDictee() {
     <section class="bloc"><div class="bloc-titre"><h2>Correction</h2></div>
       ${d.resultats.map((r, i) => r ? `<div class="correction ligne"><div>${htmlComparaison(r)}</div>
         <button class="btn-mini clair" data-relire="${i}">${ICONES.son}</button></div>` : '').join('')}
+      ${s.url ? `<a class="btn-second" href="${h(s.url)}" target="_blank" rel="noopener">Lire l'article sur Wikipédia ${ICONES.lien}</a><p class="info">Texte : Wikipédia, licence CC BY-SA.</p>` : ''}
     </section>
     <div class="boutons">
-      <button class="btn-principal" id="refaire">Recommencer</button>
-      <a class="btn-second" href="#/dictees">Autres textes</a>
+      <button class="btn-principal" id="refaire">${s.source === 'banque' ? 'Nouvelle dictée' : 'Recommencer'}</button>
+      <a class="btn-second" href="#/dictees">Autres dictées</a>
     </div>
   </main>`;
-  vue.querySelectorAll('[data-relire]').forEach(b => b.onclick = () => {
-    const r = store.get().reglages;
-    dire(d.texte.phrases[+b.dataset.relire], { nom: r.voix });
-  });
-  $('#refaire').onclick = () => lancerDictee(d.texte);
+  vue.querySelectorAll('[data-relire]').forEach(b => b.onclick = () => dire(d.texte.phrases[+b.dataset.relire], { nom: store.get().reglages.voix }));
+  $('#refaire').onclick = () => {
+    if (s.source === 'banque') {
+      const e = store.get(), r = e.dictee;
+      const choix = choisirPhrases(BANQUE, e.phrasesDictee, s.niveau, r.nb, Date.now());
+      lancerDictee({ id: 'banque-' + s.niveau, titre: `Dictée ${s.niveau}`, phrases: choix.map(p => p.texte), ids: choix.map(p => p.id) }, { source: 'banque', niveau: s.niveau });
+    } else lancerDictee(d.texte, d.opts);
+  };
 }
 
 demarrer().catch(err => {

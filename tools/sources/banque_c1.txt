@@ -1,0 +1,102 @@
+# thème | phrase  (niveau C1 : structures complexes, expressions idiomatiques, vocabulaire riche)
+travail | Had I known the project would drag on this long, I would never have signed up for it.
+travail | The proposal was shot down before anyone had even bothered to read it properly.
+travail | She's got a knack for defusing tense situations without anyone noticing.
+travail | We're stretched pretty thin as it is, so taking on another client is out of the question.
+travail | It wasn't until the numbers came in that we realized how badly we'd misjudged the market.
+travail | He tends to overpromise and underdeliver, which is starting to wear on the team.
+travail | The merger is expected to go through despite mounting opposition from shareholders.
+travail | Rather than micromanaging everyone, she lets people figure things out on their own.
+travail | I'd been putting off that conversation for weeks, but it went better than I'd feared.
+travail | We'll need to strike a balance between cutting costs and keeping morale up.
+travail | The new policy has been met with a fair amount of skepticism from the staff.
+travail | If anything, the setback made us more determined to get it right.
+société | The gap between the richest and the poorest has been widening for decades.
+société | Critics argue that the measure does little to address the root causes of the problem.
+société | Housing prices have skyrocketed, pushing many families out of the neighborhoods they grew up in.
+société | Few issues are as divisive as immigration, and the debate shows no sign of cooling down.
+société | The report sheds light on just how widespread the problem has become.
+société | Whether the reform will actually make a difference remains to be seen.
+société | Turnout among young voters was surprisingly high, defying most predictions.
+société | It's one thing to pass a law and another thing entirely to enforce it.
+société | The scandal has dealt a serious blow to public trust in the institution.
+société | Many rural towns are struggling to hold on to their younger residents.
+science | The findings challenge the long-held assumption that the brain stops changing in adulthood.
+science | Researchers have yet to explain why the effect seems stronger in some patients than in others.
+science | The study's sample size was too small to draw any meaningful conclusions.
+science | What sets this approach apart is its ability to detect the disease years before symptoms appear.
+science | Scientists warn that the window for meaningful action on climate change is rapidly closing.
+science | The vaccine was developed in record time, thanks in part to decades of earlier research.
+science | Contrary to popular belief, we use far more than ten percent of our brains.
+science | The experiment had to be repeated after a calibration error skewed the results.
+science | Little is known about the creatures that inhabit the deepest parts of the ocean.
+technologie | Artificial intelligence is advancing at a pace that few experts had anticipated.
+technologie | The company came under fire for the way it handled its users' personal data.
+technologie | Most people click "accept" without having the faintest idea what they're agreeing to.
+technologie | The outage brought much of the internet to a standstill for several hours.
+technologie | It's become increasingly difficult to tell genuine content from what's been manipulated.
+technologie | The startup was acquired for a fraction of what it had once been valued at.
+technologie | Constant connectivity has blurred the line between work and personal time.
+technologie | Once the novelty wore off, most users simply stopped opening the app.
+argent | Inflation has eaten into people's savings, and wages have struggled to keep up.
+argent | Investors have grown wary of companies that burn through cash without turning a profit.
+argent | They managed to pay off their mortgage years ahead of schedule.
+argent | The cost of living here is so high that even well-paid professionals are feeling the pinch.
+argent | It's tempting to splurge after a hard week, but those small purchases add up.
+argent | The deal fell through at the last minute over a disagreement about the price.
+relations | We drifted apart after college, but we've recently reconnected.
+relations | He's not one to open up easily, so I was touched that he confided in me.
+relations | It took me years to realize that I didn't need everyone's approval.
+relations | She has a way of making people feel heard, even when she disagrees with them.
+relations | They bent over backwards to make us feel at home.
+relations | I'd hate for a misunderstanding like that to come between us.
+relations | No matter how busy he gets, he always makes time for his kids.
+relations | Looking back, I can see that we were both too stubborn to back down.
+culture | The novel's ending is deliberately ambiguous, leaving readers to draw their own conclusions.
+culture | The film drew mixed reviews, but it has since gained something of a cult following.
+culture | Her latest album marks a striking departure from the sound that made her famous.
+culture | The exhibit traces the artist's evolution over the course of five decades.
+culture | It's a slow-burning series, but by the third episode I was completely hooked.
+culture | The play tackles grief with a surprising amount of humor.
+culture | Some critics dismissed the book as sentimental, while others hailed it as a masterpiece.
+nature | The river has burst its banks twice this year, flooding hundreds of homes.
+nature | Rising temperatures are forcing some species to migrate farther north.
+nature | The coral reef has suffered extensive bleaching over the past few summers.
+nature | Wildfires have become not only more frequent but also far more intense.
+nature | Conservationists hope the ban will give the population a chance to recover.
+nature | The drought has left reservoirs at their lowest levels in half a century.
+santé | Chronic stress can take a toll on your body long before you notice any symptoms.
+santé | The clinic is so understaffed that patients often wait months for an appointment.
+santé | Doctors are increasingly concerned about the overuse of antibiotics.
+santé | It's not so much the amount of exercise that matters as the consistency.
+santé | She made a full recovery, which the doctors described as nothing short of remarkable.
+santé | Sleep deprivation impairs judgment in much the same way as alcohol does.
+voyage | We'd barely checked in when the fire alarm went off and the whole hotel had to be evacuated.
+voyage | The town is off the beaten path, which is precisely what makes it so charming.
+voyage | Traveling alone forced me out of my comfort zone in ways I hadn't expected.
+voyage | The flight was overbooked, so they offered us vouchers to take a later one.
+voyage | Mass tourism is putting a strain on cities that were never designed for such crowds.
+voyage | We took a wrong turn and ended up in a village that wasn't even on the map.
+opinions | I can't help but feel that we're missing the bigger picture here.
+opinions | That's easier said than done, especially when you're on a tight budget.
+opinions | I'm all for innovation, but not at the expense of people's privacy.
+opinions | It goes without saying that safety should come first.
+opinions | To be fair, nobody could have predicted how things would turn out.
+opinions | I'm not entirely convinced, but I'm willing to give it a shot.
+opinions | Far from solving the problem, the new rules have only made things worse.
+opinions | You'd think they would have learned from their mistakes by now.
+opinions | It's not a question of whether it will happen, but when.
+opinions | Much as I'd like to help, my hands are tied.
+quotidien | I've been so swamped lately that I've barely had time to catch my breath.
+quotidien | No sooner had I sat down than the phone started ringing again.
+quotidien | I'd completely lost track of time until I noticed it was getting dark.
+quotidien | It's been one thing after another since we moved in.
+quotidien | Try as I might, I just couldn't get the stain out of the carpet.
+quotidien | I'm in two minds about whether to renew my lease.
+quotidien | Should you need anything at all, don't hesitate to let me know.
+quotidien | I wouldn't have bothered if I'd known how long it was going to take.
+histoire | The treaty, signed after years of negotiations, brought an uneasy peace to the region.
+histoire | Historians still disagree about what ultimately led to the empire's collapse.
+histoire | The city was almost entirely rebuilt after the fire of the late nineteenth century.
+histoire | Few could have foreseen that the discovery would reshape the course of medicine.
+histoire | The letters, discovered decades later, revealed a very different side of the general.

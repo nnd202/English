@@ -23,7 +23,8 @@ export function mots(phrase) {
     .replace(/[-–—/]/g, ' ')
     .split(/\s+/)
     .map(brut => ({ brut, n: normaliser(brut) }))
-    .filter(m => m.n);
+    .filter(m => m.n)
+    .map((m, i) => ({ ...m, i }));
 }
 
 export function normaliser(m) {
@@ -49,7 +50,9 @@ function distance(a, b) {
 //   { k: 'faux', ref, saisi }        autre mot
 //   { k: 'manque', ref }             mot oublié
 //   { k: 'ajout', saisi }            mot en trop
-export function comparer(reference, saisie) {
+// Option indulgenceNoms : un nom propre (majuscule hors début de phrase) mal écrit
+// compte comme juste, affiché à part (« nom »).
+export function comparer(reference, saisie, { indulgenceNoms = false } = {}) {
   const R = mots(reference), S = mots(saisie);
   // Plus longue sous-suite commune sur les formes normalisées.
   const L = Array.from({ length: R.length + 1 }, () => Array(S.length + 1).fill(0));
@@ -62,9 +65,10 @@ export function comparer(reference, saisie) {
     for (let k = 0; k < n; k++) {
       const r = refEnAttente[k], s = saisiEnAttente[k];
       const tol = r.n.length > 6 ? 2 : 1;
-      out.push({ k: distance(r.n, s.n) <= tol ? 'faute' : 'faux', ref: r.brut, saisi: s.brut });
+      const nom = indulgenceNoms && r.i > 0 && /^["“'‘(]?[A-Z]/.test(r.brut);
+      out.push({ k: nom ? 'nom' : distance(r.n, s.n) <= tol ? 'faute' : 'faux', ref: r.brut, saisi: s.brut });
     }
-    for (const r of refEnAttente.slice(n)) out.push({ k: 'manque', ref: r.brut });
+    for (const r of refEnAttente.slice(n)) out.push({ k: indulgenceNoms && r.i > 0 && /^[A-Z]/.test(r.brut) ? 'nom' : 'manque', ref: r.brut });
     for (const s of saisiEnAttente.slice(n)) out.push({ k: 'ajout', saisi: s.brut });
     refEnAttente = []; saisiEnAttente = [];
   };
@@ -82,11 +86,51 @@ export function compter(elements) {
   const c = { mots: 0, justes: 0, fautes: 0, faux: 0, manques: 0, ajouts: 0 };
   for (const e of elements) {
     if (e.k !== 'ajout') c.mots++;
-    if (e.k === 'ok') c.justes++;
+    if (e.k === 'ok' || e.k === 'nom') c.justes++;
     else if (e.k === 'faute') c.fautes++;
     else if (e.k === 'faux') c.faux++;
     else if (e.k === 'manque') c.manques++;
     else c.ajouts++;
   }
   return c;
+}
+
+// ---------- Banque de phrases ----------
+
+const melanger = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+// Choisit n phrases d'un niveau : surtout des phrases jamais vues,
+// plus environ une sur quatre à retravailler (ratée, vue il y a plus d'un jour).
+// etats : { id: { n, best, last } } (best = part de mots justes, de 0 à 1).
+export function choisirPhrases(banque, etats, niveau, n, maintenant) {
+  const pool = banque.filter(p => p.niveau === niveau);
+  const jamais = melanger(pool.filter(p => !etats[p.id]));
+  const aRevoir = pool.filter(p => etats[p.id] && etats[p.id].best < 1 && maintenant - etats[p.id].last > 86400000)
+    .sort((a, b) => etats[a.id].best - etats[b.id].best);
+  const nRevoir = Math.min(aRevoir.length, Math.max(aRevoir.length ? 1 : 0, Math.floor(n / 4)));
+  const choix = aRevoir.slice(0, nRevoir);
+  for (const p of jamais) { if (choix.length >= n) break; choix.push(p); }
+  if (choix.length < n) {
+    const reste = pool.filter(p => !choix.includes(p)).sort((a, b) => (etats[a.id]?.last || 0) - (etats[b.id]?.last || 0));
+    for (const p of reste) { if (choix.length >= n) break; choix.push(p); }
+  }
+  return melanger(choix);
+}
+
+// Morceaux d'une phrase pour l'aide « par morceaux » : coupure à la ponctuation,
+// puis les morceaux de plus de 9 mots sont coupés en deux.
+export function morceaux(phrase) {
+  const out = [];
+  for (const m of phrase.split(/(?<=[,;:—])\s+/)) {
+    const w = m.split(/\s+/);
+    if (w.length > 9) { const k = Math.ceil(w.length / 2); out.push(w.slice(0, k).join(' '), w.slice(k).join(' ')); }
+    else out.push(m);
+  }
+  return out.filter(Boolean);
+}
+
+// Nettoie un résumé Wikipédia : sans parenthèses ni crochets, en phrases.
+export function phrasesWiki(extrait, max) {
+  const propre = extrait.replace(/\s*\([^()]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
+  return decouperPhrases(propre).filter(p => p.split(' ').length >= 4).slice(0, max);
 }

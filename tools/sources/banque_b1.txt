@@ -1,0 +1,102 @@
+# thème | phrase  (niveau B1 : phrases courtes et claires, débit naturel)
+quotidien | I usually grab a coffee on my way to work.
+quotidien | Could you turn the music down a little?
+quotidien | I forgot to set my alarm this morning.
+quotidien | We ran out of milk, so I'll stop by the store.
+quotidien | My phone died in the middle of the call.
+quotidien | Don't forget to take the trash out tonight.
+quotidien | I'm going to take a quick shower before dinner.
+quotidien | Can you pick me up at the station around six?
+quotidien | It took me forever to find a parking spot.
+quotidien | The kids are already in bed, so keep it down.
+quotidien | I need to do laundry before the weekend.
+quotidien | Let me know when you get home safe.
+quotidien | I left my keys in the car again.
+quotidien | Do you want to order pizza tonight?
+quotidien | I'll be there in about ten minutes.
+travail | I have a meeting at nine, so I can't talk long.
+travail | My boss asked me to stay a little later today.
+travail | Could you send me that file when you get a chance?
+travail | I'm working from home for the rest of the week.
+travail | We have a deadline on Friday, so it's pretty busy.
+travail | She just got promoted to team manager.
+travail | I'll call you back after lunch, if that's OK.
+travail | The printer isn't working again.
+travail | He's been with the company for almost ten years.
+travail | I'm not sure I'll make it to the meeting.
+voyage | Our flight was delayed for two hours.
+voyage | Is there a pharmacy near the hotel?
+voyage | We're thinking about going to the beach this summer.
+voyage | I always forget to bring a charger when I travel.
+voyage | How long does it take to get downtown by bus?
+voyage | The hotel room was small, but it was really clean.
+voyage | We got lost on the way, but it was worth it.
+voyage | Can I get a window seat, please?
+voyage | I'd like to rent a car for three days.
+voyage | The museum is closed on Mondays.
+nourriture | This soup is a little too salty for me.
+nourriture | Can we get the check, please?
+nourriture | I'm trying to eat less sugar these days.
+nourriture | Do you have any vegetarian options?
+nourriture | We should try that new Mexican place downtown.
+nourriture | I'll have the chicken with a side salad.
+nourriture | My grandmother makes the best apple pie.
+nourriture | I'm not really hungry, but I'll have some fruit.
+nourriture | Could I get some water, please?
+nourriture | Breakfast is my favorite meal of the day.
+santé | I've had a headache since this morning.
+santé | You should see a doctor if it doesn't get better.
+santé | I go to the gym three times a week.
+santé | I didn't sleep well last night.
+santé | Drink plenty of water and get some rest.
+santé | My back hurts after sitting all day.
+santé | She's allergic to peanuts, so be careful.
+santé | I'm trying to walk at least thirty minutes a day.
+relations | We've been friends since high school.
+relations | My sister is getting married next spring.
+relations | I haven't talked to him in a while.
+relations | They invited us over for dinner on Saturday.
+relations | Tell your parents I said hello.
+relations | We had a big argument, but we're fine now.
+relations | My neighbors are really friendly.
+relations | I'm meeting a friend for lunch tomorrow.
+relations | He always makes me laugh.
+relations | Do you want to come with us to the movies?
+loisirs | I've been reading a really good book lately.
+loisirs | We watched a movie and went to bed early.
+loisirs | Do you play any sports?
+loisirs | I'd love to learn how to play the guitar.
+loisirs | The concert was amazing, but it was so crowded.
+loisirs | We usually go hiking on Sunday mornings.
+loisirs | I spent the whole afternoon gardening.
+loisirs | Have you seen the new season yet?
+loisirs | I'm not a big fan of horror movies.
+loisirs | We're having a barbecue in the backyard.
+achats | These shoes are on sale this week.
+achats | Do you have this in a smaller size?
+achats | I'm just looking, thanks.
+achats | Can I pay by card?
+achats | I bought a new laptop, but it's already slow.
+achats | That's a little more than I wanted to spend.
+achats | Could I return this if it doesn't fit?
+achats | The store opens at ten on weekends.
+météo | It's supposed to rain all weekend.
+météo | It's way too hot to go outside right now.
+météo | Don't forget your jacket, it's getting cold.
+météo | The roads are icy, so drive carefully.
+météo | It was sunny this morning, but now it's cloudy.
+météo | I love the smell of the air after it rains.
+études | I have a big exam next week.
+études | My English is getting better, little by little.
+études | Could you explain that again, please?
+études | I'm taking an online course in photography.
+études | I always study better in the morning.
+études | What does this word mean?
+études | She wants to study medicine after high school.
+opinions | I think it's a great idea.
+opinions | Honestly, I don't really care either way.
+opinions | That sounds like a lot of work.
+opinions | I'm not sure that's a good idea.
+opinions | It's not as bad as I thought.
+opinions | I totally agree with you.
+opinions | It depends on how much it costs.

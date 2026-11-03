@@ -10,7 +10,7 @@ import { decouper, zones } from '../js/ipa.js';
 import { noter, retenu, W, JOUR } from '../js/fsrs.js';
 import { creerPioche, quotaNouvelles, difficultes } from '../js/tirage.js';
 import { series, records, fusionner, REGLAGES_DEFAUT, TYPES } from '../js/store.js';
-import { decouperPhrases, comparer, compter } from '../js/dictee.js';
+import { decouperPhrases, comparer, compter, choisirPhrases, morceaux, phrasesWiki } from '../js/dictee.js';
 
 const RACINE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const lire = (p) => readFileSync(join(RACINE, p), 'utf8');
@@ -62,11 +62,17 @@ for (const nom of lots) {
     }
   }
 }
-let nbTextes = 0;
+let nbTextes = 0, nbBanque = 0;
 for (const nom of dictees) {
   const lot = json(`data/dictees/${nom}.json`);
   verifier(lot.lot === nom && sw.includes(`data/dictees/${nom}.json`), `${nom} : nom ou CORE incorrect`);
-  for (const t of lot.textes) {
+  for (const x of lot.banque || []) {
+    nbBanque++;
+    verifier(x.id && !ids.has(x.id) && ['B1', 'B2', 'C1', 'C2'].includes(x.niveau) && x.texte, `${nom} › ${x.id} : phrase de banque incomplète ou en double`);
+    ids.add(x.id);
+    verifier(!/\d/.test(x.texte), `${nom} › ${x.id} : chiffres à écrire en lettres`);
+  }
+  for (const t of lot.textes || []) {
     nbTextes++;
     verifier(t.id && !ids.has(t.id), `${nom} › ${t.id} : identifiant manquant ou en double`);
     ids.add(t.id);
@@ -124,6 +130,14 @@ verifier(cmp('I could use some help.', 'I could use some health') === 'ok,ok,ok,
 verifier(cmp('It’s bike-sharing, OK?', "it's bike sharing ok") === 'ok,ok,ok,ok', 'Dictée : apostrophes typographiques, tirets, majuscules et ponctuation pardonnés');
 verifier(decouperPhrases('Hi there. How are you?\nFine! Thanks… bye. Mr. Smith left.')[4] === 'Mr. Smith left.', 'Dictée : découpage en phrases d\'un texte collé');
 
+const banqueTest = Array.from({ length: 20 }, (_, i) => ({ id: 'q' + i, niveau: 'C1', texte: 'x' }));
+const etatsQ = { q0: { n: 1, best: 0.5, last: T0 - 3 * JOUR }, q1: { n: 1, best: 1, last: T0 - 3 * JOUR }, q2: { n: 1, best: 0.2, last: T0 - 3600000 } };
+const ch = choisirPhrases(banqueTest, etatsQ, 'C1', 8, T0).map(p => p.id);
+verifier(ch.length === 8 && new Set(ch).size === 8 && ch.includes('q0') && !ch.includes('q1') && !ch.includes('q2'), 'Banque : phrases neuves + une ratée à revoir ; ni réussie, ni vue dans la journée');
+verifier(morceaux('Had I known the project would drag on this long, I would never have signed up for it.').length === 3, 'Dictée : découpage par morceaux');
+verifier(phrasesWiki('Paris (French: [paʁi]) is the capital and largest city of France. It is old.', 5)[0] === 'Paris is the capital and largest city of France.', 'Wikipédia : parenthèses retirées, phrases trop courtes écartées');
+verifier(comparer('It was signed by Clemenceau in Paris.', 'it was signed by clemenso in pari', { indulgenceNoms: true }).filter(e => e.k === 'nom').length === 2, 'Dictée : noms propres pardonnés sur demande');
+
 // Séries, records, fusion
 const s = (id, jour, extra = {}) => ({ id, debut: Date.UTC(2026, 10, jour, 10), cartes: [['a', 3, 1000]], passees: 10, mode: 'sprint', duree: 900, tirage: 'melange', complet: true, ...extra });
 const ses = [s('a', 1), s('b', 2), s('c', 3), s('d', 5, { passees: 30 }), s('e', 6, { passees: 50, complet: false })];
@@ -138,5 +152,5 @@ verifier(F.cartes.k.s === 3 && F.cartes.m.s === 2 && F.cartes.m.ej === 4 && F.ca
 verifier(F.sessions.length === 3, 'Fusion : parties sans doublon');
 verifier(series([{ id: 'z', debut: Date.UTC(2026, 10, 6, 10), mode: 'dictee', cartes: [] }], '2026-11-06').enCours === 1, 'Séries : une dictée compte comme un jour joué');
 
-console.log(`\n${nb} cartes, ${nbTextes} dictées (${Object.entries(parType).map(([k, v]) => `${k} ${v}`).join(', ')}), ${controles} contrôles, ${erreurs ? erreurs + ' erreur(s)' : 'tout est bon'}.`);
+console.log(`\n${nb} cartes, ${nbTextes} histoires, ${nbBanque} phrases de dictée (${Object.entries(parType).map(([k, v]) => `${k} ${v}`).join(', ')}), ${controles} contrôles, ${erreurs ? erreurs + ' erreur(s)' : 'tout est bon'}.`);
 process.exit(erreurs ? 1 : 0);

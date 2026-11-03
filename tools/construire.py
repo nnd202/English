@@ -39,3 +39,14 @@ c=[]
 for t,ipa,d,p in lignes('phrases_005.txt'):
     c.append({'id':'f-'+slug(t),'type':'phrase','texte':t,'ipa':ipa,'def':d,'p':pastilles(p,t)})
 ecrire('lot-005','Phrases courtes de la vie courante',c)
+
+# Banque de phrases de dictée (tirées au hasard par niveau)
+b = []
+for niv in ['b1', 'b2', 'c1', 'c2']:
+    k = 0
+    for theme, phrase in lignes(f'banque_{niv}.txt'):
+        k += 1
+        b.append({'id': f'{niv}-{k:03d}', 'niveau': niv.upper(), 'theme': theme, 'texte': phrase})
+json.dump({'lot': 'banque-001', 'titre': 'Banque de phrases B1 à C2', 'date': '2026-11-03', 'banque': b},
+          open(os.path.join(RACINE, 'data', 'dictees', 'banque-001.json'), 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+print('banque-001', len(b), {n: sum(1 for x in b if x['niveau'] == n) for n in ['B1', 'B2', 'C1', 'C2']})

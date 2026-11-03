@@ -1,0 +1,83 @@
+# thème | phrase  (niveau C2 : phrases longues et denses, registre soutenu ou très idiomatique)
+société | Notwithstanding the government's assurances, the reforms have done little to stem the tide of discontent among public sector workers.
+société | What began as a grassroots campaign has snowballed into a movement that politicians can no longer afford to ignore.
+société | The commission's findings, which were leaked days before their official release, paint a damning picture of institutional neglect.
+société | It is precisely those who stand to lose the most who have the least say in how such decisions are made.
+société | The ruling sets a precedent that could have far-reaching implications for how privacy is understood in the digital age.
+société | For all the talk of transparency, the process remains as opaque as ever.
+société | Not only did the policy fail to deliver on its promises, but it also exacerbated the very inequalities it was meant to address.
+société | The debate has become so polarized that any attempt at compromise is dismissed as a betrayal by both sides.
+société | Gentrification is often framed as a straightforward story of progress, yet it seldom benefits the people it displaces.
+société | Seldom has a single court decision provoked such a visceral reaction across the political spectrum.
+science | The hypothesis, though elegant, rests on a number of assumptions that have yet to be rigorously tested.
+science | Were the results to be replicated, they would upend decades of conventional wisdom about how memories are formed.
+science | The paper was retracted after it emerged that several of the images had been doctored.
+science | Far from being a fringe concern, antimicrobial resistance is now considered one of the gravest threats to global health.
+science | The telescope has allowed astronomers to peer further back in time than ever before, to an era when the first galaxies were taking shape.
+science | Correlation, as any statistician will tell you, is not the same thing as causation.
+science | The researchers were at pains to point out that their findings were preliminary and should be interpreted with caution.
+science | Only by pooling data from dozens of hospitals were they able to detect a pattern that had previously gone unnoticed.
+science | The mechanism by which the drug exerts its effect remains, to a large extent, a mystery.
+économie | The central bank's decision to hold interest rates steady was widely interpreted as a tacit admission that the recovery had stalled.
+économie | Investors, spooked by the prospect of a prolonged downturn, rushed to offload their riskier assets.
+économie | The company's meteoric rise was matched only by the speed of its subsequent collapse.
+économie | Austerity measures, however necessary they may have seemed at the time, left lasting scars on the country's public services.
+économie | It remains to be seen whether the stimulus will translate into sustained growth or merely a short-lived bump.
+économie | The so-called gig economy has given workers flexibility at the cost of security and benefits.
+économie | Had regulators intervened sooner, much of the fallout could arguably have been avoided.
+économie | The supply chain disruptions laid bare just how dependent manufacturers had become on a handful of suppliers.
+culture | The novel weaves together three generations of a family whose fates are inextricably bound up with the history of the town.
+culture | Her prose is deceptively simple, concealing layers of meaning that only reveal themselves on a second reading.
+culture | The director eschews conventional storytelling in favor of a fragmented, almost dreamlike structure.
+culture | What might have been a run-of-the-mill thriller is elevated by a performance of remarkable subtlety.
+culture | The retrospective invites visitors to reconsider an artist who was long dismissed as a mere imitator.
+culture | Critics were quick to dismiss the album as derivative, though it has since come to be regarded as a landmark of the genre.
+culture | The translation manages to capture not just the meaning of the original but its rhythm and its wit.
+culture | There is a melancholy undercurrent to even the most lighthearted scenes, which lends the film an unexpected depth.
+histoire | The armistice, far from heralding a lasting peace, merely postponed a conflict that many considered inevitable.
+histoire | Archival documents unearthed in the nineties cast the events of that winter in an entirely different light.
+histoire | The dynasty's downfall is often attributed to military defeat, but economic mismanagement played at least as large a role.
+histoire | Scarcely a decade after the revolution, many of its original ideals had been quietly abandoned.
+histoire | The expedition was beset by misfortune from the outset, and only a handful of its members ever made it home.
+histoire | Contemporary accounts of the battle vary so widely that historians have struggled to reconstruct what actually happened.
+travail | The restructuring, which management insisted was purely a matter of efficiency, was widely perceived as a pretext for layoffs.
+travail | She has an uncanny ability to anticipate objections and address them before they've even been raised.
+travail | It was only after he'd left the company that the full extent of the mismanagement came to light.
+travail | The negotiations dragged on for months, with neither side willing to make the first concession.
+travail | Burnout is rarely the result of a single crisis; more often, it creeps up on people over a period of years.
+travail | Under no circumstances should confidential documents be shared outside the department.
+travail | The board was reluctant to rock the boat, even though it was abundantly clear that a change of direction was long overdue.
+relations | It took me the better part of a decade to come to terms with the way things ended between us.
+relations | He has a disarming habit of saying exactly what everyone else is thinking but is too polite to admit.
+relations | Their friendship weathered more storms than most marriages, which is perhaps why it endured.
+relations | However hard she tried to hide it, her resentment was palpable to anyone who knew her well.
+relations | We've agreed to disagree, which, all things considered, is probably the healthiest outcome.
+relations | Little did they know that a chance encounter on a delayed train would change the course of their lives.
+nature | The once-thriving wetlands have been reduced to a fraction of their former size by decades of unchecked development.
+nature | Ecologists caution that reintroducing a predator can have consequences that ripple through the entire ecosystem.
+nature | The glacier, which has been retreating at an alarming rate, is expected to disappear entirely within a generation.
+nature | Few landscapes are as unforgiving as the desert at midday, when the heat seems to radiate from the very rocks.
+nature | The scheme to reforest the hillsides has been hailed as a success, though its long-term viability is still in question.
+technologie | The algorithm, opaque even to the engineers who designed it, has been accused of perpetuating existing biases.
+technologie | What was once hailed as a democratizing force has, in the eyes of many, become a vehicle for misinformation.
+technologie | The breach went undetected for months, during which time millions of records were quietly siphoned off.
+technologie | Rarely does a technology move from the laboratory to the mainstream as quickly as this one has.
+technologie | The promise of a paperless office has proved every bit as elusive as the promise of a four-day week.
+santé | The epidemic exposed long-standing weaknesses in a health system that had been chronically underfunded.
+santé | While the treatment is undeniably effective, its side effects are severe enough to deter many patients.
+santé | There is mounting evidence that loneliness is as detrimental to our health as smoking or obesity.
+santé | The guidelines, revised in light of new evidence, now advise against routine screening for people under fifty.
+opinions | I'd be hard-pressed to think of a worse moment to announce such a drastic change.
+opinions | It strikes me as somewhat disingenuous to complain about a problem you've done nothing to solve.
+opinions | Be that as it may, we can hardly afford to sit back and wait for things to improve on their own.
+opinions | The argument, persuasive as it may sound at first, doesn't hold up under closer scrutiny.
+opinions | Whatever one makes of his politics, there's no denying that he's a formidable speaker.
+opinions | I'm loath to admit it, but they may have had a point all along.
+opinions | It would be naive to assume that the problem will simply resolve itself.
+opinions | One could argue that the cure has turned out to be worse than the disease.
+quotidien | By the time I'd finally tracked down the right form, the office had already closed for the day.
+quotidien | I've lived here for the better part of fifteen years, and I still haven't figured out the parking rules.
+quotidien | Had it not been for a neighbor's quick thinking, the kitchen fire could have spread to the rest of the building.
+quotidien | Every time I think I've got my inbox under control, another deluge of emails comes pouring in.
+quotidien | The renovation, which was supposed to take three weeks, has now dragged on for the better part of a year.
+quotidien | I'd sooner walk the whole way home than squeeze onto another overcrowded bus.

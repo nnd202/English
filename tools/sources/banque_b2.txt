@@ -1,0 +1,101 @@
+# thème | phrase  (niveau B2 : phrases plus longues, liaisons et formes réduites fréquentes)
+quotidien | I was going to call you, but I got caught up with something at work.
+quotidien | If you're heading out anyway, could you grab some bread on the way back?
+quotidien | I've been meaning to clean out the garage for months now.
+quotidien | We ended up staying up way too late watching old videos.
+quotidien | I'd rather take the train than sit in traffic for an hour.
+quotidien | It turns out the store had closed early because of the storm.
+quotidien | I can't believe how fast this year has gone by.
+quotidien | You might want to double-check the address before you leave.
+quotidien | I didn't realize how tired I was until I sat down.
+quotidien | Let's figure out the details once we get there.
+quotidien | I've gotten used to waking up early, but I still don't like it.
+quotidien | Whenever I try to relax, something comes up.
+travail | We're supposed to have the report ready by the end of the month.
+travail | She turned down the job offer because the salary was too low.
+travail | I'll get back to you as soon as I've talked to the team.
+travail | The meeting ran over, so I missed my train.
+travail | He's really good at explaining complicated things in simple terms.
+travail | They're cutting back on travel to save money this year.
+travail | I've been asked to give a short presentation on Monday.
+travail | If we don't hire someone soon, we're going to fall behind.
+travail | It's hard to focus when people keep interrupting you.
+travail | I asked for a raise, and to my surprise, they said yes.
+travail | We need to come up with a better way to handle complaints.
+travail | Working remotely has its perks, but I miss my colleagues.
+voyage | We missed our connecting flight and had to spend the night at the airport.
+voyage | The view from the top was absolutely worth the climb.
+voyage | I'd recommend booking in advance, especially during the holidays.
+voyage | We didn't have much of a plan, so we just wandered around the old town.
+voyage | The train was packed, so we had to stand the whole way.
+voyage | I always feel a little lost the first day in a new city.
+voyage | Make sure your passport is valid for at least six months.
+voyage | We rented a small apartment instead of staying in a hotel.
+voyage | The locals were incredibly welcoming and helpful.
+voyage | By the time we got to the beach, it had started raining.
+nourriture | I've been trying to cook at home more often to save money.
+nourriture | The service was a bit slow, but the food more than made up for it.
+nourriture | I'm not much of a cook, but I make a decent pasta sauce.
+nourriture | We should have made a reservation, the place is completely full.
+nourriture | My doctor told me to cut down on red meat.
+nourriture | I didn't expect it to be that spicy, my mouth is on fire.
+nourriture | They've changed the menu, and honestly, I liked the old one better.
+nourriture | Could you put the leftovers in the fridge before you go to bed?
+santé | I've been feeling a little run down, so I'm taking it easy this week.
+santé | She sprained her ankle while running and had to use crutches.
+santé | Getting enough sleep makes a huge difference in how I feel.
+santé | I should probably stop drinking coffee after four in the afternoon.
+santé | The doctor said it was nothing serious, just a minor infection.
+santé | Stress can affect your health more than people realize.
+santé | I've signed up for a yoga class to help me relax.
+santé | It took me a few weeks to fully recover from the flu.
+relations | We haven't seen each other in years, but it felt like no time had passed.
+relations | I don't think he meant to be rude, he's just a little awkward.
+relations | They've been together for so long that they finish each other's sentences.
+relations | My parents are thinking about moving closer to us.
+relations | I wish I had told her how I felt sooner.
+relations | We get along well, even though we're completely different.
+relations | She's always there for me when things get tough.
+relations | I ran into my old teacher at the grocery store yesterday.
+relations | We decided to keep things simple and have a small wedding.
+relations | It's not always easy to stay in touch when you live far apart.
+société | More and more people are choosing to live without a car.
+société | The city is planning to build more affordable housing downtown.
+société | A lot of young people can't afford to buy a home anymore.
+société | Social media has completely changed the way we communicate.
+société | The new law is supposed to take effect next year.
+société | Public transportation here is cheap, but it's not very reliable.
+société | Volunteering is a great way to meet people in your community.
+société | Some schools have banned phones in the classroom.
+technologie | My laptop keeps freezing whenever I open more than two programs.
+technologie | I forgot my password, so I had to reset it again.
+technologie | It's amazing how much you can do with just a phone these days.
+technologie | Make sure you back up your files before you install the update.
+technologie | I turned off notifications, and I feel a lot calmer now.
+technologie | The app is free, but you have to pay to remove the ads.
+technologie | I spend way too much time scrolling before bed.
+technologie | Self-driving cars still have a long way to go.
+argent | We're trying to put a little money aside every month.
+argent | Prices have gone up so much that eating out is a luxury now.
+argent | I ended up paying twice as much as I'd planned.
+argent | It's worth spending a bit more on something that lasts.
+argent | They offered me a discount because I'd been waiting so long.
+argent | I keep track of my expenses in a spreadsheet.
+culture | The movie was based on a true story, which made it even more powerful.
+culture | I didn't really get the ending, to be honest.
+culture | The museum was so big that we couldn't see everything in one day.
+culture | She's been playing the piano since she was a little kid.
+culture | The book was much better than the movie, as usual.
+culture | I've always wanted to see a play on Broadway.
+nature | We saw a family of deer right outside our window.
+nature | The lake was so clear you could see the bottom.
+nature | It's getting harder to find places without any light pollution.
+nature | The forest fire forced hundreds of people to leave their homes.
+nature | If it doesn't rain soon, the farmers are going to be in trouble.
+opinions | I see your point, but I'm not sure I agree.
+opinions | It's not that I don't like it, it's just not my thing.
+opinions | I'd be lying if I said I wasn't a little disappointed.
+opinions | It's easy to criticize when you don't have to make the decision.
+opinions | The more I think about it, the less I like the idea.
+opinions | Whether we like it or not, things are going to change.
+opinions | I used to think it was a waste of time, but I've changed my mind.

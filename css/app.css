@@ -227,6 +227,19 @@ svg.graphe text.jour { fill: #a6afc2; font-size: 8px; }
 .toast[hidden] { display: none; }
 
 /* Dictées */
+.sous-titre { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--gris); margin-bottom: -4px; }
+.boutons-ligne { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.boutons-ligne .btn-second[disabled] { opacity: .6; }
+.fiche-actions button[disabled], .morceaux .puce[disabled] { opacity: .35; }
+.morceaux { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.morceaux span { font-size: 12px; color: var(--gris); }
+.morceaux .puce { min-width: 40px; }
+.aide-mots { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; align-items: center; margin: 0; }
+.aide-mots i { width: 16px; height: 4px; border-radius: 2px; background: #c9d2e6; }
+.aide-mots span { font-size: 12px; color: var(--gris); margin-left: 6px; }
+.relire { align-self: center; display: flex; align-items: center; gap: 6px; }
+.relire svg { width: 18px; height: 18px; }
+.d-nom { color: var(--bleu-fonce); border-bottom: 2px dotted var(--bleu); }
 .ligne-dictee { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid var(--gris-clair); }
 .bloc-titre + .ligne-dictee { border-top: 0; }
 .ld-main { flex: 1; text-align: left; display: flex; flex-direction: column; }
