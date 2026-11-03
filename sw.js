@@ -1,6 +1,6 @@
 // Service worker : réseau d'abord, cache en secours (fonctionne hors ligne).
 // Tout nouveau fichier doit être ajouté à CORE (tools/check.mjs le vérifie).
-const CACHE = 'english-v3';
+const CACHE = 'english-v4';
 const CORE = [
   './',
   'index.html',

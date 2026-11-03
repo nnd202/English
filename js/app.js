@@ -51,7 +51,21 @@ const ICONES = {
 };
 
 // ---------- Démarrage ----------
+// Hauteur réellement visible (barre du navigateur et clavier déduits).
+function ajusterHauteur() {
+  const v = window.visualViewport;
+  const r = document.documentElement.style;
+  r.setProperty('--hauteur-visible', `${Math.round(v ? v.height : window.innerHeight)}px`);
+  r.setProperty('--haut-visible', `${Math.round(v ? v.offsetTop : 0)}px`);
+}
+
 async function demarrer() {
+  ajusterHauteur();
+  if (window.visualViewport) {
+    visualViewport.addEventListener('resize', ajusterHauteur);
+    visualViewport.addEventListener('scroll', ajusterHauteur);
+  }
+  window.addEventListener('resize', ajusterHauteur);
   const charge = async (u) => (await fetch(u, { cache: 'no-cache' })).json();
   LANGUE = await charge('data/langue.json');
   const { lots, dictees = [] } = await charge('data/lots.json');
@@ -86,6 +100,8 @@ function router() {
   fermerFeuille();
   const [, ecran, arg] = hash.split('/');
   nav.hidden = ecran === 'jeu' || ecran === 'dictee';
+  document.body.classList.toggle('verrou', nav.hidden);
+  if (!nav.hidden) window.scrollTo(0, 0);
   if (ecran === 'dictee' && dictee) return ecranDictee();
   if (ecran === 'bilan-dictee' && bilanDictee) return ecranBilanDictee();
   if (ecran === 'dictees') return ecranDictees();

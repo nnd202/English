@@ -157,6 +157,7 @@ Bleu roi franc (#3d63dd), grandes cartes blanches, coins très arrondis (24 à 2
 - Le petit signe du flap (U+032C) est mal placé par certaines polices : il est dessiné en CSS (`.flap`).
 - Une carte en attente de retour ne doit pas être piochée normalement, sinon le retour se perd.
 - Le bouton retour d'Android pendant une partie : pause, pas sortie.
+- Barre du navigateur mobile : les écrans de jeu (Sprint, dictée) sont fixés et calés sur `visualViewport` (hauteur visible, clavier déduit), et la page ne défile pas pendant le jeu. Sinon la barre se replie, la hauteur change et tout se décale.
 
 ## 13. Les dictées
 
