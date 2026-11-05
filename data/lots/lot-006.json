@@ -1,0 +1,1757 @@
+{
+ "lot": "lot-006",
+ "titre": "Vocabulaire C1-C2 et pièges avancés",
+ "date": "2026-11-03",
+ "cartes": [
+  {
+   "id": "m-conundrum",
+   "type": "mot",
+   "texte": "conundrum",
+   "ipa": "kəˈnʌn.drəm",
+   "def": "A confusing and difficult problem.",
+   "ex": "Finding childcare is a real conundrum for working parents.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnʌn"
+    }
+   ]
+  },
+  {
+   "id": "m-quintessential",
+   "type": "mot",
+   "texte": "quintessential",
+   "ipa": "ˌkwɪn.t̬əˈsen.ʃəl",
+   "def": "Being the most typical example of something.",
+   "ex": "It's the quintessential New York diner.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈsen"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-juxtaposition",
+   "type": "mot",
+   "texte": "juxtaposition",
+   "ipa": "ˌdʒʌk.stə.pəˈzɪʃ.ən",
+   "def": "Placing two contrasting things side by side.",
+   "ex": "The juxtaposition of old and new buildings is striking.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈzɪʃ"
+    }
+   ]
+  },
+  {
+   "id": "m-ephemeral",
+   "type": "mot",
+   "texte": "ephemeral",
+   "ipa": "ɪˈfem.ɚ.əl",
+   "def": "Lasting a very short time.",
+   "ex": "Fame on social media is often ephemeral.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "e[ph]emeral"
+    }
+   ]
+  },
+  {
+   "id": "m-serendipity",
+   "type": "mot",
+   "texte": "serendipity",
+   "ipa": "ˌser.ənˈdɪp.ə.t̬i",
+   "def": "Finding something good by happy accident.",
+   "ex": "Meeting her there was pure serendipity.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈdɪp"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-ambivalent",
+   "type": "mot",
+   "texte": "ambivalent",
+   "ipa": "æmˈbɪv.ə.lənt",
+   "def": "Having mixed feelings about something.",
+   "ex": "I'm ambivalent about moving abroad.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈbɪv"
+    }
+   ]
+  },
+  {
+   "id": "m-cacophony",
+   "type": "mot",
+   "texte": "cacophony",
+   "ipa": "kəˈkɑː.fə.ni",
+   "def": "A harsh mix of loud, unpleasant sounds.",
+   "ex": "A cacophony of car horns filled the street.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkɑː"
+    },
+    {
+     "t": "piege",
+     "mot": "caco[ph]ony"
+    }
+   ]
+  },
+  {
+   "id": "m-idiosyncrasy",
+   "type": "mot",
+   "texte": "idiosyncrasy",
+   "ipa": "ˌɪd.i.əˈsɪŋ.krə.si",
+   "def": "A strange habit or way of behaving that is typical of one person.",
+   "ex": "Everyone has their little idiosyncrasies.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈsɪŋ"
+    }
+   ]
+  },
+  {
+   "id": "m-pragmatic",
+   "type": "mot",
+   "texte": "pragmatic",
+   "ipa": "præɡˈmæt̬.ɪk",
+   "def": "Dealing with things in a practical, realistic way.",
+   "ex": "We need a pragmatic solution, not a perfect one.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-scrutiny",
+   "type": "mot",
+   "texte": "scrutiny",
+   "ipa": "ˈskruː.t̬ən.i",
+   "def": "Careful, detailed examination.",
+   "ex": "The company is under intense scrutiny.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-plethora",
+   "type": "mot",
+   "texte": "plethora",
+   "ipa": "ˈpleθ.ɚ.ə",
+   "def": "A very large amount, often more than needed.",
+   "ex": "There's a plethora of options to choose from.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈpleθ"
+    }
+   ]
+  },
+  {
+   "id": "m-paradigm",
+   "type": "mot",
+   "texte": "paradigm",
+   "ipa": "ˈper.ə.daɪm",
+   "def": "A model or typical pattern of thinking.",
+   "ex": "It marked a paradigm shift in medicine.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "paradi[g]m"
+    }
+   ]
+  },
+  {
+   "id": "m-hegemony",
+   "type": "mot",
+   "texte": "hegemony",
+   "ipa": "hɪˈdʒem.ə.ni",
+   "def": "Dominance of one group or country over others.",
+   "ex": "The empire's hegemony lasted for centuries.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈdʒem"
+    }
+   ]
+  },
+  {
+   "id": "m-nuance",
+   "type": "mot",
+   "texte": "nuance",
+   "ipa": "ˈnuː.ɑːns",
+   "def": "A very small difference in meaning, feeling or color.",
+   "ex": "The translation loses some of the nuance.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈnuː.ɑːns"
+    }
+   ]
+  },
+  {
+   "id": "m-arbitrary",
+   "type": "mot",
+   "texte": "arbitrary",
+   "ipa": "ˈɑːr.bə.trer.i",
+   "def": "Based on chance or personal whim rather than reason.",
+   "ex": "The rules seem completely arbitrary.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈɑːr"
+    }
+   ]
+  },
+  {
+   "id": "m-autonomous",
+   "type": "mot",
+   "texte": "autonomous",
+   "ipa": "ɑːˈtɑː.nə.məs",
+   "def": "Independent; governing itself.",
+   "ex": "The region is largely autonomous.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-benevolent",
+   "type": "mot",
+   "texte": "benevolent",
+   "ipa": "bəˈnev.əl.ənt",
+   "def": "Kind and wanting to help others.",
+   "ex": "He was a benevolent boss.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnev"
+    }
+   ]
+  },
+  {
+   "id": "m-cognizant",
+   "type": "mot",
+   "texte": "cognizant",
+   "ipa": "ˈkɑːɡ.nə.zənt",
+   "def": "Aware of something (formal).",
+   "ex": "We are cognizant of the risks.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɡ.n"
+    }
+   ]
+  },
+  {
+   "id": "m-complacent",
+   "type": "mot",
+   "texte": "complacent",
+   "ipa": "kəmˈpleɪ.sənt",
+   "def": "Too satisfied with yourself to see danger or need for change.",
+   "ex": "We can't afford to get complacent.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈpleɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-conscientious",
+   "type": "mot",
+   "texte": "conscientious",
+   "ipa": "ˌkɑːn.ʃiˈen.ʃəs",
+   "def": "Careful to do things well and thoroughly.",
+   "ex": "She's a very conscientious worker.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ʃiˈen.ʃəs"
+    }
+   ]
+  },
+  {
+   "id": "m-contentious",
+   "type": "mot",
+   "texte": "contentious",
+   "ipa": "kənˈten.ʃəs",
+   "def": "Likely to cause disagreement.",
+   "ex": "Immigration remains a contentious issue.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ʃəs"
+    }
+   ]
+  },
+  {
+   "id": "m-convoluted",
+   "type": "mot",
+   "texte": "convoluted",
+   "ipa": "ˈkɑːn.və.luː.t̬ɪd",
+   "def": "Extremely complicated and hard to follow.",
+   "ex": "The plot was far too convoluted.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈkɑːn"
+    }
+   ]
+  },
+  {
+   "id": "m-debilitating",
+   "type": "mot",
+   "texte": "debilitating",
+   "ipa": "dɪˈbɪl.ə.teɪ.t̬ɪŋ",
+   "def": "Making someone very weak.",
+   "ex": "She suffers from debilitating migraines.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-deteriorate",
+   "type": "mot",
+   "texte": "deteriorate",
+   "ipa": "dɪˈtɪr.i.ə.reɪt",
+   "def": "To become worse.",
+   "ex": "His health began to deteriorate.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtɪr"
+    }
+   ]
+  },
+  {
+   "id": "m-discrepancy",
+   "type": "mot",
+   "texte": "discrepancy",
+   "ipa": "dɪˈskrep.ən.si",
+   "def": "A difference between things that should match.",
+   "ex": "There's a discrepancy in the figures.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈskrep"
+    }
+   ]
+  },
+  {
+   "id": "m-disparity",
+   "type": "mot",
+   "texte": "disparity",
+   "ipa": "dɪˈsper.ə.t̬i",
+   "def": "A large, often unfair difference.",
+   "ex": "The pay disparity is shocking.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-eloquent",
+   "type": "mot",
+   "texte": "eloquent",
+   "ipa": "ˈel.ə.kwənt",
+   "def": "Speaking or writing clearly and persuasively.",
+   "ex": "She gave an eloquent speech.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈel"
+    }
+   ]
+  },
+  {
+   "id": "m-exacerbate",
+   "type": "mot",
+   "texte": "exacerbate",
+   "ipa": "ɪɡˈzæs.ɚ.beɪt",
+   "def": "To make a bad situation worse.",
+   "ex": "The drought exacerbated the crisis.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɡˈz"
+    }
+   ]
+  },
+  {
+   "id": "m-facetious",
+   "type": "mot",
+   "texte": "facetious",
+   "ipa": "fəˈsiː.ʃəs",
+   "def": "Joking at an inappropriate moment.",
+   "ex": "Stop being facetious, this is serious.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈsiː.ʃəs"
+    }
+   ]
+  },
+  {
+   "id": "m-feasible",
+   "type": "mot",
+   "texte": "feasible",
+   "ipa": "ˈfiː.zə.bəl",
+   "def": "Possible and practical to do.",
+   "ex": "Is that even feasible on our budget?",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "z"
+    }
+   ]
+  },
+  {
+   "id": "m-fluctuate",
+   "type": "mot",
+   "texte": "fluctuate",
+   "ipa": "ˈflʌk.tʃu.eɪt",
+   "def": "To change often, going up and down.",
+   "ex": "Prices fluctuate from week to week.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "tʃu"
+    }
+   ]
+  },
+  {
+   "id": "m-frivolous",
+   "type": "mot",
+   "texte": "frivolous",
+   "ipa": "ˈfrɪv.əl.əs",
+   "def": "Not serious; silly or wasteful.",
+   "ex": "It's not a frivolous purchase.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈfrɪv"
+    }
+   ]
+  },
+  {
+   "id": "m-gregarious",
+   "type": "mot",
+   "texte": "gregarious",
+   "ipa": "ɡrɪˈɡer.i.əs",
+   "def": "Enjoying the company of others; sociable.",
+   "ex": "He's outgoing and gregarious.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈɡer"
+    }
+   ]
+  },
+  {
+   "id": "m-hypocrisy",
+   "type": "mot",
+   "texte": "hypocrisy",
+   "ipa": "hɪˈpɑː.krə.si",
+   "def": "Claiming beliefs that you don't actually follow.",
+   "ex": "The hypocrisy of it all is staggering.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈpɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-impeccable",
+   "type": "mot",
+   "texte": "impeccable",
+   "ipa": "ɪmˈpek.ə.bəl",
+   "def": "Perfect; without any fault.",
+   "ex": "Her timing was impeccable.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈpek"
+    }
+   ]
+  },
+  {
+   "id": "m-imminent",
+   "type": "mot",
+   "texte": "imminent",
+   "ipa": "ˈɪm.ə.nənt",
+   "def": "About to happen very soon.",
+   "ex": "A storm is imminent.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈɪm"
+    }
+   ]
+  },
+  {
+   "id": "m-implicit",
+   "type": "mot",
+   "texte": "implicit",
+   "ipa": "ɪmˈplɪs.ɪt",
+   "def": "Suggested but not said directly.",
+   "ex": "There was an implicit threat in his words.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈplɪs"
+    }
+   ]
+  },
+  {
+   "id": "m-inadvertently",
+   "type": "mot",
+   "texte": "inadvertently",
+   "ipa": "ˌɪn.ədˈvɝː.ʔənt.li",
+   "def": "Without meaning to; by accident.",
+   "ex": "I inadvertently deleted the file.",
+   "p": [
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈvɝː"
+    }
+   ]
+  },
+  {
+   "id": "m-incentive",
+   "type": "mot",
+   "texte": "incentive",
+   "ipa": "ɪnˈsen.t̬ɪv",
+   "def": "Something that encourages you to act.",
+   "ex": "There's no incentive to work harder.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-incongruous",
+   "type": "mot",
+   "texte": "incongruous",
+   "ipa": "ɪnˈkɑːŋ.ɡru.əs",
+   "def": "Strange because it doesn't fit its surroundings.",
+   "ex": "A modern sculpture looked incongruous in the old church.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkɑːŋ"
+    }
+   ]
+  },
+  {
+   "id": "m-indigenous",
+   "type": "mot",
+   "texte": "indigenous",
+   "ipa": "ɪnˈdɪdʒ.ə.nəs",
+   "def": "Originally from a particular place; native.",
+   "ex": "The plant is indigenous to Australia.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈdɪdʒ"
+    }
+   ]
+  },
+  {
+   "id": "m-indispensable",
+   "type": "mot",
+   "texte": "indispensable",
+   "ipa": "ˌɪn.dɪˈspen.sə.bəl",
+   "def": "Absolutely necessary.",
+   "ex": "She's become indispensable to the team.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈspen"
+    }
+   ]
+  },
+  {
+   "id": "m-inherent",
+   "type": "mot",
+   "texte": "inherent",
+   "ipa": "ɪnˈhɪr.ənt",
+   "def": "Existing as a natural, permanent part of something.",
+   "ex": "Every investment carries inherent risks.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈhɪr"
+    }
+   ]
+  },
+  {
+   "id": "m-innocuous",
+   "type": "mot",
+   "texte": "innocuous",
+   "ipa": "ɪˈnɑː.kju.əs",
+   "def": "Harmless; not likely to offend.",
+   "ex": "It was an innocuous question.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-insidious",
+   "type": "mot",
+   "texte": "insidious",
+   "ipa": "ɪnˈsɪd.i.əs",
+   "def": "Gradually and secretly harmful.",
+   "ex": "Stress can have an insidious effect on health.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈsɪd"
+    }
+   ]
+  },
+  {
+   "id": "m-integrity",
+   "type": "mot",
+   "texte": "integrity",
+   "ipa": "ɪnˈteɡ.rə.t̬i",
+   "def": "Being honest and having strong moral principles.",
+   "ex": "He's a man of great integrity.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈteɡ"
+    }
+   ]
+  },
+  {
+   "id": "m-intrinsic",
+   "type": "mot",
+   "texte": "intrinsic",
+   "ipa": "ɪnˈtrɪn.sɪk",
+   "def": "Belonging naturally to something; essential.",
+   "ex": "The painting has little intrinsic value.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtrɪn"
+    }
+   ]
+  },
+  {
+   "id": "m-irreverent",
+   "type": "mot",
+   "texte": "irreverent",
+   "ipa": "ɪˈrev.ɚ.ənt",
+   "def": "Not showing the expected respect, often humorously.",
+   "ex": "The show has an irreverent sense of humor.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈrev"
+    }
+   ]
+  },
+  {
+   "id": "m-jeopardize",
+   "type": "mot",
+   "texte": "jeopardize",
+   "ipa": "ˈdʒep.ɚ.daɪz",
+   "def": "To put something at risk.",
+   "ex": "Don't jeopardize your career over this.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "je[o]pardize"
+    }
+   ]
+  },
+  {
+   "id": "m-lethargic",
+   "type": "mot",
+   "texte": "lethargic",
+   "ipa": "ləˈθɑːr.dʒɪk",
+   "def": "Sluggish and lacking energy.",
+   "ex": "The heat made everyone lethargic.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈθɑːr"
+    }
+   ]
+  },
+  {
+   "id": "m-leverage",
+   "type": "mot",
+   "texte": "leverage",
+   "ipa": "ˈlev.ɚ.ɪdʒ",
+   "def": "Power to influence; to use something to maximum advantage.",
+   "ex": "We can leverage our network to find clients.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈlev"
+    }
+   ]
+  },
+  {
+   "id": "m-lucrative",
+   "type": "mot",
+   "texte": "lucrative",
+   "ipa": "ˈluː.krə.t̬ɪv",
+   "def": "Producing a lot of money.",
+   "ex": "It's a very lucrative business.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈluː"
+    }
+   ]
+  },
+  {
+   "id": "m-magnanimous",
+   "type": "mot",
+   "texte": "magnanimous",
+   "ipa": "mæɡˈnæn.ə.məs",
+   "def": "Generous and forgiving, especially toward a rival.",
+   "ex": "She was magnanimous in victory.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnæn"
+    }
+   ]
+  },
+  {
+   "id": "m-malleable",
+   "type": "mot",
+   "texte": "malleable",
+   "ipa": "ˈmæl.i.ə.bəl",
+   "def": "Easily shaped or influenced.",
+   "ex": "Young minds are very malleable.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈmæl"
+    }
+   ]
+  },
+  {
+   "id": "m-mediocre",
+   "type": "mot",
+   "texte": "mediocre",
+   "ipa": "ˌmiː.diˈoʊ.kɚ",
+   "def": "Only average; not very good.",
+   "ex": "The food was mediocre at best.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈoʊ"
+    }
+   ]
+  },
+  {
+   "id": "m-mitigate",
+   "type": "mot",
+   "texte": "mitigate",
+   "ipa": "ˈmɪt̬.ə.ɡeɪt",
+   "def": "To make something less severe.",
+   "ex": "Measures to mitigate the risk.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-negligible",
+   "type": "mot",
+   "texte": "negligible",
+   "ipa": "ˈneɡ.lə.dʒə.bəl",
+   "def": "So small it's not worth considering.",
+   "ex": "The difference is negligible.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "dʒə"
+    }
+   ]
+  },
+  {
+   "id": "m-nonchalant",
+   "type": "mot",
+   "texte": "nonchalant",
+   "ipa": "ˌnɑːn.ʃəˈlɑːnt",
+   "def": "Calm and relaxed, seeming not to care.",
+   "ex": "He was oddly nonchalant about the news.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈlɑːnt"
+    },
+    {
+     "t": "piege",
+     "mot": "non[ch]alant"
+    }
+   ]
+  },
+  {
+   "id": "m-notorious",
+   "type": "mot",
+   "texte": "notorious",
+   "ipa": "noʊˈtɔːr.i.əs",
+   "def": "Famous for something bad.",
+   "ex": "The road is notorious for accidents.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈtɔːr"
+    }
+   ]
+  },
+  {
+   "id": "m-obsolete",
+   "type": "mot",
+   "texte": "obsolete",
+   "ipa": "ˌɑːb.səˈliːt",
+   "def": "No longer used or needed; out of date.",
+   "ex": "Fax machines are almost obsolete.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈliːt"
+    }
+   ]
+  },
+  {
+   "id": "m-ominous",
+   "type": "mot",
+   "texte": "ominous",
+   "ipa": "ˈɑː.mə.nəs",
+   "def": "Suggesting that something bad will happen.",
+   "ex": "There was an ominous silence.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-onerous",
+   "type": "mot",
+   "texte": "onerous",
+   "ipa": "ˈoʊ.nɚ.əs",
+   "def": "Heavy, difficult and tiring to deal with.",
+   "ex": "The paperwork is onerous.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈoʊ"
+    }
+   ]
+  },
+  {
+   "id": "m-paradox",
+   "type": "mot",
+   "texte": "paradox",
+   "ipa": "ˈper.ə.dɑːks",
+   "def": "A situation or statement that seems to contradict itself.",
+   "ex": "It's a paradox: the more choice, the less happy we are.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈper"
+    }
+   ]
+  },
+  {
+   "id": "m-pernicious",
+   "type": "mot",
+   "texte": "pernicious",
+   "ipa": "pɚˈnɪʃ.əs",
+   "def": "Harmful in a gradual, hidden way.",
+   "ex": "The pernicious effects of misinformation.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnɪʃ"
+    }
+   ]
+  },
+  {
+   "id": "m-plausible",
+   "type": "mot",
+   "texte": "plausible",
+   "ipa": "ˈplɑː.zə.bəl",
+   "def": "Seeming reasonable or likely to be true.",
+   "ex": "That's a plausible explanation.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈplɑː.z"
+    }
+   ]
+  },
+  {
+   "id": "m-poignant",
+   "type": "mot",
+   "texte": "poignant",
+   "ipa": "ˈpɔɪ.njənt",
+   "def": "Causing a strong feeling of sadness.",
+   "ex": "It was a poignant reminder of the past.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "poi[g]nant"
+    }
+   ]
+  },
+  {
+   "id": "m-precarious",
+   "type": "mot",
+   "texte": "precarious",
+   "ipa": "prɪˈker.i.əs",
+   "def": "Not secure; dangerously likely to fall or fail.",
+   "ex": "Their finances are precarious.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈker"
+    }
+   ]
+  },
+  {
+   "id": "m-prerogative",
+   "type": "mot",
+   "texte": "prerogative",
+   "ipa": "prɪˈrɑː.ɡə.t̬ɪv",
+   "def": "A right or privilege belonging to a person or group.",
+   "ex": "It's your prerogative to say no.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈrɑː"
+    }
+   ]
+  },
+  {
+   "id": "m-pretentious",
+   "type": "mot",
+   "texte": "pretentious",
+   "ipa": "prɪˈten.ʃəs",
+   "def": "Trying to seem more important or clever than you are.",
+   "ex": "The restaurant is a bit pretentious.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈten"
+    }
+   ]
+  },
+  {
+   "id": "m-proficient",
+   "type": "mot",
+   "texte": "proficient",
+   "ipa": "prəˈfɪʃ.ənt",
+   "def": "Skilled; competent.",
+   "ex": "She's proficient in three languages.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈfɪʃ"
+    }
+   ]
+  },
+  {
+   "id": "m-prolific",
+   "type": "mot",
+   "texte": "prolific",
+   "ipa": "proʊˈlɪf.ɪk",
+   "def": "Producing a lot of work.",
+   "ex": "He was a prolific writer.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈlɪf"
+    }
+   ]
+  },
+  {
+   "id": "m-quaint",
+   "type": "mot",
+   "texte": "quaint",
+   "ipa": "kweɪnt",
+   "def": "Attractively old-fashioned.",
+   "ex": "We stayed in a quaint little village.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "kw"
+    }
+   ]
+  },
+  {
+   "id": "m-rapport",
+   "type": "mot",
+   "texte": "rapport",
+   "ipa": "ræˈpɔːr",
+   "def": "A friendly relationship with good understanding.",
+   "ex": "She has a great rapport with her students.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "rappor[t]"
+    }
+   ]
+  },
+  {
+   "id": "m-rationale",
+   "type": "mot",
+   "texte": "rationale",
+   "ipa": "ˌræʃ.əˈnæl",
+   "def": "The reasons behind a decision.",
+   "ex": "What's the rationale behind this policy?",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnæl"
+    }
+   ]
+  },
+  {
+   "id": "m-rhetoric",
+   "type": "mot",
+   "texte": "rhetoric",
+   "ipa": "ˈret̬.ɚ.ɪk",
+   "def": "Persuasive language, often insincere.",
+   "ex": "It's just political rhetoric.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "r[h]etoric"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-salient",
+   "type": "mot",
+   "texte": "salient",
+   "ipa": "ˈseɪ.li.ənt",
+   "def": "Most noticeable or important.",
+   "ex": "Here are the salient points.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈseɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-scrupulous",
+   "type": "mot",
+   "texte": "scrupulous",
+   "ipa": "ˈskruː.pjə.ləs",
+   "def": "Very careful to be honest and correct.",
+   "ex": "He's scrupulous about details.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈskruː"
+    }
+   ]
+  },
+  {
+   "id": "m-spontaneous",
+   "type": "mot",
+   "texte": "spontaneous",
+   "ipa": "spɑːnˈteɪ.ni.əs",
+   "def": "Done without planning.",
+   "ex": "It was a spontaneous decision.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈteɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-staggering",
+   "type": "mot",
+   "texte": "staggering",
+   "ipa": "ˈstæɡ.ɚ.ɪŋ",
+   "def": "Extremely surprising or shocking.",
+   "ex": "The cost was staggering.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈstæɡ"
+    }
+   ]
+  },
+  {
+   "id": "m-subsequent",
+   "type": "mot",
+   "texte": "subsequent",
+   "ipa": "ˈsʌb.sə.kwənt",
+   "def": "Coming after something else.",
+   "ex": "Subsequent tests confirmed the results.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈsʌb"
+    }
+   ]
+  },
+  {
+   "id": "m-superfluous",
+   "type": "mot",
+   "texte": "superfluous",
+   "ipa": "suːˈpɝː.flu.əs",
+   "def": "Unnecessary; more than needed.",
+   "ex": "Cut any superfluous words.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈpɝː"
+    }
+   ]
+  },
+  {
+   "id": "m-tenacious",
+   "type": "mot",
+   "texte": "tenacious",
+   "ipa": "təˈneɪ.ʃəs",
+   "def": "Determined; not giving up easily.",
+   "ex": "She's tenacious when she wants something.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈneɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-tentative",
+   "type": "mot",
+   "texte": "tentative",
+   "ipa": "ˈten.t̬ə.t̬ɪv",
+   "def": "Not certain or fixed; hesitant.",
+   "ex": "We made tentative plans for Friday.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-threshold",
+   "type": "mot",
+   "texte": "threshold",
+   "ipa": "ˈθreʃ.hoʊld",
+   "def": "The level at which something starts to happen; a doorway.",
+   "ex": "He has a low pain threshold.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ʃ.h"
+    }
+   ]
+  },
+  {
+   "id": "m-tumultuous",
+   "type": "mot",
+   "texte": "tumultuous",
+   "ipa": "tuːˈmʌl.tʃu.əs",
+   "def": "Noisy, confused or full of upheaval.",
+   "ex": "It was a tumultuous year.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈmʌl"
+    }
+   ]
+  },
+  {
+   "id": "m-unprecedented",
+   "type": "mot",
+   "texte": "unprecedented",
+   "ipa": "ʌnˈpres.ə.den.t̬ɪd",
+   "def": "Never having happened before.",
+   "ex": "The crisis is unprecedented.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "accent",
+     "ipa": "ˈpres"
+    }
+   ]
+  },
+  {
+   "id": "m-vehement",
+   "type": "mot",
+   "texte": "vehement",
+   "ipa": "ˈviː.ə.mənt",
+   "def": "Showing strong, intense feeling.",
+   "ex": "He was vehement in his denial.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "ve[h]ement"
+    }
+   ]
+  },
+  {
+   "id": "m-viable",
+   "type": "mot",
+   "texte": "viable",
+   "ipa": "ˈvaɪ.ə.bəl",
+   "def": "Able to work successfully.",
+   "ex": "Is it a viable plan?",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈvaɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-volatile",
+   "type": "mot",
+   "texte": "volatile",
+   "ipa": "ˈvɑː.lə.t̬əl",
+   "def": "Likely to change suddenly and unpredictably.",
+   "ex": "The market is extremely volatile.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "piege",
+     "ipa": "t̬əl"
+    }
+   ]
+  },
+  {
+   "id": "m-whimsical",
+   "type": "mot",
+   "texte": "whimsical",
+   "ipa": "ˈwɪm.zɪ.kəl",
+   "def": "Playful and unusual in a charming way.",
+   "ex": "The book has a whimsical style.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "w[h]imsical"
+    }
+   ]
+  },
+  {
+   "id": "m-zealous",
+   "type": "mot",
+   "texte": "zealous",
+   "ipa": "ˈzel.əs",
+   "def": "Very enthusiastic and dedicated.",
+   "ex": "He's a zealous supporter of the cause.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈzel"
+    }
+   ]
+  },
+  {
+   "id": "m-colloquial",
+   "type": "mot",
+   "texte": "colloquial",
+   "ipa": "kəˈloʊ.kwi.əl",
+   "def": "Informal; used in everyday conversation.",
+   "ex": "It's a colloquial expression.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈloʊ"
+    }
+   ]
+  },
+  {
+   "id": "m-cumbersome",
+   "type": "mot",
+   "texte": "cumbersome",
+   "ipa": "ˈkʌm.bɚ.səm",
+   "def": "Large, heavy and difficult to use or manage.",
+   "ex": "The process is slow and cumbersome.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈkʌm"
+    }
+   ]
+  },
+  {
+   "id": "m-despicable",
+   "type": "mot",
+   "texte": "despicable",
+   "ipa": "dɪˈspɪk.ə.bəl",
+   "def": "Extremely unpleasant or immoral.",
+   "ex": "What he did was despicable.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈspɪk"
+    }
+   ]
+  },
+  {
+   "id": "m-dichotomy",
+   "type": "mot",
+   "texte": "dichotomy",
+   "ipa": "daɪˈkɑː.t̬ə.mi",
+   "def": "A division into two opposing parts.",
+   "ex": "The false dichotomy between work and life.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "piege",
+     "mot": "di[ch]otomy"
+    }
+   ]
+  },
+  {
+   "id": "m-egregious",
+   "type": "mot",
+   "texte": "egregious",
+   "ipa": "ɪˈɡriː.dʒəs",
+   "def": "Outstandingly bad; shocking.",
+   "ex": "It was an egregious error.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "dʒəs"
+    }
+   ]
+  },
+  {
+   "id": "m-elicit",
+   "type": "mot",
+   "texte": "elicit",
+   "ipa": "iˈlɪs.ɪt",
+   "def": "To draw out a response or reaction.",
+   "ex": "The joke didn't elicit a single laugh.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "iˈlɪs"
+    }
+   ]
+  },
+  {
+   "id": "m-illicit",
+   "type": "mot",
+   "texte": "illicit",
+   "ipa": "ɪˈlɪs.ɪt",
+   "def": "Illegal or not allowed.",
+   "ex": "They were involved in illicit trade.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ɪˈlɪs"
+    }
+   ]
+  },
+  {
+   "id": "m-enigma",
+   "type": "mot",
+   "texte": "enigma",
+   "ipa": "ɪˈnɪɡ.mə",
+   "def": "Someone or something mysterious and hard to understand.",
+   "ex": "He remains an enigma to his colleagues.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnɪɡ"
+    }
+   ]
+  },
+  {
+   "id": "m-fallacy",
+   "type": "mot",
+   "texte": "fallacy",
+   "ipa": "ˈfæl.ə.si",
+   "def": "A mistaken belief or faulty reasoning.",
+   "ex": "That's a common fallacy.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈfæl"
+    }
+   ]
+  },
+  {
+   "id": "m-gauge",
+   "type": "mot",
+   "texte": "gauge",
+   "ipa": "ɡeɪdʒ",
+   "def": "To estimate or judge; a measuring instrument.",
+   "ex": "It's hard to gauge his reaction.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "g[au]ge"
+    }
+   ]
+  },
+  {
+   "id": "m-indict",
+   "type": "mot",
+   "texte": "indict",
+   "ipa": "ɪnˈdaɪt",
+   "def": "To formally charge someone with a crime.",
+   "ex": "He was indicted for fraud.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "indi[c]t"
+    }
+   ]
+  },
+  {
+   "id": "m-kiosk",
+   "type": "mot",
+   "texte": "kiosk",
+   "ipa": "ˈkiː.ɑːsk",
+   "def": "A small booth selling newspapers, tickets and so on.",
+   "ex": "Buy your ticket at the kiosk.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈkiː"
+    }
+   ]
+  },
+  {
+   "id": "m-liaison",
+   "type": "mot",
+   "texte": "liaison",
+   "ipa": "ˈliː.eɪ.zɑːn",
+   "def": "A person who connects two groups; a link.",
+   "ex": "She acts as a liaison between the teams.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈliː.eɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-liable",
+   "type": "mot",
+   "texte": "liable",
+   "ipa": "ˈlaɪ.ə.bəl",
+   "def": "Legally responsible; likely to.",
+   "ex": "You'll be liable for any damage.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "ˈlaɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-onomatopoeia",
+   "type": "mot",
+   "texte": "onomatopoeia",
+   "ipa": "ˌɑː.nəˌmæt̬.əˈpiː.ə",
+   "def": "A word that imitates a sound, like \"buzz\".",
+   "ex": "\"Bang\" is an example of onomatopoeia.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈpiː"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    }
+   ]
+  },
+  {
+   "id": "m-pseudonym",
+   "type": "mot",
+   "texte": "pseudonym",
+   "ipa": "ˈsuː.də.nɪm",
+   "def": "A false name used by a writer.",
+   "ex": "She wrote under a pseudonym.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[p]seudonym"
+    }
+   ]
+  },
+  {
+   "id": "m-quay",
+   "type": "mot",
+   "texte": "quay",
+   "ipa": "kiː",
+   "def": "A platform where boats are loaded.",
+   "ex": "The boats were tied up at the quay.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "q[uay]"
+    }
+   ]
+  },
+  {
+   "id": "m-rendezvous",
+   "type": "mot",
+   "texte": "rendezvous",
+   "ipa": "ˈrɑːn.deɪ.vuː",
+   "def": "A planned meeting, often secret.",
+   "ex": "They arranged a rendezvous at the station.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "rende[z]vou[s]"
+    }
+   ]
+  },
+  {
+   "id": "m-segue",
+   "type": "mot",
+   "texte": "segue",
+   "ipa": "ˈseɡ.weɪ",
+   "def": "A smooth transition from one topic to another.",
+   "ex": "That's a nice segue into my next point.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "seg[ue]"
+    }
+   ]
+  },
+  {
+   "id": "m-wreak",
+   "type": "mot",
+   "texte": "wreak",
+   "ipa": "riːk",
+   "def": "To cause a lot of damage or harm.",
+   "ex": "The storm wreaked havoc on the coast.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[w]reak"
+    }
+   ]
+  },
+  {
+   "id": "m-yacht",
+   "type": "mot",
+   "texte": "yacht",
+   "ipa": "jɑːt",
+   "def": "A large boat for pleasure or racing.",
+   "ex": "They spent the summer on a yacht.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "ya[ch]t"
+    }
+   ]
+  },
+  {
+   "id": "m-awry",
+   "type": "mot",
+   "texte": "awry",
+   "ipa": "əˈraɪ",
+   "def": "Away from the planned course; wrong.",
+   "ex": "The plan went awry.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "əˈraɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-banal",
+   "type": "mot",
+   "texte": "banal",
+   "ipa": "bəˈnɑːl",
+   "def": "Boring and unoriginal.",
+   "ex": "The dialogue was banal.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈnɑːl"
+    }
+   ]
+  },
+  {
+   "id": "m-gauche",
+   "type": "mot",
+   "texte": "gauche",
+   "ipa": "ɡoʊʃ",
+   "def": "Socially awkward; lacking tact.",
+   "ex": "It would be gauche to mention money.",
+   "p": [
+    {
+     "t": "piege",
+     "mot": "g[au]che"
+    }
+   ]
+  },
+  {
+   "id": "m-corps",
+   "type": "mot",
+   "texte": "corps",
+   "ipa": "kɔːr",
+   "def": "An organized group of people, often military.",
+   "ex": "She joined the Peace Corps.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "cor[ps]"
+    }
+   ]
+  },
+  {
+   "id": "m-debut",
+   "type": "mot",
+   "texte": "debut",
+   "ipa": "deɪˈbjuː",
+   "def": "A first public appearance.",
+   "ex": "Her debut album was a hit.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "debu[t]"
+    }
+   ]
+  },
+  {
+   "id": "m-naive",
+   "type": "mot",
+   "texte": "naive",
+   "ipa": "naɪˈiːv",
+   "def": "Lacking experience; too trusting.",
+   "ex": "It was naive of me to believe him.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "naɪˈiːv"
+    }
+   ]
+  },
+  {
+   "id": "m-clich",
+   "type": "mot",
+   "texte": "cliché",
+   "ipa": "kliːˈʃeɪ",
+   "def": "An overused phrase or idea.",
+   "ex": "The ending was a total cliché.",
+   "p": [
+    {
+     "t": "accent",
+     "ipa": "ˈʃeɪ"
+    }
+   ]
+  },
+  {
+   "id": "m-bouquet",
+   "type": "mot",
+   "texte": "bouquet",
+   "ipa": "buːˈkeɪ",
+   "def": "A bunch of flowers; the smell of wine.",
+   "ex": "He brought her a bouquet of roses.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "bouque[t]"
+    }
+   ]
+  },
+  {
+   "id": "m-faux-pas",
+   "type": "mot",
+   "texte": "faux pas",
+   "ipa": "ˌfoʊ ˈpɑː",
+   "def": "An embarrassing social mistake.",
+   "ex": "Asking her age was a bit of a faux pas.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "fau[x] pa[s]"
+    }
+   ]
+  }
+ ]
+}

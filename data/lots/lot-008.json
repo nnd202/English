@@ -1,0 +1,710 @@
+{
+ "lot": "lot-008",
+ "titre": "Phrases-temps : les 12 temps en contexte, avec leur schéma",
+ "date": "2026-11-03",
+ "cartes": [
+  {
+   "id": "tp-most-of-what-we-worry-about-never-actual",
+   "type": "temps",
+   "temps": "ps",
+   "texte": "Most of what we worry about never actually happens.",
+   "ipa": "ˈmoʊst‿əv ˈwʌt wi ˈwɝː.i‿əˈbaʊt ˈnev.ɚ ˈæk.tʃu.ə.li ˈhæp.ənz",
+   "def": "Present simple (présent simple) : Habitude, vérité générale, état permanent ou programme : l'action se répète ou est toujours vraie.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-he-rarely-admits-when-hes-wrong",
+   "type": "temps",
+   "temps": "ps",
+   "texte": "He rarely admits when he's wrong.",
+   "ipa": "hi ˈrer.li ədˈmɪts wen hiz ˈrɑːŋ",
+   "def": "Present simple (présent simple) : Habitude, vérité générale, état permanent ou programme : l'action se répète ou est toujours vraie.",
+   "p": []
+  },
+  {
+   "id": "tp-the-train-leaves-at-six-forty-five-every",
+   "type": "temps",
+   "temps": "ps",
+   "texte": "The train leaves at six forty-five every morning.",
+   "ipa": "ðə ˈtreɪn ˈliːvz‿ət ˈsɪks ˈfɔːr.t̬i ˈfaɪv ˈev.ri ˈmɔːr.nɪŋ",
+   "def": "Present simple (présent simple) : Habitude, vérité générale, état permanent ou programme : l'action se répète ou est toujours vraie.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-whenever-it-rains-the-basement-floods",
+   "type": "temps",
+   "temps": "ps",
+   "texte": "Whenever it rains, the basement floods.",
+   "ipa": "wenˈev.ɚ‿ɪt ˈreɪnz ðə ˈbeɪs.mənt ˈflʌdz",
+   "def": "Present simple (présent simple) : Habitude, vérité générale, état permanent ou programme : l'action se répète ou est toujours vraie.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-im-trying-to-cut-back-on-coffee-these-da",
+   "type": "temps",
+   "temps": "pc",
+   "texte": "I'm trying to cut back on coffee these days.",
+   "ipa": "aɪm ˈtraɪ.ɪŋ tə ˈkʌt ˈbæk‿ɑːn ˈkɑː.fi ˈðiːz ˈdeɪz",
+   "def": "Present continuous (présent continu) : Action en cours en ce moment, ou situation temporaire autour de maintenant.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-theyre-constantly-changing-the-rules-on-",
+   "type": "temps",
+   "temps": "pc",
+   "texte": "They're constantly changing the rules on us.",
+   "ipa": "ðɚ ˈkɑːn.stənt.li ˈtʃeɪn.dʒɪŋ ðə ˈruːlz‿ɑːn‿əs",
+   "def": "Present continuous (présent continu) : Action en cours en ce moment, ou situation temporaire autour de maintenant.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-what-are-you-working-on-at-the-moment",
+   "type": "temps",
+   "temps": "pc",
+   "texte": "What are you working on at the moment?",
+   "ipa": "ˈwʌt̬‿ɚ jə ˈwɝː.kɪŋ‿ɑːn‿ət ðə ˈmoʊ.mənt",
+   "def": "Present continuous (présent continu) : Action en cours en ce moment, ou situation temporaire autour de maintenant.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-the-situation-is-getting-worse-by-the-da",
+   "type": "temps",
+   "temps": "pc",
+   "texte": "The situation is getting worse by the day.",
+   "ipa": "ðə ˌsɪtʃ.uˈeɪ.ʃən‿ɪz ˈɡet̬.ɪŋ ˈwɝːs baɪ ðə ˈdeɪ",
+   "def": "Present continuous (présent continu) : Action en cours en ce moment, ou situation temporaire autour de maintenant.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-ive-never-been-so-embarrassed-in-my-enti",
+   "type": "temps",
+   "temps": "pp",
+   "texte": "I've never been so embarrassed in my entire life.",
+   "ipa": "aɪv ˈnev.ɚ bɪn ˈsoʊ‿ɪmˈber.əst‿ɪn maɪ ɪnˈtaɪr ˈlaɪf",
+   "def": "Present perfect (present perfect) : Action passée dont le résultat ou l'expérience compte maintenant ; le moment exact n'est pas dit, ou la période n'est pas finie.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-weve-already-spent-more-than-we-budgeted",
+   "type": "temps",
+   "temps": "pp",
+   "texte": "We've already spent more than we budgeted for.",
+   "ipa": "wiv‿ɑːlˈred.i ˈspent ˈmɔːr ðən wi ˈbʌdʒ.ɪ.t̬ɪd fɔːr",
+   "def": "Present perfect (present perfect) : Action passée dont le résultat ou l'expérience compte maintenant ; le moment exact n'est pas dit, ou la période n'est pas finie.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-have-you-ever-thought-about-moving-abroa",
+   "type": "temps",
+   "temps": "pp",
+   "texte": "Have you ever thought about moving abroad?",
+   "ipa": "həv jə ˈev.ɚ ˈθɑːt̬‿əˈbaʊt ˈmuː.vɪŋ‿əˈbrɑːd",
+   "def": "Present perfect (present perfect) : Action passée dont le résultat ou l'expérience compte maintenant ; le moment exact n'est pas dit, ou la période n'est pas finie.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-shes-just-handed-in-her-resignation",
+   "type": "temps",
+   "temps": "pp",
+   "texte": "She's just handed in her resignation.",
+   "ipa": "ʃiz ˈdʒʌs ˈhæn.dɪd‿ɪn‿ɚ ˌrez.ɪɡˈneɪ.ʃən",
+   "def": "Present perfect (present perfect) : Action passée dont le résultat ou l'expérience compte maintenant ; le moment exact n'est pas dit, ou la période n'est pas finie.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-ive-been-meaning-to-call-you-for-weeks",
+   "type": "temps",
+   "temps": "ppc",
+   "texte": "I've been meaning to call you for weeks.",
+   "ipa": "aɪv bɪn ˈmiː.nɪŋ tə ˈkɑːl jə fɚ ˈwiːks",
+   "def": "Present perfect continuous (present perfect continu) : Action commencée dans le passé qui dure jusqu'à maintenant (ou vient de s'arrêter) ; on insiste sur la durée.",
+   "p": []
+  },
+  {
+   "id": "tp-how-long-have-you-been-waiting",
+   "type": "temps",
+   "temps": "ppc",
+   "texte": "How long have you been waiting?",
+   "ipa": "ˈhaʊ ˈlɑːŋ‿əv jə bɪn ˈweɪ.t̬ɪŋ",
+   "def": "Present perfect continuous (present perfect continu) : Action commencée dans le passé qui dure jusqu'à maintenant (ou vient de s'arrêter) ; on insiste sur la durée.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-theyve-been-arguing-about-it-all-morning",
+   "type": "temps",
+   "temps": "ppc",
+   "texte": "They've been arguing about it all morning.",
+   "ipa": "ðeɪv bɪn‿ˈɑːrɡ.ju.ɪŋ‿əˈbaʊt̬‿ɪt̬‿ɑːl ˈmɔːr.nɪŋ",
+   "def": "Present perfect continuous (present perfect continu) : Action commencée dans le passé qui dure jusqu'à maintenant (ou vient de s'arrêter) ; on insiste sur la durée.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-its-been-getting-harder-and-harder-to-fi",
+   "type": "temps",
+   "temps": "ppc",
+   "texte": "It's been getting harder and harder to find a decent apartment.",
+   "ipa": "ɪts bɪn ˈɡet̬.ɪŋ ˈhɑːr.dɚ‿ən ˈhɑːr.dɚ tə ˈfaɪnd‿ə ˈdiː.sənt‿əˈpɑːrt.mənt",
+   "def": "Present perfect continuous (present perfect continu) : Action commencée dans le passé qui dure jusqu'à maintenant (ou vient de s'arrêter) ; on insiste sur la durée.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-we-drove-all-night-and-arrived-just-befo",
+   "type": "temps",
+   "temps": "pas",
+   "texte": "We drove all night and arrived just before dawn.",
+   "ipa": "wi ˈdroʊv‿ɑːl ˈnaɪt̬‿ən‿əˈraɪvd ˈdʒʌs bɪˈfɔːr ˈdɑːn",
+   "def": "Past simple (prétérit) : Action terminée à un moment précis du passé, coupée du présent.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-i-didnt-realize-how-late-it-was",
+   "type": "temps",
+   "temps": "pas",
+   "texte": "I didn't realize how late it was.",
+   "ipa": "aɪ ˈdɪd.ən ˈriː.ə.laɪz ˈhaʊ ˈleɪt̬‿ɪt ˈwʌz",
+   "def": "Past simple (prétérit) : Action terminée à un moment précis du passé, coupée du présent.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-she-grew-up-in-a-small-town-in-ohio",
+   "type": "temps",
+   "temps": "pas",
+   "texte": "She grew up in a small town in Ohio.",
+   "ipa": "ʃi ˈɡruː‿ʌp‿ɪn‿ə ˈsmɑːl ˈtaʊn‿ɪn‿oʊˈhaɪ.oʊ",
+   "def": "Past simple (prétérit) : Action terminée à un moment précis du passé, coupée du présent.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-why-didnt-you-tell-me-sooner",
+   "type": "temps",
+   "temps": "pas",
+   "texte": "Why didn't you tell me sooner?",
+   "ipa": "ˈwaɪ ˈdɪd.ən.tʃə ˈtel mi ˈsuː.nɚ",
+   "def": "Past simple (prétérit) : Action terminée à un moment précis du passé, coupée du présent.",
+   "p": []
+  },
+  {
+   "id": "tp-i-was-just-about-to-call-you-when-you-wa",
+   "type": "temps",
+   "temps": "pasc",
+   "texte": "I was just about to call you when you walked in.",
+   "ipa": "aɪ wəz ˈdʒʌst‿əˈbaʊ.t̬ə ˈkɑːl jə wen jə ˈwɑːkt‿ˈɪn",
+   "def": "Past continuous (prétérit continu) : Action en cours à un moment du passé, souvent interrompue par une autre action.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-what-were-you-doing-when-the-lights-went",
+   "type": "temps",
+   "temps": "pasc",
+   "texte": "What were you doing when the lights went out?",
+   "ipa": "ˈwʌt wɚ jə ˈduː.ɪŋ wen ðə ˈlaɪts ˈwent‿ˈaʊt",
+   "def": "Past continuous (prétérit continu) : Action en cours à un moment du passé, souvent interrompue par une autre action.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-we-were-having-dinner-when-the-news-brok",
+   "type": "temps",
+   "temps": "pasc",
+   "texte": "We were having dinner when the news broke.",
+   "ipa": "wi wɚ ˈhæv.ɪŋ ˈdɪn.ɚ wen ðə ˈnuːz ˈbroʊk",
+   "def": "Past continuous (prétérit continu) : Action en cours à un moment du passé, souvent interrompue par une autre action.",
+   "p": []
+  },
+  {
+   "id": "tp-he-wasnt-paying-attention-so-he-missed-t",
+   "type": "temps",
+   "temps": "pasc",
+   "texte": "He wasn't paying attention, so he missed the exit.",
+   "ipa": "hi ˈwʌz.ənt ˈpeɪ.ɪŋ‿əˈten.ʃən soʊ hi ˈmɪst ði ˈeɡ.zɪt",
+   "def": "Past continuous (prétérit continu) : Action en cours à un moment du passé, souvent interrompue par une autre action.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-by-the-time-i-got-there-everyone-had-alr",
+   "type": "temps",
+   "temps": "pasp",
+   "texte": "By the time I got there, everyone had already left.",
+   "ipa": "baɪ ðə ˈtaɪm‿aɪ ˈɡɑːt ˈðer ˈev.ri.wʌn həd‿ɑːlˈred.i ˈleft",
+   "def": "Past perfect (plus-que-parfait) : Action terminée avant un autre moment du passé : le passé du passé.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-i-had-never-seen-anything-like-it-before",
+   "type": "temps",
+   "temps": "pasp",
+   "texte": "I had never seen anything like it before.",
+   "ipa": "aɪ həd ˈnev.ɚ ˈsiːn‿ˈen.i.θɪŋ ˈlaɪk‿ɪt bɪˈfɔːr",
+   "def": "Past perfect (plus-que-parfait) : Action terminée avant un autre moment du passé : le passé du passé.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-she-told-me-she-had-lost-her-passport",
+   "type": "temps",
+   "temps": "pasp",
+   "texte": "She told me she had lost her passport.",
+   "ipa": "ʃi ˈtoʊld mi ʃi həd ˈlɑːst‿ɚ ˈpæs.pɔːrt",
+   "def": "Past perfect (plus-que-parfait) : Action terminée avant un autre moment du passé : le passé du passé.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-they-had-barely-sat-down-when-the-alarm-",
+   "type": "temps",
+   "temps": "pasp",
+   "texte": "They had barely sat down when the alarm went off.",
+   "ipa": "ðeɪ həd ˈber.li ˈsæt ˈdaʊn wen ði əˈlɑːrm ˈwent‿ˈɑːf",
+   "def": "Past perfect (plus-que-parfait) : Action terminée avant un autre moment du passé : le passé du passé.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-we-had-been-waiting-for-over-an-hour-whe",
+   "type": "temps",
+   "temps": "paspc",
+   "texte": "We had been waiting for over an hour when they finally showed up.",
+   "ipa": "wi həd bɪn ˈweɪ.t̬ɪŋ fɚ‿ˈoʊ.vɚ‿ən‿ˈaʊ.ɚ wen ðeɪ ˈfaɪ.nəl.i ˈʃoʊd‿ˈʌp",
+   "def": "Past perfect continuous (plus-que-parfait continu) : Action qui durait jusqu'à un moment du passé ; on insiste sur la durée ou sur la cause d'un état.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-she-had-been-working-there-for-years-bef",
+   "type": "temps",
+   "temps": "paspc",
+   "texte": "She had been working there for years before anyone noticed her.",
+   "ipa": "ʃi həd bɪn ˈwɝː.kɪŋ ðer fɚ ˈjɪrz bɪˈfɔːr‿ˈen.i.wʌn ˈnoʊ.t̬ɪst‿ɚ",
+   "def": "Past perfect continuous (plus-que-parfait continu) : Action qui durait jusqu'à un moment du passé ; on insiste sur la durée ou sur la cause d'un état.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-his-hands-were-shaking-because-he-had-be",
+   "type": "temps",
+   "temps": "paspc",
+   "texte": "His hands were shaking because he had been drinking too much coffee.",
+   "ipa": "hɪz ˈhændz wɚ ˈʃeɪ.kɪŋ bɪˈkɑːz hi həd bɪn ˈdrɪŋ.kɪŋ ˈtuː ˈmʌtʃ ˈkɑː.fi",
+   "def": "Past perfect continuous (plus-que-parfait continu) : Action qui durait jusqu'à un moment du passé ; on insiste sur la durée ou sur la cause d'un état.",
+   "p": []
+  },
+  {
+   "id": "tp-they-had-been-planning-the-trip-for-mont",
+   "type": "temps",
+   "temps": "paspc",
+   "texte": "They had been planning the trip for months.",
+   "ipa": "ðeɪ həd bɪn ˈplæn.ɪŋ ðə ˈtrɪp fɚ ˈmʌnθs",
+   "def": "Past perfect continuous (plus-que-parfait continu) : Action qui durait jusqu'à un moment du passé ; on insiste sur la durée ou sur la cause d'un état.",
+   "p": []
+  },
+  {
+   "id": "tp-ill-let-you-know-as-soon-as-i-hear-anyth",
+   "type": "temps",
+   "temps": "fs",
+   "texte": "I'll let you know as soon as I hear anything.",
+   "ipa": "aɪl ˈle.tʃə ˈnoʊ əz ˈsuːn‿əz‿aɪ ˈhɪr‿ˈen.i.θɪŋ",
+   "def": "Future simple (will) (futur avec will) : Prédiction, décision prise sur le moment, promesse ou fait futur.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-dont-worry-itll-all-work-out-in-the-end",
+   "type": "temps",
+   "temps": "fs",
+   "texte": "Don't worry, it'll all work out in the end.",
+   "ipa": "doʊn ˈwɝː.i ɪt̬.əl‿ˈɑːl ˈwɝːk‿ˈaʊt̬‿ɪn ði ˈend",
+   "def": "Future simple (will) (futur avec will) : Prédiction, décision prise sur le moment, promesse ou fait futur.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-im-sure-youll-do-great-tomorrow",
+   "type": "temps",
+   "temps": "fs",
+   "texte": "I'm sure you'll do great tomorrow.",
+   "ipa": "aɪm ˈʃʊr jəl ˈduː ˈɡreɪt təˈmɑːr.oʊ",
+   "def": "Future simple (will) (futur avec will) : Prédiction, décision prise sur le moment, promesse ou fait futur.",
+   "p": []
+  },
+  {
+   "id": "tp-i-wont-be-able-to-make-it-on-friday",
+   "type": "temps",
+   "temps": "fs",
+   "texte": "I won't be able to make it on Friday.",
+   "ipa": "aɪ ˈwoʊnt bi ˈeɪ.bəl tə ˈmeɪk‿ɪt̬‿ɑːn ˈfraɪ.deɪ",
+   "def": "Future simple (will) (futur avec will) : Prédiction, décision prise sur le moment, promesse ou fait futur.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-ill-be-working-late-tonight-so-dont-wait",
+   "type": "temps",
+   "temps": "fc",
+   "texte": "I'll be working late tonight, so don't wait up.",
+   "ipa": "aɪl bi ˈwɝː.kɪŋ ˈleɪt təˈnaɪt soʊ ˈdoʊn ˈweɪt̬‿ˈʌp",
+   "def": "Future continuous (futur continu) : Action qui sera en cours à un moment précis du futur.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-this-time-next-year-well-be-living-in-a-",
+   "type": "temps",
+   "temps": "fc",
+   "texte": "This time next year, we'll be living in a new city.",
+   "ipa": "ˈðɪs ˈtaɪm ˈneks ˈjɪr wil bi ˈlɪv.ɪŋ‿ɪn‿ə ˈnuː ˈsɪt̬.i",
+   "def": "Future continuous (futur continu) : Action qui sera en cours à un moment précis du futur.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-will-you-be-using-the-car-this-weekend",
+   "type": "temps",
+   "temps": "fc",
+   "texte": "Will you be using the car this weekend?",
+   "ipa": "wɪl jə bi ˈjuː.zɪŋ ðə ˈkɑːr ðɪs ˈwiːk.end",
+   "def": "Future continuous (futur continu) : Action qui sera en cours à un moment précis du futur.",
+   "p": []
+  },
+  {
+   "id": "tp-at-midnight-ill-probably-still-be-packin",
+   "type": "temps",
+   "temps": "fc",
+   "texte": "At midnight, I'll probably still be packing.",
+   "ipa": "ət ˈmɪd.naɪt aɪl ˈprɑː.bə.bli ˈstɪl bi ˈpæk.ɪŋ",
+   "def": "Future continuous (futur continu) : Action qui sera en cours à un moment précis du futur.",
+   "p": []
+  },
+  {
+   "id": "tp-by-the-end-of-the-week-well-have-finishe",
+   "type": "temps",
+   "temps": "fp",
+   "texte": "By the end of the week, we'll have finished the whole project.",
+   "ipa": "baɪ ði ˈend‿əv ðə ˈwiːk wil‿əv ˈfɪn.ɪʃt ðə ˈhoʊl ˈprɑː.dʒekt",
+   "def": "Future perfect (futur antérieur) : Action qui sera terminée avant un moment du futur.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-by-the-time-you-read-this-ill-have-left-",
+   "type": "temps",
+   "temps": "fp",
+   "texte": "By the time you read this, I'll have left the country.",
+   "ipa": "baɪ ðə ˈtaɪm jə ˈred ˈðɪs aɪl‿əv ˈleft ðə ˈkʌn.tri",
+   "def": "Future perfect (futur antérieur) : Action qui sera terminée avant un moment du futur.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-theyll-have-forgotten-all-about-it-by-ne",
+   "type": "temps",
+   "temps": "fp",
+   "texte": "They'll have forgotten all about it by next year.",
+   "ipa": "ðeɪl‿əv fɚˈɡɑː.ʔən‿ɑːl‿əˈbaʊt̬‿ɪt baɪ ˈneks ˈjɪr",
+   "def": "Future perfect (futur antérieur) : Action qui sera terminée avant un moment du futur.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    },
+    {
+     "t": "glotte",
+     "ipa": "ʔ"
+    }
+   ]
+  },
+  {
+   "id": "tp-will-you-have-finished-by-six",
+   "type": "temps",
+   "temps": "fp",
+   "texte": "Will you have finished by six?",
+   "ipa": "wɪl jə‿əv ˈfɪn.ɪʃt baɪ ˈsɪks",
+   "def": "Future perfect (futur antérieur) : Action qui sera terminée avant un moment du futur.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-by-june-ill-have-been-living-here-for-te",
+   "type": "temps",
+   "temps": "fpc",
+   "texte": "By June, I'll have been living here for ten years.",
+   "ipa": "baɪ ˈdʒuːn aɪl‿əv bɪn ˈlɪv.ɪŋ ˈhɪr fɚ ˈten ˈjɪrz",
+   "def": "Future perfect continuous (futur antérieur continu) : Durée d'une action jusqu'à un moment du futur : « d'ici là, ça fera tant de temps que… ».",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-by-the-time-she-retires-shell-have-been-",
+   "type": "temps",
+   "temps": "fpc",
+   "texte": "By the time she retires, she'll have been teaching for four decades.",
+   "ipa": "baɪ ðə ˈtaɪm ʃi rɪˈtaɪrz ʃil‿əv bɪn ˈtiː.tʃɪŋ fɚ ˈfɔːr ˈdek.eɪdz",
+   "def": "Future perfect continuous (futur antérieur continu) : Durée d'une action jusqu'à un moment du futur : « d'ici là, ça fera tant de temps que… ».",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-next-month-well-have-been-working-on-thi",
+   "type": "temps",
+   "temps": "fpc",
+   "texte": "Next month, we'll have been working on this for a whole year.",
+   "ipa": "ˈneks ˈmʌnθ wil‿əv bɪn ˈwɝː.kɪŋ‿ɑːn ˈðɪs fɚ‿ə ˈhoʊl ˈjɪr",
+   "def": "Future perfect continuous (futur antérieur continu) : Durée d'une action jusqu'à un moment du futur : « d'ici là, ça fera tant de temps que… ».",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "tp-by-the-time-we-get-there-well-have-been-",
+   "type": "temps",
+   "temps": "fpc",
+   "texte": "By the time we get there, we'll have been driving for twelve hours.",
+   "ipa": "baɪ ðə ˈtaɪm wi ˈɡet ˈðer wil‿əv bɪn ˈdraɪ.vɪŋ fɚ ˈtwelv‿ˈaʊ.ɚz",
+   "def": "Future perfect continuous (futur antérieur continu) : Durée d'une action jusqu'à un moment du futur : « d'ici là, ça fera tant de temps que… ».",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  }
+ ]
+}

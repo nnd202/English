@@ -5,6 +5,7 @@ import { creerPioche, difficultes, quotaNouvelles } from './tirage.js';
 import { retenu } from './fsrs.js';
 import { legende, zones, morceaux } from './ipa.js';
 import { initVoix, dire, voixListe, voixOk } from './voix.js';
+import { noterDeck, ordreTour, plusDures, repartition, NOTES_DECK } from './decks.js';
 import { schema, decouper, phraseComplete, estJuste, distracteurs, tirerQuestions } from './temps.js';
 import { decouperPhrases, comparer, compter, choisirPhrases, morceaux as morceauxPhrase, phrasesWiki } from './dictee.js';
 
@@ -14,6 +15,7 @@ const h = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 
 let LANGUE = null, CARTES = [], PAR_ID = new Map(), DICTEES = [], BANQUE = [];
 let partie = null, bilan = null, dictee = null, bilanDictee = null, exo = null, bilanTemps = null, TEMPS = null;
+let DECKS = [], sessionDeck = null, bilanDeck = null;
 
 const DUREES = [300, 600, 900, 1200];
 const TIRAGES = { melange: 'Brassage', hasard: 'Hasard', dues: 'Révisions', nouvelles: 'Nouvelles' };
@@ -71,6 +73,7 @@ async function demarrer() {
   LANGUE = await charge('data/langue.json');
   const { lots, dictees = [] } = await charge('data/lots.json');
   TEMPS = await charge('data/temps.json');
+  DECKS = (await charge('data/decks.json')).decks;
   const tous = await Promise.all([
     ...lots.map(nom => charge(`data/lots/${nom}.json`)),
     ...dictees.map(nom => charge(`data/dictees/${nom}.json`))
@@ -100,6 +103,7 @@ function router() {
     voileQuitterDictee();
     return;
   }
+  if (sessionDeck && !sessionDeck.fini && hash !== '#/deck') { finirDeck(true); return; }
   if (exo && !exo.fini && hash !== '#/exo-temps') {
     history.pushState(null, '', '#/exo-temps');
     $('#quitter-t')?.click();
@@ -107,13 +111,16 @@ function router() {
   }
   fermerFeuille();
   const [, ecran, arg] = hash.split('/');
-  nav.hidden = ecran === 'jeu' || ecran === 'dictee' || ecran === 'exo-temps';
+  nav.hidden = ecran === 'jeu' || ecran === 'dictee' || ecran === 'exo-temps' || ecran === 'deck';
   document.body.classList.toggle('verrou', nav.hidden);
   if (!nav.hidden) window.scrollTo(0, 0);
   if (ecran === 'dictee' && dictee) return ecranDictee();
   if (ecran === 'bilan-dictee' && bilanDictee) return ecranBilanDictee();
   if (ecran === 'dictees') return ecranDictees();
   if (ecran === 'temps') return ecranTemps();
+  if (ecran === 'decks') return ecranDecks();
+  if (ecran === 'deck' && sessionDeck) return ecranDeck();
+  if (ecran === 'bilan-deck' && bilanDeck) return ecranBilanDeck();
   if (ecran === 'exo-temps' && exo) return ecranExoTemps();
   if (ecran === 'bilan-temps' && bilanTemps) return ecranBilanTemps();
   if (ecran === 'coller') return ecranColler();
@@ -195,6 +202,10 @@ function ecranAccueil() {
         : `Pas encore de record en ${sp.duree / 60} min · ${TIRAGES[sp.tirage]}`}</div>
       <p class="info">${pluriel(inf.jamais, 'carte')} jamais vue${inf.jamais > 1 ? 's' : ''} · ${pluriel(inf.dues, 'carte')} à revoir${sp.tirage === 'melange' ? ` · ${Math.round(e.reglages.partNouvelles * 100)} % de nouveautés` : ''}${inf.quota < inf.jamais ? ` · plafond : ${inf.quota} aujourd'hui` : ''}</p>
       <button class="btn-principal" data-lancer="sprint">${ICONES.jouer} Démarrer le Sprint</button>
+    </section>
+    <section class="bloc">
+      <div class="bloc-titre"><h2>Decks</h2><span>Un paquet fixe de 45 à 60 cartes, tout à la suite, puis tes cartes dures à rabâcher</span></div>
+      <a class="btn-second fort" href="#/decks">Ouvrir les decks</a>
     </section>
     <section class="bloc">
       <div class="bloc-titre"><h2>Mode libre</h2><span>Sans chrono ni record : prendre son temps, lire, écouter</span></div>
@@ -362,7 +373,7 @@ function htmlCarte(c, { retournee, surligne }) {
   const p = surligne != null ? (c.p || [])[surligne] : null;
   const reg = store.get().reglages;
   let html = `<div class="fiche-type">${h(LANGUE.types[c.type])}</div>
-    <div class="fiche-texte ${c.type === 'phrase' ? 'long' : ''}">${retournee && p && p.mot ? htmlSurligne(c.texte, p.mot) : h(c.texte)}</div>
+    <div class="fiche-texte ${c.type === 'phrase' || c.type === 'temps' ? 'long' : ''}">${retournee && p && p.mot ? htmlSurligne(c.texte, p.mot) : h(c.texte)}</div>
     ${c.note && c.note.startsWith('(') ? `<div class="fiche-note">${h(c.note)}</div>` : ''}`;
   if (!retournee) return html + `<div class="fiche-indice">Prononce, puis retourne</div>`;
   html += `<div class="fiche-ipa${c.ipa.length > 24 ? ' long' : ''}">/${p && p.ipa ? htmlSurligne(c.ipa, p.ipa) : ipaHtml(c.ipa)}/</div>
@@ -371,6 +382,10 @@ function htmlCarte(c, { retournee, surligne }) {
       <button data-dire="lent">${ICONES.lent}<span>Lent</span></button>
       <button data-sens>${ICONES.sens}<span>Sens</span></button>
     </div>`;
+  if (c.temps && TEMPS) {
+    const t = TEMPS.temps.find(x => x.id === c.temps);
+    html += `<div class="schema-carte">${schema(c.temps)}<span><b>${h(t.nom)}</b> · ${h(t.forme)}</span></div>`;
+  }
   if (reg.pastilles && c.p && c.p.length) {
     html += `<div class="pastilles">${c.p.map((x, i) => `<button class="pastille p-${x.t} ${surligne === i ? 'on' : ''}" data-pastille="${i}">${h(LANGUE.pastilles[x.t].nom)}</button>`).join('')}</div>`;
     if (p) html += `<div class="regle">${h(LANGUE.pastilles[p.t].regle)}</div>`;
@@ -556,7 +571,10 @@ function ecranStats() {
     ${lentes.length ? `<section class="bloc"><div class="bloc-titre"><h2>Celles qui prennent du temps</h2><span>Temps moyen par passage, tous modes</span></div>
       ${lentes.map(c => ligneCarte(c, `${(etats[c.id].t / etats[c.id].n / 1000).toFixed(1)} s`)).join('')}</section>` : ''}
     <section class="bloc"><div class="bloc-titre"><h2>Historique</h2></div>
-      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'temps' ? `<div class="ligne-histo">
+      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'deck' ? `<div class="ligne-histo">
+        <div><b>Deck</b> · ${h(s.titre)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}${s.complet ? ' · tour terminé' : ''}</small></div>
+        <div class="histo-droite"><strong>${s.passees}</strong><span class="pts"><i class="n4">${s.notesDeck[0]}</i><i class="n2">${s.notesDeck[1]}</i><i class="n1">${s.notesDeck[2]}</i></span></div>
+      </div>` : s.mode === 'temps' ? `<div class="ligne-histo">
         <div><b>Temps</b> · ${h(MODES_TEMPS[s.exercice].nom)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}</small></div>
         <div class="histo-droite"><strong>${s.justes}/${s.total}</strong></div>
       </div>` : s.mode === 'dictee' ? `<div class="ligne-histo">
@@ -726,7 +744,7 @@ async function exporter() {
   const e = store.get();
   const d = new Date();
   const nom = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')} - Export English.txt`;
-  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint, textes: e.textes, dictee: e.dictee, phrasesDictee: e.phrasesDictee } });
+  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint, textes: e.textes, dictee: e.dictee, phrasesDictee: e.phrasesDictee, decks: e.decks } });
   const fichier = new File([contenu], nom, { type: 'text/plain' });
   let ok = false;
   try {
@@ -754,7 +772,7 @@ async function importer(f) {
     if (data.app !== 'English' || !data.etat) throw new Error('format');
     const e = store.get();
     const fus = store.fusionner(e, data.etat);
-    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions, textes: fus.textes, phrasesDictee: fus.phrasesDictee });
+    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions, textes: fus.textes, phrasesDictee: fus.phrasesDictee, decks: fus.decks });
     toast(`Import réussi : ${fus.sessions.length} parties au total.`);
     router();
   } catch {
@@ -1293,6 +1311,172 @@ function statsTemps(sessions) {
     </div>
     ${pires.length ? `<p class="info">Ceux qui te résistent : ${pires.map(([t, n]) => `${h(tempsDe(t).nom)} (${n})`).join(', ')}</p>` : ''}
   </section>`;
+}
+
+// ---------- Decks ----------
+const deckDe = (id) => DECKS.find(d => d.id === id);
+
+function etatDecks() {
+  const e = store.get();
+  e.decks ||= {};
+  e.decks.notation ||= '3';
+  e.decks.ordre ||= 'fixe';
+  e.decks.progres ||= {};
+  e.decks.evals ||= {};
+  return e.decks;
+}
+
+function barreDeck(ids, evals) {
+  const r = repartition(ids, evals), t = ids.length || 1;
+  return `<div class="barre-deck">${[[0, 'n4'], [1, 'n2'], [2, 'n1']].map(([g, c]) => r[g] ? `<i class="${c}" style="flex:${r[g] / t}"></i>` : '').join('')}${r.jamais ? `<i class="jamais" style="flex:${r.jamais / t}"></i>` : ''}</div>`;
+}
+
+function ecranDecks() {
+  dessinerNav('maison');
+  const D = etatDecks();
+  const toutes = DECKS.flatMap(d => d.cartes);
+  const dures = plusDures([...new Set(toutes)], D.evals);
+  const puce = (cle, val, label) => `<button class="puce ${D[cle] === val ? 'on' : ''}" data-dr="${cle}" data-v="${val}">${label}</button>`;
+  vue.innerHTML = `${entete('Decks', 'Un paquet fixe, toutes les cartes à la suite', false, '#/')}
+  <main class="page">
+    <section class="bloc">
+      <div class="sous-titre">Après chaque carte</div>
+      <div class="puces petites">${puce('notation', '3', 'Facile · Moyen · Dur')}${puce('notation', 'suivant', 'Suivant seulement')}</div>
+      <div class="sous-titre">Ordre des cartes</div>
+      <div class="puces petites">${puce('ordre', 'fixe', 'Toujours le même')}${puce('ordre', 'melange', 'Mélangé à chaque tour')}</div>
+      <p class="info">La notation sert à repérer tes cartes dures pour les rabâcher. Pas de répétition espacée ici : tout le deck, dans l'ordre.</p>
+    </section>
+    <section class="bloc">
+      <div class="bloc-titre"><h2>Les plus dures</h2><span>Tes cartes notées dures ou moyennes, tous decks confondus, la plus dure d'abord.</span></div>
+      <button class="btn-principal" id="dures" ${dures.length ? '' : 'disabled'}>${dures.length ? `Rabâcher ${Math.min(dures.length, 40)} cartes` : 'Pas encore de carte notée dure'}</button>
+    </section>
+    ${DECKS.map(d => {
+      const p = D.progres[d.id] || { pos: 0, tours: 0 };
+      const duresDeck = plusDures(d.cartes, D.evals);
+      return `<section class="bloc deck">
+        <div class="deck-tete"><div class="bloc-titre"><h2>${h(d.titre)}</h2><span>${h(d.desc)}</span></div><em class="niveau">${h(d.niveau)}</em></div>
+        ${barreDeck(d.cartes, D.evals)}
+        <p class="info">${d.cartes.length} cartes${p.tours ? ` · ${pluriel(p.tours, 'tour')} terminé${p.tours > 1 ? 's' : ''}` : ''}${p.pos ? ` · en cours : ${p.pos}/${d.cartes.length}` : ''}${duresDeck.length ? ` · ${duresDeck.length} dure${duresDeck.length > 1 ? 's' : ''}` : ''}</p>
+        <div class="boutons-ligne">
+          <button class="btn-second fort" data-deck="${d.id}">${p.pos ? 'Continuer' : p.tours ? 'Nouveau tour' : 'Commencer'}</button>
+          <button class="btn-second" data-deck-dures="${d.id}" ${duresDeck.length ? '' : 'disabled'}>Que les dures</button>
+        </div>
+      </section>`;
+    }).join('')}
+  </main>`;
+  vue.querySelectorAll('[data-dr]').forEach(b => b.onclick = () => { D[b.dataset.dr] = b.dataset.v; store.sauver(); ecranDecks(); });
+  vue.querySelectorAll('[data-deck]').forEach(b => b.onclick = () => lancerDeck(deckDe(b.dataset.deck)));
+  vue.querySelectorAll('[data-deck-dures]').forEach(b => b.onclick = () => {
+    const d = deckDe(b.dataset.deckDures);
+    lancerDeck({ id: d.id + ':dures', titre: `${d.titre} · les dures`, cartes: plusDures(d.cartes, D.evals), virtuel: true });
+  });
+  const bd = $('#dures');
+  if (bd) bd.onclick = () => lancerDeck({ id: 'dures', titre: 'Les plus dures', cartes: plusDures([...new Set(toutes)], D.evals, 40), virtuel: true });
+}
+
+function lancerDeck(deck) {
+  if (!deck.cartes.length) { toast('Aucune carte dans ce deck.'); return; }
+  const D = etatDecks();
+  const p = deck.virtuel ? { pos: 0, tours: 0 } : (D.progres[deck.id] ||= { pos: 0, tours: 0 });
+  sessionDeck = {
+    deck, ordre: ordreTour(deck.cartes, D.ordre, p.tours), pos: p.pos, tour: p.tours + 1,
+    debut: Date.now(), depuis: Date.now(), retournee: false, surligne: null,
+    notes: { 0: 0, 1: 0, 2: 0 }, cartes: [], fini: false
+  };
+  history.pushState(null, '', '#/deck');
+  router();
+}
+
+function ecranDeck() {
+  nav.hidden = true;
+  const S = sessionDeck, D = etatDecks();
+  const c = PAR_ID.get(S.ordre[S.pos]);
+  if (!c) { finirDeck(true); return; }
+  const total = S.ordre.length;
+  const ev = D.evals[c.id];
+  vue.innerHTML = `<div class="jeu deck-jeu">
+    <div class="jeu-tete">
+      <button class="btn-rond" id="quitter-deck" aria-label="Quitter">${ICONES.fermer}</button>
+      <div class="jeu-chrono"><span>${S.pos + 1}/${total}</span><small>${h(S.deck.titre)}${S.deck.virtuel ? '' : ` · tour ${S.tour}`}</small></div>
+      <div class="jeu-score"><b>${S.cartes.length}</b><small>passées</small></div>
+      <div class="barre"><div style="width:${100 * S.pos / total}%"></div></div>
+    </div>
+    <div class="jeu-zone">
+      <div class="fiche ${S.retournee ? 'verso' : 'recto'}" id="fiche">${htmlCarte(c, S)}
+        ${S.retournee && ev ? `<div class="deja">Dernière note : ${NOTES_DECK[ev.g]} · ${pluriel(ev.n, 'passage')}</div>` : ''}</div>
+    </div>
+    <div class="jeu-bas">
+      ${!S.retournee ? '<button class="btn-principal" id="retourner">Retourner</button>'
+        : D.notation === 'suivant' ? '<button class="btn-principal" data-gd="-1">Suivant</button>'
+        : `<div class="notes trois">${[[0, 'n4'], [1, 'n2'], [2, 'n1']].map(([g, cl]) => `<button class="${cl}" data-gd="${g}">${NOTES_DECK[g]}</button>`).join('')}</div>`}
+    </div>
+  </div>`;
+  const fiche = $('#fiche');
+  if (!S.retournee) {
+    const tourner = () => { S.retournee = true; ecranDeck(); };
+    fiche.onclick = tourner; $('#retourner').onclick = tourner;
+  } else {
+    brancherCarte(fiche, c, S, ecranDeck);
+    vue.querySelectorAll('[data-gd]').forEach(b => b.onclick = () => passerCarteDeck(c.id, +b.dataset.gd));
+  }
+  $('#quitter-deck').onclick = () => finirDeck(true);
+}
+
+function passerCarteDeck(id, g) {
+  const S = sessionDeck, D = etatDecks(), now = Date.now();
+  if (g >= 0) { noterDeck(D.evals, id, g, now); S.notes[g]++; }
+  S.cartes.push([id, g, now - S.depuis]);
+  S.depuis = now;
+  S.pos++;
+  S.retournee = false; S.surligne = null;
+  if (!S.deck.virtuel) D.progres[S.deck.id].pos = S.pos;
+  store.sauver();
+  if (S.pos >= S.ordre.length) finirDeck(false);
+  else ecranDeck();
+}
+
+function finirDeck(enCours) {
+  const S = sessionDeck, D = etatDecks(), e = store.get();
+  S.fini = true;
+  const tourFini = !enCours && S.pos >= S.ordre.length;
+  if (tourFini && !S.deck.virtuel) { D.progres[S.deck.id] = { pos: 0, tours: (D.progres[S.deck.id].tours || 0) + 1 }; }
+  const s = {
+    id: 'k' + S.debut, mode: 'deck', deckId: S.deck.id, titre: S.deck.titre, debut: S.debut, fin: Date.now(), joue: Date.now() - S.debut,
+    complet: tourFini, passees: S.cartes.length, notesDeck: { ...S.notes }, notes: {}, cartes: S.cartes, tour: S.tour
+  };
+  if (S.cartes.length) e.sessions.push(s);
+  store.sauver();
+  bilanDeck = S.cartes.length ? { s, S, tourFini } : null;
+  sessionDeck = null;
+  location.replace(bilanDeck ? '#/bilan-deck' : '#/decks');
+}
+
+function ecranBilanDeck() {
+  dessinerNav('maison');
+  const { s, S, tourFini } = bilanDeck, D = etatDecks();
+  const vus = [...new Set(s.cartes.map(x => x[0]))];
+  const dures = plusDures(vus, D.evals);
+  const total = s.notesDeck[0] + s.notesDeck[1] + s.notesDeck[2] || 1;
+  vue.innerHTML = `${entete(tourFini ? (S.deck.virtuel ? 'Série terminée' : `Tour ${S.tour} terminé`) : 'Pause dans le deck', S.deck.titre)}
+  <main class="page">
+    <section class="bloc bilan">
+      <div class="gros"><b>${s.passees}</b><span>cartes</span></div>
+      <p class="sous">en ${chrono(s.joue)}${!tourFini && !S.deck.virtuel ? ` · reprise à la carte ${S.pos + 1}/${S.ordre.length}` : ''}</p>
+      ${D.notation === '3' || s.notesDeck[0] + s.notesDeck[1] + s.notesDeck[2] ? `<div class="barre-notes">${[[0, 'n4'], [1, 'n2'], [2, 'n1']].map(([g, c]) => s.notesDeck[g] ? `<div class="${c}" style="flex:${s.notesDeck[g] / total}"></div>` : '').join('')}</div>
+      <div class="legende-notes">${[[0, 'n4'], [1, 'n2'], [2, 'n1']].map(([g, c]) => `<span><i class="${c}"></i>${NOTES_DECK[g]} <b>${s.notesDeck[g]}</b></span>`).join('')}</div>` : ''}
+    </section>
+    ${dures.length ? `<section class="bloc"><div class="bloc-titre"><h2>Les dures de cette série</h2><span>Moyenne récente de tes notes</span></div>
+      ${dures.map(id => ligneCarte(PAR_ID.get(id), D.evals[id].m >= 1.5 ? 'dure' : 'moyenne')).join('')}</section>` : ''}
+    <div class="boutons">
+      ${dures.length ? '<button class="btn-principal" id="rabacher">Rabâcher les dures</button>' : ''}
+      ${!S.deck.virtuel ? `<button class="${dures.length ? 'btn-second' : 'btn-principal'}" id="encore">${tourFini ? 'Tour suivant' : 'Reprendre'}</button>` : ''}
+      <a class="btn-second" href="#/decks">Decks</a>
+    </div>
+  </main>`;
+  const r = $('#rabacher');
+  if (r) r.onclick = () => lancerDeck({ id: S.deck.id + ':dures', titre: `${S.deck.titre.replace(/ · les dures$/, '')} · les dures`, cartes: dures, virtuel: true });
+  const en = $('#encore');
+  if (en) en.onclick = () => lancerDeck(deckDe(S.deck.id));
 }
 
 demarrer().catch(err => {

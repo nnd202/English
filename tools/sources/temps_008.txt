@@ -1,0 +1,49 @@
+# temps | phrase | ipa   (phrases-temps : le verso montre le schéma du temps ; flap et liaison automatiques)
+ps | Most of what we worry about never actually happens. | ˈmoʊst‿əv ˈwʌt wi ˈwɝː.i‿əˈbaʊt ˈnev.ɚ ˈæk.tʃu.ə.li ˈhæp.ənz
+ps | He rarely admits when he's wrong. | hi ˈrer.li ədˈmɪts wen hiz ˈrɑːŋ
+ps | The train leaves at six forty-five every morning. | ðə ˈtreɪn ˈliːvz‿ət ˈsɪks ˈfɔːr.t̬i ˈfaɪv ˈev.ri ˈmɔːr.nɪŋ
+ps | Whenever it rains, the basement floods. | wenˈev.ɚ‿ɪt ˈreɪnz ðə ˈbeɪs.mənt ˈflʌdz
+pc | I'm trying to cut back on coffee these days. | aɪm ˈtraɪ.ɪŋ tə ˈkʌt ˈbæk‿ɑːn ˈkɑː.fi ˈðiːz ˈdeɪz
+pc | They're constantly changing the rules on us. | ðɚ ˈkɑːn.stənt.li ˈtʃeɪn.dʒɪŋ ðə ˈruːlz‿ɑːn‿əs
+pc | What are you working on at the moment? | ˈwʌt̬‿ɚ jə ˈwɝː.kɪŋ‿ɑːn‿ət ðə ˈmoʊ.mənt
+pc | The situation is getting worse by the day. | ðə ˌsɪtʃ.uˈeɪ.ʃən‿ɪz ˈɡet̬.ɪŋ ˈwɝːs baɪ ðə ˈdeɪ
+pp | I've never been so embarrassed in my entire life. | aɪv ˈnev.ɚ bɪn ˈsoʊ‿ɪmˈber.əst‿ɪn maɪ ɪnˈtaɪr ˈlaɪf
+pp | We've already spent more than we budgeted for. | wiv‿ɑːlˈred.i ˈspent ˈmɔːr ðən wi ˈbʌdʒ.ɪ.t̬ɪd fɔːr
+pp | Have you ever thought about moving abroad? | həv jə ˈev.ɚ ˈθɑːt̬‿əˈbaʊt ˈmuː.vɪŋ‿əˈbrɑːd
+pp | She's just handed in her resignation. | ʃiz ˈdʒʌs ˈhæn.dɪd‿ɪn‿ɚ ˌrez.ɪɡˈneɪ.ʃən
+ppc | I've been meaning to call you for weeks. | aɪv bɪn ˈmiː.nɪŋ tə ˈkɑːl jə fɚ ˈwiːks
+ppc | How long have you been waiting? | ˈhaʊ ˈlɑːŋ‿əv jə bɪn ˈweɪ.t̬ɪŋ
+ppc | They've been arguing about it all morning. | ðeɪv bɪn‿ˈɑːrɡ.ju.ɪŋ‿əˈbaʊt̬‿ɪt̬‿ɑːl ˈmɔːr.nɪŋ
+ppc | It's been getting harder and harder to find a decent apartment. | ɪts bɪn ˈɡet̬.ɪŋ ˈhɑːr.dɚ‿ən ˈhɑːr.dɚ tə ˈfaɪnd‿ə ˈdiː.sənt‿əˈpɑːrt.mənt
+pas | We drove all night and arrived just before dawn. | wi ˈdroʊv‿ɑːl ˈnaɪt̬‿ən‿əˈraɪvd ˈdʒʌs bɪˈfɔːr ˈdɑːn
+pas | I didn't realize how late it was. | aɪ ˈdɪd.ən ˈriː.ə.laɪz ˈhaʊ ˈleɪt̬‿ɪt ˈwʌz
+pas | She grew up in a small town in Ohio. | ʃi ˈɡruː‿ʌp‿ɪn‿ə ˈsmɑːl ˈtaʊn‿ɪn‿oʊˈhaɪ.oʊ
+pas | Why didn't you tell me sooner? | ˈwaɪ ˈdɪd.ən.tʃə ˈtel mi ˈsuː.nɚ
+pasc | I was just about to call you when you walked in. | aɪ wəz ˈdʒʌst‿əˈbaʊ.t̬ə ˈkɑːl jə wen jə ˈwɑːkt‿ˈɪn
+pasc | What were you doing when the lights went out? | ˈwʌt wɚ jə ˈduː.ɪŋ wen ðə ˈlaɪts ˈwent‿ˈaʊt
+pasc | We were having dinner when the news broke. | wi wɚ ˈhæv.ɪŋ ˈdɪn.ɚ wen ðə ˈnuːz ˈbroʊk
+pasc | He wasn't paying attention, so he missed the exit. | hi ˈwʌz.ənt ˈpeɪ.ɪŋ‿əˈten.ʃən soʊ hi ˈmɪst ði ˈeɡ.zɪt
+pasp | By the time I got there, everyone had already left. | baɪ ðə ˈtaɪm‿aɪ ˈɡɑːt ˈðer ˈev.ri.wʌn həd‿ɑːlˈred.i ˈleft
+pasp | I had never seen anything like it before. | aɪ həd ˈnev.ɚ ˈsiːn‿ˈen.i.θɪŋ ˈlaɪk‿ɪt bɪˈfɔːr
+pasp | She told me she had lost her passport. | ʃi ˈtoʊld mi ʃi həd ˈlɑːst‿ɚ ˈpæs.pɔːrt
+pasp | They had barely sat down when the alarm went off. | ðeɪ həd ˈber.li ˈsæt ˈdaʊn wen ði əˈlɑːrm ˈwent‿ˈɑːf
+paspc | We had been waiting for over an hour when they finally showed up. | wi həd bɪn ˈweɪ.t̬ɪŋ fɚ‿ˈoʊ.vɚ‿ən‿ˈaʊ.ɚ wen ðeɪ ˈfaɪ.nəl.i ˈʃoʊd‿ˈʌp
+paspc | She had been working there for years before anyone noticed her. | ʃi həd bɪn ˈwɝː.kɪŋ ðer fɚ ˈjɪrz bɪˈfɔːr‿ˈen.i.wʌn ˈnoʊ.t̬ɪst‿ɚ
+paspc | His hands were shaking because he had been drinking too much coffee. | hɪz ˈhændz wɚ ˈʃeɪ.kɪŋ bɪˈkɑːz hi həd bɪn ˈdrɪŋ.kɪŋ ˈtuː ˈmʌtʃ ˈkɑː.fi
+paspc | They had been planning the trip for months. | ðeɪ həd bɪn ˈplæn.ɪŋ ðə ˈtrɪp fɚ ˈmʌnθs
+fs | I'll let you know as soon as I hear anything. | aɪl ˈle.tʃə ˈnoʊ əz ˈsuːn‿əz‿aɪ ˈhɪr‿ˈen.i.θɪŋ
+fs | Don't worry, it'll all work out in the end. | doʊn ˈwɝː.i ɪt̬.əl‿ˈɑːl ˈwɝːk‿ˈaʊt̬‿ɪn ði ˈend
+fs | I'm sure you'll do great tomorrow. | aɪm ˈʃʊr jəl ˈduː ˈɡreɪt təˈmɑːr.oʊ
+fs | I won't be able to make it on Friday. | aɪ ˈwoʊnt bi ˈeɪ.bəl tə ˈmeɪk‿ɪt̬‿ɑːn ˈfraɪ.deɪ
+fc | I'll be working late tonight, so don't wait up. | aɪl bi ˈwɝː.kɪŋ ˈleɪt təˈnaɪt soʊ ˈdoʊn ˈweɪt̬‿ˈʌp
+fc | This time next year, we'll be living in a new city. | ˈðɪs ˈtaɪm ˈneks ˈjɪr wil bi ˈlɪv.ɪŋ‿ɪn‿ə ˈnuː ˈsɪt̬.i
+fc | Will you be using the car this weekend? | wɪl jə bi ˈjuː.zɪŋ ðə ˈkɑːr ðɪs ˈwiːk.end
+fc | At midnight, I'll probably still be packing. | ət ˈmɪd.naɪt aɪl ˈprɑː.bə.bli ˈstɪl bi ˈpæk.ɪŋ
+fp | By the end of the week, we'll have finished the whole project. | baɪ ði ˈend‿əv ðə ˈwiːk wil‿əv ˈfɪn.ɪʃt ðə ˈhoʊl ˈprɑː.dʒekt
+fp | By the time you read this, I'll have left the country. | baɪ ðə ˈtaɪm jə ˈred ˈðɪs aɪl‿əv ˈleft ðə ˈkʌn.tri
+fp | They'll have forgotten all about it by next year. | ðeɪl‿əv fɚˈɡɑː.ʔən‿ɑːl‿əˈbaʊt̬‿ɪt baɪ ˈneks ˈjɪr
+fp | Will you have finished by six? | wɪl jə‿əv ˈfɪn.ɪʃt baɪ ˈsɪks
+fpc | By June, I'll have been living here for ten years. | baɪ ˈdʒuːn aɪl‿əv bɪn ˈlɪv.ɪŋ ˈhɪr fɚ ˈten ˈjɪrz
+fpc | By the time she retires, she'll have been teaching for four decades. | baɪ ðə ˈtaɪm ʃi rɪˈtaɪrz ʃil‿əv bɪn ˈtiː.tʃɪŋ fɚ ˈfɔːr ˈdek.eɪdz
+fpc | Next month, we'll have been working on this for a whole year. | ˈneks ˈmʌnθ wil‿əv bɪn ˈwɝː.kɪŋ‿ɑːn ˈðɪs fɚ‿ə ˈhoʊl ˈjɪr
+fpc | By the time we get there, we'll have been driving for twelve hours. | baɪ ðə ˈtaɪm wi ˈɡet ˈðer wil‿əv bɪn ˈdraɪ.vɪŋ fɚ ˈtwelv‿ˈaʊ.ɚz

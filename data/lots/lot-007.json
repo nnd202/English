@@ -1,0 +1,879 @@
+{
+ "lot": "lot-007",
+ "titre": "Phrases C1-C2 : expressions, inversions, tournures idiomatiques",
+ "date": "2026-11-03",
+ "cartes": [
+  {
+   "id": "f-i-cant-help-but-feel-were-missing-someth",
+   "type": "phrase",
+   "texte": "I can't help but feel we're missing something.",
+   "ipa": "aɪ ˈkænt ˈhelp bət ˈfiːl wɚ ˈmɪs.ɪŋ ˈsʌm.θɪŋ",
+   "def": "I have the feeling something is being overlooked.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "bət"
+    }
+   ]
+  },
+  {
+   "id": "f-thats-easier-said-than-done",
+   "type": "phrase",
+   "texte": "That's easier said than done.",
+   "ipa": "ðæts‿ˈiː.zi.ɚ ˈsed ðən ˈdʌn",
+   "def": "It sounds simple, but it's hard to actually do.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ðən"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-it-goes-without-saying-that-well-need-mo",
+   "type": "phrase",
+   "texte": "It goes without saying that we'll need more time.",
+   "ipa": "ɪt ˈɡoʊz wɪˈðaʊt ˈseɪ.ɪŋ ðət wil ˈniːd ˈmɔːr ˈtaɪm",
+   "def": "It's so obvious it doesn't need to be said.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "ðət"
+    }
+   ]
+  },
+  {
+   "id": "f-i-wouldnt-have-bothered-if-id-known",
+   "type": "phrase",
+   "texte": "I wouldn't have bothered if I'd known.",
+   "ipa": "aɪ ˈwʊd.ənt‿əv ˈbɑː.ðɚd‿ɪf‿aɪd ˈnoʊn",
+   "def": "Third conditional: I wouldn't have made the effort.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-you-might-as-well-get-it-over-with",
+   "type": "phrase",
+   "texte": "You might as well get it over with.",
+   "ipa": "jə ˈmaɪt̬‿əz ˈwel ˈɡet̬‿ɪt̬‿ˈoʊ.vɚ wɪð",
+   "def": "Do the unpleasant thing now and be done with it.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əz"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-im-not-entirely-convinced-but-ill-give-i",
+   "type": "phrase",
+   "texte": "I'm not entirely convinced, but I'll give it a shot.",
+   "ipa": "aɪm ˈnɑːt̬‿ɪnˈtaɪr.li kənˈvɪnst bət̬‿aɪl ˈɡɪv‿ɪt̬‿ə ˈʃɑːt",
+   "def": "I have doubts, but I'll try it.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-its-not-a-question-of-if-but-when",
+   "type": "phrase",
+   "texte": "It's not a question of if, but when.",
+   "ipa": "ɪts ˈnɑːt̬‿ə ˈkwes.tʃən‿əv‿ˈɪf bət ˈwen",
+   "def": "It will happen; only the timing is uncertain.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-had-i-known-i-would-have-said-something",
+   "type": "phrase",
+   "texte": "Had I known, I would have said something.",
+   "ipa": "ˈhæd‿aɪ ˈnoʊn aɪ wəd‿əv ˈsed ˈsʌm.θɪŋ",
+   "def": "Formal inversion: \"If I had known…\"",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "wəd‿əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-no-sooner-had-we-left-than-it-started-to",
+   "type": "phrase",
+   "texte": "No sooner had we left than it started to pour.",
+   "ipa": "ˈnoʊ ˈsuː.nɚ həd wi ˈleft ðən‿ɪt ˈstɑːr.t̬ɪd tə ˈpɔːr",
+   "def": "Formal inversion: it poured right after we left.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "həd"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-little-did-they-know-what-was-about-to-h",
+   "type": "phrase",
+   "texte": "Little did they know what was about to happen.",
+   "ipa": "ˈlɪt̬.əl ˈdɪd ðeɪ ˈnoʊ ˈwʌt wəz‿əˈbaʊ.t̬ə ˈhæp.ən",
+   "def": "Formal inversion: they had no idea what was coming.",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "əˈbaʊ.t̬ə"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-id-rather-you-didnt-mention-it-to-anyone",
+   "type": "phrase",
+   "texte": "I'd rather you didn't mention it to anyone.",
+   "ipa": "aɪd ˈræð.ɚ jə ˈdɪd.ən ˈmen.ʃən‿ɪt tu‿ˈen.i.wʌn",
+   "def": "Polite request: please don't tell anyone (would rather + past).",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "didn'[t] mention"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-its-about-time-somebody-said-it-out-loud",
+   "type": "phrase",
+   "texte": "It's about time somebody said it out loud.",
+   "ipa": "ɪts‿əˈbaʊ ˈtaɪm ˈsʌm.bɑː.di ˈsed‿ɪt̬‿aʊt ˈlaʊd",
+   "def": "Finally someone said it; it should have happened sooner.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "abou[t] time"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-for-what-its-worth-i-think-you-made-the-",
+   "type": "phrase",
+   "texte": "For what it's worth, I think you made the right call.",
+   "ipa": "fɚ ˈwʌt̬‿ɪts ˈwɝːθ aɪ ˈθɪŋk jə ˈmeɪd ðə ˈraɪt ˈkɑːl",
+   "def": "Offering an opinion modestly.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "fɚ"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-ill-take-your-word-for-it",
+   "type": "phrase",
+   "texte": "I'll take your word for it.",
+   "ipa": "aɪl ˈteɪk jɚ ˈwɝːd fɚ‿ɪt",
+   "def": "I'll believe you without checking.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "jɚ"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-lets-not-get-ahead-of-ourselves",
+   "type": "phrase",
+   "texte": "Let's not get ahead of ourselves.",
+   "ipa": "ˈlets ˈnɑːt ˈɡet̬‿əˈhed‿əv‿ˌaʊ.ɚˈselvz",
+   "def": "Let's not assume too much too soon.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-its-not-the-end-of-the-world",
+   "type": "phrase",
+   "texte": "It's not the end of the world.",
+   "ipa": "ɪts ˈnɑːt ðə ˈend‿əv ðə ˈwɝːld",
+   "def": "It's not a disaster.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-i-couldnt-care-less-what-they-think",
+   "type": "phrase",
+   "texte": "I couldn't care less what they think.",
+   "ipa": "aɪ ˈkʊd.ənt ˈker ˈles ˈwʌt ðeɪ ˈθɪŋk",
+   "def": "I don't care at all.",
+   "p": []
+  },
+  {
+   "id": "f-shes-bound-to-find-out-sooner-or-later",
+   "type": "phrase",
+   "texte": "She's bound to find out sooner or later.",
+   "ipa": "ʃiz ˈbaʊnd tə ˈfaɪnd‿ˈaʊt ˈsuː.nɚ‿ɚ ˈleɪ.t̬ɚ",
+   "def": "She will certainly discover it at some point.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "‿ɚ"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-well-cross-that-bridge-when-we-come-to-i",
+   "type": "phrase",
+   "texte": "We'll cross that bridge when we come to it.",
+   "ipa": "wil ˈkrɑːs ðæt ˈbrɪdʒ wen wi ˈkʌm tu‿ɪt",
+   "def": "We'll deal with that problem if it actually happens.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-hes-been-dragging-his-feet-on-this-for-w",
+   "type": "phrase",
+   "texte": "He's been dragging his feet on this for weeks.",
+   "ipa": "hiz bɪn ˈdræɡ.ɪŋ‿ɪz ˈfiːt̬‿ɑːn ˈðɪs fɚ ˈwiːks",
+   "def": "He has been deliberately slow to act.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "‿ɪz"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-im-in-two-minds-about-whether-to-go",
+   "type": "phrase",
+   "texte": "I'm in two minds about whether to go.",
+   "ipa": "aɪm‿ɪn ˈtuː ˈmaɪndz‿əˈbaʊt ˈweð.ɚ tə ˈɡoʊ",
+   "def": "I can't decide.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-it-slipped-my-mind-to-be-honest",
+   "type": "phrase",
+   "texte": "It slipped my mind, to be honest.",
+   "ipa": "ɪt ˈslɪpt maɪ ˈmaɪnd tə bi ˈɑː.nɪst",
+   "def": "I forgot.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "[h]onest"
+    }
+   ]
+  },
+  {
+   "id": "f-you-cant-have-it-both-ways",
+   "type": "phrase",
+   "texte": "You can't have it both ways.",
+   "ipa": "jə ˈkænt ˈhæv‿ɪt ˈboʊθ ˈweɪz",
+   "def": "You can't have the benefits of two opposite choices.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-thats-beside-the-point",
+   "type": "phrase",
+   "texte": "That's beside the point.",
+   "ipa": "ðæts bɪˈsaɪd ðə ˈpɔɪnt",
+   "def": "That's not relevant to the main issue.",
+   "p": []
+  },
+  {
+   "id": "f-i-didnt-see-that-coming-at-all",
+   "type": "phrase",
+   "texte": "I didn't see that coming at all.",
+   "ipa": "aɪ ˈdɪd.ən ˈsiː ðæt ˈkʌm.ɪŋ‿ət̬‿ˈɑːl",
+   "def": "It surprised me completely.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "didn'[t] see"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-its-not-worth-losing-sleep-over",
+   "type": "phrase",
+   "texte": "It's not worth losing sleep over.",
+   "ipa": "ɪts ˈnɑːt ˈwɝːθ ˈluː.zɪŋ ˈsliːp‿ˌoʊ.vɚ",
+   "def": "It's not worth worrying about.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-we-ended-up-having-to-start-all-over-aga",
+   "type": "phrase",
+   "texte": "We ended up having to start all over again.",
+   "ipa": "wi ˈen.dɪd‿ʌp ˈhæv.ɪŋ tə ˈstɑːr.t̬‿ɑːl ˈoʊ.vɚ əˈɡen",
+   "def": "We had to begin again from the start.",
+   "p": [
+    {
+     "t": "piege",
+     "ipa": "əˈɡen"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-whatever-happens-dont-let-it-get-to-you",
+   "type": "phrase",
+   "texte": "Whatever happens, don't let it get to you.",
+   "ipa": "wʌtˈev.ɚ ˈhæp.ənz doʊn ˈlet̬‿ɪt ˈɡet tə jə",
+   "def": "Don't let it upset you.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "don'[t] let"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-hes-not-one-to-beat-around-the-bush",
+   "type": "phrase",
+   "texte": "He's not one to beat around the bush.",
+   "ipa": "hiz ˈnɑːt ˈwʌn tə ˈbiːt̬‿əˈraʊnd ðə ˈbʊʃ",
+   "def": "He speaks directly.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-id-have-thought-youd-know-better-by-now",
+   "type": "phrase",
+   "texte": "I'd have thought you'd know better by now.",
+   "ipa": "aɪd‿əv ˈθɑːt jəd ˈnoʊ ˈbet̬.ɚ baɪ ˈnaʊ",
+   "def": "I expected you to have learned by now.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-theres-no-point-in-dwelling-on-it",
+   "type": "phrase",
+   "texte": "There's no point in dwelling on it.",
+   "ipa": "ðɚz ˈnoʊ ˈpɔɪnt‿ɪn ˈdwel.ɪŋ‿ɑːn‿ɪt",
+   "def": "Thinking about it over and over won't help.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-should-you-need-anything-just-let-me-kno",
+   "type": "phrase",
+   "texte": "Should you need anything, just let me know.",
+   "ipa": "ˈʃʊd jə ˈniːd‿ˈen.i.θɪŋ ˈdʒʌs ˈlem.i ˈnoʊ",
+   "def": "Formal inversion: \"If you need anything…\"",
+   "p": [
+    {
+     "t": "reduction",
+     "ipa": "ˈlem.i"
+    },
+    {
+     "t": "elision",
+     "mot": "jus[t] let"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-she-made-a-point-of-thanking-everyone-in",
+   "type": "phrase",
+   "texte": "She made a point of thanking everyone individually.",
+   "ipa": "ʃi ˈmeɪd‿ə ˈpɔɪnt‿əv ˈθæŋ.kɪŋ ˈev.ri.wʌn ˌɪn.dəˈvɪdʒ.u.ə.li",
+   "def": "She deliberately made sure to thank everyone.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-it-turned-out-to-be-a-blessing-in-disgui",
+   "type": "phrase",
+   "texte": "It turned out to be a blessing in disguise.",
+   "ipa": "ɪt ˈtɝːnd‿ˈaʊt tə bi‿ə ˈbles.ɪŋ‿ɪn dɪsˈɡaɪz",
+   "def": "Something bad that turned out to be good.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-ive-got-a-lot-on-my-plate-at-the-moment",
+   "type": "phrase",
+   "texte": "I've got a lot on my plate at the moment.",
+   "ipa": "aɪv ˈɡɑːt̬‿ə ˈlɑːt̬‿ɑːn maɪ ˈpleɪt̬‿ət ðə ˈmoʊ.mənt",
+   "def": "I'm very busy right now.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-its-a-long-shot-but-it-might-just-work",
+   "type": "phrase",
+   "texte": "It's a long shot, but it might just work.",
+   "ipa": "ɪts‿ə ˈlɑːŋ ˈʃɑːt bət̬‿ɪt ˈmaɪt ˈdʒʌst ˈwɝːk",
+   "def": "Unlikely to succeed, but worth trying.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-dont-take-it-the-wrong-way",
+   "type": "phrase",
+   "texte": "Don't take it the wrong way.",
+   "ipa": "doʊn ˈteɪk‿ɪt ðə ˈrɑːŋ ˈweɪ",
+   "def": "Don't be offended.",
+   "p": [
+    {
+     "t": "elision",
+     "mot": "Don'[t] take"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-not-that-it-matters-but-i-was-right",
+   "type": "phrase",
+   "texte": "Not that it matters, but I was right.",
+   "ipa": "ˈnɑːt ðət̬‿ɪt ˈmæt̬.ɚz bət̬‿aɪ wəz ˈraɪt",
+   "def": "Saying it's unimportant while still pointing it out.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "wəz"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-im-not-saying-its-your-fault-but-it-isnt",
+   "type": "phrase",
+   "texte": "I'm not saying it's your fault, but it isn't mine either.",
+   "ipa": "aɪm ˈnɑːt ˈseɪ.ɪŋ‿ɪts jɚ ˈfɑːlt bət̬‿ɪt̬‿ˈɪz.ənt ˈmaɪn‿ˈiː.ðɚ",
+   "def": "Refusing the blame without accusing.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-we-could-have-done-without-the-drama",
+   "type": "phrase",
+   "texte": "We could have done without the drama.",
+   "ipa": "wi ˈkʊd‿əv ˈdʌn wɪˈðaʊt ðə ˈdrɑː.mə",
+   "def": "We would have preferred not to have the drama.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-it-remains-to-be-seen-whether-itll-pay-o",
+   "type": "phrase",
+   "texte": "It remains to be seen whether it'll pay off.",
+   "ipa": "ɪt rɪˈmeɪnz tə bi ˈsiːn ˈweð.ɚ ɪt̬.əl ˈpeɪ‿ˈɑːf",
+   "def": "We don't know yet whether it will succeed.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-as-far-as-im-concerned-the-matter-is-clo",
+   "type": "phrase",
+   "texte": "As far as I'm concerned, the matter is closed.",
+   "ipa": "əz ˈfɑːr‿əz‿aɪm kənˈsɝːnd ðə ˈmæt̬.ɚ‿ɪz ˈkloʊzd",
+   "def": "In my opinion, the discussion is over.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əz"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-they-bent-over-backwards-to-make-it-work",
+   "type": "phrase",
+   "texte": "They bent over backwards to make it work.",
+   "ipa": "ðeɪ ˈbent‿ˈoʊ.vɚ ˈbæk.wɚdz tə ˈmeɪk‿ɪt ˈwɝːk",
+   "def": "They tried extremely hard.",
+   "p": [
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-id-better-get-going-before-it-gets-dark",
+   "type": "phrase",
+   "texte": "I'd better get going before it gets dark.",
+   "ipa": "aɪd ˈbet̬.ɚ ˈɡet ˈɡoʊ.ɪŋ bɪˈfɔːr‿ɪt ˈɡets ˈdɑːrk",
+   "def": "I should leave now.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-thats-the-last-thing-i-would-have-expect",
+   "type": "phrase",
+   "texte": "That's the last thing I would have expected.",
+   "ipa": "ðæts ðə ˈlæst ˈθɪŋ‿aɪ wʊd‿əv‿ɪkˈspek.tɪd",
+   "def": "I didn't expect it at all.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əv"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-its-not-as-if-we-didnt-warn-them",
+   "type": "phrase",
+   "texte": "It's not as if we didn't warn them.",
+   "ipa": "ɪts ˈnɑːt̬‿əz‿ɪf wi ˈdɪd.ən ˈwɔːrn‿əm",
+   "def": "We did warn them.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "əm"
+    },
+    {
+     "t": "elision",
+     "mot": "didn'[t] warn"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-shes-got-a-point-whether-we-like-it-or-n",
+   "type": "phrase",
+   "texte": "She's got a point, whether we like it or not.",
+   "ipa": "ʃiz ˈɡɑːt̬‿ə ˈpɔɪnt ˈweð.ɚ wi ˈlaɪk‿ɪt̬‿ɚ ˈnɑːt",
+   "def": "She's right, even if we don't want to admit it.",
+   "p": [
+    {
+     "t": "faible",
+     "ipa": "‿ɚ"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-make-of-it-what-you-will",
+   "type": "phrase",
+   "texte": "Make of it what you will.",
+   "ipa": "ˈmeɪk‿əv‿ɪt ˈwʌ.tʃə ˈwɪl",
+   "def": "Interpret it however you like.",
+   "p": [
+    {
+     "t": "assimilation",
+     "ipa": "tʃə"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-id-sooner-walk-than-wait-another-hour",
+   "type": "phrase",
+   "texte": "I'd sooner walk than wait another hour.",
+   "ipa": "aɪd ˈsuː.nɚ ˈwɑːk ðən ˈweɪt̬‿əˈnʌð.ɚ ˈaʊ.ɚ",
+   "def": "I'd prefer to walk.",
+   "p": [
+    {
+     "t": "muet",
+     "mot": "wa[l]k"
+    },
+    {
+     "t": "muet",
+     "mot": "[h]our"
+    },
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  },
+  {
+   "id": "f-be-that-as-it-may-we-still-have-a-deadli",
+   "type": "phrase",
+   "texte": "Be that as it may, we still have a deadline.",
+   "ipa": "ˈbi ðæt̬‿əz‿ɪt ˈmeɪ wi ˈstɪl ˈhæv‿ə ˈded.laɪn",
+   "def": "Even so; nevertheless.",
+   "p": [
+    {
+     "t": "flap",
+     "ipa": "t̬"
+    },
+    {
+     "t": "liaison",
+     "ipa": "‿"
+    }
+   ]
+  }
+ ]
+}

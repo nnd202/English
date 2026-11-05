@@ -10,6 +10,7 @@ import { decouper, zones } from '../js/ipa.js';
 import { noter, retenu, W, JOUR } from '../js/fsrs.js';
 import { creerPioche, quotaNouvelles, difficultes } from '../js/tirage.js';
 import { series, records, fusionner, REGLAGES_DEFAUT, TYPES } from '../js/store.js';
+import { noterDeck, ordreTour, plusDures } from '../js/decks.js';
 import { decouper as decouperTemps, estJuste, distracteurs, schema, tirerQuestions } from '../js/temps.js';
 import { decouperPhrases, comparer, compter, choisirPhrases, morceaux, phrasesWiki } from '../js/dictee.js';
 
@@ -81,6 +82,17 @@ for (const nom of dictees) {
     for (const p of t.phrases || []) verifier(compter(comparer(p, p)).justes === compter(comparer(p, p)).mots, `${nom} › ${t.id} : phrase non auto-comparable « ${p} »`);
   }
 }
+// Decks
+const DK = json('data/decks.json').decks;
+const toutesIds = new Set();
+for (const nom of lots) for (const c of json(`data/lots/${nom}.json`).cartes) toutesIds.add(c.id);
+for (const d of DK) {
+  verifier(d.id && d.titre && d.cartes.length >= 20, `Deck ${d.id} : titre ou cartes manquants`);
+  verifier(new Set(d.cartes).size === d.cartes.length && d.cartes.every(id => toutesIds.has(id)), `Deck ${d.id} : carte inconnue ou en double`);
+}
+verifier(new Set(DK.map(d => d.id)).size === DK.length, 'Decks : identifiants uniques');
+for (const nom of lots) for (const c of json(`data/lots/${nom}.json`).cartes) if (c.type === 'temps') verifier(json('data/temps.json').temps.some(t => t.id === c.temps), `${c.id} : temps inconnu`);
+
 // Exercice des temps
 const TP = json('data/temps.json');
 verifier(TP.temps.length === 12 && new Set(TP.temps.map(t => `${t.epoque}|${t.aspect}`)).size === 12, 'Temps : 12 temps, un par case de la grille');
@@ -170,6 +182,15 @@ const ds = distracteurs(TP.temps, 'pasp');
 verifier(ds.length === 4 && new Set(ds).size === 4 && ds.includes('pasp'), 'Temps : quatre schémas au choix dont le bon');
 const tq = tirerQuestions(TP.phrases, 10, ['t-ps-1', 't-pc-1']);
 verifier(tq.length === 10 && new Set(tq).size === 10 && tq.some(p => p.id === 't-ps-1'), 'Temps : 10 questions sans doublon, ratées reprises');
+
+// Decks : moyenne récente, ordre, plus dures
+const ev = {};
+noterDeck(ev, 'a', 2, 1); noterDeck(ev, 'a', 0, 2); noterDeck(ev, 'b', 1, 3); noterDeck(ev, 'c', 2, 4); noterDeck(ev, 'd', 0, 5);
+verifier(Math.abs(ev.a.m - 1.2) < 1e-9 && ev.a.n === 2 && ev.a.g === 0, 'Decks : moyenne récente (dur puis facile = 1,2)');
+verifier(plusDures(['a', 'b', 'c', 'd', 'e'], ev).join() === 'c,a,b', 'Decks : les plus dures, la plus dure d\'abord, faciles et jamais vues exclues');
+const ids6 = ['a', 'b', 'c', 'd', 'e', 'f'];
+verifier(ordreTour(ids6, 'fixe', 3).join() === 'a,b,c,d,e,f', 'Decks : ordre fixe');
+verifier(ordreTour(ids6, 'melange', 1).join() === ordreTour(ids6, 'melange', 1).join() && ordreTour(ids6, 'melange', 1).join() !== ordreTour(ids6, 'melange', 2).join() && ordreTour(ids6, 'melange', 1).slice().sort().join() === 'a,b,c,d,e,f', 'Decks : ordre mélangé stable pendant un tour, différent au tour suivant');
 
 // Séries, records, fusion
 const s = (id, jour, extra = {}) => ({ id, debut: Date.UTC(2026, 10, jour, 10), cartes: [['a', 3, 1000]], passees: 10, mode: 'sprint', duree: 900, tirage: 'melange', complet: true, ...extra });

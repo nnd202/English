@@ -101,7 +101,7 @@ texte | ipa | définition | exemple | lemme | pastilles            (combis_*.txt
 texte | ipa | usage | pastilles                                   (phrases_*.txt)
 ```
 
-Pastilles : `flap`, `glotte`, `liaison` seules (cible automatique : t̬, ʔ, ‿) ; sinon `type@m:zone` (dans le mot) ou `type@i:zone` (dans l'IPA), séparées par `;`. Puis `python3 tools/construire.py` régénère les JSON. `python3 tools/ipa_us.py mot…` propose une transcription à partir de CMUdict (`pip install cmudict`), convertie à la notation Cambridge (t̬, ɚ, ɝː, ɑː, syllabes, coup de glotte) : **toujours relire à la main**.
+Pastilles : `flap`, `glotte`, `liaison` seules (cible automatique : t̬, ʔ, ‿) ; sinon `type@m:zone` (dans le mot) ou `type@i:zone` (dans l'IPA), séparées par `;`. Puis `python3 tools/construire.py` régénère les JSON. `python3 tools/ipa_phrase.py "phrase…"` propose la transcription d'une phrase entière (formes faibles des mots grammaticaux, liaisons, flaps par-dessus la frontière des mots). `python3 tools/ipa_us.py mot…` propose une transcription à partir de CMUdict (`pip install cmudict`), convertie à la notation Cambridge (t̬, ɚ, ɝː, ɑː, syllabes, coup de glotte) : **toujours relire à la main**.
 
 **Directement en JSON** :
 
@@ -143,7 +143,7 @@ Le moteur (Sprint, FSRS, tirage, stats, sauvegarde, rendu des cartes) ne dépend
 
 ## 10. Feuille de route
 
-1. **Sprint** et cartes de prononciation : livré. 446 cartes (251 mots, 91 combinaisons, 59 phrasal verbs, 45 phrases).
+1. **Sprint** et cartes de prononciation : livré. 665 cartes (372 mots dont 121 de vocabulaire C1-C2, 91 combinaisons, 59 phrasal verbs, 95 phrases dont 50 C1-C2, 48 phrases-temps).
 2. **Dictées** : livré (banque de phrases B1-C2, dictée surprise Wikipédia, histoires, texte collé, difficulté réglable). Voir § 13.
 3. **Les temps** : livré. Voir § 14.
 4. **Verbes irréguliers** : la grille à remplir façon Geoquiz (saisie libre ou curseur), avec l'IPA.
@@ -194,3 +194,16 @@ Le but : **voir** le temps avant de le nommer, pour que le choix devienne automa
 - **La grille des 12 temps** : époques en lignes, aspects en colonnes ; on touche la case du temps de la phrase. La même grille, avec schéma, forme et règle de chaque temps, sert de fiche de révision.
 - Séries de 10 questions ; les phrases ratées lors des 3 dernières séries reviennent en priorité (un tiers au plus). Correction immédiate : nom anglais et français, forme, règle en une ligne.
 - Contenu : `data/temps.json` (12 temps, 60 phrases, 5 par temps ; le verbe entre crochets). Comptent pour la série de jours et le temps cumulé ; stats : % de justes et temps qui résistent.
+
+## 15. Les decks (6 novembre 2026)
+
+L'utilisateur cherche encore sa façon idéale d'apprendre ; les decks sont un **mode à part**, qui ne touche ni au Sprint ni à FSRS.
+
+- **Un deck = un paquet fixe** de 45 à 63 cartes (`data/decks.json`, fabriqué par `tools/construire.py` : chaque groupe est mélangé une fois pour toutes puis découpé). On le parcourt **en entier, une carte après l'autre** ; la position est gardée (on reprend où on s'est arrêté) ; chaque passage complet est un **tour**.
+- **Ordre** : toujours le même (défaut) ou mélangé à chaque tour (stable pendant le tour).
+- **Après chaque carte** : Facile · Moyen · Dur (défaut) ou « Suivant » seulement. La note ne sert qu'à **repérer les cartes dures** : chaque carte a une **moyenne récente** (0 facile, 1 moyen, 2 dur ; moyenne mobile 60/40, pour qu'une carte maîtrisée redescende).
+- **Rabâcher les dures** : par deck (« Que les dures ») ou tous decks confondus (« Les plus dures », 40 cartes au plus, moyenne ≥ 0,8, la plus dure d'abord). En fin de tour, le bilan propose de rabâcher les dures de la série.
+- Les decks : Vocabulaire C1-C2 (2), Phrases C1-C2, Les temps en phrases, Combinaisons (2), Phrasal verbs, Phrases courantes, Pièges de prononciation (4). Une barre par deck montre la répartition des dernières notes.
+- **Phrases-temps** (type `temps`) : une phrase par temps en contexte ; le verso montre le **schéma de frise** du temps, son nom et sa forme, pour associer la sonorité à l'image mentale.
+- Les parties de deck comptent pour la série de jours, les cartes du jour et le temps cumulé (historique : « Deck »), pas pour les records du Sprint. Évaluations et progression sont dans la sauvegarde (`decks`), fusionnées à l'import.
+- Le niveau visé est B2 au minimum, surtout C1-C2 (C2 est le niveau le plus haut du cadre européen) : les prochains lots iront dans ce sens.

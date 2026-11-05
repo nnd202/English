@@ -117,9 +117,9 @@ body.verrou #vue { padding-bottom: 0; }
 .fiche-note { color: var(--gris); font-size: 15px; margin-top: -8px; }
 .fiche-indice { color: #b3bbcc; font-size: 13px; margin-top: 14px; }
 .fiche-ipa { font-family: var(--ipa); font-size: 28px; color: var(--bleu-nuit); background: var(--bleu-pale); border-radius: 18px; padding: 10px 16px; line-height: 1.4; }
-/* Flap : t avec le petit ˬ dessous, dessiné en CSS */
+/* Flap : t avec un petit chevron dessous, dessiné en CSS (indépendant des polices) */
 .flap { position: relative; }
-.flap::after { content: "ˬ"; position: absolute; left: 50%; transform: translateX(-50%); bottom: -.32em; font-size: .75em; line-height: 1; }
+.flap::after { content: ""; position: absolute; left: 38%; bottom: -.08em; width: .2em; height: .2em; border-right: .06em solid currentColor; border-bottom: .06em solid currentColor; transform: translateX(-50%) rotate(45deg); }
 .fiche-ipa.long { font-size: 23px; padding: 8px 14px; }
 mark { background: #ffe39a; color: inherit; border-radius: 4px; padding: 0 1px; }
 .fiche-actions { display: flex; gap: 10px; }
@@ -312,6 +312,18 @@ svg.schema { width: 100%; height: auto; display: block; }
 .bloc-titre + .ligne-temps { border-top: 0; }
 .ligne-temps p { margin: 0 0 3px; } .ligne-temps small { color: var(--gris); }
 .jeu.temps .jeu-chrono span { font-size: 17px; }
+
+/* Decks */
+.deck-tete { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.niveau { font-style: normal; font-size: 12px; font-weight: 700; color: var(--bleu-fonce); background: var(--bleu-clair); padding: 4px 10px; border-radius: 999px; white-space: nowrap; }
+.barre-deck { display: flex; height: 8px; border-radius: 6px; overflow: hidden; gap: 2px; background: var(--gris-clair); }
+.barre-deck i.jamais { background: var(--gris-clair); }
+.btn-second.fort { background: var(--bleu); color: var(--blanc); }
+.btn-second[disabled], .btn-principal[disabled] { opacity: .45; }
+.notes.trois { grid-template-columns: repeat(3, 1fr); }
+.deja { font-size: 12px; color: var(--gris); }
+.schema-carte { width: 100%; background: var(--bleu-pale); border-radius: 16px; padding: 4px 8px 8px; }
+.schema-carte span { display: block; font-size: 13px; color: #4b5670; margin-top: -2px; }
 
 @media (min-width: 700px) {
 }

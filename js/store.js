@@ -16,7 +16,7 @@ export const REGLAGES_DEFAUT = {
   rappelJours: 7            // rappel de sauvegarde (0 = jamais)
 };
 
-export const TYPES = ['mot', 'combi', 'phrasal', 'phrase'];
+export const TYPES = ['mot', 'combi', 'phrasal', 'phrase', 'temps'];
 
 export const DICTEE_DEFAUT = {
   niveau: 'B2',       // B1, B2, C1, C2
@@ -152,6 +152,14 @@ export function fusionner(a, b) {
   out.sessions.sort((x, y) => x.debut - y.debut);
   const tids = new Set((a.textes || []).map(t => t.id));
   out.textes = [...(a.textes || []), ...(b.textes || []).filter(t => !tids.has(t.id))];
+  // Decks : évaluations par carte (la plus récente), progression la plus avancée.
+  const da = a.decks || {}, db = b.decks || {};
+  out.decks = { ...db, ...da, evals: { ...(da.evals || {}) }, progres: { ...(da.progres || {}) } };
+  for (const [id, x] of Object.entries(db.evals || {})) if (!out.decks.evals[id] || x.last > out.decks.evals[id].last) out.decks.evals[id] = x;
+  for (const [id, x] of Object.entries(db.progres || {})) {
+    const y = out.decks.progres[id];
+    if (!y || x.tours > y.tours || (x.tours === y.tours && x.pos > y.pos)) out.decks.progres[id] = x;
+  }
   out.phrasesDictee = { ...(a.phrasesDictee || {}) };
   for (const [id, x] of Object.entries(b.phrasesDictee || {})) {
     const y = out.phrasesDictee[id];
