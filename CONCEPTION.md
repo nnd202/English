@@ -50,15 +50,16 @@ Le jeu phare est un **contre-la-montre** : en 5, 10, 15 ou 20 minutes, passer le
 - **Phrases courtes** : 5 à 10 mots de la vie courante, transcrites en entier avec leurs liaisons.
 - Les définitions sont **écrites pour l'appli** (jamais copiées d'un dictionnaire). Le dépôt est public : aucun texte protégé, aucune donnée personnelle.
 
-## 5. Révisions : FSRS + hasard + timer
+## 5. Révisions : l'algorithme « Brassage »
 
-- **FSRS-4.5** (paramètres par défaut, rétention visée 90 %) calcule pour chaque carte sa stabilité, sa difficulté et sa date de révision.
-- **Toutes les réponses comptent, quel que soit le mode.** Une révision « trop tôt » (hasard, retour dans la partie) est gérée par FSRS : la stabilité bouge à peine. Le mode hasard ne fausse donc pas le modèle.
-- **Le timer règle l'accumulation** : la séance dure le temps choisi, quoi qu'il arrive. Il n'y a jamais de pile à finir, seulement une file où l'on pioche dans le meilleur ordre.
-- **Tirage « Mélange »** (défaut) : d'abord les cartes **en danger d'oubli** (rétention la plus basse), une **nouvelle carte toutes les 4**, puis du **hasard pondéré par la difficulté** quand tout le reste est épuisé.
-- **Autres tirages** : Hasard (toutes les cartes vues + le quota de nouvelles), À revoir, Nouvelles. Filtres par type (mots, combinaisons, phrasal verbs, phrases).
-- **Quota de nouvelles par jour** (10 par défaut) : le seul garde-fou, car chaque nouvelle carte crée des révisions futures. Il est divisé par deux au-delà d'un seuil de retard (60 cartes à revoir), et coupé au double.
-- **Difficulté estimée** pour les cartes jamais vues, d'après les cartes vues qui partagent les mêmes phénomènes (pastilles) et le même type. L'appli apprend peu à peu ce qui est dur sur tout le stock.
+Première version : FSRS dictait l'ordre (cartes dues d'abord, 10 nouvelles par jour). À l'usage (5 novembre 2026), l'utilisateur revoyait les mêmes cartes toutes les trois cartes en fin de Sprint : une fois le quota de nouvelles et les cartes dues épuisés, la pioche tournait sur une poignée de cartes. Il a besoin de **brasser beaucoup de nouveauté**, avec des révisions régulières mais sans rigidité. D'où l'algorithme actuel (`js/tirage.js`) :
+
+- **Part de nouveautés réglable** (60 % par défaut) : en Brassage, 6 cartes sur 10 sont jamais vues, réparties régulièrement dès le début de la partie. **Pas de plafond par jour**, sauf si on en fixe un dans les réglages.
+- **Le reste est de la révision**, tirée au hasard parmi les cartes déjà vues, avec un poids qui favorise : les cartes à la mémoire la plus basse (rétention FSRS), les plus difficiles, les ratées ou difficiles la dernière fois ; et qui défavorise celles déjà revues aujourd'hui.
+- **Aucune carte ne revient dans la même partie**, sauf une ratée, **une seule fois**, 8 à 12 cartes plus loin. Si tout le stock filtré a été vu, on reprend la carte vue il y a le plus longtemps.
+- **FSRS reste le modèle de mémoire** (stabilité, difficulté, rétention, prochaine révision affichées dans la fiche et les stats), mais il ne dicte plus l'ordre.
+- **Tirages** : Brassage (défaut, clé interne `melange` pour garder les records), Hasard (révision uniforme, même part de nouveautés), Révisions (cartes déjà vues uniquement), Nouvelles (jamais vues d'abord).
+- **Difficulté estimée** pour les cartes jamais vues, d'après les cartes vues qui partagent les mêmes phénomènes (pastilles) et le même type.
 
 ## 6. Stats
 
@@ -144,8 +145,8 @@ Le moteur (Sprint, FSRS, tirage, stats, sauvegarde, rendu des cartes) ne dépend
 
 1. **Sprint** et cartes de prononciation : livré. 446 cartes (251 mots, 91 combinaisons, 59 phrasal verbs, 45 phrases).
 2. **Dictées** : livré (banque de phrases B1-C2, dictée surprise Wikipédia, histoires, texte collé, difficulté réglable). Voir § 13.
-3. **Verbes irréguliers** : la grille à remplir façon Geoquiz (saisie libre ou curseur), avec l'IPA.
-4. **Timeline des temps** : une frise avec « maintenant » et un point de référence ; placer l'événement au doigt (point, durée close, action en cours qui traverse le repère) ; correction superposée avec le nom du temps. Variante inverse : conjuguer d'après le schéma. Grille des 12 temps en mode clic.
+3. **Les temps** : livré. Voir § 14.
+4. **Verbes irréguliers** : la grille à remplir façon Geoquiz (saisie libre ou curseur), avec l'IPA.
 5. **Plus tard** : prépositions, faux amis, et ce qui viendra.
 
 ## 11. Design
@@ -182,3 +183,14 @@ L'écoute est le vrai point faible visé : entendre « whaddaya » et écrire «
 **Comparaison mot à mot** (plus longue sous-suite commune) : juste ; **orthographe** (le bon mot à une ou deux lettres près : orange) ; **faux** (autre mot : rouge) ; **oublié** (encadré pointillé) ; **en trop** (barré). Majuscules, ponctuation, accents, apostrophes typographiques et tirets sont pardonnés. Les contractions comptent (« I'm » ≠ « Im »).
 
 **Bilan** : % de mots justes, détail par catégorie, temps, nombre d'écoutes, niveau et réglages, correction complète avec réécoute de chaque phrase. Stats : % par niveau. Une dictée compte pour la **série de jours** et le **temps cumulé**, pas pour les records du Sprint. Quitter en cours enregistre les phrases déjà vérifiées. Pas de pression ici : le chrono mesure seulement.
+
+## 14. Les temps
+
+Le but : **voir** le temps avant de le nommer, pour que le choix devienne automatique.
+
+- **Les schémas** (`schema()` dans `js/temps.js`, SVG) : une frise past → now → future. Un **point** = action ponctuelle ; une **barre rayée** = action en cours, qui dure ; un **arc pointillé** d'un point vers « now » ou vers un **repère** (trait orange) = action terminée mais reliée à ce moment (aspect parfait) ; des **points répétés** = habitude (présent simple). Les 12 temps ont chacun leur schéma, sans ambiguïté.
+- **Placer sur la frise** : une phrase, le verbe surligné, quatre schémas au choix (deux de la même époque, un du même aspect : les confusions classiques).
+- **Conjuguer** (variante inverse) : le schéma et la phrase à trous avec le verbe à l'infinitif ; on écrit la forme. Contractions acceptées dans les deux sens (*'ll / will*, *hadn't / had not*…).
+- **La grille des 12 temps** : époques en lignes, aspects en colonnes ; on touche la case du temps de la phrase. La même grille, avec schéma, forme et règle de chaque temps, sert de fiche de révision.
+- Séries de 10 questions ; les phrases ratées lors des 3 dernières séries reviennent en priorité (un tiers au plus). Correction immédiate : nom anglais et français, forme, règle en une ligne.
+- Contenu : `data/temps.json` (12 temps, 60 phrases, 5 par temps ; le verbe entre crochets). Comptent pour la série de jours et le temps cumulé ; stats : % de justes et temps qui résistent.

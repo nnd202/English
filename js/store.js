@@ -6,8 +6,8 @@ import { noter } from './fsrs.js';
 const CLE = 'english:v1';
 
 export const REGLAGES_DEFAUT = {
-  nouvellesParJour: 10,     // nouvelles cartes par jour (quota)
-  seuilRetard: 60,          // au-delà, le quota de nouvelles est divisé par 2 ; au double, coupé
+  partNouvelles: 0.6,       // Brassage : part des cartes jamais vues dans une partie
+  nouvellesMax: 0,          // plafond de nouvelles cartes par jour (0 = aucun)
   poidsDifficulte: 0.6,     // 0 = hasard uniforme, 1 = les cartes dures sortent beaucoup plus
   vitesseLente: 0.7,        // vitesse du bouton « lent »
   voix: '',                 // nom de la voix choisie (vide = meilleure voix en-US trouvée)
@@ -102,9 +102,9 @@ export function introduitesLe(cartes, jour) {
   return Object.values(cartes).filter(e => e.intro && jourCle(e.intro) === jour).length;
 }
 
-// Série de jours : un jour compte s'il contient au moins une carte notée ou une dictée.
+// Série de jours : un jour compte s'il contient au moins une carte notée, une dictée ou un exercice des temps.
 export function series(sessions, aujourdhui = jourCle(Date.now())) {
-  const jours = new Set(sessions.filter(s => (s.cartes && s.cartes.length) || s.mode === 'dictee').map(s => jourCle(s.debut)));
+  const jours = new Set(sessions.filter(s => (s.cartes && s.cartes.length) || s.mode === 'dictee' || s.mode === 'temps').map(s => jourCle(s.debut)));
   const tries = [...jours].sort();
   let record = 0, courant = 0, prec = null;
   for (const j of tries) {

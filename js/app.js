@@ -5,6 +5,7 @@ import { creerPioche, difficultes, quotaNouvelles } from './tirage.js';
 import { retenu } from './fsrs.js';
 import { legende, zones, morceaux } from './ipa.js';
 import { initVoix, dire, voixListe, voixOk } from './voix.js';
+import { schema, decouper, phraseComplete, estJuste, distracteurs, tirerQuestions } from './temps.js';
 import { decouperPhrases, comparer, compter, choisirPhrases, morceaux as morceauxPhrase, phrasesWiki } from './dictee.js';
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -12,10 +13,10 @@ const vue = $('#vue'), nav = $('#nav'), feuille = $('#feuille');
 const h = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 let LANGUE = null, CARTES = [], PAR_ID = new Map(), DICTEES = [], BANQUE = [];
-let partie = null, bilan = null, dictee = null, bilanDictee = null;
+let partie = null, bilan = null, dictee = null, bilanDictee = null, exo = null, bilanTemps = null, TEMPS = null;
 
 const DUREES = [300, 600, 900, 1200];
-const TIRAGES = { melange: 'Mélange', hasard: 'Hasard', dues: 'À revoir', nouvelles: 'Nouvelles' };
+const TIRAGES = { melange: 'Brassage', hasard: 'Hasard', dues: 'Révisions', nouvelles: 'Nouvelles' };
 const NOTES = { 1: 'Raté', 2: 'Difficile', 3: 'Bien', 4: 'Facile' };
 
 // ---------- Utilitaires ----------
@@ -69,6 +70,7 @@ async function demarrer() {
   const charge = async (u) => (await fetch(u, { cache: 'no-cache' })).json();
   LANGUE = await charge('data/langue.json');
   const { lots, dictees = [] } = await charge('data/lots.json');
+  TEMPS = await charge('data/temps.json');
   const tous = await Promise.all([
     ...lots.map(nom => charge(`data/lots/${nom}.json`)),
     ...dictees.map(nom => charge(`data/dictees/${nom}.json`))
@@ -98,14 +100,22 @@ function router() {
     voileQuitterDictee();
     return;
   }
+  if (exo && !exo.fini && hash !== '#/exo-temps') {
+    history.pushState(null, '', '#/exo-temps');
+    $('#quitter-t')?.click();
+    return;
+  }
   fermerFeuille();
   const [, ecran, arg] = hash.split('/');
-  nav.hidden = ecran === 'jeu' || ecran === 'dictee';
+  nav.hidden = ecran === 'jeu' || ecran === 'dictee' || ecran === 'exo-temps';
   document.body.classList.toggle('verrou', nav.hidden);
   if (!nav.hidden) window.scrollTo(0, 0);
   if (ecran === 'dictee' && dictee) return ecranDictee();
   if (ecran === 'bilan-dictee' && bilanDictee) return ecranBilanDictee();
   if (ecran === 'dictees') return ecranDictees();
+  if (ecran === 'temps') return ecranTemps();
+  if (ecran === 'exo-temps' && exo) return ecranExoTemps();
+  if (ecran === 'bilan-temps' && bilanTemps) return ecranBilanTemps();
   if (ecran === 'coller') return ecranColler();
   if (ecran === 'jeu' && partie) return ecranJeu();
   if (ecran === 'bilan' && bilan) return ecranBilan();
@@ -161,7 +171,7 @@ function infosPioche() {
   const actives = CARTES.filter(c => types.includes(c.type) && !(e.cartes[c.id] && e.cartes[c.id].ej));
   const dues = actives.filter(c => e.cartes[c.id] && e.cartes[c.id].s && e.cartes[c.id].due <= now).length;
   const jamais = actives.filter(c => !(e.cartes[c.id] && e.cartes[c.id].s)).length;
-  const quota = Math.min(jamais, quotaNouvelles(e.reglages, store.introduitesLe(e.cartes, store.jourCle(now)), dues));
+  const quota = Math.min(jamais, quotaNouvelles(e.reglages, store.introduitesLe(e.cartes, store.jourCle(now))));
   return { dues, quota, jamais };
 }
 
@@ -183,7 +193,7 @@ function ecranAccueil() {
       <div class="record">${rec
         ? `Record <b>${rec.passees} cartes</b> en ${sp.duree / 60} min · ${TIRAGES[sp.tirage]} <span>le ${dateCourte(rec.debut)}</span>`
         : `Pas encore de record en ${sp.duree / 60} min · ${TIRAGES[sp.tirage]}`}</div>
-      <p class="info">${pluriel(inf.dues, 'carte')} à revoir · ${pluriel(inf.quota, 'nouvelle')} possible${inf.quota > 1 ? 's' : ''} aujourd'hui</p>
+      <p class="info">${pluriel(inf.jamais, 'carte')} jamais vue${inf.jamais > 1 ? 's' : ''} · ${pluriel(inf.dues, 'carte')} à revoir${sp.tirage === 'melange' ? ` · ${Math.round(e.reglages.partNouvelles * 100)} % de nouveautés` : ''}${inf.quota < inf.jamais ? ` · plafond : ${inf.quota} aujourd'hui` : ''}</p>
       <button class="btn-principal" data-lancer="sprint">${ICONES.jouer} Démarrer le Sprint</button>
     </section>
     <section class="bloc">
@@ -194,9 +204,12 @@ function ecranAccueil() {
       <div class="bloc-titre"><h2>Dictées</h2><span>Écouter, taper, comparer mot à mot</span></div>
       <a class="btn-second" href="#/dictees">Choisir un texte</a>
     </section>
+    <section class="bloc">
+      <div class="bloc-titre"><h2>Les temps</h2><span>Placer l'action sur la frise, conjuguer, la grille des 12 temps</span></div>
+      <a class="btn-second" href="#/temps">S'entraîner</a>
+    </section>
     <section class="bloc bientot">
       <div class="bloc-titre"><h2>Bientôt</h2></div>
-      <div class="ligne-bientot"><b>Timeline des temps</b><span>placer l'action sur la frise</span></div>
       <div class="ligne-bientot"><b>Verbes irréguliers</b><span>la grille à remplir</span></div>
     </section>
   </main>`;
@@ -234,7 +247,8 @@ function lancer(mode) {
   const options = { tirage: e.sprint.tirage, types: [...e.sprint.types] };
   const pioche = creerPioche({
     cartes: CARTES, etats: e.cartes, reglages: e.reglages, options, maintenant: now,
-    introduitesAujourdhui: store.introduitesLe(e.cartes, store.jourCle(now))
+    introduitesAujourdhui: store.introduitesLe(e.cartes, store.jourCle(now)),
+    debutJour: new Date(now).setHours(0, 0, 0, 0)
   });
   if (!pioche.infos.actives) { toast('Aucune carte disponible avec ces filtres.'); return; }
   partie = {
@@ -536,12 +550,16 @@ function ecranStats() {
     </section>
     <section class="bloc"><div class="bloc-titre"><h2>Toutes tes notes</h2></div>${barreNotes(totalNotes)}</section>
     ${statsDictees(e.sessions)}
+    ${statsTemps(e.sessions)}
     ${dures.length ? `<section class="bloc"><div class="bloc-titre"><h2>Les plus dures</h2><span>Difficulté calculée par FSRS (sur 10)</span></div>
       ${dures.map(c => ligneCarte(c, etats[c.id].d.toFixed(1))).join('')}</section>` : ''}
     ${lentes.length ? `<section class="bloc"><div class="bloc-titre"><h2>Celles qui prennent du temps</h2><span>Temps moyen par passage, tous modes</span></div>
       ${lentes.map(c => ligneCarte(c, `${(etats[c.id].t / etats[c.id].n / 1000).toFixed(1)} s`)).join('')}</section>` : ''}
     <section class="bloc"><div class="bloc-titre"><h2>Historique</h2></div>
-      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'dictee' ? `<div class="ligne-histo">
+      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'temps' ? `<div class="ligne-histo">
+        <div><b>Temps</b> · ${h(MODES_TEMPS[s.exercice].nom)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}</small></div>
+        <div class="histo-droite"><strong>${s.justes}/${s.total}</strong></div>
+      </div>` : s.mode === 'dictee' ? `<div class="ligne-histo">
         <div><b>Dictée${s.niveau && s.source === 'banque' ? '' : ''}</b> · ${h(s.titre)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}</small></div>
         <div class="histo-droite"><strong>${pourcent(s)}</strong></div>
       </div>` : `<div class="ligne-histo">
@@ -665,10 +683,11 @@ function ecranReglages() {
     <input type="checkbox" class="interrupteur" data-cle="${cle}" ${r[cle] ? 'checked' : ''}></label>`;
   vue.innerHTML = `${entete('Réglages')}
   <main class="page">
-    <section class="bloc"><div class="bloc-titre"><h2>Révisions</h2></div>
-      ${champ('nouvellesParJour', 'Nouvelles cartes par jour', 'Chaque nouvelle carte crée des révisions futures.', 0, 50)}
-      ${champ('seuilRetard', 'Seuil de retard', 'Au-delà de ce nombre de cartes à revoir, moins de nouvelles (aucune au double).', 10, 500, 10)}
-      <label class="reglage"><div><b>Poids de la difficulté</b><small>Au hasard, les cartes dures sortent plus souvent.</small></div>
+    <section class="bloc"><div class="bloc-titre"><h2>Tirage des cartes</h2><span>Une carte ne revient jamais dans la même partie, sauf une ratée, une fois, 8 à 12 cartes plus loin.</span></div>
+      <label class="reglage"><div><b>Part de nouveautés</b><small>En Brassage, part des cartes jamais vues : <span id="val-part">${Math.round(r.partNouvelles * 100)} %</span>. Le reste est de la révision.</small></div>
+        <input type="range" min="0" max="1" step="0.1" data-cle="partNouvelles" value="${r.partNouvelles}"></label>
+      ${champ('nouvellesMax', 'Plafond de nouvelles par jour', '0 = aucun plafond.', 0, 500, 5)}
+      <label class="reglage"><div><b>Poids de la difficulté</b><small>En révision, les cartes dures sortent plus souvent.</small></div>
         <input type="range" min="0" max="1" step="0.1" data-cle="poidsDifficulte" value="${r.poidsDifficulte}"></label>
     </section>
     <section class="bloc"><div class="bloc-titre"><h2>Carte</h2></div>
@@ -695,6 +714,7 @@ function ecranReglages() {
     let v = inp.type === 'checkbox' ? inp.checked : inp.tagName === 'SELECT' ? inp.value : Number(inp.value);
     if (typeof v === 'number') { if (Number.isNaN(v)) return; v = Math.min(Number(inp.max), Math.max(Number(inp.min), v)); }
     r[cle] = v; store.sauver(); toast('Réglage enregistré.');
+    if (cle === 'partNouvelles') $('#val-part').textContent = `${Math.round(v * 100)} %`;
   });
   $('#test-voix').onclick = () => dire('figure it out', { nom: r.voix });
   $('#exporter').onclick = exporter;
@@ -1083,6 +1103,196 @@ function ecranBilanDictee() {
       lancerDictee({ id: 'banque-' + s.niveau, titre: `Dictée ${s.niveau}`, phrases: choix.map(p => p.texte), ids: choix.map(p => p.id) }, { source: 'banque', niveau: s.niveau });
     } else lancerDictee(d.texte, d.opts);
   };
+}
+
+// ---------- Les temps ----------
+const MODES_TEMPS = {
+  placer: { nom: 'Placer sur la frise', desc: 'Une phrase : choisis le schéma qui montre quand se passe l\'action.' },
+  conjuguer: { nom: 'Conjuguer', desc: 'Un schéma et une phrase à trous : écris le verbe au bon temps.' },
+  grille: { nom: 'La grille des 12 temps', desc: 'Une phrase : touche la case de son temps.' }
+};
+const EPOQUES = { passe: 'Passé', present: 'Présent', futur: 'Futur' };
+const ASPECTS = { simple: 'Simple', continu: 'Continu', parfait: 'Parfait', 'parfait continu': 'Parfait continu' };
+const tempsDe = (id) => TEMPS.temps.find(t => t.id === id);
+
+function ecranTemps() {
+  dessinerNav('maison');
+  const e = store.get();
+  const recents = e.sessions.filter(s => s.mode === 'temps');
+  const meilleur = (m) => {
+    const x = recents.filter(s => s.exercice === m);
+    return x.length ? Math.max(...x.map(s => Math.round(100 * s.justes / s.total))) : null;
+  };
+  vue.innerHTML = `${entete('Les temps', 'Voir le temps avant de le nommer', false, '#/')}
+  <main class="page">
+    ${Object.entries(MODES_TEMPS).map(([k, m]) => `<section class="bloc">
+      <div class="bloc-titre"><h2>${m.nom}</h2><span>${m.desc}</span></div>
+      ${meilleur(k) != null ? `<p class="info">Meilleur score : ${meilleur(k)} %</p>` : ''}
+      <button class="btn-principal" data-exo="${k}">10 questions</button>
+    </section>`).join('')}
+    <section class="bloc"><div class="bloc-titre"><h2>Les 12 temps</h2><span>Touche un temps pour voir son schéma et sa règle.</span></div>
+      <div class="grille-temps fiche-temps">${grilleTemps(null, true)}</div>
+      <div id="detail-temps"></div>
+    </section>
+  </main>`;
+  vue.querySelectorAll('[data-exo]').forEach(b => b.onclick = () => lancerTemps(b.dataset.exo));
+  vue.querySelectorAll('.fiche-temps [data-t]').forEach(b => b.onclick = () => {
+    vue.querySelectorAll('.fiche-temps [data-t]').forEach(x => x.classList.toggle('on', x === b));
+    const t = tempsDe(b.dataset.t);
+    $('#detail-temps').innerHTML = `<div class="detail-temps">${schema(t.id)}<h3>${h(t.nom)} <small>${h(t.fr)}</small></h3>
+      <p><b>${h(t.forme)}</b></p><p>${h(t.regle)}</p>
+      <p class="ex">${TEMPS.phrases.filter(p => p.t === t.id).slice(0, 2).map(p => h(phraseComplete(p.p))).join('<br>')}</p></div>`;
+  });
+}
+
+// Grille 3 × 4 : époques en lignes, aspects en colonnes.
+function grilleTemps(marques = null, avecNoms = false) {
+  const cases = [];
+  cases.push('<span></span>', ...Object.values(ASPECTS).map(a => `<span class="gt-col">${a}</span>`));
+  for (const [ep, lib] of Object.entries(EPOQUES)) {
+    cases.push(`<span class="gt-lig">${lib}</span>`);
+    for (const asp of Object.keys(ASPECTS)) {
+      const t = TEMPS.temps.find(x => x.epoque === ep && x.aspect === asp);
+      const cl = marques ? (marques[t.id] || '') : '';
+      cases.push(`<button class="gt-case ${cl}" data-t="${t.id}">${avecNoms || marques ? h(t.nom.replace(' (will)', '')) : ''}</button>`);
+    }
+  }
+  return cases.join('');
+}
+
+function lancerTemps(mode) {
+  const e = store.get();
+  const dernieres = e.sessions.filter(s => s.mode === 'temps').slice(-3).flatMap(s => s.ratees || []);
+  exo = { mode, questions: tirerQuestions(TEMPS.phrases, 10, dernieres), i: 0, reponses: [], debut: Date.now(), fini: false, saisie: '' };
+  history.pushState(null, '', '#/exo-temps');
+  router();
+}
+
+function ecranExoTemps() {
+  nav.hidden = true;
+  const x = exo, q = x.questions[x.i], t = tempsDe(q.t), rep = x.reponses[x.i];
+  const { avant, verbe, apres } = decouper(q.p);
+  let corps = '';
+  if (x.mode === 'placer') {
+    x.choix ||= {};
+    const choix = x.choix[x.i] ||= distracteurs(TEMPS.temps, q.t);
+    corps = `<p class="phrase-temps">${h(avant)}<mark>${h(verbe)}</mark>${h(apres)}</p>
+      <p class="info centre">Quel schéma correspond au verbe surligné ?</p>
+      <div class="choix-schemas">${choix.map(id => `<button class="choix-schema ${rep ? (id === q.t ? 'bon' : id === rep.donne ? 'faux' : 'eteint') : ''}" data-choix="${id}" ${rep ? 'disabled' : ''}>${schema(id)}</button>`).join('')}</div>`;
+  } else if (x.mode === 'grille') {
+    const marques = rep ? { [q.t]: 'bon', ...(rep.ok ? {} : { [rep.donne]: 'faux' }) } : null;
+    corps = `<p class="phrase-temps">${h(avant)}<mark>${h(verbe)}</mark>${h(apres)}</p>
+      <div class="grille-temps jeu-grille">${grilleTemps(marques, false)}</div>`;
+  } else {
+    corps = `<div class="schema-grand">${schema(q.t)}</div>
+      <p class="phrase-temps">${h(avant)}${rep ? `<mark class="${rep.ok ? 'ok' : 'ko'}">${h(rep.ok ? rep.donne : verbe)}</mark>` : `<span class="trou">______</span>`}${h(apres)}</p>
+      <p class="info centre">Verbe : <b>${h(q.base)}</b></p>
+      ${rep ? (rep.ok ? '' : `<p class="info centre">Ta réponse : <s>${h(rep.donne)}</s></p>`) :
+        `<input class="champ saisie-temps" id="saisie-temps" placeholder="ta réponse" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="${h(x.saisie)}">`}`;
+  }
+  const retour = rep ? `<div class="retour-temps ${rep.ok ? 'ok' : 'ko'}">
+      <b>${rep.ok ? 'Juste !' : 'Pas tout à fait.'}</b> ${h(t.nom)} <small>(${h(t.fr)})</small>
+      <p><b>${h(t.forme)}</b> · ${h(t.regle)}</p>
+      ${x.mode !== 'conjuguer' ? '' : ''}
+    </div>` : '';
+  vue.innerHTML = `<div class="jeu temps">
+    <div class="jeu-tete">
+      <button class="btn-rond" id="quitter-t" aria-label="Quitter">${ICONES.fermer}</button>
+      <div class="jeu-chrono"><span>${MODES_TEMPS[x.mode].nom}</span><small>question ${x.i + 1} sur ${x.questions.length}</small></div>
+      <div class="jeu-score"><b>${x.reponses.filter(r => r && r.ok).length}</b><small>justes</small></div>
+      <div class="barre"><div style="width:${100 * (x.i + (rep ? 1 : 0)) / x.questions.length}%"></div></div>
+    </div>
+    <div class="dictee-corps">
+      <div class="fiche dictee-fiche">${corps}${retour}</div>
+      ${rep ? `<button class="btn-principal" id="suite-t">${x.i + 1 < x.questions.length ? 'Question suivante' : 'Voir le bilan'}</button>`
+        : x.mode === 'conjuguer' ? '<button class="btn-principal" id="valider-t">Vérifier</button>' : ''}
+    </div>
+  </div>`;
+  const repondre = (donne, ok) => { x.reponses[x.i] = { donne, ok }; ecranExoTemps(); };
+  vue.querySelectorAll('[data-choix]').forEach(b => b.onclick = () => repondre(b.dataset.choix, b.dataset.choix === q.t));
+  vue.querySelectorAll('.jeu-grille [data-t]').forEach(b => b.onclick = () => { if (!rep) repondre(b.dataset.t, b.dataset.t === q.t); });
+  const champ = $('#saisie-temps');
+  if (champ) {
+    champ.oninput = () => { x.saisie = champ.value; };
+    champ.onkeydown = (ev) => { if (ev.key === 'Enter') $('#valider-t').click(); };
+  }
+  const v = $('#valider-t');
+  if (v) v.onclick = () => {
+    if (!x.saisie.trim()) { toast('Écris d\'abord le verbe.'); return; }
+    repondre(x.saisie.trim(), estJuste(x.saisie, verbe));
+    x.saisie = '';
+  };
+  if (rep) $('.retour-temps')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  const s = $('#suite-t');
+  if (s) s.onclick = () => { if (x.i + 1 < x.questions.length) { x.i++; ecranExoTemps(); } else finirTemps(); };
+  $('#quitter-t').onclick = () => {
+    if ($('.voile-pause')) return;
+    const div = document.createElement('div');
+    div.className = 'voile-pause';
+    div.innerHTML = `<div class="boite"><h2>Quitter l'exercice ?</h2><p>${x.reponses.filter(Boolean).length ? 'Les réponses déjà données seront enregistrées.' : 'Rien ne sera enregistré.'}</p>
+      <button class="btn-principal" id="continuer-t">Continuer</button><button class="btn-second" id="arreter-t">Quitter</button></div>`;
+    $('.jeu').appendChild(div);
+    $('#continuer-t').onclick = () => div.remove();
+    $('#arreter-t').onclick = () => finirTemps(true);
+  };
+}
+
+function finirTemps(abandon = false) {
+  const x = exo;
+  x.fini = true;
+  const faites = x.reponses.map((r, i) => r ? { q: x.questions[i], r } : null).filter(Boolean);
+  const s = {
+    id: 'te' + x.debut, mode: 'temps', exercice: x.mode, debut: x.debut, fin: Date.now(), joue: Date.now() - x.debut,
+    complet: !abandon, total: faites.length, justes: faites.filter(f => f.r.ok).length,
+    ratees: faites.filter(f => !f.r.ok).map(f => f.q.id), erreurs: faites.filter(f => !f.r.ok).map(f => f.q.t),
+    passees: 0, notes: {}, cartes: []
+  };
+  const e = store.get();
+  if (faites.length) e.sessions.push(s);
+  store.sauver();
+  bilanTemps = faites.length ? { s, faites } : null;
+  exo = null;
+  location.replace(faites.length ? '#/bilan-temps' : '#/temps');
+}
+
+function ecranBilanTemps() {
+  dessinerNav('maison');
+  const { s, faites } = bilanTemps;
+  const ratees = faites.filter(f => !f.r.ok);
+  vue.innerHTML = `${entete('Bilan', MODES_TEMPS[s.exercice].nom)}
+  <main class="page">
+    <section class="bloc bilan">
+      <div class="gros"><b>${s.justes}/${s.total}</b><span>réponses justes</span></div>
+      <p class="sous">en ${chrono(s.joue)}</p>
+    </section>
+    ${ratees.length ? `<section class="bloc"><div class="bloc-titre"><h2>À revoir</h2><span>Elles reviendront en priorité la prochaine fois.</span></div>
+      ${ratees.map(f => { const t = tempsDe(f.q.t); const d = decouper(f.q.p); return `<div class="ligne-temps">
+        <p>${h(d.avant)}<mark>${h(d.verbe)}</mark>${h(d.apres)}</p>
+        <small>${h(t.nom)} · ${h(t.forme)}${s.exercice === 'conjuguer' ? ` · ta réponse : ${h(f.r.donne)}` : ` · tu as choisi : ${h(tempsDe(f.r.donne).nom)}`}</small>
+      </div>`; }).join('')}</section>` : '<section class="bloc"><p class="info centre">Sans faute !</p></section>'}
+    <div class="boutons">
+      <button class="btn-principal" id="refaire-t">Encore 10 questions</button>
+      <a class="btn-second" href="#/temps">Les temps</a>
+    </div>
+  </main>`;
+  $('#refaire-t').onclick = () => lancerTemps(s.exercice);
+}
+
+function statsTemps(sessions) {
+  const d = sessions.filter(s => s.mode === 'temps');
+  if (!d.length) return '';
+  const tot = d.reduce((n, s) => n + s.total, 0), j = d.reduce((n, s) => n + s.justes, 0);
+  const err = {};
+  for (const s of d) for (const t of s.erreurs || []) err[t] = (err[t] || 0) + 1;
+  const pires = Object.entries(err).sort((a, b) => b[1] - a[1]).slice(0, 3);
+  return `<section class="bloc"><div class="bloc-titre"><h2>Les temps</h2></div>
+    <div class="grille-chiffres">
+      <div><b>${d.length}</b><span>séries</span></div>
+      <div><b>${Math.round(100 * j / tot)} %</b><span>justes</span></div>
+      <div><b>${duree(d.reduce((n, s) => n + s.joue, 0))}</b><span>temps</span></div>
+    </div>
+    ${pires.length ? `<p class="info">Ceux qui te résistent : ${pires.map(([t, n]) => `${h(tempsDe(t).nom)} (${n})`).join(', ')}</p>` : ''}
+  </section>`;
 }
 
 demarrer().catch(err => {

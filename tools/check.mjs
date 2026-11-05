@@ -10,6 +10,7 @@ import { decouper, zones } from '../js/ipa.js';
 import { noter, retenu, W, JOUR } from '../js/fsrs.js';
 import { creerPioche, quotaNouvelles, difficultes } from '../js/tirage.js';
 import { series, records, fusionner, REGLAGES_DEFAUT, TYPES } from '../js/store.js';
+import { decouper as decouperTemps, estJuste, distracteurs, schema, tirerQuestions } from '../js/temps.js';
 import { decouperPhrases, comparer, compter, choisirPhrases, morceaux, phrasesWiki } from '../js/dictee.js';
 
 const RACINE = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -80,6 +81,16 @@ for (const nom of dictees) {
     for (const p of t.phrases || []) verifier(compter(comparer(p, p)).justes === compter(comparer(p, p)).mots, `${nom} › ${t.id} : phrase non auto-comparable « ${p} »`);
   }
 }
+// Exercice des temps
+const TP = json('data/temps.json');
+verifier(TP.temps.length === 12 && new Set(TP.temps.map(t => `${t.epoque}|${t.aspect}`)).size === 12, 'Temps : 12 temps, un par case de la grille');
+for (const t of TP.temps) verifier(schema(t.id).includes('sx-ev'), `Temps : schéma manquant pour ${t.id}`);
+for (const p of TP.phrases) {
+  verifier(TP.temps.some(t => t.id === p.t) && decouperTemps(p.p).verbe && p.base && !ids.has(p.id), `Temps › ${p.id} : temps, verbe entre crochets, base ou identifiant`);
+  ids.add(p.id);
+  verifier(estJuste(decouperTemps(p.p).verbe, decouperTemps(p.p).verbe), `Temps › ${p.id} : la réponse doit se valider elle-même`);
+}
+for (const t of TP.temps) verifier(TP.phrases.filter(p => p.t === t.id).length >= 5, `Temps : au moins 5 phrases pour ${t.id}`);
 for (const l of langue.liens) for (const t of l.types) verifier(TYPES.includes(t), `lien ${l.nom} : type inconnu ${t}`);
 
 // ---------- 3. Moteur ----------
@@ -98,26 +109,40 @@ verifier(rate.s < apres.s && rate.l === 1, 'FSRS : raté → stabilité réduite
 verifier(noter({}, 1, T0).d > noter({}, 4, T0).d, 'FSRS : « Raté » donne une difficulté plus haute que « Facile »');
 verifier(Math.abs(retenu(e, e.due) - 0.9) < 0.001, 'FSRS : rétention de 90 % à l\'échéance');
 
-// Pioche
-const cartesTest = Array.from({ length: 30 }, (_, i) => ({ id: 'x' + i, type: TYPES[i % 4], p: i % 2 ? [{ t: 'flap' }] : [] }));
+// Pioche (Brassage)
+const cartesTest = Array.from({ length: 80 }, (_, i) => ({ id: 'x' + i, type: TYPES[i % 4], p: i % 2 ? [{ t: 'flap' }] : [] }));
 const etatsTest = {};
-for (let i = 0; i < 10; i++) etatsTest['x' + i] = noter({}, 3, T0 - 20 * JOUR);       // 10 vues, dues
-etatsTest.x10 = { ej: T0 };                                                        // éjectée jamais vue
-const reg = { ...REGLAGES_DEFAUT, nouvellesParJour: 5 };
-const pioche = creerPioche({ cartes: cartesTest, etats: etatsTest, reglages: reg, options: { tirage: 'melange', types: TYPES }, maintenant: T0, introduitesAujourdhui: 0 });
-verifier(pioche.infos.dues === 10 && pioche.infos.nouvelles === 5 && pioche.infos.actives === 29, 'Pioche : 10 dues, quota de 5 nouvelles, éjectée exclue');
-const tirées = Array.from({ length: 60 }, () => pioche.suivante());
-verifier(tirées.every(x => x && x.carte.id !== 'x10'), 'Pioche : jamais de carte éjectée, jamais de fin de pioche');
-verifier(tirées.filter(x => x.nouvelle).length === 5, 'Pioche : exactement le quota de nouvelles');
-verifier(new Set(tirées.slice(0, 15).map(x => x.carte.id)).size === 15, 'Pioche : pas de répétition rapprochée');
-const premieres = tirées.slice(0, 13).filter(x => !x.nouvelle).map(x => x.carte.id);
-verifier(premieres.every(id => +id.slice(1) < 10), 'Pioche : les cartes dues passent en premier');
-pioche.retour('x3');
-const suite = Array.from({ length: 12 }, () => pioche.suivante());
-verifier(suite.some(x => x.carte.id === 'x3' && x.retour), 'Pioche : une carte ratée revient dans la partie, marquée comme retour');
-const filtre = creerPioche({ cartes: cartesTest, etats: etatsTest, reglages: reg, options: { tirage: 'hasard', types: ['mot'] }, maintenant: T0, introduitesAujourdhui: 0 });
+for (let i = 0; i < 20; i++) etatsTest['x' + i] = noter({}, i < 5 ? 1 : 3, T0 - 20 * JOUR);   // 20 vues, dont 5 ratées
+etatsTest.x20 = { ej: T0 };                                                              // éjectée jamais vue
+const reg = { ...REGLAGES_DEFAUT, partNouvelles: 0.6, nouvellesMax: 0 };
+const piocher = (opts = {}) => creerPioche({ cartes: cartesTest, etats: etatsTest, reglages: { ...reg, ...(opts.reg || {}) }, options: { tirage: opts.tirage || 'melange', types: opts.types || TYPES }, maintenant: T0, introduitesAujourdhui: opts.intro || 0 });
+const pioche = piocher();
+verifier(pioche.infos.vues === 20 && pioche.infos.nouvelles === 59 && pioche.infos.actives === 79, 'Pioche : 20 vues, 59 nouvelles sans plafond, éjectée exclue');
+const tirées = Array.from({ length: 50 }, () => pioche.suivante());
+verifier(tirées.every(x => x && x.carte.id !== 'x20'), 'Pioche : jamais de carte éjectée, jamais de fin de pioche');
+verifier(new Set(tirées.map(x => x.carte.id)).size === 50, 'Pioche : aucune carte deux fois dans une partie (sans ratée)');
+const nbNouv = tirées.filter(x => x.nouvelle).length;
+verifier(nbNouv >= 29 && nbNouv <= 31, `Pioche : 60 % de nouveautés, régulièrement réparties (${nbNouv}/50)`);
+verifier(tirées.slice(0, 10).filter(x => x.nouvelle).length >= 5, 'Pioche : les nouveautés arrivent dès le début');
+const p2 = piocher();
+const premiere = p2.suivante();
+p2.retour(premiere.carte.id); p2.retour(premiere.carte.id);
+const suite = Array.from({ length: 30 }, () => p2.suivante());
+const ret = suite.map((x, i) => x.carte.id === premiere.carte.id ? i : -1).filter(i => i >= 0);
+verifier(ret.length === 1 && ret[0] >= 7 && ret[0] <= 11 && suite[ret[0]].retour, 'Pioche : une ratée revient une seule fois, 8 à 12 cartes plus loin');
+const plaf = piocher({ reg: { nouvellesMax: 15 }, intro: 12 });
+verifier(Array.from({ length: 40 }, () => plaf.suivante()).filter(x => x.nouvelle).length === 3, 'Pioche : le plafond optionnel de nouvelles est respecté');
+const rev = piocher({ tirage: 'dues' });
+verifier(Array.from({ length: 20 }, () => rev.suivante()).every(x => !x.nouvelle && +x.carte.id.slice(1) < 20), 'Pioche : mode Révisions = cartes déjà vues uniquement');
+const filtre = piocher({ tirage: 'hasard', types: ['mot'] });
 verifier(Array.from({ length: 20 }, () => filtre.suivante()).every(x => x.carte.type === 'mot'), 'Pioche : le filtre par type est respecté');
-verifier(quotaNouvelles(reg, 0, 61) === 2 && quotaNouvelles(reg, 0, 121) === 0 && quotaNouvelles(reg, 3, 0) === 2, 'Quota : réduit avec le retard, décompté des nouvelles du jour');
+const petit = creerPioche({ cartes: cartesTest.slice(0, 6), etats: {}, reglages: reg, options: { tirage: 'melange', types: TYPES }, maintenant: T0, introduitesAujourdhui: 0 });
+const ps = Array.from({ length: 12 }, () => petit.suivante().carte.id);
+verifier(new Set(ps.slice(0, 6)).size === 6 && ps[6] === ps[0], 'Pioche : stock épuisé → on reprend la carte vue il y a le plus longtemps');
+let ratéesTirées = 0;
+for (let k = 0; k < 1000; k++) { const pk = piocher({ reg: { partNouvelles: 0 } }); if (+pk.suivante().carte.id.slice(1) < 5) ratéesTirées++; }
+verifier(ratéesTirées > 310, `Pioche : en révision, les cartes ratées sortent plus souvent (${ratéesTirées}/1000, hasard pur ≈ 250)`);
+verifier(quotaNouvelles(reg, 5) === Infinity && quotaNouvelles({ nouvellesMax: 10 }, 3) === 7, 'Quota : aucun plafond par défaut, plafond optionnel décompté');
 const est = difficultes(cartesTest, etatsTest);
 verifier(est.x29.estimee && est.x29.d > 0 && !est.x1.estimee, 'Difficulté : réelle si vue, estimée sinon');
 
@@ -137,6 +162,14 @@ verifier(ch.length === 8 && new Set(ch).size === 8 && ch.includes('q0') && !ch.i
 verifier(morceaux('Had I known the project would drag on this long, I would never have signed up for it.').length === 3, 'Dictée : découpage par morceaux');
 verifier(phrasesWiki('Paris (French: [paʁi]) is the capital and largest city of France. It is old.', 5)[0] === 'Paris is the capital and largest city of France.', 'Wikipédia : parenthèses retirées, phrases trop courtes écartées');
 verifier(comparer('It was signed by Clemenceau in Paris.', 'it was signed by clemenso in pari', { indulgenceNoms: true }).filter(e => e.k === 'nom').length === 2, 'Dictée : noms propres pardonnés sur demande');
+
+// Temps : réponses et choix
+verifier(estJuste("'ll have left", 'will have left') && estJuste('hadn’t flown', 'had not flown') && estJuste("won't tell", 'will not tell') && estJuste('  Had Left. ', 'had left'), 'Temps : contractions, majuscules et ponctuation acceptées');
+verifier(!estJuste('has left', 'had left') && !estJuste('left', 'had left'), 'Temps : une autre forme est refusée');
+const ds = distracteurs(TP.temps, 'pasp');
+verifier(ds.length === 4 && new Set(ds).size === 4 && ds.includes('pasp'), 'Temps : quatre schémas au choix dont le bon');
+const tq = tirerQuestions(TP.phrases, 10, ['t-ps-1', 't-pc-1']);
+verifier(tq.length === 10 && new Set(tq).size === 10 && tq.some(p => p.id === 't-ps-1'), 'Temps : 10 questions sans doublon, ratées reprises');
 
 // Séries, records, fusion
 const s = (id, jour, extra = {}) => ({ id, debut: Date.UTC(2026, 10, jour, 10), cartes: [['a', 3, 1000]], passees: 10, mode: 'sprint', duree: 900, tirage: 'melange', complet: true, ...extra });

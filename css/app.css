@@ -270,5 +270,48 @@ svg.graphe text.jour { fill: #a6afc2; font-size: 8px; }
 .legende-notes i.d-i-faute { background: var(--difficile); } .legende-notes i.d-i-faux { background: var(--rate); }
 .legende-notes i.d-i-manque { background: #b9c2d6; } .legende-notes i.d-i-ajout { background: #f3b1b7; }
 
+/* Les temps */
+svg.schema { width: 100%; height: auto; display: block; }
+.sx-axe { stroke: #9aa5bd; stroke-width: 2; fill: none; }
+.sx-now { stroke: var(--bleu-nuit); stroke-width: 3; }
+.sx-t { font-size: 11px; fill: var(--bleu-nuit); text-anchor: middle; font-weight: 700; stroke: none; }
+.sx-t.pale { fill: #a6afc2; font-weight: 600; }
+.sx-ev { fill: var(--bleu); stroke: none; }
+.sx-ev.raye { fill: url(#rayures); stroke: var(--bleu); stroke-width: 2; }
+.sx-fond { fill: #dfe7fc; stroke: none; } .sx-raie { fill: #7d9bf0; stroke: none; }
+.sx-lien { fill: none; stroke: var(--bleu); stroke-width: 2; stroke-dasharray: 4 4; }
+.sx-lien-fin { fill: none; stroke: var(--bleu); stroke-width: 2; }
+.sx-rep { stroke: var(--difficile); stroke-width: 3; stroke-linecap: round; }
+.sx-rep-t { font-size: 10px; fill: #b56a12; text-anchor: middle; font-weight: 700; stroke: none; }
+.phrase-temps { font-size: 20px; line-height: 1.5; text-align: center; margin: 4px 0; font-weight: 600; }
+.phrase-temps mark { padding: 0 3px; }
+.phrase-temps mark.ok { background: #d6f3e5; } .phrase-temps mark.ko { background: #fde2e5; }
+.trou { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--bleu); color: transparent; }
+.choix-schemas { display: grid; grid-template-columns: 1fr; gap: 8px; width: 100%; }
+.choix-schema { background: var(--bleu-pale); border-radius: 16px; padding: 4px 8px; border: 2px solid transparent; }
+.choix-schema.bon { border-color: var(--facile); background: #e9f8f1; }
+.choix-schema.faux { border-color: var(--rate); background: #fdeef0; }
+.choix-schema.eteint { opacity: .45; }
+.schema-grand { width: 100%; background: var(--bleu-pale); border-radius: 16px; padding: 6px 8px; }
+.saisie-temps { font-size: 18px; text-align: center; }
+.retour-temps { width: 100%; text-align: left; border-radius: 16px; padding: 12px 14px; font-size: 14px; line-height: 1.45; }
+.retour-temps.ok { background: #e9f8f1; } .retour-temps.ko { background: #fdeef0; }
+.retour-temps p { margin: 6px 0 0; color: #4b5670; }
+.grille-temps { display: grid; grid-template-columns: 54px repeat(4, 1fr); gap: 5px; width: 100%; align-items: stretch; }
+.gt-col { font-size: 10.5px; font-weight: 700; color: var(--gris); text-align: center; align-self: end; line-height: 1.1; }
+.gt-lig { font-size: 11px; font-weight: 700; color: var(--bleu-fonce); align-self: center; }
+.gt-case { min-height: 52px; border-radius: 12px; background: var(--bleu-pale); font-size: 10.5px; font-weight: 600; color: var(--bleu-nuit); padding: 4px; line-height: 1.15; }
+.gt-case.on { background: var(--bleu); color: var(--blanc); }
+.gt-case.bon { background: var(--facile); color: var(--blanc); }
+.gt-case.faux { background: var(--rate); color: var(--blanc); }
+.jeu-grille .gt-case { min-height: 58px; }
+.detail-temps { background: var(--bleu-pale); border-radius: 16px; padding: 10px 12px; margin-top: 6px; }
+.detail-temps h3 { margin: 6px 0 4px; font-size: 16px; } .detail-temps h3 small { color: var(--gris); font-weight: 500; }
+.detail-temps p { margin: 4px 0; font-size: 14px; color: #4b5670; }
+.ligne-temps { padding: 10px 0; border-top: 1px solid var(--gris-clair); }
+.bloc-titre + .ligne-temps { border-top: 0; }
+.ligne-temps p { margin: 0 0 3px; } .ligne-temps small { color: var(--gris); }
+.jeu.temps .jeu-chrono span { font-size: 17px; }
+
 @media (min-width: 700px) {
 }
