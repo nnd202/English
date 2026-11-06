@@ -1,0 +1,2985 @@
+{
+ "paquets": [
+  {
+   "id": "bureau",
+   "groupe": "Vocabulaire et phrases",
+   "genre": "cartes",
+   "titre": "Le bureau",
+   "accroche": "L'anglais de l'entreprise américaine, celui des réunions et des e-mails.",
+   "cartes": [
+    {
+     "id": "bu-01",
+     "cat": "expr",
+     "texte": "touch base",
+     "ipa": "ˈtʌtʃ ˈbeɪs",
+     "aide": "Briefly talk to someone to check in.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Let's touch base on Monday."
+    },
+    {
+     "id": "bu-02",
+     "cat": "phrasal",
+     "texte": "circle back",
+     "ipa": "ˈsɝː.kəl ˈbæk",
+     "aide": "Come back to a topic later.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Can we circle back to this after lunch?"
+    },
+    {
+     "id": "bu-03",
+     "cat": "mot",
+     "texte": "bandwidth",
+     "ipa": "ˈbænd.wɪdθ",
+     "aide": "(figurative) The time or energy to take on more work.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "I don't have the bandwidth for another project."
+    },
+    {
+     "id": "bu-04",
+     "cat": "phrasal",
+     "texte": "follow up",
+     "ipa": "ˈfɑː.loʊ‿ˈʌp",
+     "aide": "Contact someone again about something already discussed.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "I'll follow up with an email."
+    },
+    {
+     "id": "bu-05",
+     "cat": "phrasal",
+     "texte": "run it by",
+     "ipa": "ˈrʌn‿ɪt ˈbaɪ",
+     "aide": "Tell someone an idea to get their opinion.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Let me run it by my manager first."
+    },
+    {
+     "id": "bu-06",
+     "cat": "expr",
+     "texte": "on the same page",
+     "ipa": "ɑːn ðə ˈseɪm ˈpeɪdʒ",
+     "aide": "In agreement; sharing the same understanding.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Let's make sure we're all on the same page."
+    },
+    {
+     "id": "bu-07",
+     "cat": "phrasal",
+     "texte": "push back",
+     "ipa": "ˈpʊʃ ˈbæk",
+     "aide": "Resist or object; also, postpone.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "The client pushed back on the price."
+    },
+    {
+     "id": "bu-08",
+     "cat": "expr",
+     "texte": "a ballpark figure",
+     "ipa": "ə ˈbɑːl.pɑːrk ˈfɪɡ.jɚ",
+     "aide": "A rough estimate.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Can you give me a ballpark figure?"
+    },
+    {
+     "id": "bu-09",
+     "cat": "mot",
+     "texte": "deliverable",
+     "ipa": "dɪˈlɪv.ɚ.ə.bəl",
+     "aide": "A concrete result a project must produce.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "The main deliverable is due Friday."
+    },
+    {
+     "id": "bu-10",
+     "cat": "mot",
+     "texte": "stakeholder",
+     "ipa": "ˈsteɪk.hoʊl.dɚ",
+     "aide": "Anyone with an interest in a project or company.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "We need input from all the stakeholders."
+    },
+    {
+     "id": "bu-11",
+     "cat": "mot",
+     "texte": "buy-in",
+     "ipa": "ˈbaɪ.ɪn",
+     "aide": "Agreement and support from the people involved.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Without buy-in from the team, it won't work."
+    },
+    {
+     "id": "bu-12",
+     "cat": "mot",
+     "texte": "streamline",
+     "ipa": "ˈstriːm.laɪn",
+     "aide": "Make a process simpler and more efficient.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "We need to streamline the approval process."
+    },
+    {
+     "id": "bu-13",
+     "cat": "mot",
+     "texte": "bottleneck",
+     "ipa": "ˈbɑː.t̬əl.nek",
+     "aide": "A point that slows everything down.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": [
+       "flap"
+      ]
+     },
+     "ex": "Legal review is the main bottleneck."
+    },
+    {
+     "id": "bu-14",
+     "cat": "mot",
+     "texte": "workaround",
+     "ipa": "ˈwɝːk.ə.raʊnd",
+     "aide": "A way around a problem, without really fixing it.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "It's not a fix, just a workaround."
+    },
+    {
+     "id": "bu-15",
+     "cat": "mot",
+     "texte": "heads-up",
+     "ipa": "ˈhedz.ʌp",
+     "aide": "Advance notice or warning.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Thanks for the heads-up."
+    },
+    {
+     "id": "bu-16",
+     "cat": "expr",
+     "texte": "drop the ball",
+     "ipa": "ˈdrɑːp ðə ˈbɑːl",
+     "aide": "Make a careless mistake; fail to do your part.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Someone dropped the ball on the invoices."
+    },
+    {
+     "id": "bu-17",
+     "cat": "expr",
+     "texte": "get the ball rolling",
+     "ipa": "ˈɡet ðə ˈbɑːl ˈroʊ.lɪŋ",
+     "aide": "Get something started.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Let's get the ball rolling on the redesign."
+    },
+    {
+     "id": "bu-18",
+     "cat": "expr",
+     "texte": "low-hanging fruit",
+     "ipa": "ˌloʊ.hæŋ.ɪŋ ˈfruːt",
+     "aide": "Easy wins that need little effort.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Let's go after the low-hanging fruit first."
+    },
+    {
+     "id": "bu-19",
+     "cat": "phrase",
+     "texte": "Let's take this offline.",
+     "ipa": "ˈlets ˈteɪk ðɪs‿ɑːfˈlaɪn",
+     "aide": "Let's discuss it privately later, not in this meeting.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "bu-20",
+     "cat": "expr",
+     "texte": "a tight deadline",
+     "ipa": "ə ˈtaɪt ˈded.laɪn",
+     "aide": "Very little time to finish something.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "We're working to a tight deadline."
+    },
+    {
+     "id": "bu-21",
+     "cat": "mot",
+     "texte": "burnout",
+     "ipa": "ˈbɝːn.aʊt",
+     "aide": "Exhaustion caused by too much work and stress.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Burnout is a real risk in this job."
+    },
+    {
+     "id": "bu-22",
+     "cat": "mot",
+     "texte": "onboarding",
+     "ipa": "ˈɑːn.bɔːr.dɪŋ",
+     "aide": "The process of integrating a new employee or user.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Onboarding takes about two weeks."
+    },
+    {
+     "id": "bu-23",
+     "cat": "mot",
+     "texte": "headcount",
+     "ipa": "ˈhed.kaʊnt",
+     "aide": "The number of people employed.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "We can't increase headcount this year."
+    },
+    {
+     "id": "bu-24",
+     "cat": "phrase",
+     "texte": "I'm swamped.",
+     "ipa": "aɪm ˈswɑːmpt",
+     "aide": "I'm extremely busy.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": []
+     }
+    },
+    {
+     "id": "bu-25",
+     "cat": "phrasal",
+     "texte": "sign off on",
+     "ipa": "ˌsaɪn‿ˈɑːf‿ɑːn",
+     "aide": "Give official approval to something.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "The director has to sign off on the budget."
+    },
+    {
+     "id": "bu-26",
+     "cat": "phrasal",
+     "texte": "iron out",
+     "ipa": "ˈaɪ.ɚn‿ˈaʊt",
+     "aide": "Resolve small problems or details.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "We still need to iron out a few details."
+    },
+    {
+     "id": "bu-27",
+     "cat": "phrasal",
+     "texte": "flesh out",
+     "ipa": "ˈfleʃ‿ˈaʊt",
+     "aide": "Add details to an idea or plan.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Can you flesh out the proposal a bit?"
+    },
+    {
+     "id": "bu-28",
+     "cat": "phrasal",
+     "texte": "weigh in",
+     "ipa": "ˈweɪ‿ˈɪn",
+     "aide": "Give your opinion in a discussion.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Does anyone else want to weigh in?"
+    },
+    {
+     "id": "bu-29",
+     "cat": "phrase",
+     "texte": "Let's table this.",
+     "ipa": "ˈlets ˈteɪ.bəl ðɪs",
+     "aide": "(US) Let's postpone discussing this.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "note": "En anglais britannique, « table » veut dire l'inverse : mettre à l'ordre du jour."
+    },
+    {
+     "id": "bu-30",
+     "cat": "phrase",
+     "texte": "Per my last email…",
+     "ipa": "pɚ maɪ ˈlæst ˈiː.meɪl",
+     "aide": "A polite but pointed way of saying \"I already told you.\"",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": []
+     }
+    },
+    {
+     "id": "bu-31",
+     "cat": "phrase",
+     "texte": "I'll loop you in.",
+     "ipa": "aɪl ˈluːp jə‿ˈɪn",
+     "aide": "I'll include you in the conversation or emails.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "bu-32",
+     "cat": "phrase",
+     "texte": "Can we push the meeting to Thursday?",
+     "ipa": "kən wi ˈpʊʃ ðə ˈmiː.t̬ɪŋ tə ˈθɝːz.deɪ",
+     "aide": "Can we move the meeting to a later day?",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": [
+       "flap"
+      ]
+     }
+    },
+    {
+     "id": "bu-33",
+     "cat": "phrase",
+     "texte": "That's above my pay grade.",
+     "ipa": "ðæts‿əˈbʌv maɪ ˈpeɪ ˌɡreɪd",
+     "aide": "That decision belongs to someone more senior.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "bu-34",
+     "cat": "phrase",
+     "texte": "We're short-staffed this week.",
+     "ipa": "wɚ ˌʃɔːrtˈstæft ðɪs ˈwiːk",
+     "aide": "We don't have enough people working this week.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": []
+     }
+    },
+    {
+     "id": "bu-35",
+     "cat": "phrase",
+     "texte": "Let's not reinvent the wheel.",
+     "ipa": "ˈlets ˈnɑːt ˌriː.ɪnˈvent ðə ˈwiːl",
+     "aide": "Let's use what already works instead of starting over.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": []
+     }
+    },
+    {
+     "id": "bu-36",
+     "cat": "phrase",
+     "texte": "I'm going to have to pass on that.",
+     "ipa": "aɪm ˈɡʌ.nə ˈhæf.tə ˈpæs‿ɑːn ˈðæt",
+     "aide": "A polite way to decline.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": [
+       "liaison",
+       "reduction"
+      ]
+     }
+    },
+    {
+     "id": "bu-37",
+     "cat": "expr",
+     "texte": "moving forward",
+     "ipa": "ˈmuː.vɪŋ ˈfɔːr.wɚd",
+     "aide": "From now on.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "Moving forward, all requests go through Sam."
+    },
+    {
+     "id": "bu-38",
+     "cat": "mot",
+     "texte": "pivot",
+     "ipa": "ˈpɪv.ət",
+     "aide": "Change strategy or direction.",
+     "tags": {
+      "cat": "mot",
+      "reg": "professionnel",
+      "phon": []
+     },
+     "ex": "The startup had to pivot after the first year."
+    },
+    {
+     "id": "bu-39",
+     "cat": "expr",
+     "texte": "think outside the box",
+     "ipa": "ˈθɪŋk‿aʊtˈsaɪd ðə ˈbɑːks",
+     "aide": "Think creatively, in an unusual way.",
+     "tags": {
+      "cat": "expr",
+      "reg": "professionnel",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "We need someone who can think outside the box."
+    },
+    {
+     "id": "bu-40",
+     "cat": "phrase",
+     "texte": "It's not in the budget.",
+     "ipa": "ɪts ˈnɑːt̬‿ɪn ðə ˈbʌdʒ.ɪt",
+     "aide": "We can't pay for it.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "professionnel",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "debat",
+   "groupe": "Vocabulaire et phrases",
+   "genre": "cartes",
+   "titre": "Le débat",
+   "accroche": "Nuancer, argumenter, contredire avec élégance.",
+   "cartes": [
+    {
+     "id": "de-01",
+     "cat": "mot",
+     "texte": "arguably",
+     "ipa": "ˈɑːrɡ.ju.ə.bli",
+     "aide": "It could be argued that (used to soften a claim).",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "It's arguably the best book of the decade."
+    },
+    {
+     "id": "de-02",
+     "cat": "mot",
+     "texte": "notwithstanding",
+     "ipa": "ˌnɑːt.wɪθˈstæn.dɪŋ",
+     "aide": "In spite of (formal).",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "Notwithstanding the risks, we went ahead."
+    },
+    {
+     "id": "de-03",
+     "cat": "expr",
+     "texte": "that being said",
+     "ipa": "ˈðæt ˈbiː.ɪŋ ˈsed",
+     "aide": "Even so; introduces a contrasting point.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "It's expensive. That being said, it's worth it."
+    },
+    {
+     "id": "de-04",
+     "cat": "expr",
+     "texte": "play devil's advocate",
+     "ipa": "ˈpleɪ ˈdev.əlz ˈæd.və.kət",
+     "aide": "Argue the opposite side just to test an idea.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "Let me play devil's advocate for a second."
+    },
+    {
+     "id": "de-05",
+     "cat": "expr",
+     "texte": "I take your point",
+     "ipa": "aɪ ˈteɪk jɚ ˈpɔɪnt",
+     "aide": "I understand and accept what you're saying.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "I take your point, but I still disagree."
+    },
+    {
+     "id": "de-06",
+     "cat": "expr",
+     "texte": "by and large",
+     "ipa": "ˌbaɪ‿ən ˈlɑːrdʒ",
+     "aide": "Generally; on the whole.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "By and large, the results were positive."
+    },
+    {
+     "id": "de-07",
+     "cat": "mot",
+     "texte": "compelling",
+     "ipa": "kəmˈpel.ɪŋ",
+     "aide": "Convincing; powerful enough to hold your attention.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "She made a compelling argument."
+    },
+    {
+     "id": "de-08",
+     "cat": "mot",
+     "texte": "dubious",
+     "ipa": "ˈduː.bi.əs",
+     "aide": "Doubtful; probably not true or honest.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "That claim seems a little dubious."
+    },
+    {
+     "id": "de-09",
+     "cat": "expr",
+     "texte": "a moot point",
+     "ipa": "ə ˈmuːt ˈpɔɪnt",
+     "aide": "A point no longer worth discussing.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "Since he resigned, it's a moot point."
+    },
+    {
+     "id": "de-10",
+     "cat": "mot",
+     "texte": "caveat",
+     "ipa": "ˈkæv.i.æt",
+     "aide": "A warning or condition attached to a statement.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "One caveat: the sample was small."
+    },
+    {
+     "id": "de-11",
+     "cat": "expr",
+     "texte": "insofar as",
+     "ipa": "ˌɪn.soʊˈfɑːr‿æz",
+     "aide": "To the extent that (formal).",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "It's fair insofar as everyone gets the same chance."
+    },
+    {
+     "id": "de-12",
+     "cat": "expr",
+     "texte": "to some extent",
+     "ipa": "tə ˈsʌm‿ɪkˈstent",
+     "aide": "Partly; not completely.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "I agree with you to some extent."
+    },
+    {
+     "id": "de-13",
+     "cat": "expr",
+     "texte": "on the flip side",
+     "ipa": "ɑːn ðə ˈflɪp ˌsaɪd",
+     "aide": "Looking at the other side of the situation.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "It pays well. On the flip side, the hours are long."
+    },
+    {
+     "id": "de-14",
+     "cat": "expr",
+     "texte": "a slippery slope",
+     "ipa": "ə ˈslɪp.ɚ.i ˈsloʊp",
+     "aide": "A small step that leads to worse and worse consequences.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "Banning one book is a slippery slope."
+    },
+    {
+     "id": "de-15",
+     "cat": "expr",
+     "texte": "a straw man",
+     "ipa": "ə ˈstrɑː ˌmæn",
+     "aide": "A distorted version of someone's argument, easy to attack.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "That's a straw man; I never said that."
+    },
+    {
+     "id": "de-16",
+     "cat": "expr",
+     "texte": "beg the question",
+     "ipa": "ˈbeɡ ðə ˈkwes.tʃən",
+     "aide": "Raise a question (common use); assume what you're trying to prove (strict use).",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": [
+       "reduction"
+      ]
+     },
+     "ex": "Which begs the question: who's paying?"
+    },
+    {
+     "id": "de-17",
+     "cat": "mot",
+     "texte": "cherry-pick",
+     "ipa": "ˈtʃer.i.pɪk",
+     "aide": "Choose only the facts that support your view.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "You can't just cherry-pick the data."
+    },
+    {
+     "id": "de-18",
+     "cat": "mot",
+     "texte": "conflate",
+     "ipa": "kənˈfleɪt",
+     "aide": "Wrongly treat two different things as the same.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "Don't conflate popularity with quality."
+    },
+    {
+     "id": "de-19",
+     "cat": "mot",
+     "texte": "refute",
+     "ipa": "rɪˈfjuːt",
+     "aide": "Prove that a claim is wrong.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "She refuted every one of his points."
+    },
+    {
+     "id": "de-20",
+     "cat": "mot",
+     "texte": "concede",
+     "ipa": "kənˈsiːd",
+     "aide": "Admit that something is true, often reluctantly.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "I'll concede that you have a point."
+    },
+    {
+     "id": "de-21",
+     "cat": "mot",
+     "texte": "tenuous",
+     "ipa": "ˈten.ju.əs",
+     "aide": "Very weak or slight.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "The link between the two is tenuous at best."
+    },
+    {
+     "id": "de-22",
+     "cat": "mot",
+     "texte": "nuanced",
+     "ipa": "ˈnuː.ɑːnst",
+     "aide": "Showing subtle differences; not black and white.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "It's a more nuanced view of the problem."
+    },
+    {
+     "id": "de-23",
+     "cat": "mot",
+     "texte": "counterintuitive",
+     "ipa": "ˌkaʊn.t̬ɚ.ɪnˈtuː.ə.t̬ɪv",
+     "aide": "The opposite of what you would expect.",
+     "tags": {
+      "cat": "mot",
+      "reg": "soutenu",
+      "phon": [
+       "flap"
+      ]
+     },
+     "ex": "It sounds counterintuitive, but it works."
+    },
+    {
+     "id": "de-24",
+     "cat": "expr",
+     "texte": "a double-edged sword",
+     "ipa": "ə ˌdʌb.əl.edʒd ˈsɔːrd",
+     "aide": "Something with both good and bad effects.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "Fame is a double-edged sword."
+    },
+    {
+     "id": "de-25",
+     "cat": "expr",
+     "texte": "the elephant in the room",
+     "ipa": "ði ˈel.ə.fənt̬‿ɪn ðə ˈruːm",
+     "aide": "An obvious problem nobody wants to mention.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     },
+     "ex": "Let's address the elephant in the room."
+    },
+    {
+     "id": "de-26",
+     "cat": "phrasal",
+     "texte": "rule out",
+     "ipa": "ˈruːl‿ˈaʊt",
+     "aide": "Exclude a possibility.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "We can't rule out a second wave."
+    },
+    {
+     "id": "de-27",
+     "cat": "phrasal",
+     "texte": "boil down to",
+     "ipa": "ˈbɔɪl ˈdaʊn tuː",
+     "aide": "Be, in essence, about one main thing.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "It all boils down to money."
+    },
+    {
+     "id": "de-28",
+     "cat": "phrasal",
+     "texte": "stem from",
+     "ipa": "ˈstem frəm",
+     "aide": "Be caused by; originate in.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "The problem stems from poor communication."
+    },
+    {
+     "id": "de-29",
+     "cat": "phrase",
+     "texte": "That's a fair point.",
+     "ipa": "ðæts‿ə ˈfer ˈpɔɪnt",
+     "aide": "You're right about that.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "de-30",
+     "cat": "phrase",
+     "texte": "I see where you're coming from, but…",
+     "ipa": "aɪ ˈsiː wer jɚ ˈkʌm.ɪŋ frʌm bət",
+     "aide": "I understand your reasons, but I disagree.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": []
+     }
+    },
+    {
+     "id": "de-31",
+     "cat": "phrase",
+     "texte": "With all due respect…",
+     "ipa": "wɪð ˈɑːl ˈduː rɪˈspekt",
+     "aide": "A polite opening before disagreeing strongly.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": []
+     }
+    },
+    {
+     "id": "de-32",
+     "cat": "phrase",
+     "texte": "It's not that simple.",
+     "ipa": "ɪts ˈnɑːt ðæt ˈsɪm.pəl",
+     "aide": "The issue is more complicated than that.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": []
+     }
+    },
+    {
+     "id": "de-33",
+     "cat": "phrase",
+     "texte": "The jury's still out.",
+     "ipa": "ðə ˈdʒʊr.iz ˈstɪl‿ˈaʊt",
+     "aide": "It hasn't been decided or proven yet.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "de-34",
+     "cat": "phrase",
+     "texte": "Correlation isn't causation.",
+     "ipa": "ˌkɔːr.əˈleɪ.ʃən ˈɪz.ənt kɑːˈzeɪ.ʃən",
+     "aide": "Two things happening together doesn't mean one causes the other.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": []
+     }
+    },
+    {
+     "id": "de-35",
+     "cat": "phrase",
+     "texte": "You're missing the point.",
+     "ipa": "jɚ ˈmɪs.ɪŋ ðə ˈpɔɪnt",
+     "aide": "You don't understand what really matters here.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": []
+     }
+    },
+    {
+     "id": "de-36",
+     "cat": "phrase",
+     "texte": "Let's agree to disagree.",
+     "ipa": "ˈlets‿əˈɡriː tə ˌdɪs.əˈɡriː",
+     "aide": "Let's accept that we have different opinions.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "de-37",
+     "cat": "phrase",
+     "texte": "Fair enough.",
+     "ipa": "ˈfer‿ɪˈnʌf",
+     "aide": "OK, that's reasonable.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "de-38",
+     "cat": "expr",
+     "texte": "by the same token",
+     "ipa": "baɪ ðə ˈseɪm ˈtoʊ.kən",
+     "aide": "For the same reason; in the same way.",
+     "tags": {
+      "cat": "expr",
+      "reg": "soutenu",
+      "phon": []
+     },
+     "ex": "By the same token, we should help them too."
+    },
+    {
+     "id": "de-39",
+     "cat": "phrase",
+     "texte": "That's a bit of a stretch.",
+     "ipa": "ðæts‿ə ˈbɪt̬‿əv‿ə ˈstretʃ",
+     "aide": "That's exaggerated or hard to believe.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "de-40",
+     "cat": "phrase",
+     "texte": "Let's not lose sight of the bigger picture.",
+     "ipa": "ˈlets ˈnɑːt ˈluːz ˈsaɪt̬‿əv ðə ˈbɪɡ.ɚ ˈpɪk.tʃɚ",
+     "aide": "Let's keep the overall situation in mind.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "soutenu",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "amis",
+   "groupe": "Vocabulaire et phrases",
+   "genre": "cartes",
+   "titre": "Entre amis",
+   "accroche": "L'anglais américain du quotidien, celui des natifs.",
+   "cartes": [
+    {
+     "id": "am-01",
+     "cat": "phrase",
+     "texte": "I'm beat.",
+     "ipa": "aɪm ˈbiːt",
+     "aide": "I'm exhausted.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-02",
+     "cat": "phrase",
+     "texte": "No biggie.",
+     "ipa": "ˈnoʊ ˈbɪɡ.i",
+     "aide": "It's not a problem.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-03",
+     "cat": "phrase",
+     "texte": "My bad.",
+     "ipa": "ˈmaɪ ˈbæd",
+     "aide": "My mistake, sorry.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-04",
+     "cat": "phrasal",
+     "texte": "bail on",
+     "ipa": "ˈbeɪl‿ɑːn",
+     "aide": "Cancel plans with someone at the last minute.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "He bailed on us again."
+    },
+    {
+     "id": "am-05",
+     "cat": "mot",
+     "texte": "flaky",
+     "ipa": "ˈfleɪ.ki",
+     "aide": "Unreliable; often cancels plans.",
+     "tags": {
+      "cat": "mot",
+      "reg": "familier",
+      "phon": []
+     },
+     "ex": "She's a bit flaky."
+    },
+    {
+     "id": "am-06",
+     "cat": "mot",
+     "texte": "sketchy",
+     "ipa": "ˈsketʃ.i",
+     "aide": "Suspicious, a bit dangerous or dishonest.",
+     "tags": {
+      "cat": "mot",
+      "reg": "familier",
+      "phon": []
+     },
+     "ex": "That neighborhood looks sketchy."
+    },
+    {
+     "id": "am-07",
+     "cat": "phrasal",
+     "texte": "hit it off",
+     "ipa": "ˈhɪt̬‿ɪt̬‿ˈɑːf",
+     "aide": "Get along immediately with someone new.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "familier",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     },
+     "ex": "We totally hit it off."
+    },
+    {
+     "id": "am-08",
+     "cat": "mot",
+     "texte": "binge-watch",
+     "ipa": "ˈbɪndʒ.wɑːtʃ",
+     "aide": "Watch many episodes in a row.",
+     "tags": {
+      "cat": "mot",
+      "reg": "familier",
+      "phon": []
+     },
+     "ex": "We binge-watched the whole season."
+    },
+    {
+     "id": "am-09",
+     "cat": "phrase",
+     "texte": "I'm down.",
+     "ipa": "aɪm ˈdaʊn",
+     "aide": "I'm in; count me in.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-10",
+     "cat": "phrase",
+     "texte": "What's up with that?",
+     "ipa": "ˈwʌts‿ˈʌp wɪð ˈðæt",
+     "aide": "Why is it like that? What's going on?",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "am-11",
+     "cat": "mot",
+     "texte": "deal-breaker",
+     "ipa": "ˈdiːl.breɪ.kɚ",
+     "aide": "Something that makes you reject an option.",
+     "tags": {
+      "cat": "mot",
+      "reg": "familier",
+      "phon": []
+     },
+     "ex": "No parking is a deal-breaker for me."
+    },
+    {
+     "id": "am-12",
+     "cat": "expr",
+     "texte": "hang in there",
+     "ipa": "ˈhæŋ‿ɪn ˈðer",
+     "aide": "Don't give up; stay strong.",
+     "tags": {
+      "cat": "expr",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Hang in there, it'll get better."
+    },
+    {
+     "id": "am-13",
+     "cat": "phrasal",
+     "texte": "chill out",
+     "ipa": "ˈtʃɪl‿ˈaʊt",
+     "aide": "Relax; calm down.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Chill out, we have time."
+    },
+    {
+     "id": "am-14",
+     "cat": "phrasal",
+     "texte": "crash at",
+     "ipa": "ˈkræʃ‿ət",
+     "aide": "Sleep at someone's place for the night.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Can I crash at your place?"
+    },
+    {
+     "id": "am-15",
+     "cat": "expr",
+     "texte": "grab a bite",
+     "ipa": "ˈɡræb‿ə ˈbaɪt",
+     "aide": "Get something quick to eat.",
+     "tags": {
+      "cat": "expr",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Want to grab a bite?"
+    },
+    {
+     "id": "am-16",
+     "cat": "phrase",
+     "texte": "I'm starving.",
+     "ipa": "aɪm ˈstɑːr.vɪŋ",
+     "aide": "I'm very hungry.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-17",
+     "cat": "mot",
+     "texte": "rip-off",
+     "ipa": "ˈrɪp.ɑːf",
+     "aide": "Something far too expensive.",
+     "tags": {
+      "cat": "mot",
+      "reg": "familier",
+      "phon": []
+     },
+     "ex": "Twenty bucks for a burger? What a rip-off."
+    },
+    {
+     "id": "am-18",
+     "cat": "phrase",
+     "texte": "You nailed it.",
+     "ipa": "jə ˈneɪld‿ɪt",
+     "aide": "You did it perfectly.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "am-19",
+     "cat": "phrase",
+     "texte": "I'm on it.",
+     "ipa": "aɪm ˈɑːn‿ɪt",
+     "aide": "I'm dealing with it right now.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "am-20",
+     "cat": "phrase",
+     "texte": "Tell me about it.",
+     "ipa": "ˈtel mi‿əˈbaʊt̬‿ɪt",
+     "aide": "I completely agree; I know exactly what you mean.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "am-21",
+     "cat": "phrase",
+     "texte": "It's no big deal.",
+     "ipa": "ɪts ˈnoʊ ˈbɪɡ ˈdiːl",
+     "aide": "It's not important.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-22",
+     "cat": "phrase",
+     "texte": "I'm kind of tired.",
+     "ipa": "aɪm ˈkaɪn.də ˈtaɪ.ɚd",
+     "aide": "I'm a little tired.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "reduction"
+      ]
+     },
+     "note": "Souvent écrit « kinda »."
+    },
+    {
+     "id": "am-23",
+     "cat": "phrase",
+     "texte": "Do you want to grab a drink?",
+     "ipa": "də.jə ˈwɑː.nə ˈɡræb‿ə ˈdrɪŋk",
+     "aide": "An invitation for a drink.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "liaison",
+       "reduction"
+      ]
+     },
+     "note": "Souvent écrit « wanna »."
+    },
+    {
+     "id": "am-24",
+     "cat": "phrase",
+     "texte": "I've got to run.",
+     "ipa": "aɪv ˈɡɑː.t̬ə ˈrʌn",
+     "aide": "I have to leave now.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "flap",
+       "reduction"
+      ]
+     },
+     "note": "Souvent écrit « gotta »."
+    },
+    {
+     "id": "am-25",
+     "cat": "phrase",
+     "texte": "Let me think.",
+     "ipa": "ˈlem.i ˈθɪŋk",
+     "aide": "Give me a moment to think.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "reduction"
+      ]
+     },
+     "note": "Souvent écrit « lemme »."
+    },
+    {
+     "id": "am-26",
+     "cat": "phrase",
+     "texte": "What are you doing?",
+     "ipa": "ˈwʌ.tʃə ˈduː.ɪn",
+     "aide": "A casual question.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "reduction"
+      ]
+     },
+     "note": "Souvent écrit « whatcha »."
+    },
+    {
+     "id": "am-27",
+     "cat": "phrase",
+     "texte": "Did you eat?",
+     "ipa": "ˈdɪdʒ.ə ˈiːt",
+     "aide": "A casual question.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     },
+     "note": "Souvent écrit « didja »."
+    },
+    {
+     "id": "am-28",
+     "cat": "phrase",
+     "texte": "I don't know.",
+     "ipa": "aɪ dəˈnoʊ",
+     "aide": "A casual answer.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "reduction"
+      ]
+     },
+     "note": "Souvent écrit « dunno »."
+    },
+    {
+     "id": "am-29",
+     "cat": "phrasal",
+     "texte": "freak out",
+     "ipa": "ˈfriːk‿ˈaʊt",
+     "aide": "Panic or get very upset.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Don't freak out, but I scratched your car."
+    },
+    {
+     "id": "am-30",
+     "cat": "phrasal",
+     "texte": "screw up",
+     "ipa": "ˈskruː‿ˈʌp",
+     "aide": "Make a big mistake.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "I really screwed up this time."
+    },
+    {
+     "id": "am-31",
+     "cat": "phrasal",
+     "texte": "zone out",
+     "ipa": "ˈzoʊn‿ˈaʊt",
+     "aide": "Stop paying attention; daydream.",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     },
+     "ex": "Sorry, I zoned out for a second."
+    },
+    {
+     "id": "am-32",
+     "cat": "phrase",
+     "texte": "Can I take a rain check?",
+     "ipa": "kən‿aɪ ˈteɪk‿ə ˈreɪn ˌtʃek",
+     "aide": "Can we do it another time?",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "am-33",
+     "cat": "expr",
+     "texte": "the bottom line",
+     "ipa": "ðə ˈbɑː.t̬əm ˈlaɪn",
+     "aide": "The most important fact; the final result.",
+     "tags": {
+      "cat": "expr",
+      "reg": "familier",
+      "phon": [
+       "flap"
+      ]
+     },
+     "ex": "The bottom line is, we're broke."
+    },
+    {
+     "id": "am-34",
+     "cat": "phrase",
+     "texte": "It's on me.",
+     "ipa": "ɪts ˈɑːn ˈmi",
+     "aide": "I'll pay.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-35",
+     "cat": "phrase",
+     "texte": "Long time no see.",
+     "ipa": "ˈlɑːŋ ˈtaɪm ˈnoʊ ˈsiː",
+     "aide": "It's been a long time since we met.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-36",
+     "cat": "phrase",
+     "texte": "Knock it off.",
+     "ipa": "ˈnɑːk‿ɪt̬‿ˈɑːf",
+     "aide": "Stop doing that (annoyed).",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "am-37",
+     "cat": "phrase",
+     "texte": "You bet.",
+     "ipa": "jə ˈbet",
+     "aide": "Of course; you're welcome.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-38",
+     "cat": "phrase",
+     "texte": "I'll pass.",
+     "ipa": "aɪl ˈpæs",
+     "aide": "No thanks.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-39",
+     "cat": "phrase",
+     "texte": "Same here.",
+     "ipa": "ˈseɪm ˈhɪr",
+     "aide": "Me too.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    },
+    {
+     "id": "am-40",
+     "cat": "phrase",
+     "texte": "I'm broke.",
+     "ipa": "aɪm ˈbroʊk",
+     "aide": "I have no money.",
+     "tags": {
+      "cat": "phrase",
+      "reg": "familier",
+      "phon": []
+     }
+    }
+   ]
+  },
+  {
+   "id": "soutenu",
+   "groupe": "Phrasal verbs",
+   "genre": "soutenu",
+   "titre": "Du soutenu au naturel",
+   "accroche": "Une phrase au verbe soutenu : redis-la avec le phrasal verb d'un natif.",
+   "cartes": [
+    {
+     "id": "so-01",
+     "recto": "We had to [postpone] the meeting.",
+     "texte": "We had to put off the meeting.",
+     "ipa": "wi ˈhæd tə ˈpʊt̬‿ɑːf ðə ˈmiː.t̬ɪŋ",
+     "aide": "put off = reporter. Aussi : put the meeting off.",
+     "lemme": "put off",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-02",
+     "recto": "I can't [tolerate] this noise anymore.",
+     "texte": "I can't put up with this noise anymore.",
+     "ipa": "aɪ ˈkænt ˈpʊt̬‿ˈʌp wɪð ðɪs ˈnɔɪz‿ˌen.iˈmɔːr",
+     "aide": "put up with = supporter, tolérer.",
+     "lemme": "put up with",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-03",
+     "recto": "The police are [investigating] the case.",
+     "texte": "The police are looking into the case.",
+     "ipa": "ðə pəˈliːs‿ɚ ˈlʊk.ɪŋ‿ɪn.tə ðə ˈkeɪs",
+     "aide": "look into = examiner, enquêter sur.",
+     "lemme": "look into",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-04",
+     "recto": "I [discovered] that she'd left.",
+     "texte": "I found out that she'd left.",
+     "ipa": "aɪ ˈfaʊnd‿ˈaʊt ðət ʃid ˈleft",
+     "aide": "find out = découvrir, apprendre.",
+     "lemme": "find out",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-05",
+     "recto": "They [canceled] the game because of the rain.",
+     "texte": "They called off the game because of the rain.",
+     "ipa": "ðeɪ ˈkɑːld‿ˈɑːf ðə ˈɡeɪm bɪˈkɑːz‿əv ðə ˈreɪn",
+     "aide": "call off = annuler.",
+     "lemme": "call off",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-06",
+     "recto": "Please [continue] with your story.",
+     "texte": "Please go on with your story.",
+     "ipa": "ˈpliːz ˈɡoʊ‿ˈɑːn wɪð jɚ ˈstɔːr.i",
+     "aide": "go on = continuer. Aussi : carry on.",
+     "lemme": "go on",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-07",
+     "recto": "I'm trying to [reduce] my sugar intake.",
+     "texte": "I'm trying to cut down on sugar.",
+     "ipa": "aɪm ˈtraɪ.ɪŋ tə ˈkʌt ˈdaʊn‿ɑːn ˈʃʊɡ.ɚ",
+     "aide": "cut down on = réduire. Aussi : cut back on.",
+     "lemme": "cut down on",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-08",
+     "recto": "He [invented] an excuse.",
+     "texte": "He made up an excuse.",
+     "ipa": "hi ˈmeɪd‿ˈʌp‿ən‿ɪkˈskjuːs",
+     "aide": "make up = inventer (une histoire, une excuse).",
+     "lemme": "make up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-09",
+     "recto": "She [rejected] the job offer.",
+     "texte": "She turned down the job offer.",
+     "ipa": "ʃi ˈtɝːnd ˈdaʊn ðə ˈdʒɑːb‿ˌɑː.fɚ",
+     "aide": "turn down = refuser.",
+     "lemme": "turn down",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-10",
+     "recto": "She was [raised] by her grandparents.",
+     "texte": "She was brought up by her grandparents.",
+     "ipa": "ʃi wəz ˈbrɑːt̬‿ˈʌp baɪ hɚ ˈɡræn.per.ənts",
+     "aide": "bring up = élever (un enfant) ; aussi : aborder un sujet.",
+     "lemme": "bring up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-11",
+     "recto": "Please don't [mention] it again.",
+     "texte": "Please don't bring it up again.",
+     "ipa": "ˈpliːz doʊn ˈbrɪŋ‿ɪt̬‿ˈʌp‿əˈɡen",
+     "aide": "bring up = aborder, mentionner.",
+     "lemme": "bring up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-12",
+     "recto": "He didn't [arrive] until ten.",
+     "texte": "He didn't show up until ten.",
+     "ipa": "hi ˈdɪd.ən ˈʃoʊ‿ˈʌp ənˈtɪl ˈten",
+     "aide": "show up = arriver, se pointer. Aussi : turn up.",
+     "lemme": "show up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-13",
+     "recto": "She [resembles] her father.",
+     "texte": "She takes after her father.",
+     "ipa": "ʃi ˈteɪks‿ˈæf.tɚ hɚ ˈfɑː.ðɚ",
+     "aide": "take after = tenir de (un parent).",
+     "lemme": "take after",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-14",
+     "recto": "It took him months to [recover from] the breakup.",
+     "texte": "It took him months to get over the breakup.",
+     "ipa": "ɪt ˈtʊk‿ɪm ˈmʌnθs tə ˈɡet̬‿ˈoʊ.vɚ ðə ˈbreɪk.ʌp",
+     "aide": "get over = se remettre de.",
+     "lemme": "get over",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-15",
+     "recto": "The teacher [distributed] the tests.",
+     "texte": "The teacher handed out the tests.",
+     "ipa": "ðə ˈtiː.tʃɚ ˈhæn.dɪd‿ˈaʊt ðə ˈtests",
+     "aide": "hand out = distribuer.",
+     "lemme": "hand out",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-16",
+     "recto": "I finally [surrendered] and said yes.",
+     "texte": "I finally gave in and said yes.",
+     "ipa": "aɪ ˈfaɪ.nəl.i ˈɡeɪv‿ˈɪn ən ˈsed ˈjes",
+     "aide": "give in = céder.",
+     "lemme": "give in",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-17",
+     "recto": "I'm trying to [quit] smoking.",
+     "texte": "I'm trying to give up smoking.",
+     "ipa": "aɪm ˈtraɪ.ɪŋ tə ˈɡɪv‿ˈʌp ˈsmoʊ.kɪŋ",
+     "aide": "give up = arrêter (une habitude), abandonner.",
+     "lemme": "give up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-18",
+     "recto": "Let's [review] the plan once more.",
+     "texte": "Let's go over the plan once more.",
+     "ipa": "ˈlets ˈɡoʊ‿ˈoʊ.vɚ ðə ˈplæn ˈwʌns ˈmɔːr",
+     "aide": "go over = revoir, passer en revue.",
+     "lemme": "go over",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-19",
+     "recto": "[Visit] anytime you're in town.",
+     "texte": "Drop by anytime you're in town.",
+     "ipa": "ˈdrɑːp ˈbaɪ ˈen.i.taɪm jɚ‿ɪn ˈtaʊn",
+     "aide": "drop by = passer (voir quelqu'un).",
+     "lemme": "drop by",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-20",
+     "recto": "They [established] a new company.",
+     "texte": "They set up a new company.",
+     "ipa": "ðeɪ ˈset̬‿ˈʌp‿ə ˈnuː ˈkʌm.pə.ni",
+     "aide": "set up = créer, monter, installer.",
+     "lemme": "set up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-21",
+     "recto": "We need to [eliminate] these old files.",
+     "texte": "We need to get rid of these old files.",
+     "ipa": "wi ˈniːd tə ˈɡet ˈrɪd‿əv ðiːz‿ˈoʊld ˈfaɪlz",
+     "aide": "get rid of = se débarrasser de.",
+     "lemme": "get rid of",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-22",
+     "recto": "Can you [consult] the word in a dictionary?",
+     "texte": "Can you look up the word in a dictionary?",
+     "ipa": "kən jə ˈlʊk‿ˈʌp ðə ˈwɝːd‿ɪn‿ə ˈdɪk.ʃə.ner.i",
+     "aide": "look up = chercher (une information).",
+     "lemme": "look up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-23",
+     "recto": "They [reconciled] after the fight.",
+     "texte": "They made up after the fight.",
+     "ipa": "ðeɪ ˈmeɪd‿ˈʌp ˈæf.tɚ ðə ˈfaɪt",
+     "aide": "make up = se réconcilier (sans objet).",
+     "lemme": "make up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-24",
+     "recto": "I can't [understand] how it works.",
+     "texte": "I can't figure out how it works.",
+     "ipa": "aɪ ˈkænt ˈfɪɡ.jɚ‿ˈaʊt ˈhaʊ‿ɪt ˈwɝːks",
+     "aide": "figure out = comprendre, trouver.",
+     "lemme": "figure out",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-25",
+     "recto": "We've [exhausted our supply of] coffee.",
+     "texte": "We've run out of coffee.",
+     "ipa": "wiv ˈrʌn‿ˈaʊt̬‿əv ˈkɑː.fi",
+     "aide": "run out of = ne plus avoir de.",
+     "lemme": "run out of",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-26",
+     "recto": "I [encountered] an old friend downtown.",
+     "texte": "I ran into an old friend downtown.",
+     "ipa": "aɪ ˈræn‿ˈɪn.tu‿ən‿ˈoʊld ˈfrend ˌdaʊnˈtaʊn",
+     "aide": "run into = tomber sur (par hasard).",
+     "lemme": "run into",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-27",
+     "recto": "The firefighters [extinguished] the fire.",
+     "texte": "The firefighters put out the fire.",
+     "ipa": "ðə ˈfaɪ.ɚ.faɪ.t̬ɚz ˈpʊt̬‿ˈaʊt ðə ˈfaɪ.ɚ",
+     "aide": "put out = éteindre.",
+     "lemme": "put out",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-28",
+     "recto": "I've always [admired] my older brother.",
+     "texte": "I've always looked up to my older brother.",
+     "ipa": "aɪv ˈɑːl.weɪz ˈlʊkt̬‿ˈʌp tə maɪ ˈoʊl.dɚ ˈbrʌð.ɚ",
+     "aide": "look up to = admirer.",
+     "lemme": "look up to",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "so-29",
+     "recto": "I don't want to [disappoint] you.",
+     "texte": "I don't want to let you down.",
+     "ipa": "aɪ doʊn ˈwɑː.nə ˈle.tʃə ˈdaʊn",
+     "aide": "let down = décevoir.",
+     "lemme": "let down",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "reduction"
+      ]
+     }
+    },
+    {
+     "id": "so-30",
+     "recto": "Sorry I'm late, I was [delayed] in traffic.",
+     "texte": "Sorry I'm late, I was held up in traffic.",
+     "ipa": "ˈsɑːr.i‿aɪm ˈleɪt aɪ wəz ˈheld‿ˈʌp‿ɪn ˈtræf.ɪk",
+     "aide": "hold up = retarder.",
+     "lemme": "hold up",
+     "tags": {
+      "cat": "phrasal",
+      "reg": "courant",
+      "phon": [
+       "liaison"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "particules",
+   "groupe": "Phrasal verbs",
+   "genre": "particules",
+   "titre": "Particules",
+   "accroche": "Retrouve la particule, et sa logique : up, out, off, down…",
+   "cartes": [
+    {
+     "id": "pa-01",
+     "recto": "We ran ___ of milk.",
+     "particule": "out",
+     "texte": "We ran out of milk.",
+     "ipa": "wi ˈræn‿ˈaʊt̬‿əv ˈmɪlk",
+     "aide": "out = jusqu'au bout, épuisement : il n'y en a plus.",
+     "lemme": "ran out",
+     "tags": {
+      "cat": "particule",
+      "particule": "out",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-02",
+     "recto": "Can you figure ___ how it works?",
+     "particule": "out",
+     "texte": "Can you figure out how it works?",
+     "ipa": "kən jə ˈfɪɡ.jɚ‿ˈaʊt ˈhaʊ‿ɪt ˈwɝːks",
+     "aide": "out = faire apparaître, découvrir.",
+     "lemme": "figure out",
+     "tags": {
+      "cat": "particule",
+      "particule": "out",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-03",
+     "recto": "The news came ___ yesterday.",
+     "particule": "out",
+     "texte": "The news came out yesterday.",
+     "ipa": "ðə ˈnuːz ˈkeɪm‿ˈaʊt ˈjes.tɚ.deɪ",
+     "aide": "out = sortir, devenir public.",
+     "lemme": "came out",
+     "tags": {
+      "cat": "particule",
+      "particule": "out",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-04",
+     "recto": "The meeting was called ___.",
+     "particule": "off",
+     "texte": "The meeting was called off.",
+     "ipa": "ðə ˈmiː.t̬ɪŋ wəz ˈkɑːld‿ˈɑːf",
+     "aide": "off = séparation, annulation, arrêt.",
+     "lemme": "called off",
+     "tags": {
+      "cat": "particule",
+      "particule": "off",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-05",
+     "recto": "The plane took ___ late.",
+     "particule": "off",
+     "texte": "The plane took off late.",
+     "ipa": "ðə ˈpleɪn ˈtʊk‿ˈɑːf ˈleɪt",
+     "aide": "off = départ, on quitte le sol.",
+     "lemme": "took off",
+     "tags": {
+      "cat": "particule",
+      "particule": "off",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-06",
+     "recto": "The fire alarm went ___ at three a.m.",
+     "particule": "off",
+     "texte": "The fire alarm went off at three a.m.",
+     "ipa": "ði ˈfaɪ.ɚ‿əˌlɑːrm ˈwent‿ˈɑːf",
+     "aide": "off = se déclencher (alarme, bombe).",
+     "lemme": "went off",
+     "tags": {
+      "cat": "particule",
+      "particule": "off",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-07",
+     "recto": "Turn the music ___, it's too loud.",
+     "particule": "down",
+     "texte": "Turn the music down, it's too loud.",
+     "ipa": "ˈtɝːn ðə ˈmjuː.zɪk ˈdaʊn",
+     "aide": "down = diminution.",
+     "lemme": "music down",
+     "tags": {
+      "cat": "particule",
+      "particule": "down",
+      "phon": []
+     }
+    },
+    {
+     "id": "pa-08",
+     "recto": "Write ___ the address before you forget.",
+     "particule": "down",
+     "texte": "Write down the address before you forget.",
+     "ipa": "ˈraɪt ˈdaʊn ði əˈdres bɪˈfɔːr jə fɚˈɡet",
+     "aide": "down = fixer par écrit.",
+     "lemme": "Write down",
+     "tags": {
+      "cat": "particule",
+      "particule": "down",
+      "phon": []
+     }
+    },
+    {
+     "id": "pa-09",
+     "recto": "The car broke ___ on the highway.",
+     "particule": "down",
+     "texte": "The car broke down on the highway.",
+     "ipa": "ðə ˈkɑːr ˈbroʊk ˈdaʊn‿ɑːn ðə ˈhaɪ.weɪ",
+     "aide": "down = panne, échec.",
+     "lemme": "broke down",
+     "tags": {
+      "cat": "particule",
+      "particule": "down",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-10",
+     "recto": "Calm ___, it's not a big deal.",
+     "particule": "down",
+     "texte": "Calm down, it's not a big deal.",
+     "ipa": "ˈkɑːm ˈdaʊn ɪts ˈnɑːt̬‿ə ˈbɪɡ ˈdiːl",
+     "aide": "down = retour au calme.",
+     "lemme": "Calm down",
+     "tags": {
+      "cat": "particule",
+      "particule": "down",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-11",
+     "recto": "Drink ___ your coffee, it's getting cold.",
+     "particule": "up",
+     "texte": "Drink up your coffee, it's getting cold.",
+     "ipa": "ˈdrɪŋk‿ˈʌp jɚ ˈkɑː.fi",
+     "aide": "up = achèvement : jusqu'à la fin.",
+     "lemme": "Drink up",
+     "tags": {
+      "cat": "particule",
+      "particule": "up",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-12",
+     "recto": "Prices keep going ___.",
+     "particule": "up",
+     "texte": "Prices keep going up.",
+     "ipa": "ˈpraɪ.sɪz ˈkiːp ˈɡoʊ.ɪŋ‿ˈʌp",
+     "aide": "up = augmentation.",
+     "lemme": "going up",
+     "tags": {
+      "cat": "particule",
+      "particule": "up",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-13",
+     "recto": "He showed ___ late again.",
+     "particule": "up",
+     "texte": "He showed up late again.",
+     "ipa": "hi ˈʃoʊd‿ˈʌp ˈleɪt‿əˈɡen",
+     "aide": "up = apparaître, arriver.",
+     "lemme": "showed up",
+     "tags": {
+      "cat": "particule",
+      "particule": "up",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-14",
+     "recto": "Cheer ___! It's not that bad.",
+     "particule": "up",
+     "texte": "Cheer up! It's not that bad.",
+     "ipa": "ˈtʃɪr‿ˈʌp",
+     "aide": "up = vers le haut, le moral remonte.",
+     "lemme": "Cheer up",
+     "tags": {
+      "cat": "particule",
+      "particule": "up",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-15",
+     "recto": "Keep ___ the good work.",
+     "particule": "up",
+     "texte": "Keep up the good work.",
+     "ipa": "ˈkiːp‿ˈʌp ðə ˈɡʊd ˈwɝːk",
+     "aide": "up = maintenir à niveau.",
+     "lemme": "Keep up",
+     "tags": {
+      "cat": "particule",
+      "particule": "up",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-16",
+     "recto": "Go ___, I'm listening.",
+     "particule": "on",
+     "texte": "Go on, I'm listening.",
+     "ipa": "ˈɡoʊ‿ˈɑːn aɪm ˈlɪs.ən.ɪŋ",
+     "aide": "on = continuation.",
+     "lemme": "Go on",
+     "tags": {
+      "cat": "particule",
+      "particule": "on",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-17",
+     "recto": "Hold ___ a second.",
+     "particule": "on",
+     "texte": "Hold on a second.",
+     "ipa": "ˈhoʊld‿ˈɑːn‿ə ˈsek.ənd",
+     "aide": "on = tenir, rester en contact.",
+     "lemme": "Hold on",
+     "tags": {
+      "cat": "particule",
+      "particule": "on",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-18",
+     "recto": "Let's go ___ the plan one more time.",
+     "particule": "over",
+     "texte": "Let's go over the plan one more time.",
+     "ipa": "ˈlets ˈɡoʊ‿ˈoʊ.vɚ ðə ˈplæn ˈwʌn ˈmɔːr ˈtaɪm",
+     "aide": "over = d'un bout à l'autre, révision.",
+     "lemme": "go over",
+     "tags": {
+      "cat": "particule",
+      "particule": "over",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-19",
+     "recto": "Think it ___ before you decide.",
+     "particule": "over",
+     "texte": "Think it over before you decide.",
+     "ipa": "ˈθɪŋk‿ɪt̬‿ˈoʊ.vɚ bɪˈfɔːr jə dɪˈsaɪd",
+     "aide": "over = examiner sous tous les angles.",
+     "lemme": "it over",
+     "tags": {
+      "cat": "particule",
+      "particule": "over",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-20",
+     "recto": "I'll call you ___ later.",
+     "particule": "back",
+     "texte": "I'll call you back later.",
+     "ipa": "aɪl ˈkɑːl jə ˈbæk ˈleɪ.t̬ɚ",
+     "aide": "back = retour, réponse.",
+     "lemme": "you back",
+     "tags": {
+      "cat": "particule",
+      "particule": "back",
+      "phon": [
+       "flap"
+      ]
+     }
+    },
+    {
+     "id": "pa-21",
+     "recto": "Can I have my book ___?",
+     "particule": "back",
+     "texte": "Can I have my book back?",
+     "ipa": "kən‿aɪ ˈhæv maɪ ˈbʊk ˈbæk",
+     "aide": "back = retour au point de départ.",
+     "lemme": "book back",
+     "tags": {
+      "cat": "particule",
+      "particule": "back",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-22",
+     "recto": "She went ___ a lot last year.",
+     "particule": "through",
+     "texte": "She went through a lot last year.",
+     "ipa": "ʃi ˈwent ˈθruː‿ə ˈlɑːt ˈlæst ˈjɪr",
+     "aide": "through = traverser (une épreuve) de bout en bout.",
+     "lemme": "went through",
+     "tags": {
+      "cat": "particule",
+      "particule": "through",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-23",
+     "recto": "I can't get ___ to him; his phone is off.",
+     "particule": "through",
+     "texte": "I can't get through to him; his phone is off.",
+     "ipa": "aɪ ˈkænt ˈɡet ˈθruː tə hɪm",
+     "aide": "through = passer, atteindre (au téléphone).",
+     "lemme": "get through",
+     "tags": {
+      "cat": "particule",
+      "particule": "through",
+      "phon": []
+     }
+    },
+    {
+     "id": "pa-24",
+     "recto": "Don't throw that ___!",
+     "particule": "away",
+     "texte": "Don't throw that away!",
+     "ipa": "doʊn ˈθroʊ ðæt̬‿əˈweɪ",
+     "aide": "away = éloignement, disparition.",
+     "lemme": "that away",
+     "tags": {
+      "cat": "particule",
+      "particule": "away",
+      "phon": [
+       "flap",
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-25",
+     "recto": "The pain will go ___ in a few days.",
+     "particule": "away",
+     "texte": "The pain will go away in a few days.",
+     "ipa": "ðə ˈpeɪn wɪl ˈɡoʊ‿əˈweɪ‿ɪn‿ə ˈfjuː ˈdeɪz",
+     "aide": "away = disparaître.",
+     "lemme": "go away",
+     "tags": {
+      "cat": "particule",
+      "particule": "away",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-26",
+     "recto": "Please fill ___ this form.",
+     "particule": "out",
+     "texte": "Please fill out this form.",
+     "ipa": "ˈpliːz ˈfɪl‿ˈaʊt ðɪs ˈfɔːrm",
+     "aide": "out = remplir entièrement (US ; en anglais britannique : fill in).",
+     "lemme": "fill out",
+     "tags": {
+      "cat": "particule",
+      "particule": "out",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-27",
+     "recto": "Hand ___ your essays by Friday.",
+     "particule": "in",
+     "texte": "Hand in your essays by Friday.",
+     "ipa": "ˈhænd‿ˈɪn jɚ‿ˈes.eɪz baɪ ˈfraɪ.deɪ",
+     "aide": "in = remettre, faire entrer.",
+     "lemme": "Hand in",
+     "tags": {
+      "cat": "particule",
+      "particule": "in",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-28",
+     "recto": "Count me ___!",
+     "particule": "in",
+     "texte": "Count me in!",
+     "ipa": "ˈkaʊnt mi‿ˈɪn",
+     "aide": "in = inclusion : je participe.",
+     "lemme": "me in",
+     "tags": {
+      "cat": "particule",
+      "particule": "in",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-29",
+     "recto": "Stop messing ___ and get to work.",
+     "particule": "around",
+     "texte": "Stop messing around and get to work.",
+     "ipa": "ˈstɑːp ˈmes.ɪŋ‿əˈraʊnd",
+     "aide": "around = sans but, dans tous les sens.",
+     "lemme": "messing around",
+     "tags": {
+      "cat": "particule",
+      "particule": "around",
+      "phon": [
+       "liaison"
+      ]
+     }
+    },
+    {
+     "id": "pa-30",
+     "recto": "Let's look ___ before we buy anything.",
+     "particule": "around",
+     "texte": "Let's look around before we buy anything.",
+     "ipa": "ˈlets ˈlʊk‿əˈraʊnd bɪˈfɔːr wi ˈbaɪ ˈen.i.θɪŋ",
+     "aide": "around = faire le tour, explorer.",
+     "lemme": "look around",
+     "tags": {
+      "cat": "particule",
+      "particule": "around",
+      "phon": [
+       "liaison"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "paires-temps",
+   "groupe": "Temps",
+   "genre": "paires",
+   "titre": "Paires de temps",
+   "accroche": "Deux phrases, un seul temps qui change : laquelle dit quoi ?",
+   "cartes": [
+    {
+     "id": "tp2-01",
+     "a": "I've lived here for ten years.",
+     "ta": "pp",
+     "b": "I lived here for ten years.",
+     "tb": "pas",
+     "question": "Laquelle dit que tu y habites encore ?",
+     "rep": "a",
+     "aide": "Le present perfect relie le passé à maintenant ; le prétérit coupe : c'est fini.",
+     "texte": "I've lived here for ten years.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pp",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-02",
+     "a": "I've lost my keys.",
+     "ta": "pp",
+     "b": "I lost my keys.",
+     "tb": "pas",
+     "question": "Laquelle sous-entend que tu ne les as toujours pas ?",
+     "rep": "a",
+     "aide": "Present perfect : le résultat compte maintenant (je n'ai pas mes clés). Prétérit : un fait passé, peut-être réglé depuis.",
+     "texte": "I've lost my keys.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pp",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-03",
+     "a": "I've been waiting for an hour.",
+     "ta": "ppc",
+     "b": "I waited for an hour.",
+     "tb": "pas",
+     "question": "Laquelle dit que tu attends encore ?",
+     "rep": "a",
+     "aide": "Le present perfect continu étire l'action jusqu'à maintenant.",
+     "texte": "I've been waiting for an hour.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "ppc",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-04",
+     "a": "It rained all day.",
+     "ta": "pas",
+     "b": "It's been raining all day.",
+     "tb": "ppc",
+     "question": "Laquelle dit qu'il pleut peut-être encore ?",
+     "rep": "b",
+     "aide": "Le present perfect continu va jusqu'à maintenant ; le prétérit parle d'une journée terminée.",
+     "texte": "It rained all day.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pas",
+       "ppc"
+      ]
+     }
+    },
+    {
+     "id": "tp2-05",
+     "a": "He's been painting the house.",
+     "ta": "ppc",
+     "b": "He's painted the house.",
+     "tb": "pp",
+     "question": "Laquelle dit que la maison est finie ?",
+     "rep": "b",
+     "aide": "Present perfect : résultat achevé. Continu : l'activité, pas forcément terminée.",
+     "texte": "He's been painting the house.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "ppc",
+       "pp"
+      ]
+     }
+    },
+    {
+     "id": "tp2-06",
+     "a": "I've finished my report.",
+     "ta": "pp",
+     "b": "I finished my report an hour ago.",
+     "tb": "pas",
+     "question": "Laquelle donne le moment précis ?",
+     "rep": "b",
+     "aide": "Un moment précis du passé (an hour ago) exige le prétérit.",
+     "texte": "I've finished my report.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pp",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-07",
+     "a": "When we got there, the movie started.",
+     "ta": "pas",
+     "b": "When we got there, the movie had started.",
+     "tb": "pasp",
+     "question": "Dans laquelle avez-vous raté le début ?",
+     "rep": "b",
+     "aide": "Past perfect : le film avait commencé avant votre arrivée.",
+     "texte": "When we got there, the movie started.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pas",
+       "pasp"
+      ]
+     }
+    },
+    {
+     "id": "tp2-08",
+     "a": "When I arrived, she left.",
+     "ta": "pas",
+     "b": "When I arrived, she had left.",
+     "tb": "pasp",
+     "question": "Dans laquelle as-tu pu la croiser ?",
+     "rep": "a",
+     "aide": "Prétérit + prétérit : les actions se suivent. Past perfect : elle était déjà partie.",
+     "texte": "When I arrived, she left.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pas",
+       "pasp"
+      ]
+     }
+    },
+    {
+     "id": "tp2-09",
+     "a": "I was cooking dinner when you called.",
+     "ta": "pasc",
+     "b": "I cooked dinner when you called.",
+     "tb": "pas",
+     "question": "Dans laquelle as-tu commencé à cuisiner après l'appel ?",
+     "rep": "b",
+     "aide": "Prétérit : l'action suit l'appel. Continu : elle était déjà en cours.",
+     "texte": "I was cooking dinner when you called.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pasc",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-10",
+     "a": "They had been arguing when I came in.",
+     "ta": "paspc",
+     "b": "They argued when I came in.",
+     "tb": "pas",
+     "question": "Dans laquelle la dispute a-t-elle commencé avant ton arrivée ?",
+     "rep": "a",
+     "aide": "Past perfect continu : l'action durait jusqu'au repère passé.",
+     "texte": "They had been arguing when I came in.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "paspc",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-11",
+     "a": "I had been working all day, so I was exhausted.",
+     "ta": "paspc",
+     "b": "I had worked all day, so I was exhausted.",
+     "tb": "pasp",
+     "question": "Laquelle insiste sur la durée de l'effort ?",
+     "rep": "a",
+     "aide": "Le continu met l'accent sur la durée, le parfait simple sur le résultat.",
+     "texte": "I had been working all day, so I was exhausted.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "paspc",
+       "pasp"
+      ]
+     }
+    },
+    {
+     "id": "tp2-12",
+     "a": "She works in London.",
+     "ta": "ps",
+     "b": "She's working in London.",
+     "tb": "pc",
+     "question": "Laquelle suggère une situation temporaire ?",
+     "rep": "b",
+     "aide": "Le présent continu décrit le temporaire ; le présent simple, le permanent.",
+     "texte": "She works in London.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "ps",
+       "pc"
+      ]
+     }
+    },
+    {
+     "id": "tp2-13",
+     "a": "The train leaves at six.",
+     "ta": "ps",
+     "b": "The train is leaving.",
+     "tb": "pc",
+     "question": "Laquelle parle d'un horaire fixe ?",
+     "rep": "a",
+     "aide": "Le présent simple sert aux horaires et programmes.",
+     "texte": "The train leaves at six.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "ps",
+       "pc"
+      ]
+     }
+    },
+    {
+     "id": "tp2-14",
+     "a": "At eight, I'll have dinner.",
+     "ta": "fs",
+     "b": "At eight, I'll be having dinner.",
+     "tb": "fc",
+     "question": "Laquelle dit que le dîner sera déjà en cours à 8 h ?",
+     "rep": "b",
+     "aide": "Futur continu : en cours à un moment du futur. Futur simple : le dîner commence à 8 h.",
+     "texte": "At eight, I'll have dinner.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "fs",
+       "fc"
+      ]
+     }
+    },
+    {
+     "id": "tp2-15",
+     "a": "By June, I'll finish the book.",
+     "ta": "fs",
+     "b": "By June, I'll have finished the book.",
+     "tb": "fp",
+     "question": "Laquelle dit que ce sera terminé avant juin ?",
+     "rep": "b",
+     "aide": "Futur antérieur : achevé avant le repère futur.",
+     "texte": "By June, I'll finish the book.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "fs",
+       "fp"
+      ]
+     }
+    },
+    {
+     "id": "tp2-16",
+     "a": "This time tomorrow, I'll be flying to Boston.",
+     "ta": "fc",
+     "b": "Tomorrow, I'll fly to Boston.",
+     "tb": "fs",
+     "question": "Laquelle te place en plein vol à un moment précis ?",
+     "rep": "a",
+     "aide": "Le futur continu montre l'action en cours au repère.",
+     "texte": "This time tomorrow, I'll be flying to Boston.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "fc",
+       "fs"
+      ]
+     }
+    },
+    {
+     "id": "tp2-17",
+     "a": "In May, I'll have been working here for ten years.",
+     "ta": "fpc",
+     "b": "In May, I'll work here.",
+     "tb": "fs",
+     "question": "Laquelle compte une durée déjà commencée ?",
+     "rep": "a",
+     "aide": "Futur antérieur continu : durée qui court jusqu'au repère futur.",
+     "texte": "In May, I'll have been working here for ten years.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "fpc",
+       "fs"
+      ]
+     }
+    },
+    {
+     "id": "tp2-18",
+     "a": "Have you seen the news?",
+     "ta": "pp",
+     "b": "Did you see the news last night?",
+     "tb": "pas",
+     "question": "Laquelle parle d'un moment terminé et précis ?",
+     "rep": "b",
+     "aide": "Last night : moment révolu, donc prétérit.",
+     "texte": "Have you seen the news?",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pp",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-19",
+     "a": "I was reading when the lights went out.",
+     "ta": "pasc",
+     "b": "I read when the lights went out.",
+     "tb": "pas",
+     "question": "Laquelle dit que la lecture était déjà en cours ?",
+     "rep": "a",
+     "aide": "Le prétérit continu pose le décor interrompu par l'événement.",
+     "texte": "I was reading when the lights went out.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pasc",
+       "pas"
+      ]
+     }
+    },
+    {
+     "id": "tp2-20",
+     "a": "I've known her since college.",
+     "ta": "pp",
+     "b": "I knew her in college.",
+     "tb": "pas",
+     "question": "Laquelle dit que tu la connais toujours ?",
+     "rep": "a",
+     "aide": "Since + present perfect : la relation continue jusqu'à maintenant.",
+     "texte": "I've known her since college.",
+     "tags": {
+      "cat": "temps",
+      "temps": [
+       "pp",
+       "pas"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

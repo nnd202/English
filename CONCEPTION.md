@@ -207,3 +207,32 @@ L'utilisateur cherche encore sa façon idéale d'apprendre ; les decks sont un *
 - **Phrases-temps** (type `temps`) : une phrase par temps en contexte ; le verso montre le **schéma de frise** du temps, son nom et sa forme, pour associer la sonorité à l'image mentale.
 - Les parties de deck comptent pour la série de jours, les cartes du jour et le temps cumulé (historique : « Deck »), pas pour les records du Sprint. Évaluations et progression sont dans la sauvegarde (`decks`), fusionnées à l'import.
 - Le niveau visé est B2 au minimum, surtout C1-C2 (C2 est le niveau le plus haut du cadre européen) : les prochains lots iront dans ce sens.
+
+## 16. Le Sprint par paquets (6 novembre 2026) : le cœur actuel
+
+Le Sprint devient **le concept de l'appli** ; ce sont les thèmes (paquets) qui changent. Inspiration directe de Geoquiz : réussir tout le paquet dans un temps donné. Les anciens outils (Sprint classique, Brassage, decks, dictées, exercices des temps, mode libre) restent accessibles en bas de l'accueil, repliés sous « Autres outils ».
+
+**Règles du jeu** (`js/paquet.js`) :
+- Un paquet de 20 à 40 cartes tourne **en boucle**, dans l'ordre ou dans un **ordre au hasard tiré au démarrage** et gardé jusqu'à la fin de la partie.
+- **OK** : la carte sort de la boucle. **Raté** : elle reste et revient au tour suivant. Notation binaire volontaire : c'est réussi ou c'est raté ; la répétition des réponses donne la nuance.
+- **Gagné** quand toutes les cartes sont OK ; sinon, au gong, le score est le nombre d'OK. Durées : 5, 10, 15, 20 min ou Libre (chrono qui monte).
+- **Records** par paquet et par durée : une partie gagnée bat toujours une partie non gagnée ; entre gagnées, le meilleur temps ; sinon, le plus d'OK. Pas de garde-fou : l'utilisateur joue honnête.
+- **Plus de FSRS ici** : chaque réponse alimente seulement les stats de la carte (`paquets.stats` : ok, rate, dernier résultat), d'où la difficulté (taux d'échec) et « les plus ratées » par paquet.
+- **Recto au choix** : le texte, ou l'audio (gros bouton Écouter ; on écoute, on répète, on retourne).
+
+**La carte épurée** : recto = le mot ou la phrase ; verso = IPA US (Cambridge, t̬, ‿, ʔ), Écouter / Lent / Sens (définition courte en aide + Cambridge, Merriam-Webster, YouGlish, Forvo, PlayPhrase), légende des symboles. Plus de pastilles. Puis Raté / OK.
+
+**Les paquets** (`data/paquets.json`, fabriqué par `python3 tools/construire_paquets.py` depuis `tools/sources/paquets/*.txt`) :
+- **Vocabulaire et phrases** : chaque paquet a une **identité** (une « voix » de l'anglais américain), et mélange mots, expressions, phrasal verbs et phrases. *Le bureau* (anglais de l'entreprise), *Le débat* (nuancer, argumenter), *Entre amis* (le familier des natifs ; orthographe standard, la réduction s'entend dans l'IPA, la forme écrite familière en note). 40 cartes chacun.
+- **Phrasal verbs** (à l'essai) : *Du soutenu au naturel* (phrase au verbe soutenu → la redire avec le phrasal verb) ; *Particules* (phrase à trou → la particule, avec sa logique : up = achèvement / hausse, out = jusqu'au bout…).
+- **Temps** (à l'essai) : *Paires de temps* (deux phrases qui ne diffèrent que par le temps + une question ; au verso, le schéma de chacune et l'explication).
+
+**Métadonnées** : chaque carte porte des `tags` (catégorie, registre, phénomènes de prononciation détectés dans l'IPA, particule, temps) pour une future analyse de ce qui résiste le plus.
+
+**Format des sources** (une ligne par carte, champs séparés par `|`) :
+- vocabulaire : `cat | texte | ipa | aide (sens en anglais) | exemple | note` (cat : mot, expr, phrasal, phrase) ;
+- soutenu : `phrase avec [verbe soutenu] | réponse | ipa | aide` ;
+- particules : `phrase avec ___ | particule | ipa | logique` ;
+- paires : `phrase A (temps) | phrase B (temps) | question | a ou b | explication` (temps : identifiants de `data/temps.json`).
+
+**À propos du flap** : t̬ n'existe pas en un seul caractère Unicode ; c'est un t suivi du signe combinant U+032C. Les données le stockent ainsi (exactement ce qu'on obtient par copier-coller). Seul l'affichage est corrigé en CSS, car beaucoup de polices placent mal ce signe. ɾ (le « petit r ») est le symbole IPA du flap chez les linguistes, mais Cambridge écrit t̬ : on garde t̬.

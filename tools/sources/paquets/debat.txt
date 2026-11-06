@@ -1,0 +1,41 @@
+# Paquet « Le débat » : nuancer, argumenter, contredire avec élégance.
+mot | arguably | ˈɑːrɡ.ju.ə.bli | It could be argued that (used to soften a claim). | It's arguably the best book of the decade. |
+mot | notwithstanding | ˌnɑːt.wɪθˈstæn.dɪŋ | In spite of (formal). | Notwithstanding the risks, we went ahead. |
+expr | that being said | ˈðæt ˈbiː.ɪŋ ˈsed | Even so; introduces a contrasting point. | It's expensive. That being said, it's worth it. |
+expr | play devil's advocate | ˈpleɪ ˈdev.əlz ˈæd.və.kət | Argue the opposite side just to test an idea. | Let me play devil's advocate for a second. |
+expr | I take your point | aɪ ˈteɪk jɚ ˈpɔɪnt | I understand and accept what you're saying. | I take your point, but I still disagree. |
+expr | by and large | ˌbaɪ‿ən ˈlɑːrdʒ | Generally; on the whole. | By and large, the results were positive. |
+mot | compelling | kəmˈpel.ɪŋ | Convincing; powerful enough to hold your attention. | She made a compelling argument. |
+mot | dubious | ˈduː.bi.əs | Doubtful; probably not true or honest. | That claim seems a little dubious. |
+expr | a moot point | ə ˈmuːt ˈpɔɪnt | A point no longer worth discussing. | Since he resigned, it's a moot point. |
+mot | caveat | ˈkæv.i.æt | A warning or condition attached to a statement. | One caveat: the sample was small. |
+expr | insofar as | ˌɪn.soʊˈfɑːr‿æz | To the extent that (formal). | It's fair insofar as everyone gets the same chance. |
+expr | to some extent | tə ˈsʌm‿ɪkˈstent | Partly; not completely. | I agree with you to some extent. |
+expr | on the flip side | ɑːn ðə ˈflɪp ˌsaɪd | Looking at the other side of the situation. | It pays well. On the flip side, the hours are long. |
+expr | a slippery slope | ə ˈslɪp.ɚ.i ˈsloʊp | A small step that leads to worse and worse consequences. | Banning one book is a slippery slope. |
+expr | a straw man | ə ˈstrɑː ˌmæn | A distorted version of someone's argument, easy to attack. | That's a straw man; I never said that. |
+expr | beg the question | ˈbeɡ ðə ˈkwes.tʃən | Raise a question (common use); assume what you're trying to prove (strict use). | Which begs the question: who's paying? |
+mot | cherry-pick | ˈtʃer.i.pɪk | Choose only the facts that support your view. | You can't just cherry-pick the data. |
+mot | conflate | kənˈfleɪt | Wrongly treat two different things as the same. | Don't conflate popularity with quality. |
+mot | refute | rɪˈfjuːt | Prove that a claim is wrong. | She refuted every one of his points. |
+mot | concede | kənˈsiːd | Admit that something is true, often reluctantly. | I'll concede that you have a point. |
+mot | tenuous | ˈten.ju.əs | Very weak or slight. | The link between the two is tenuous at best. |
+mot | nuanced | ˈnuː.ɑːnst | Showing subtle differences; not black and white. | It's a more nuanced view of the problem. |
+mot | counterintuitive | ˌkaʊn.t̬ɚ.ɪnˈtuː.ə.t̬ɪv | The opposite of what you would expect. | It sounds counterintuitive, but it works. |
+expr | a double-edged sword | ə ˌdʌb.əl.edʒd ˈsɔːrd | Something with both good and bad effects. | Fame is a double-edged sword. |
+expr | the elephant in the room | ði ˈel.ə.fənt̬‿ɪn ðə ˈruːm | An obvious problem nobody wants to mention. | Let's address the elephant in the room. |
+phrasal | rule out | ˈruːl‿ˈaʊt | Exclude a possibility. | We can't rule out a second wave. |
+phrasal | boil down to | ˈbɔɪl ˈdaʊn tuː | Be, in essence, about one main thing. | It all boils down to money. |
+phrasal | stem from | ˈstem frəm | Be caused by; originate in. | The problem stems from poor communication. |
+phrase | That's a fair point. | ðæts‿ə ˈfer ˈpɔɪnt | You're right about that. | |
+phrase | I see where you're coming from, but… | aɪ ˈsiː wer jɚ ˈkʌm.ɪŋ frʌm bət | I understand your reasons, but I disagree. | |
+phrase | With all due respect… | wɪð ˈɑːl ˈduː rɪˈspekt | A polite opening before disagreeing strongly. | |
+phrase | It's not that simple. | ɪts ˈnɑːt ðæt ˈsɪm.pəl | The issue is more complicated than that. | |
+phrase | The jury's still out. | ðə ˈdʒʊr.iz ˈstɪl‿ˈaʊt | It hasn't been decided or proven yet. | |
+phrase | Correlation isn't causation. | ˌkɔːr.əˈleɪ.ʃən ˈɪz.ənt kɑːˈzeɪ.ʃən | Two things happening together doesn't mean one causes the other. | |
+phrase | You're missing the point. | jɚ ˈmɪs.ɪŋ ðə ˈpɔɪnt | You don't understand what really matters here. | |
+phrase | Let's agree to disagree. | ˈlets‿əˈɡriː tə ˌdɪs.əˈɡriː | Let's accept that we have different opinions. | |
+phrase | Fair enough. | ˈfer‿ɪˈnʌf | OK, that's reasonable. | |
+expr | by the same token | baɪ ðə ˈseɪm ˈtoʊ.kən | For the same reason; in the same way. | By the same token, we should help them too. |
+phrase | That's a bit of a stretch. | ðæts‿ə ˈbɪt̬‿əv‿ə ˈstretʃ | That's exaggerated or hard to believe. | |
+phrase | Let's not lose sight of the bigger picture. | ˈlets ˈnɑːt ˈluːz ˈsaɪt̬‿əv ðə ˈbɪɡ.ɚ ˈpɪk.tʃɚ | Let's keep the overall situation in mind. | |

@@ -160,6 +160,10 @@ export function fusionner(a, b) {
     const y = out.decks.progres[id];
     if (!y || x.tours > y.tours || (x.tours === y.tours && x.pos > y.pos)) out.decks.progres[id] = x;
   }
+  // Paquets : stats par carte (la plus récente), réglages de l'appareil courant.
+  const pa = a.paquets || {}, pb = b.paquets || {};
+  out.paquets = { ...pb, ...pa, stats: { ...(pa.stats || {}) } };
+  for (const [id, x] of Object.entries(pb.stats || {})) if (!out.paquets.stats[id] || (x.last || 0) > (out.paquets.stats[id].last || 0)) out.paquets.stats[id] = x;
   out.phrasesDictee = { ...(a.phrasesDictee || {}) };
   for (const [id, x] of Object.entries(b.phrasesDictee || {})) {
     const y = out.phrasesDictee[id];

@@ -1,0 +1,42 @@
+# Paquet « Le bureau » : l'anglais de l'entreprise américaine, tel qu'on l'entend en réunion.
+# cat | texte | ipa | aide (sens en anglais) | exemple | note
+expr | touch base | ˈtʌtʃ ˈbeɪs | Briefly talk to someone to check in. | Let's touch base on Monday. |
+phrasal | circle back | ˈsɝː.kəl ˈbæk | Come back to a topic later. | Can we circle back to this after lunch? |
+mot | bandwidth | ˈbænd.wɪdθ | (figurative) The time or energy to take on more work. | I don't have the bandwidth for another project. |
+phrasal | follow up | ˈfɑː.loʊ‿ˈʌp | Contact someone again about something already discussed. | I'll follow up with an email. |
+phrasal | run it by | ˈrʌn‿ɪt ˈbaɪ | Tell someone an idea to get their opinion. | Let me run it by my manager first. |
+expr | on the same page | ɑːn ðə ˈseɪm ˈpeɪdʒ | In agreement; sharing the same understanding. | Let's make sure we're all on the same page. |
+phrasal | push back | ˈpʊʃ ˈbæk | Resist or object; also, postpone. | The client pushed back on the price. |
+expr | a ballpark figure | ə ˈbɑːl.pɑːrk ˈfɪɡ.jɚ | A rough estimate. | Can you give me a ballpark figure? |
+mot | deliverable | dɪˈlɪv.ɚ.ə.bəl | A concrete result a project must produce. | The main deliverable is due Friday. |
+mot | stakeholder | ˈsteɪk.hoʊl.dɚ | Anyone with an interest in a project or company. | We need input from all the stakeholders. |
+mot | buy-in | ˈbaɪ.ɪn | Agreement and support from the people involved. | Without buy-in from the team, it won't work. |
+mot | streamline | ˈstriːm.laɪn | Make a process simpler and more efficient. | We need to streamline the approval process. |
+mot | bottleneck | ˈbɑː.t̬əl.nek | A point that slows everything down. | Legal review is the main bottleneck. |
+mot | workaround | ˈwɝːk.ə.raʊnd | A way around a problem, without really fixing it. | It's not a fix, just a workaround. |
+mot | heads-up | ˈhedz.ʌp | Advance notice or warning. | Thanks for the heads-up. |
+expr | drop the ball | ˈdrɑːp ðə ˈbɑːl | Make a careless mistake; fail to do your part. | Someone dropped the ball on the invoices. |
+expr | get the ball rolling | ˈɡet ðə ˈbɑːl ˈroʊ.lɪŋ | Get something started. | Let's get the ball rolling on the redesign. |
+expr | low-hanging fruit | ˌloʊ.hæŋ.ɪŋ ˈfruːt | Easy wins that need little effort. | Let's go after the low-hanging fruit first. |
+phrase | Let's take this offline. | ˈlets ˈteɪk ðɪs‿ɑːfˈlaɪn | Let's discuss it privately later, not in this meeting. | |
+expr | a tight deadline | ə ˈtaɪt ˈded.laɪn | Very little time to finish something. | We're working to a tight deadline. |
+mot | burnout | ˈbɝːn.aʊt | Exhaustion caused by too much work and stress. | Burnout is a real risk in this job. |
+mot | onboarding | ˈɑːn.bɔːr.dɪŋ | The process of integrating a new employee or user. | Onboarding takes about two weeks. |
+mot | headcount | ˈhed.kaʊnt | The number of people employed. | We can't increase headcount this year. |
+phrase | I'm swamped. | aɪm ˈswɑːmpt | I'm extremely busy. | |
+phrasal | sign off on | ˌsaɪn‿ˈɑːf‿ɑːn | Give official approval to something. | The director has to sign off on the budget. |
+phrasal | iron out | ˈaɪ.ɚn‿ˈaʊt | Resolve small problems or details. | We still need to iron out a few details. |
+phrasal | flesh out | ˈfleʃ‿ˈaʊt | Add details to an idea or plan. | Can you flesh out the proposal a bit? |
+phrasal | weigh in | ˈweɪ‿ˈɪn | Give your opinion in a discussion. | Does anyone else want to weigh in? |
+phrase | Let's table this. | ˈlets ˈteɪ.bəl ðɪs | (US) Let's postpone discussing this. | | En anglais britannique, « table » veut dire l'inverse : mettre à l'ordre du jour.
+phrase | Per my last email… | pɚ maɪ ˈlæst ˈiː.meɪl | A polite but pointed way of saying "I already told you." | |
+phrase | I'll loop you in. | aɪl ˈluːp jə‿ˈɪn | I'll include you in the conversation or emails. | |
+phrase | Can we push the meeting to Thursday? | kən wi ˈpʊʃ ðə ˈmiː.t̬ɪŋ tə ˈθɝːz.deɪ | Can we move the meeting to a later day? | |
+phrase | That's above my pay grade. | ðæts‿əˈbʌv maɪ ˈpeɪ ˌɡreɪd | That decision belongs to someone more senior. | |
+phrase | We're short-staffed this week. | wɚ ˌʃɔːrtˈstæft ðɪs ˈwiːk | We don't have enough people working this week. | |
+phrase | Let's not reinvent the wheel. | ˈlets ˈnɑːt ˌriː.ɪnˈvent ðə ˈwiːl | Let's use what already works instead of starting over. | |
+phrase | I'm going to have to pass on that. | aɪm ˈɡʌ.nə ˈhæf.tə ˈpæs‿ɑːn ˈðæt | A polite way to decline. | |
+expr | moving forward | ˈmuː.vɪŋ ˈfɔːr.wɚd | From now on. | Moving forward, all requests go through Sam. |
+mot | pivot | ˈpɪv.ət | Change strategy or direction. | The startup had to pivot after the first year. |
+expr | think outside the box | ˈθɪŋk‿aʊtˈsaɪd ðə ˈbɑːks | Think creatively, in an unusual way. | We need someone who can think outside the box. |
+phrase | It's not in the budget. | ɪts ˈnɑːt̬‿ɪn ðə ˈbʌdʒ.ɪt | We can't pay for it. | |

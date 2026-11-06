@@ -11,6 +11,7 @@ import { noter, retenu, W, JOUR } from '../js/fsrs.js';
 import { creerPioche, quotaNouvelles, difficultes } from '../js/tirage.js';
 import { series, records, fusionner, REGLAGES_DEFAUT, TYPES } from '../js/store.js';
 import { noterDeck, ordreTour, plusDures } from '../js/decks.js';
+import { creerBoucle, noterCarte as noterCarteP, plusRatees, meilleure, bat } from '../js/paquet.js';
 import { decouper as decouperTemps, estJuste, distracteurs, schema, tirerQuestions } from '../js/temps.js';
 import { decouperPhrases, comparer, compter, choisirPhrases, morceaux, phrasesWiki } from '../js/dictee.js';
 
@@ -92,6 +93,27 @@ for (const d of DK) {
 }
 verifier(new Set(DK.map(d => d.id)).size === DK.length, 'Decks : identifiants uniques');
 for (const nom of lots) for (const c of json(`data/lots/${nom}.json`).cartes) if (c.type === 'temps') verifier(json('data/temps.json').temps.some(t => t.id === c.temps), `${c.id} : temps inconnu`);
+
+// Paquets du Sprint
+const PQ = json('data/paquets.json').paquets;
+const tempsIds = json('data/temps.json').temps.map(t => t.id);
+verifier(new Set(PQ.map(p => p.id)).size === PQ.length, 'Paquets : identifiants uniques');
+for (const p of PQ) {
+  verifier(p.titre && p.accroche && p.groupe && ['cartes', 'soutenu', 'particules', 'paires'].includes(p.genre) && p.cartes.length >= 15, `Paquet ${p.id} : champs ou cartes manquants`);
+  for (const c of p.cartes) {
+    const ou = `Paquet ${p.id} › ${c.id}`;
+    verifier(!ids.has(c.id), `${ou} : identifiant en double`); ids.add(c.id);
+    verifier(c.texte && c.aide, `${ou} : texte ou aide manquant`);
+    if (p.genre === 'paires') { verifier(tempsIds.includes(c.ta) && tempsIds.includes(c.tb) && ['a', 'b'].includes(c.rep) && c.question, `${ou} : paire incomplète`); continue; }
+    verifier(c.ipa && !/[g:/]/.test(c.ipa), `${ou} : IPA manquante ou avec g latin, deux-points ou barre`);
+    const { inconnus } = decouper(c.ipa || '', langue.symboles);
+    verifier(!inconnus.length, `${ou} : symboles IPA inconnus : ${[...new Set(inconnus)].join(' ')}`);
+    if (p.genre === 'cartes') verifier(['mot', 'expr', 'phrasal', 'phrase'].includes(c.cat), `${ou} : catégorie inconnue`);
+    if (p.genre === 'soutenu') verifier(/\[[^\]]+\]/.test(c.recto) && c.lemme, `${ou} : verbe soutenu entre crochets ou lemme manquant`);
+    if (p.genre === 'particules') verifier(c.recto.includes('___') && c.texte.includes(c.particule), `${ou} : trou ou particule`);
+  }
+}
+verifier(sw.includes('data/paquets.json'), 'paquets.json absent de CORE');
 
 // Exercice des temps
 const TP = json('data/temps.json');
@@ -191,6 +213,22 @@ verifier(plusDures(['a', 'b', 'c', 'd', 'e'], ev).join() === 'c,a,b', 'Decks : l
 const ids6 = ['a', 'b', 'c', 'd', 'e', 'f'];
 verifier(ordreTour(ids6, 'fixe', 3).join() === 'a,b,c,d,e,f', 'Decks : ordre fixe');
 verifier(ordreTour(ids6, 'melange', 1).join() === ordreTour(ids6, 'melange', 1).join() && ordreTour(ids6, 'melange', 1).join() !== ordreTour(ids6, 'melange', 2).join() && ordreTour(ids6, 'melange', 1).slice().sort().join() === 'a,b,c,d,e,f', 'Decks : ordre mélangé stable pendant un tour, différent au tour suivant');
+
+// Sprint par paquets : boucle, OK sort, raté revient au tour suivant
+const bl = creerBoucle(['a', 'b', 'c', 'd']);
+const seq = [];
+for (const rep of [1, 0, 1, 0, 0, 1, 1]) { const id = bl.suivante(); seq.push(id); if (rep) bl.ok(id); }
+verifier(seq.join() === 'a,b,c,d,b,d,b' && bl.suivante() === null && bl.reussies === 4 && bl.tour === 3, `Paquets : boucle (${seq.join()}, tour ${bl.tour})`);
+const bh = creerBoucle(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']);
+const vus8 = Array.from({ length: 8 }, () => bh.suivante());
+verifier(new Set(vus8).size === 8 && bh.suivante() === 'a', 'Paquets : un tour complet sans répétition, puis on repart du début');
+const bz = creerBoucle(Array.from({ length: 40 }, (_, i) => 'x' + i), true);
+verifier(new Set(bz.ordre).size === 40 && bz.ordre.join() !== Array.from({ length: 40 }, (_, i) => 'x' + i).join(), 'Paquets : ordre au hasard tiré au démarrage, sans perte');
+const stP = {};
+noterCarteP(stP, 'a', false, 1); noterCarteP(stP, 'a', false, 2); noterCarteP(stP, 'a', true, 3); noterCarteP(stP, 'b', false, 4); noterCarteP(stP, 'c', true, 5);
+verifier(stP.a.ok === 1 && stP.a.rate === 2 && stP.a.dernier === 1 && plusRatees(['a', 'b', 'c'], stP).join() === 'b,a', 'Paquets : stats par carte et plus ratées');
+const pg = (complet, joue, ok) => ({ complet, joue, ok });
+verifier(meilleure([pg(false, 600000, 30), pg(true, 500000, 40), pg(true, 420000, 40), pg(false, 600000, 38)]).joue === 420000 && bat(pg(false, 0, 39), pg(false, 0, 38)) && !bat(pg(false, 0, 39), pg(true, 590000, 40)), 'Paquets : record = gagnée la plus rapide, sinon le plus d\'OK');
 
 // Séries, records, fusion
 const s = (id, jour, extra = {}) => ({ id, debut: Date.UTC(2026, 10, jour, 10), cartes: [['a', 3, 1000]], passees: 10, mode: 'sprint', duree: 900, tirage: 'melange', complet: true, ...extra });

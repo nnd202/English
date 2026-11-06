@@ -5,6 +5,7 @@ import { creerPioche, difficultes, quotaNouvelles } from './tirage.js';
 import { retenu } from './fsrs.js';
 import { legende, zones, morceaux } from './ipa.js';
 import { initVoix, dire, voixListe, voixOk } from './voix.js';
+import { creerBoucle, noterCarte as noterCarteP, plusRatees, meilleure as meilleurePartie, bat } from './paquet.js';
 import { noterDeck, ordreTour, plusDures, repartition, NOTES_DECK } from './decks.js';
 import { schema, decouper, phraseComplete, estJuste, distracteurs, tirerQuestions } from './temps.js';
 import { decouperPhrases, comparer, compter, choisirPhrases, morceaux as morceauxPhrase, phrasesWiki } from './dictee.js';
@@ -15,7 +16,7 @@ const h = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 
 let LANGUE = null, CARTES = [], PAR_ID = new Map(), DICTEES = [], BANQUE = [];
 let partie = null, bilan = null, dictee = null, bilanDictee = null, exo = null, bilanTemps = null, TEMPS = null;
-let DECKS = [], sessionDeck = null, bilanDeck = null;
+let DECKS = [], sessionDeck = null, bilanDeck = null, PAQUETS = [], sprintP = null, bilanP = null;
 
 const DUREES = [300, 600, 900, 1200];
 const TIRAGES = { melange: 'Brassage', hasard: 'Hasard', dues: 'Révisions', nouvelles: 'Nouvelles' };
@@ -74,6 +75,7 @@ async function demarrer() {
   const { lots, dictees = [] } = await charge('data/lots.json');
   TEMPS = await charge('data/temps.json');
   DECKS = (await charge('data/decks.json')).decks;
+  PAQUETS = (await charge('data/paquets.json')).paquets;
   const tous = await Promise.all([
     ...lots.map(nom => charge(`data/lots/${nom}.json`)),
     ...dictees.map(nom => charge(`data/dictees/${nom}.json`))
@@ -104,6 +106,12 @@ function router() {
     return;
   }
   if (sessionDeck && !sessionDeck.fini && hash !== '#/deck') { finirDeck(true); return; }
+  if (sprintP && !sprintP.fini && hash !== '#/paquet') {
+    history.pushState(null, '', '#/paquet');
+    if (feuille.classList.contains('ouverte')) { fermerFeuille(); return; }
+    pausePaquet(true);
+    return;
+  }
   if (exo && !exo.fini && hash !== '#/exo-temps') {
     history.pushState(null, '', '#/exo-temps');
     $('#quitter-t')?.click();
@@ -111,7 +119,7 @@ function router() {
   }
   fermerFeuille();
   const [, ecran, arg] = hash.split('/');
-  nav.hidden = ecran === 'jeu' || ecran === 'dictee' || ecran === 'exo-temps' || ecran === 'deck';
+  nav.hidden = ['jeu', 'dictee', 'exo-temps', 'deck', 'paquet'].includes(ecran);
   document.body.classList.toggle('verrou', nav.hidden);
   if (!nav.hidden) window.scrollTo(0, 0);
   if (ecran === 'dictee' && dictee) return ecranDictee();
@@ -119,6 +127,9 @@ function router() {
   if (ecran === 'dictees') return ecranDictees();
   if (ecran === 'temps') return ecranTemps();
   if (ecran === 'decks') return ecranDecks();
+  if (ecran === 'classique') return ecranClassique();
+  if (ecran === 'paquet' && sprintP) return ecranPaquet();
+  if (ecran === 'bilan-paquet' && bilanP) return ecranBilanPaquet();
   if (ecran === 'deck' && sessionDeck) return ecranDeck();
   if (ecran === 'bilan-deck' && bilanDeck) return ecranBilanDeck();
   if (ecran === 'exo-temps' && exo) return ecranExoTemps();
@@ -138,7 +149,7 @@ function dessinerNav(actif) {
   nav.innerHTML = `${b('maison', '#/', 'Accueil')}${b('stats', '#/stats', 'Stats')}
     <button class="nav-jouer" aria-label="Lancer un Sprint">${ICONES.jouer}</button>
     ${b('cartes', '#/cartes', 'Cartes')}${b('reglages', '#/reglages', 'Réglages')}`;
-  $('.nav-jouer', nav).onclick = () => lancer('sprint');
+  $('.nav-jouer', nav).onclick = () => lancerPaquet(etatPaquets().dernier || PAQUETS[0].id);
 }
 
 // ---------- Bandeau de stats ----------
@@ -182,18 +193,17 @@ function infosPioche() {
   return { dues, quota, jamais };
 }
 
-function ecranAccueil() {
+function ecranClassique() {
   dessinerNav('maison');
   const e = store.get();
   const sp = e.sprint;
   const rec = store.records(e.sessions)[store.cleRecord({ duree: sp.duree, tirage: sp.tirage })];
   const inf = infosPioche();
   const puce = (groupe, val, label, actif) => `<button class="puce ${actif ? 'on' : ''}" data-${groupe}="${val}">${label}</button>`;
-  vue.innerHTML = `${entete('English', new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }), true)}
+  vue.innerHTML = `${entete('Sprint classique', 'Le premier système : tirage Brassage, notes en 4 niveaux', false, '#/')}
   <main class="page">
-    ${rappelSauvegarde()}
     <section class="bloc sprint">
-      <div class="bloc-titre"><h2>Sprint</h2><span>Le plus de cartes possible dans le temps choisi</span></div>
+      <div class="bloc-titre"><h2>Sprint classique</h2><span>Le plus de cartes possible dans le temps choisi</span></div>
       <div class="puces">${DUREES.map(d => puce('duree', d, `${d / 60} min`, sp.duree === d)).join('')}</div>
       <div class="puces">${Object.entries(TIRAGES).map(([k, v]) => puce('tirage', k, v, sp.tirage === k)).join('')}</div>
       <div class="puces petites">${store.TYPES.map(t => puce('type', t, LANGUE.types[t], sp.types.includes(t))).join('')}</div>
@@ -224,13 +234,13 @@ function ecranAccueil() {
       <div class="ligne-bientot"><b>Verbes irréguliers</b><span>la grille à remplir</span></div>
     </section>
   </main>`;
-  vue.querySelectorAll('[data-duree]').forEach(b => b.onclick = () => { sp.duree = +b.dataset.duree; store.sauver(); ecranAccueil(); });
-  vue.querySelectorAll('[data-tirage]').forEach(b => b.onclick = () => { sp.tirage = b.dataset.tirage; store.sauver(); ecranAccueil(); });
+  vue.querySelectorAll('[data-duree]').forEach(b => b.onclick = () => { sp.duree = +b.dataset.duree; store.sauver(); ecranClassique(); });
+  vue.querySelectorAll('[data-tirage]').forEach(b => b.onclick = () => { sp.tirage = b.dataset.tirage; store.sauver(); ecranClassique(); });
   vue.querySelectorAll('[data-type]').forEach(b => b.onclick = () => {
     const t = b.dataset.type;
     if (sp.types.includes(t)) { if (sp.types.length > 1) sp.types = sp.types.filter(x => x !== t); }
     else sp.types = store.TYPES.filter(x => x === t || sp.types.includes(x));
-    store.sauver(); ecranAccueil();
+    store.sauver(); ecranClassique();
   });
   vue.querySelectorAll('[data-lancer]').forEach(b => b.onclick = () => lancer(b.dataset.lancer));
   brancherRappel();
@@ -547,7 +557,8 @@ function ecranStats() {
 
   vue.innerHTML = `${entete('Stats', '', true)}
   <main class="page">
-    <section class="bloc"><div class="bloc-titre"><h2>Records</h2><span>Meilleure partie complète par durée et tirage</span></div>
+    ${statsPaquets()}
+    <section class="bloc"><div class="bloc-titre"><h2>Records du Sprint classique</h2><span>Meilleure partie complète par durée et tirage</span></div>
       ${recs.length ? recs.map(r => `<div class="ligne-record"><div><b>${r.duree / 60} min</b> · ${TIRAGES[r.tirage]}<small>le ${dateCourte(r.debut)}</small></div><strong>${r.passees}</strong></div>
         <div class="mini-notes">${barreNotes(r.notes)}</div>`).join('') : '<p class="info">Pas encore de Sprint complet.</p>'}
     </section>
@@ -571,7 +582,10 @@ function ecranStats() {
     ${lentes.length ? `<section class="bloc"><div class="bloc-titre"><h2>Celles qui prennent du temps</h2><span>Temps moyen par passage, tous modes</span></div>
       ${lentes.map(c => ligneCarte(c, `${(etats[c.id].t / etats[c.id].n / 1000).toFixed(1)} s`)).join('')}</section>` : ''}
     <section class="bloc"><div class="bloc-titre"><h2>Historique</h2></div>
-      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'deck' ? `<div class="ligne-histo">
+      ${e.sessions.length ? e.sessions.slice(-30).reverse().map(s => s.mode === 'paquet' ? `<div class="ligne-histo">
+        <div><b>Sprint</b> · ${h(s.titre)}<small>${dateHeure(s.debut)} · ${libDuree(s.duree)} · ${s.rates} raté${s.rates > 1 ? 's' : ''}</small></div>
+        <div class="histo-droite"><strong>${s.complet ? '✓ ' + chrono(s.joue) : `${s.ok}/${s.total}`}</strong></div>
+      </div>` : s.mode === 'deck' ? `<div class="ligne-histo">
         <div><b>Deck</b> · ${h(s.titre)}<small>${dateHeure(s.debut)} · ${chrono(s.joue)}${s.complet ? ' · tour terminé' : ''}</small></div>
         <div class="histo-droite"><strong>${s.passees}</strong><span class="pts"><i class="n4">${s.notesDeck[0]}</i><i class="n2">${s.notesDeck[1]}</i><i class="n1">${s.notesDeck[2]}</i></span></div>
       </div>` : s.mode === 'temps' ? `<div class="ligne-histo">
@@ -744,7 +758,7 @@ async function exporter() {
   const e = store.get();
   const d = new Date();
   const nom = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')} - Export English.txt`;
-  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint, textes: e.textes, dictee: e.dictee, phrasesDictee: e.phrasesDictee, decks: e.decks } });
+  const contenu = JSON.stringify({ app: 'English', v: 1, date: d.toISOString(), etat: { cartes: e.cartes, sessions: e.sessions, reglages: e.reglages, sprint: e.sprint, textes: e.textes, dictee: e.dictee, phrasesDictee: e.phrasesDictee, decks: e.decks, paquets: e.paquets } });
   const fichier = new File([contenu], nom, { type: 'text/plain' });
   let ok = false;
   try {
@@ -772,7 +786,7 @@ async function importer(f) {
     if (data.app !== 'English' || !data.etat) throw new Error('format');
     const e = store.get();
     const fus = store.fusionner(e, data.etat);
-    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions, textes: fus.textes, phrasesDictee: fus.phrasesDictee, decks: fus.decks });
+    store.remplacer({ ...e, cartes: fus.cartes, sessions: fus.sessions, textes: fus.textes, phrasesDictee: fus.phrasesDictee, decks: fus.decks, paquets: fus.paquets });
     toast(`Import réussi : ${fus.sessions.length} parties au total.`);
     router();
   } catch {
@@ -1477,6 +1491,292 @@ function ecranBilanDeck() {
   if (r) r.onclick = () => lancerDeck({ id: S.deck.id + ':dures', titre: `${S.deck.titre.replace(/ · les dures$/, '')} · les dures`, cartes: dures, virtuel: true });
   const en = $('#encore');
   if (en) en.onclick = () => lancerDeck(deckDe(S.deck.id));
+}
+
+// ---------- Sprint par paquets ----------
+const DUREES_P = [300, 600, 900, 1200, 0];
+const libDuree = (d) => d ? `${d / 60} min` : 'Libre';
+const paquetDe = (id) => PAQUETS.find(p => p.id === id);
+
+function etatPaquets() {
+  const e = store.get();
+  e.paquets ||= {};
+  e.paquets.reglages ||= { duree: 600, hasard: false, recto: 'texte' };
+  e.paquets.stats ||= {};
+  return e.paquets;
+}
+const partiesDe = (pid, duree) => store.get().sessions.filter(s => s.mode === 'paquet' && s.paquetId === pid && (duree === undefined || s.duree === duree));
+
+function libRecord(r, total) {
+  if (!r) return '';
+  return r.complet ? `${total}/${total} en ${chrono(r.joue)}` : `${r.ok}/${total}`;
+}
+
+// Carte de paquet → objet attendu par le panneau Sens (liens selon le type).
+function versCarte(pc, paquet) {
+  const type = paquet.genre === 'cartes' ? ({ mot: 'mot', expr: 'combi', phrasal: 'phrasal', phrase: 'phrase' }[pc.cat] || 'mot')
+    : paquet.genre === 'paires' ? 'phrase' : 'phrasal';
+  return { texte: pc.texte, def: pc.aide, ex: pc.ex, note: pc.note, type, lemme: pc.lemme };
+}
+
+function ecranAccueil() {
+  dessinerNav('maison');
+  const P = etatPaquets(), r = P.reglages;
+  const puce = (cle, val, label) => `<button class="puce ${r[cle] === val ? 'on' : ''}" data-pr="${cle}" data-v="${val}">${label}</button>`;
+  const groupes = [...new Set(PAQUETS.map(p => p.groupe))];
+  const ligne = (p) => {
+    const rec = meilleurePartie(partiesDe(p.id, r.duree));
+    const vues = p.cartes.filter(c => P.stats[c.id]).length;
+    const reussies = p.cartes.filter(c => P.stats[c.id] && P.stats[c.id].dernier === 1).length;
+    return `<div class="ligne-paquet">
+      <button class="lp-main" data-infos="${p.id}">
+        <b>${h(p.titre)}</b><small>${h(p.accroche)}</small>
+        <span class="lp-meta">${p.cartes.length} cartes${vues ? ` · ${reussies} réussies la dernière fois` : ''}${rec ? ` · record ${libDuree(r.duree)} : <b>${libRecord(rec, p.cartes.length)}</b>` : ''}</span>
+        <div class="barre-deck">${reussies ? `<i class="n4" style="flex:${reussies}"></i>` : ''}${vues - reussies ? `<i class="n1" style="flex:${vues - reussies}"></i>` : ''}${p.cartes.length - vues ? `<i class="jamais" style="flex:${p.cartes.length - vues}"></i>` : ''}</div>
+      </button>
+      <button class="lp-jouer" data-jouer="${p.id}" aria-label="Jouer">${ICONES.jouer}</button>
+    </div>`;
+  };
+  vue.innerHTML = `${entete('English', new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }), true)}
+  <main class="page">
+    ${rappelSauvegarde()}
+    <section class="bloc sprint">
+      <div class="bloc-titre"><h2>Sprint</h2><span>Un paquet, un chrono : réussir toutes les cartes. Raté → la carte revient au tour suivant.</span></div>
+      <div class="puces">${DUREES_P.map(d => puce('duree', d, libDuree(d))).join('')}</div>
+      <div class="puces petites">${puce('hasard', false, 'Dans l\'ordre')}${puce('hasard', true, 'Au hasard')}</div>
+      <div class="puces petites">${puce('recto', 'texte', 'Recto : le texte')}${puce('recto', 'audio', 'Recto : l\'audio')}</div>
+    </section>
+    ${groupes.map(g => `<section class="bloc liste"><div class="bloc-titre"><h2>${h(g)}</h2>${g !== 'Vocabulaire et phrases' ? '<span>À l\'essai</span>' : ''}</div>
+      ${PAQUETS.filter(p => p.groupe === g).map(ligne).join('')}</section>`).join('')}
+    <details class="bloc autres">
+      <summary><b>Autres outils</b><span>Sprint classique, decks, dictées, exercices des temps, mode libre</span></summary>
+      <div class="autres-liens">
+        <a class="btn-second" href="#/classique">Sprint classique et mode libre</a>
+        <a class="btn-second" href="#/decks">Decks</a>
+        <a class="btn-second" href="#/dictees">Dictées</a>
+        <a class="btn-second" href="#/temps">Exercices des temps</a>
+      </div>
+    </details>
+  </main>`;
+  vue.querySelectorAll('[data-pr]').forEach(b => b.onclick = () => {
+    const k = b.dataset.pr, v = b.dataset.v;
+    r[k] = k === 'duree' ? +v : k === 'hasard' ? v === 'true' : v;
+    store.sauver(); ecranAccueil();
+  });
+  vue.querySelectorAll('[data-jouer]').forEach(b => b.onclick = () => lancerPaquet(b.dataset.jouer));
+  vue.querySelectorAll('[data-infos]').forEach(b => b.onclick = () => feuillePaquet(paquetDe(b.dataset.infos)));
+  brancherRappel();
+}
+
+function statsPaquets() {
+  const P = etatPaquets();
+  const lignes = PAQUETS.map(p => {
+    const parties = partiesDe(p.id);
+    if (!parties.length) return '';
+    const rec = DUREES_P.map(d => [d, meilleurePartie(partiesDe(p.id, d))]).filter(([, x]) => x).map(([d, x]) => `${libDuree(d)} : ${libRecord(x, p.cartes.length)}`).join(' · ');
+    const jouees = p.cartes.filter(c => P.stats[c.id]);
+    const okT = jouees.reduce((n, c) => n + P.stats[c.id].ok, 0), raT = jouees.reduce((n, c) => n + P.stats[c.id].rate, 0);
+    return `<div class="ligne-histo"><div><b>${h(p.titre)}</b><small>${pluriel(parties.length, 'partie')} · ${rec}</small></div>
+      <div class="histo-droite"><strong>${okT + raT ? Math.round(100 * okT / (okT + raT)) : 0} %</strong><small>réussite</small></div></div>`;
+  }).join('');
+  return lignes ? `<section class="bloc"><div class="bloc-titre"><h2>Sprint par paquets</h2><span>Records par durée, taux de réussite de toutes tes réponses</span></div>${lignes}</section>` : '';
+}
+
+function feuillePaquet(p) {
+  const P = etatPaquets(), r = P.reglages;
+  const parties = partiesDe(p.id).slice(-8).reverse();
+  const ratees = plusRatees(p.cartes.map(c => c.id), P.stats, 8);
+  const parId = new Map(p.cartes.map(c => [c.id, c]));
+  const records = DUREES_P.map(d => [d, meilleurePartie(partiesDe(p.id, d))]).filter(([, x]) => x);
+  ouvrirFeuille(`<div class="sens">
+    <h2>${h(p.titre)}</h2><p class="info">${h(p.accroche)} ${p.cartes.length} cartes.</p>
+    ${records.length ? `<h3 class="sous-titre">Records</h3>${records.map(([d, x]) => `<div class="ligne-record"><div>${libDuree(d)}<small>le ${dateCourte(x.debut)}</small></div><strong>${libRecord(x, p.cartes.length)}</strong></div>`).join('')}` : '<p class="info">Pas encore de partie.</p>'}
+    ${parties.length ? `<h3 class="sous-titre">Dernières parties</h3>${parties.map(s => `<div class="ligne-histo"><div>${libDuree(s.duree)}${s.hasard ? ' · hasard' : ''}${s.recto === 'audio' ? ' · audio' : ''}<small>${dateHeure(s.debut)} · ${s.tours} tour${s.tours > 1 ? 's' : ''} · ${s.rates} raté${s.rates > 1 ? 's' : ''}</small></div><div class="histo-droite"><strong>${s.complet ? '✓ ' + chrono(s.joue) : `${s.ok}/${s.total}`}</strong></div></div>`).join('')}` : ''}
+    ${ratees.length ? `<h3 class="sous-titre">Les plus ratées</h3>${ratees.map(id => { const x = P.stats[id]; return `<div class="ligne-histo"><div>${h(parId.get(id).recto ? parId.get(id).texte : parId.get(id).texte)}</div><div class="histo-droite"><span class="pts"><i class="n4">${x.ok}</i><i class="n1">${x.rate}</i></span></div></div>`; }).join('')}` : ''}
+    <button class="btn-principal" id="jouer-feuille">${ICONES.jouer} Jouer · ${libDuree(r.duree)}</button>
+  </div>`);
+  $('#jouer-feuille').onclick = () => { fermerFeuille(); lancerPaquet(p.id); };
+}
+
+function lancerPaquet(pid) {
+  const p = paquetDe(pid);
+  if (!p) return;
+  const P = etatPaquets(), r = P.reglages;
+  P.dernier = pid;
+  const boucle = creerBoucle(p.cartes.map(c => c.id), r.hasard);
+  sprintP = {
+    paquet: p, parId: new Map(p.cartes.map(c => [c.id, c])), boucle, duree: r.duree, hasard: r.hasard,
+    recto: p.genre === 'cartes' ? r.recto : 'texte',
+    debut: Date.now(), joueMs: 0, top: Date.now(), pause: false, pauses: 0, fini: false,
+    courante: null, depuis: 0, retournee: false, rates: 0, cartes: [], rateesPartie: new Set()
+  };
+  sprintP.courante = boucle.suivante();
+  sprintP.depuis = 0;
+  store.sauver();
+  history.pushState(null, '', '#/paquet');
+  router();
+  bouclePaquet();
+}
+
+const tempsJoueP = () => sprintP.joueMs + (sprintP.pause ? 0 : Date.now() - sprintP.top);
+
+function bouclePaquet() {
+  clearInterval(bouclePaquet.t);
+  bouclePaquet.t = setInterval(() => {
+    const S = sprintP;
+    if (!S || S.fini) { clearInterval(bouclePaquet.t); return; }
+    const t = tempsJoueP(), el = $('#chrono');
+    if (S.duree) {
+      const reste = S.duree * 1000 - t;
+      if (el) { el.textContent = chrono(reste); el.classList.toggle('urgent', reste < 30000); }
+      if (reste <= 0) finirPaquet();
+    } else if (el) el.textContent = chrono(t);
+  }, 200);
+}
+
+function pausePaquet(oui) {
+  const S = sprintP;
+  if (!S || S.fini || S.pause === oui) return;
+  if (oui) { S.joueMs += Date.now() - S.top; S.pause = true; S.pauses++; }
+  else { S.top = Date.now(); S.pause = false; }
+  ecranPaquet();
+}
+
+function htmlRectoVerso(pc, S) {
+  const p = S.paquet, reg = store.get().reglages;
+  const leg = (ipa) => { const l = legende(ipa, LANGUE.symboles, reg.legendeComplete); return l.length ? `<button class="legende" data-legende>${l.map(x => `<span><b>${ipaHtml(x.s)}</b>${h(x.ex)}</span>`).join('')}</button>` : ''; };
+  const actions = `<div class="fiche-actions"><button data-dire="1">${ICONES.son}<span>Écouter</span></button><button data-dire="lent">${ICONES.lent}<span>Lent</span></button><button data-sens>${ICONES.sens}<span>Sens</span></button></div>`;
+  if (p.genre === 'paires') {
+    const ligneP = (k) => {
+      const t = TEMPS.temps.find(x => x.id === pc['t' + k]);
+      const cl = S.retournee ? (pc.rep === k ? 'bonne' : 'autre') : '';
+      return `<div class="paire ${cl}"><div class="paire-tete"><b>${k.toUpperCase()}</b><span>${h(pc[k])}</span><button class="btn-rond petit" data-dire-texte="${h(pc[k])}">${ICONES.son}</button></div>
+        ${S.retournee ? `<div class="paire-schema">${schema(pc['t' + k])}<small>${h(t.nom)}</small></div>` : ''}</div>`;
+    };
+    return `<div class="fiche-type">Temps</div><p class="question-paire">${h(pc.question)}</p>${ligneP('a')}${ligneP('b')}
+      ${S.retournee ? `<p class="reponse-paire">Réponse : <b>${pc.rep.toUpperCase()}</b></p><div class="regle">${h(pc.aide)}</div>` : '<div class="fiche-indice">Choisis A ou B dans ta tête, puis retourne</div>'}`;
+  }
+  if (p.genre === 'soutenu') {
+    const recto = h(pc.recto).replace(/\[([^\]]+)\]/, '<mark>$1</mark>');
+    if (!S.retournee) return `<div class="fiche-type">Phrasal verb</div><div class="consigne">Redis-le avec un phrasal verb</div><div class="fiche-texte long">${recto}</div><div class="fiche-indice">Dis ta version à voix haute, puis retourne</div>`;
+    return `<div class="fiche-type">Phrasal verb</div><div class="rappel-recto">${recto}</div><div class="fiche-texte long">${h(pc.texte)}</div>
+      <div class="fiche-ipa${pc.ipa.length > 24 ? ' long' : ''}">/${ipaHtml(pc.ipa)}/</div>${actions}<div class="regle">${h(pc.aide)}</div>${leg(pc.ipa)}`;
+  }
+  if (p.genre === 'particules') {
+    if (!S.retournee) return `<div class="fiche-type">Particule</div><div class="fiche-texte long">${h(pc.recto).replace('___', '<span class="trou-p">___</span>')}</div><div class="fiche-indice">Dis la phrase complète, puis retourne</div>`;
+    return `<div class="fiche-type">Particule</div><div class="fiche-texte long">${h(pc.recto).replace('___', `<mark>${h(pc.particule)}</mark>`)}</div>
+      <div class="fiche-ipa${pc.ipa.length > 24 ? ' long' : ''}">/${ipaHtml(pc.ipa)}/</div>${actions}<div class="regle">${h(pc.aide)}</div>${leg(pc.ipa)}`;
+  }
+  // Cartes de vocabulaire et de phrases
+  const long = pc.cat === 'phrase' || pc.texte.length > 22 ? ' long' : '';
+  if (!S.retournee) {
+    if (S.recto === 'audio') return `<div class="fiche-type">Écoute</div><button class="btn-ecoute" data-dire="1">${ICONES.son}</button><div class="fiche-indice">Écoute, répète, puis retourne<br><button class="lien-lent" data-dire="lent">écouter lentement</button></div>`;
+    return `<div class="fiche-texte${long}">${h(pc.texte)}</div><div class="fiche-indice">Prononce, puis retourne</div>`;
+  }
+  return `<div class="fiche-texte${long}">${h(pc.texte)}</div><div class="fiche-ipa${pc.ipa.length > 24 ? ' long' : ''}">/${ipaHtml(pc.ipa)}/</div>${actions}
+    ${pc.note ? `<div class="note-carte">${h(pc.note)}</div>` : ''}${leg(pc.ipa)}`;
+}
+
+function ecranPaquet() {
+  nav.hidden = true;
+  const S = sprintP;
+  if (!S) return router();
+  const pc = S.parId.get(S.courante);
+  const total = S.paquet.cartes.length, t = tempsJoueP();
+  vue.innerHTML = `<div class="jeu">
+    <div class="jeu-tete">
+      <button class="btn-rond" id="btn-pause" aria-label="Pause">${ICONES.pause}</button>
+      <div class="jeu-chrono"><span id="chrono">${chrono(S.duree ? S.duree * 1000 - t : t)}</span><small>${h(S.paquet.titre)} · tour ${S.boucle.tour}</small></div>
+      <div class="jeu-score"><b>${S.boucle.reussies}/${total}</b><small>OK</small></div>
+      <div class="barre"><div style="width:${100 * S.boucle.reussies / total}%"></div></div>
+    </div>
+    <div class="jeu-zone">
+      <div class="fiche ${S.retournee ? 'verso' : 'recto'}" id="fiche">${pc ? htmlRectoVerso(pc, S) : ''}
+        ${S.retournee && S.rateesPartie.has(pc.id) ? '<div class="deja">Ratée plus tôt dans cette partie</div>' : ''}</div>
+    </div>
+    <div class="jeu-bas">
+      ${S.retournee ? `<div class="notes deux"><button class="n1" data-ok="0">Raté</button><button class="n4" data-ok="1">OK</button></div>`
+        : '<button class="btn-principal" id="retourner">Retourner</button>'}
+    </div>
+    ${S.pause ? `<div class="voile-pause"><div class="boite"><h2>Pause</h2><p>Le chrono est arrêté.</p>
+      <button class="btn-principal" id="reprendre">Reprendre</button><button class="btn-second" id="terminer">Terminer la partie</button></div></div>` : ''}
+  </div>`;
+  $('#btn-pause').onclick = () => pausePaquet(true);
+  if (S.pause) { $('#reprendre').onclick = () => pausePaquet(false); $('#terminer').onclick = () => finirPaquet(); }
+  const fiche = $('#fiche');
+  const r = store.get().reglages;
+  fiche.querySelectorAll('[data-dire]').forEach(b => b.onclick = (ev) => {
+    ev.stopPropagation();
+    if (!dire(pc.texte, { vitesse: b.dataset.dire === 'lent' ? r.vitesseLente : 1, nom: r.voix })) toast('Synthèse vocale indisponible sur ce navigateur.');
+  });
+  fiche.querySelectorAll('[data-dire-texte]').forEach(b => b.onclick = (ev) => { ev.stopPropagation(); dire(b.dataset.direTexte, { nom: r.voix }); });
+  const sens = fiche.querySelector('[data-sens]');
+  if (sens) sens.onclick = (ev) => { ev.stopPropagation(); feuilleSens(versCarte(pc, S.paquet)); };
+  const lg = fiche.querySelector('[data-legende]');
+  if (lg) lg.onclick = (ev) => { ev.stopPropagation(); feuilleLegende(); };
+  if (!S.retournee) {
+    const tourner = () => { S.retournee = true; ecranPaquet(); };
+    fiche.onclick = tourner; $('#retourner').onclick = tourner;
+  } else vue.querySelectorAll('[data-ok]').forEach(b => b.onclick = () => repondrePaquet(b.dataset.ok === '1'));
+}
+
+function repondrePaquet(ok) {
+  const S = sprintP, P = etatPaquets(), now = Date.now();
+  const t = tempsJoueP();
+  noterCarteP(P.stats, S.courante, ok, now);
+  S.cartes.push([S.courante, ok ? 1 : 0, Math.round(t - S.depuis)]);
+  if (ok) S.boucle.ok(S.courante); else { S.rates++; S.rateesPartie.add(S.courante); }
+  store.sauver();
+  S.courante = S.boucle.suivante();
+  S.depuis = t;
+  S.retournee = false;
+  if (!S.courante) { finirPaquet(); return; }
+  ecranPaquet();
+}
+
+function finirPaquet() {
+  const S = sprintP;
+  if (!S || S.fini) return;
+  if (!S.pause) { S.joueMs += Date.now() - S.top; S.pause = true; }
+  S.fini = true;
+  clearInterval(bouclePaquet.t);
+  const e = store.get(), total = S.paquet.cartes.length, complet = S.boucle.reussies === total;
+  const s = {
+    id: 'q' + S.debut, mode: 'paquet', paquetId: S.paquet.id, titre: S.paquet.titre, duree: S.duree, hasard: S.hasard, recto: S.recto,
+    debut: S.debut, fin: Date.now(), joue: Math.min(Math.round(S.joueMs), S.duree ? S.duree * 1000 : Infinity),
+    complet, ok: S.boucle.reussies, total, rates: S.rates, tours: S.boucle.tour, pauses: S.pauses,
+    passees: S.cartes.length, notes: {}, cartes: S.cartes
+  };
+  const avant = meilleurePartie(partiesDe(S.paquet.id, S.duree));
+  if (s.cartes.length) e.sessions.push(s);
+  store.sauver();
+  bilanP = s.cartes.length ? { s, avant, record: bat(s, avant), S } : null;
+  sprintP = null;
+  location.replace(bilanP ? '#/bilan-paquet' : '#/');
+}
+
+function ecranBilanPaquet() {
+  dessinerNav('maison');
+  const { s, avant, record, S } = bilanP;
+  const ratees = [...S.rateesPartie];
+  vue.innerHTML = `${entete(s.complet ? 'Paquet réussi !' : 'Temps écoulé', `${s.titre} · ${libDuree(s.duree)}${s.hasard ? ' · hasard' : ''}`)}
+  <main class="page">
+    <section class="bloc bilan">
+      ${record && (avant || s.complet) ? '<div class="badge-record">Nouveau record !</div>' : ''}
+      <div class="gros"><b>${s.ok}/${s.total}</b><span>cartes réussies</span></div>
+      <p class="sous">${s.complet ? `en ${chrono(s.joue)}` : `en ${chrono(s.joue)} · il en restait ${s.total - s.ok}`}</p>
+      <p class="info centre">${pluriel(s.rates, 'raté')} · ${pluriel(s.tours, 'tour')}${s.pauses ? ` · ${pluriel(s.pauses, 'pause')}` : ''}</p>
+      ${avant && !record ? `<p class="info centre">Record : ${libRecord(avant, s.total)}</p>` : ''}
+    </section>
+    ${ratees.length ? `<section class="bloc liste"><div class="bloc-titre"><h2>Ratées pendant la partie</h2><span>Touche une carte pour revoir son sens et ses liens.</span></div>
+      ${ratees.map(id => { const pc = S.parId.get(id); return `<button class="ligne-carte" data-revoir="${id}"><div><b>${h(pc.texte)}</b>${pc.ipa ? `<span class="ipa-mini">/${ipaHtml(pc.ipa)}/</span>` : ''}</div></button>`; }).join('')}</section>` : ''}
+    <div class="boutons">
+      <button class="btn-principal" id="rejouer-p">${ICONES.jouer} Rejouer</button>
+      <a class="btn-second" href="#/">Accueil</a>
+    </div>
+  </main>`;
+  vue.querySelectorAll('[data-revoir]').forEach(b => b.onclick = () => feuilleSens(versCarte(S.parId.get(b.dataset.revoir), S.paquet)));
+  $('#rejouer-p').onclick = () => lancerPaquet(s.paquetId);
 }
 
 demarrer().catch(err => {

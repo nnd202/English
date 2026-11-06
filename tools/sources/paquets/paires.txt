@@ -1,0 +1,21 @@
+# Jeu « Paires de temps » : phrase A (temps) | phrase B (temps) | question | bonne réponse (a/b) | explication
+I've lived here for ten years. (pp) | I lived here for ten years. (pas) | Laquelle dit que tu y habites encore ? | a | Le present perfect relie le passé à maintenant ; le prétérit coupe : c'est fini.
+I've lost my keys. (pp) | I lost my keys. (pas) | Laquelle sous-entend que tu ne les as toujours pas ? | a | Present perfect : le résultat compte maintenant (je n'ai pas mes clés). Prétérit : un fait passé, peut-être réglé depuis.
+I've been waiting for an hour. (ppc) | I waited for an hour. (pas) | Laquelle dit que tu attends encore ? | a | Le present perfect continu étire l'action jusqu'à maintenant.
+It rained all day. (pas) | It's been raining all day. (ppc) | Laquelle dit qu'il pleut peut-être encore ? | b | Le present perfect continu va jusqu'à maintenant ; le prétérit parle d'une journée terminée.
+He's been painting the house. (ppc) | He's painted the house. (pp) | Laquelle dit que la maison est finie ? | b | Present perfect : résultat achevé. Continu : l'activité, pas forcément terminée.
+I've finished my report. (pp) | I finished my report an hour ago. (pas) | Laquelle donne le moment précis ? | b | Un moment précis du passé (an hour ago) exige le prétérit.
+When we got there, the movie started. (pas) | When we got there, the movie had started. (pasp) | Dans laquelle avez-vous raté le début ? | b | Past perfect : le film avait commencé avant votre arrivée.
+When I arrived, she left. (pas) | When I arrived, she had left. (pasp) | Dans laquelle as-tu pu la croiser ? | a | Prétérit + prétérit : les actions se suivent. Past perfect : elle était déjà partie.
+I was cooking dinner when you called. (pasc) | I cooked dinner when you called. (pas) | Dans laquelle as-tu commencé à cuisiner après l'appel ? | b | Prétérit : l'action suit l'appel. Continu : elle était déjà en cours.
+They had been arguing when I came in. (paspc) | They argued when I came in. (pas) | Dans laquelle la dispute a-t-elle commencé avant ton arrivée ? | a | Past perfect continu : l'action durait jusqu'au repère passé.
+I had been working all day, so I was exhausted. (paspc) | I had worked all day, so I was exhausted. (pasp) | Laquelle insiste sur la durée de l'effort ? | a | Le continu met l'accent sur la durée, le parfait simple sur le résultat.
+She works in London. (ps) | She's working in London. (pc) | Laquelle suggère une situation temporaire ? | b | Le présent continu décrit le temporaire ; le présent simple, le permanent.
+The train leaves at six. (ps) | The train is leaving. (pc) | Laquelle parle d'un horaire fixe ? | a | Le présent simple sert aux horaires et programmes.
+At eight, I'll have dinner. (fs) | At eight, I'll be having dinner. (fc) | Laquelle dit que le dîner sera déjà en cours à 8 h ? | b | Futur continu : en cours à un moment du futur. Futur simple : le dîner commence à 8 h.
+By June, I'll finish the book. (fs) | By June, I'll have finished the book. (fp) | Laquelle dit que ce sera terminé avant juin ? | b | Futur antérieur : achevé avant le repère futur.
+This time tomorrow, I'll be flying to Boston. (fc) | Tomorrow, I'll fly to Boston. (fs) | Laquelle te place en plein vol à un moment précis ? | a | Le futur continu montre l'action en cours au repère.
+In May, I'll have been working here for ten years. (fpc) | In May, I'll work here. (fs) | Laquelle compte une durée déjà commencée ? | a | Futur antérieur continu : durée qui court jusqu'au repère futur.
+Have you seen the news? (pp) | Did you see the news last night? (pas) | Laquelle parle d'un moment terminé et précis ? | b | Last night : moment révolu, donc prétérit.
+I was reading when the lights went out. (pasc) | I read when the lights went out. (pas) | Laquelle dit que la lecture était déjà en cours ? | a | Le prétérit continu pose le décor interrompu par l'événement.
+I've known her since college. (pp) | I knew her in college. (pas) | Laquelle dit que tu la connais toujours ? | a | Since + present perfect : la relation continue jusqu'à maintenant.
