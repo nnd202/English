@@ -1666,6 +1666,7 @@
     {
      "id": "so-01",
      "recto": "We had to [postpone] the meeting.",
+     "reponse": "We had to [put off] the meeting.",
      "texte": "We had to put off the meeting.",
      "ipa": "wi ˈhæd tə ˈpʊt̬‿ɑːf ðə ˈmiː.t̬ɪŋ",
      "aide": "put off = reporter. Aussi : put the meeting off.",
@@ -1682,6 +1683,7 @@
     {
      "id": "so-02",
      "recto": "I can't [tolerate] this noise anymore.",
+     "reponse": "I can't [put up with] this noise anymore.",
      "texte": "I can't put up with this noise anymore.",
      "ipa": "aɪ ˈkænt ˈpʊt̬‿ˈʌp wɪð ðɪs ˈnɔɪz‿ˌen.iˈmɔːr",
      "aide": "put up with = supporter, tolérer.",
@@ -1698,6 +1700,7 @@
     {
      "id": "so-03",
      "recto": "The police are [investigating] the case.",
+     "reponse": "The police are [looking into] the case.",
      "texte": "The police are looking into the case.",
      "ipa": "ðə pəˈliːs‿ɚ ˈlʊk.ɪŋ‿ɪn.tə ðə ˈkeɪs",
      "aide": "look into = examiner, enquêter sur.",
@@ -1713,6 +1716,7 @@
     {
      "id": "so-04",
      "recto": "I [discovered] that she'd left.",
+     "reponse": "I [found out] that she'd left.",
      "texte": "I found out that she'd left.",
      "ipa": "aɪ ˈfaʊnd‿ˈaʊt ðət ʃid ˈleft",
      "aide": "find out = découvrir, apprendre.",
@@ -1728,6 +1732,7 @@
     {
      "id": "so-05",
      "recto": "They [canceled] the game because of the rain.",
+     "reponse": "They [called off] the game because of the rain.",
      "texte": "They called off the game because of the rain.",
      "ipa": "ðeɪ ˈkɑːld‿ˈɑːf ðə ˈɡeɪm bɪˈkɑːz‿əv ðə ˈreɪn",
      "aide": "call off = annuler.",
@@ -1743,6 +1748,7 @@
     {
      "id": "so-06",
      "recto": "Please [continue] with your story.",
+     "reponse": "Please [go on] with your story.",
      "texte": "Please go on with your story.",
      "ipa": "ˈpliːz ˈɡoʊ‿ˈɑːn wɪð jɚ ˈstɔːr.i",
      "aide": "go on = continuer. Aussi : carry on.",
@@ -1758,6 +1764,7 @@
     {
      "id": "so-07",
      "recto": "I'm trying to [reduce] my sugar intake.",
+     "reponse": "I'm trying to [cut down on] sugar.",
      "texte": "I'm trying to cut down on sugar.",
      "ipa": "aɪm ˈtraɪ.ɪŋ tə ˈkʌt ˈdaʊn‿ɑːn ˈʃʊɡ.ɚ",
      "aide": "cut down on = réduire. Aussi : cut back on.",
@@ -1773,6 +1780,7 @@
     {
      "id": "so-08",
      "recto": "He [invented] an excuse.",
+     "reponse": "He [made up] an excuse.",
      "texte": "He made up an excuse.",
      "ipa": "hi ˈmeɪd‿ˈʌp‿ən‿ɪkˈskjuːs",
      "aide": "make up = inventer (une histoire, une excuse).",
@@ -1788,6 +1796,7 @@
     {
      "id": "so-09",
      "recto": "She [rejected] the job offer.",
+     "reponse": "She [turned down] the job offer.",
      "texte": "She turned down the job offer.",
      "ipa": "ʃi ˈtɝːnd ˈdaʊn ðə ˈdʒɑːb‿ˌɑː.fɚ",
      "aide": "turn down = refuser.",
@@ -1803,6 +1812,7 @@
     {
      "id": "so-10",
      "recto": "She was [raised] by her grandparents.",
+     "reponse": "She was [brought up] by her grandparents.",
      "texte": "She was brought up by her grandparents.",
      "ipa": "ʃi wəz ˈbrɑːt̬‿ˈʌp baɪ hɚ ˈɡræn.per.ənts",
      "aide": "bring up = élever (un enfant) ; aussi : aborder un sujet.",
@@ -1819,6 +1829,7 @@
     {
      "id": "so-11",
      "recto": "Please don't [mention] it again.",
+     "reponse": "Please don't [bring] it [up] again.",
      "texte": "Please don't bring it up again.",
      "ipa": "ˈpliːz doʊn ˈbrɪŋ‿ɪt̬‿ˈʌp‿əˈɡen",
      "aide": "bring up = aborder, mentionner.",
@@ -1835,6 +1846,7 @@
     {
      "id": "so-12",
      "recto": "He didn't [arrive] until ten.",
+     "reponse": "He didn't [show up] until ten.",
      "texte": "He didn't show up until ten.",
      "ipa": "hi ˈdɪd.ən ˈʃoʊ‿ˈʌp ənˈtɪl ˈten",
      "aide": "show up = arriver, se pointer. Aussi : turn up.",
@@ -1850,6 +1862,7 @@
     {
      "id": "so-13",
      "recto": "She [resembles] her father.",
+     "reponse": "She [takes after] her father.",
      "texte": "She takes after her father.",
      "ipa": "ʃi ˈteɪks‿ˈæf.tɚ hɚ ˈfɑː.ðɚ",
      "aide": "take after = tenir de (un parent).",
@@ -1865,6 +1878,7 @@
     {
      "id": "so-14",
      "recto": "It took him months to [recover from] the breakup.",
+     "reponse": "It took him months to [get over] the breakup.",
      "texte": "It took him months to get over the breakup.",
      "ipa": "ɪt ˈtʊk‿ɪm ˈmʌnθs tə ˈɡet̬‿ˈoʊ.vɚ ðə ˈbreɪk.ʌp",
      "aide": "get over = se remettre de.",
@@ -1881,6 +1895,7 @@
     {
      "id": "so-15",
      "recto": "The teacher [distributed] the tests.",
+     "reponse": "The teacher [handed out] the tests.",
      "texte": "The teacher handed out the tests.",
      "ipa": "ðə ˈtiː.tʃɚ ˈhæn.dɪd‿ˈaʊt ðə ˈtests",
      "aide": "hand out = distribuer.",
@@ -1896,6 +1911,7 @@
     {
      "id": "so-16",
      "recto": "I finally [surrendered] and said yes.",
+     "reponse": "I finally [gave in] and said yes.",
      "texte": "I finally gave in and said yes.",
      "ipa": "aɪ ˈfaɪ.nəl.i ˈɡeɪv‿ˈɪn ən ˈsed ˈjes",
      "aide": "give in = céder.",
@@ -1911,6 +1927,7 @@
     {
      "id": "so-17",
      "recto": "I'm trying to [quit] smoking.",
+     "reponse": "I'm trying to [give up] smoking.",
      "texte": "I'm trying to give up smoking.",
      "ipa": "aɪm ˈtraɪ.ɪŋ tə ˈɡɪv‿ˈʌp ˈsmoʊ.kɪŋ",
      "aide": "give up = arrêter (une habitude), abandonner.",
@@ -1926,6 +1943,7 @@
     {
      "id": "so-18",
      "recto": "Let's [review] the plan once more.",
+     "reponse": "Let's [go over] the plan once more.",
      "texte": "Let's go over the plan once more.",
      "ipa": "ˈlets ˈɡoʊ‿ˈoʊ.vɚ ðə ˈplæn ˈwʌns ˈmɔːr",
      "aide": "go over = revoir, passer en revue.",
@@ -1941,6 +1959,7 @@
     {
      "id": "so-19",
      "recto": "[Visit] anytime you're in town.",
+     "reponse": "[Drop by] anytime you're in town.",
      "texte": "Drop by anytime you're in town.",
      "ipa": "ˈdrɑːp ˈbaɪ ˈen.i.taɪm jɚ‿ɪn ˈtaʊn",
      "aide": "drop by = passer (voir quelqu'un).",
@@ -1956,6 +1975,7 @@
     {
      "id": "so-20",
      "recto": "They [established] a new company.",
+     "reponse": "They [set up] a new company.",
      "texte": "They set up a new company.",
      "ipa": "ðeɪ ˈset̬‿ˈʌp‿ə ˈnuː ˈkʌm.pə.ni",
      "aide": "set up = créer, monter, installer.",
@@ -1972,6 +1992,7 @@
     {
      "id": "so-21",
      "recto": "We need to [eliminate] these old files.",
+     "reponse": "We need to [get rid of] these old files.",
      "texte": "We need to get rid of these old files.",
      "ipa": "wi ˈniːd tə ˈɡet ˈrɪd‿əv ðiːz‿ˈoʊld ˈfaɪlz",
      "aide": "get rid of = se débarrasser de.",
@@ -1987,6 +2008,7 @@
     {
      "id": "so-22",
      "recto": "Can you [consult] the word in a dictionary?",
+     "reponse": "Can you [look up] the word in a dictionary?",
      "texte": "Can you look up the word in a dictionary?",
      "ipa": "kən jə ˈlʊk‿ˈʌp ðə ˈwɝːd‿ɪn‿ə ˈdɪk.ʃə.ner.i",
      "aide": "look up = chercher (une information).",
@@ -2002,6 +2024,7 @@
     {
      "id": "so-23",
      "recto": "They [reconciled] after the fight.",
+     "reponse": "They [made up] after the fight.",
      "texte": "They made up after the fight.",
      "ipa": "ðeɪ ˈmeɪd‿ˈʌp ˈæf.tɚ ðə ˈfaɪt",
      "aide": "make up = se réconcilier (sans objet).",
@@ -2017,6 +2040,7 @@
     {
      "id": "so-24",
      "recto": "I can't [understand] how it works.",
+     "reponse": "I can't [figure out] how it works.",
      "texte": "I can't figure out how it works.",
      "ipa": "aɪ ˈkænt ˈfɪɡ.jɚ‿ˈaʊt ˈhaʊ‿ɪt ˈwɝːks",
      "aide": "figure out = comprendre, trouver.",
@@ -2032,6 +2056,7 @@
     {
      "id": "so-25",
      "recto": "We've [exhausted our supply of] coffee.",
+     "reponse": "We've [run out of] coffee.",
      "texte": "We've run out of coffee.",
      "ipa": "wiv ˈrʌn‿ˈaʊt̬‿əv ˈkɑː.fi",
      "aide": "run out of = ne plus avoir de.",
@@ -2048,6 +2073,7 @@
     {
      "id": "so-26",
      "recto": "I [encountered] an old friend downtown.",
+     "reponse": "I [ran into] an old friend downtown.",
      "texte": "I ran into an old friend downtown.",
      "ipa": "aɪ ˈræn‿ˈɪn.tu‿ən‿ˈoʊld ˈfrend ˌdaʊnˈtaʊn",
      "aide": "run into = tomber sur (par hasard).",
@@ -2063,6 +2089,7 @@
     {
      "id": "so-27",
      "recto": "The firefighters [extinguished] the fire.",
+     "reponse": "The firefighters [put out] the fire.",
      "texte": "The firefighters put out the fire.",
      "ipa": "ðə ˈfaɪ.ɚ.faɪ.t̬ɚz ˈpʊt̬‿ˈaʊt ðə ˈfaɪ.ɚ",
      "aide": "put out = éteindre.",
@@ -2079,6 +2106,7 @@
     {
      "id": "so-28",
      "recto": "I've always [admired] my older brother.",
+     "reponse": "I've always [looked up to] my older brother.",
      "texte": "I've always looked up to my older brother.",
      "ipa": "aɪv ˈɑːl.weɪz ˈlʊkt̬‿ˈʌp tə maɪ ˈoʊl.dɚ ˈbrʌð.ɚ",
      "aide": "look up to = admirer.",
@@ -2095,6 +2123,7 @@
     {
      "id": "so-29",
      "recto": "I don't want to [disappoint] you.",
+     "reponse": "I don't want to [let] you [down].",
      "texte": "I don't want to let you down.",
      "ipa": "aɪ doʊn ˈwɑː.nə ˈle.tʃə ˈdaʊn",
      "aide": "let down = décevoir.",
@@ -2110,6 +2139,7 @@
     {
      "id": "so-30",
      "recto": "Sorry I'm late, I was [delayed] in traffic.",
+     "reponse": "Sorry I'm late, I was [held up] in traffic.",
      "texte": "Sorry I'm late, I was held up in traffic.",
      "ipa": "ˈsɑːr.i‿aɪm ˈleɪt aɪ wəz ˈheld‿ˈʌp‿ɪn ˈtræf.ɪk",
      "aide": "hold up = retarder.",

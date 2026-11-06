@@ -40,7 +40,8 @@ deck_cartes('amis.txt', 'amis', 'am', 'Entre amis', 'L\'anglais américain du qu
 c = []
 for k, (recto, texte, ipa, aide) in enumerate(lignes('soutenu.txt'), 1):
     lemme = aide.split(' =')[0].strip()
-    c.append({'id': f'so-{k:02d}', 'recto': recto, 'texte': texte, 'ipa': ipa, 'aide': aide, 'lemme': lemme,
+    # La réponse marque le phrasal verb entre crochets (surligné au verso) ; texte = version propre.
+    c.append({'id': f'so-{k:02d}', 'recto': recto, 'reponse': texte, 'texte': texte.replace('[', '').replace(']', ''), 'ipa': ipa, 'aide': aide, 'lemme': lemme,
               'tags': {'cat': 'phrasal', 'reg': 'courant', 'phon': phon(ipa)}})
 paquets.append({'id': 'soutenu', 'groupe': 'Phrasal verbs', 'genre': 'soutenu', 'titre': 'Du soutenu au naturel',
                 'accroche': 'Une phrase au verbe soutenu : redis-la avec le phrasal verb d\'un natif.', 'cartes': c})

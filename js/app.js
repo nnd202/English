@@ -1659,7 +1659,7 @@ function htmlRectoVerso(pc, S) {
   if (p.genre === 'soutenu') {
     const recto = h(pc.recto).replace(/\[([^\]]+)\]/, '<mark>$1</mark>');
     if (!S.retournee) return `<div class="fiche-type">Phrasal verb</div><div class="consigne">Redis-le avec un phrasal verb</div><div class="fiche-texte long">${recto}</div><div class="fiche-indice">Dis ta version à voix haute, puis retourne</div>`;
-    return `<div class="fiche-type">Phrasal verb</div><div class="rappel-recto">${recto}</div><div class="fiche-texte long">${h(pc.texte)}</div>
+    return `<div class="fiche-type">Phrasal verb</div><div class="rappel-recto">${recto}</div><div class="fiche-texte long">${h(pc.reponse || pc.texte).replace(/\[([^\]]+)\]/g, '<mark>$1</mark>')}</div>
       <div class="fiche-ipa${pc.ipa.length > 24 ? ' long' : ''}">/${ipaHtml(pc.ipa)}/</div>${actions}<div class="regle">${h(pc.aide)}</div>${leg(pc.ipa)}`;
   }
   if (p.genre === 'particules') {

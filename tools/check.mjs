@@ -109,7 +109,7 @@ for (const p of PQ) {
     const { inconnus } = decouper(c.ipa || '', langue.symboles);
     verifier(!inconnus.length, `${ou} : symboles IPA inconnus : ${[...new Set(inconnus)].join(' ')}`);
     if (p.genre === 'cartes') verifier(['mot', 'expr', 'phrasal', 'phrase'].includes(c.cat), `${ou} : catégorie inconnue`);
-    if (p.genre === 'soutenu') verifier(/\[[^\]]+\]/.test(c.recto) && c.lemme, `${ou} : verbe soutenu entre crochets ou lemme manquant`);
+    if (p.genre === 'soutenu') verifier(/\[[^\]]+\]/.test(c.recto) && /\[[^\]]+\]/.test(c.reponse || '') && !/[[\]]/.test(c.texte) && c.lemme, `${ou} : crochets du recto ou de la réponse, ou lemme manquant`);
     if (p.genre === 'particules') verifier(c.recto.includes('___') && c.texte.includes(c.particule), `${ou} : trou ou particule`);
   }
 }

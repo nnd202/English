@@ -326,6 +326,12 @@ svg.schema { width: 100%; height: auto; display: block; }
 .schema-carte span { display: block; font-size: 13px; color: #4b5670; margin-top: -2px; }
 
 /* Sprint par paquets */
+.feuille .sens > .info { margin-bottom: 6px; line-height: 1.45; }
+.feuille .sous-titre { margin: 22px 0 8px; }
+.feuille .ligne-record, .feuille .ligne-histo { padding: 11px 0; border-top: 1px solid var(--gris-clair); }
+.feuille .sous-titre + .ligne-record, .feuille .sous-titre + .ligne-histo { border-top: 0; }
+.feuille .ligne-record small, .feuille .ligne-histo small { margin-top: 3px; }
+.feuille #jouer-feuille { margin-top: 22px; }
 .ligne-paquet { display: flex; align-items: center; gap: 10px; padding: 12px 0; border-top: 1px solid var(--gris-clair); }
 .bloc-titre + .ligne-paquet { border-top: 0; }
 .lp-main { flex: 1; text-align: left; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
